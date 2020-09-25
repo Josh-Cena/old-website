@@ -1,6 +1,7 @@
 <template>
   <div class="music">
     <h1>My playlist</h1>
+    <h2>(Work in progress)</h2>
     <ul>
       <li v-for="(artist, index1) in artists" :key="index1">
         <div class="artist">

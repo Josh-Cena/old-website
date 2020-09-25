@@ -1,6 +1,7 @@
 <template>
   <div class="editor">
     <h1>Type your math formula below:</h1>
+    <h2>(Work in progress)</h2>
     <div id="text">
       <textarea
         id="input"
