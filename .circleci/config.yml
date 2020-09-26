@@ -39,7 +39,7 @@ jobs:
           command: |
             git config --global user.email "joshcena@qq.com"
             git config --global user.name "Joshua Chen"
-            echo "machine github.com login Josh-Cena password $GITHUB__DOCUSAURUS_TOKEN" > ~/.netrc
+            echo "machine github.com login Josh-Cena password $GITHUB_PA_TOKEN" > ~/.netrc
       - attach_workspace:
           at: .
       - run:
