@@ -9,18 +9,18 @@
 <script>
 import Blog1 from "@/components/blogs/Blog1.vue";
 import Blog2 from "@/components/blogs/Blog2.vue";
+import Blog3 from "@/components/blogs/Blog3.vue";
 
 export default {
   name: "Blog",
   components: {
     Blog1,
-    Blog2
+    Blog2,
+    Blog3
   },
-  data: function() {
-    return {
-      list: ["Blog1", "Blog2"]
-    };
-  }
+  data: () => ({
+    list: ["Blog1", "Blog2", "Blog3"]
+  })
 };
 </script>
 
