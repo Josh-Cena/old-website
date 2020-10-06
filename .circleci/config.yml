@@ -15,14 +15,14 @@ jobs:
             - yarn-packages-v1-
       - run:
           name: Install dependencies
-          command: yarn install
+          command: npm install
       - save_cache:
           paths:
             - ~/.cache/yarn
           key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - run:
           name: Build Website
-          command: yarn build
+          command: npm run build
       - persist_to_workspace:
           root: .
           paths:
@@ -44,7 +44,11 @@ jobs:
           at: .
       - run:
           name: Deploy to GitHub Pages
-          command: GIT_USER=Josh-Cena yarn run deploy
+          command: |
+            GIT_USER=Josh-Cena npm run build
+            cd dist
+            git commit -m 'Deploy website'
+            git push -f git@github.com:Josh-Cena/Josh-Cena.github.io.git master
           # Set environment variables so that project is deployed correctly
           environment:
             ORGANIZATION_NAME: Josh-Cena
