@@ -6,6 +6,7 @@ import "./assets/css/global.css";
 // import "github-markdown-css/github-markdown.css";
 import hljs from "highlight.js";
 import "highlight.js/styles/github.css";
+import vuetify from "./plugins/vuetify";
 
 Vue.directive("highlight", function(el) {
   const blocks = el.querySelectorAll("pre code");
@@ -19,5 +20,6 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   store,
+  vuetify,
   render: h => h(App)
 }).$mount("#app");
