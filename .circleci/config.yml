@@ -37,7 +37,7 @@ jobs:
       - run:
           name: Configure Git Credentials
           command: |
-            git config --global user.email "joshcena@qq.com"
+            git config --global user.email "sidachen2003@gmail.com"
             git config --global user.name "Joshua Chen"
             echo "machine github.com login Josh-Cena password $GITHUB_PA_TOKEN" > ~/.netrc
       - attach_workspace:
@@ -47,8 +47,10 @@ jobs:
           command: |
             npm run build
             cd dist
-            GIT_USER=Josh-Cena git commit -m 'Deploy website'
-            GIT_USER=Josh-Cena git push -f git@github.com:Josh-Cena/Josh-Cena.github.io.git master
+            GIT_USER=Josh-Cena git init
+            git add -A
+            git commit -m 'Deploy website'
+            git push -f git@github.com:Josh-Cena/Josh-Cena.github.io.git master
           # Set environment variables so that project is deployed correctly
           environment:
             ORGANIZATION_NAME: Josh-Cena
