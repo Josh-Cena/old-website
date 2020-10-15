@@ -51,11 +51,6 @@ jobs:
             git add -A
             GIT_USER=Josh-Cena git commit -m 'Deploy website'
             GIT_USER=Josh-Cena git push -f https://github.com/Josh-Cena/Josh-Cena.github.io.git master
-          # Set environment variables so that project is deployed correctly
-          environment:
-            ORGANIZATION_NAME: Josh-Cena
-            PROJECT_NAME: Josh-Cena.github.io
-
 
 workflows:
   version: 2.1
