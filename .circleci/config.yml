@@ -50,7 +50,7 @@ jobs:
             GIT_USER=Josh-Cena git init
             git add -A
             git commit -m 'Deploy website'
-            git push -f git@github.com:Josh-Cena/Josh-Cena.github.io.git master
+            git push -f https://github.com/Josh-Cena/Josh-Cena.github.io.git master
           # Set environment variables so that project is deployed correctly
           environment:
             ORGANIZATION_NAME: Josh-Cena
