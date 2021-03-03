@@ -15,14 +15,14 @@ jobs:
             - yarn-packages-v1-
       - run:
           name: Install dependencies
-          command: npm install
+          command: yarn install
       - save_cache:
           paths:
             - ~/.cache/yarn
           key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - run:
           name: Build Website
-          command: npm run build
+          command: yarn build
       - persist_to_workspace:
           root: .
           paths:
@@ -38,19 +38,18 @@ jobs:
           name: Configure Git Credentials
           command: |
             git config --global user.email "sidachen2003@gmail.com"
-            git config --global user.name "Joshua Chen"
+            git config --global user.name "Josh-Cena"
             echo "machine github.com login Josh-Cena password $GITHUB_PA_TOKEN" > ~/.netrc
       - attach_workspace:
           at: .
       - run:
           name: Deploy to GitHub Pages
-          command: |
-            npm run build
-            cd dist
-            git init
-            git add -A
-            GIT_USER=Josh-Cena git commit -m 'Deploy website'
-            GIT_USER=Josh-Cena git push -f https://github.com/Josh-Cena/Josh-Cena.github.io.git master
+          command: GIT_USER=Josh-Cena yarn run deploy
+          # Set environment variables so that project is deployed correctly
+          environment:
+            ORGANIZATION_NAME: Josh-Cena
+            PROJECT_NAME: Josh-Cena.github.io
+            DEPLOYMENT_BRANCH: master
 
 workflows:
   version: 2.1
