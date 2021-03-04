@@ -8,12 +8,12 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: '7-year programmer',
+    imageUrl: 'img/feature1.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Fluent with both front-end and back-end programming languages. 
+        Experienced with graphics language Asymptote and typesetting language LaTeX.
       </>
     ),
   },
@@ -59,10 +59,14 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Hello from ${siteConfig.title}`}>
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
+            <img
+              className={styles.logo}
+              alt="Logo"
+              src="/img/logo.png"
+            />
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>

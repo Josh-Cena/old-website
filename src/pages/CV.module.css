@@ -37,3 +37,12 @@
   display: inline;
   margin: 10pt;
 }
+
+.icon {
+  width: 24px;
+}
+
+html[data-theme='dark'] .icon {
+  fill: rgba(255, 255, 255, 0.85);
+  width: 24px;
+}
