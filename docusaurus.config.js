@@ -23,7 +23,7 @@ module.exports = {
       items: [
         {to: 'CV', label: 'CV', position: 'left'},
         {
-          to: 'docs/',
+          to: 'docs/Science/cavalieri',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
@@ -43,8 +43,20 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'About me',
-              to: 'docs/',
+              label: 'Science',
+              to: 'docs/Science/amino-acid',
+            },
+            {
+              label: 'Technology',
+              to: 'docs/Technology/easy-tsims',
+            },
+            {
+              label: 'Humanities',
+              to: 'docs/Humanities/law',
+            },
+            {
+              label: 'Short stories',
+              to: 'docs/Stories/red-pills',
             },
           ],
         },
