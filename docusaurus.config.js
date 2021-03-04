@@ -19,6 +19,7 @@ module.exports = {
       logo: {
         alt: 'JC',
         src: 'img/logo.svg',
+        srcDark: 'img/logo-dark.svg',
       },
       items: [
         {to: 'CV', label: 'CV', position: 'left'},
