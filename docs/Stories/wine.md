@@ -8,16 +8,11 @@ sidebar_label: About wine, dark nights, and a pen
 >
 > Link: https://mp.weixin.qq.com/s/MSqUVJfc6jhsUAbdvKUaEg
 
-> Wine comes in at the mouth
->
-> And love comes in at the eye;
->
-> That’s all we shall know for truth
->
-> Before we grow old and die.
->
-> I lift the glass to my mouth,
->
+> Wine comes in at the mouth  
+> And love comes in at the eye;  
+> That’s all we shall know for truth  
+> Before we grow old and die.  
+> I lift the glass to my mouth,  
 > I look at you, and I sigh.
 >
 > William Butler Yeats—A Drinking Song

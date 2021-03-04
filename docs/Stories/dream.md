@@ -4,6 +4,12 @@ title: 关于梦境、坠落与现实
 sidebar_label: About dreams, fall, and reality
 ---
 
+export const Pic = ({children, src}) => (
+    <div style={{textAlign: 'center'}}>
+        <img src={src} />
+        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+    </div>);
+
 > First published on Jan 2, 2021
 >
 > Link: https://mp.weixin.qq.com/s/gLPwsms14ZAF6iGfbsgiCw
@@ -12,20 +18,13 @@ sidebar_label: About dreams, fall, and reality
 
 我会分享一些我写作中的想法以及常用的意象，尝试解构它们的含义——而其他时候，我只是脑洞突发，想讲一点魔幻的小故事。
 
-> Had I the heavens’ embroidered cloths, 
->
-> Enwrought with golden and silver light, 
->
-> The blue and the dim and the dark cloths 
->
-> Of night and light and the half light, 
->
-> I would spread the cloths under your feet: 
->
-> But I, being poor, have only my dreams;
->
-> I have spread my dreams under your feet;
->
+> Had I the heavens’ embroidered cloths,  
+> Enwrought with golden and silver light,  
+> The blue and the dim and the dark cloths  
+> Of night and light and the half light,  
+> I would spread the cloths under your feet:  
+> But I, being poor, have only my dreams;  
+> I have spread my dreams under your feet;  
 > Tread softly because you tread on my dreams.
 >
 > William Butler Yeats—He Wishes for the Cloths of Heaven
@@ -42,7 +41,7 @@ sidebar_label: About dreams, fall, and reality
 
 可能正因如此，梦的最后总是下坠而非飞升，好像我们正在堕入地狱而非升上天堂。
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET69KSYobCgBALSL5DmFHicXQ0QWuZyuHm9tkfIvR1O78FibXGqI7HZB8bAm7VSHbD1uHtT2yhZO7On2A/640?wx_fmt=jpeg"></Pic>
 
 当你从五十层的高楼破窗而出，风声在耳边呼啸，冰冷的空气堵住了你的鼻子和嘴，压迫着你的肺，死亡从一缕飘散在空中的风，变成了一块坚实的地面，眼前的事物急剧放大——你正全速撞上去，去往另一个世界——那个世界被称作现实。
 

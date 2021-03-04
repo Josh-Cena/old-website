@@ -4,13 +4,19 @@ title: 圆孔衍射：迷の1.22
 sidebar_label: 'Circular aperture diffraction: the misterious 1.22'
 ---
 
+export const Pic = ({children, src}) => (
+    <div style={{textAlign: 'center'}}>
+        <img src={src} />
+        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+    </div>);
+
 > First published on Jan 8, 2021
 >
 > Link: https://mp.weixin.qq.com/s/BKh6Wgf30bSYQLlJYIUiSw
 
 我们上物理课时，学到了圆孔衍射中的“艾里斑”现象。
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_png/JGibibkelET6ibp22yfGQRTNG3uEC1ibHxbmsjjAJWEgDd5XJPMZiaBmTyucDbazZYgSXICVtickzaR9E2cQ79O921mQ/640?wx_fmt=png"></Pic>
 
 艾里斑是光透过一个孔后在光屏上形成的亮斑——上图中的中心亮斑。因为它的存在，任何一个点光源都不可能在通过光学仪器后仍然成一个完美的点的像，而一定会衍射成一个光斑。这就让“完美成像”变成了不可能——摄影中，会尤为注意这一点。但在这里，我们不深入探讨。
 
@@ -60,7 +66,7 @@ E(x,y,z)\propto \frac{1}{d}E_0\exp\left(\mathrm{i}\frac{2\pi}{\lambda}d\right)
 有了这个公式，我们就可以描述衍射时子波的相互干涉了。
 假设小孔是在 $xOy$ 平面上，圆心位于原点，半径为 $r$ 的一个圆，那么光通过圆孔后，圆孔上的每一个点 $(x_0, y_0, 0)$ 都会成为新的子波源。这些波源发出的光最终抵达位于 $z$ 的光屏，我们想要的即是对于所有 $(x_0, y_0, 0)$，它们发出的子波在 $(x_1, y_1, z)$ 这一点的叠加波幅。
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_png/JGibibkelET6ibRwzz1eaiaia1qgic8cviaNiaWNaUVzRvTlqiblbm7oGUPHm4OlvC8iayHChKOONwJrtI3zfjcpbMOFzibxw/640?wx_fmt=png"></Pic>
 
 我们当然直接莽，先积分一下。
 
@@ -188,20 +194,21 @@ $$\begin{aligned}
 最后，我们画点图验证一下衍射公式。首先是振幅关于轴距离的分布。（光强的分布就是把此函数平方，但画出来的图看起来不够优美）
 蓝线为圆孔衍射，黄线为单缝衍射，可以看到圆孔的衍射条纹要更宽一点，这个比值正是 $1.22$。
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_png/JGibibkelET694UQSTSxsmQibPBc8Mt8iczYRwERhIXETibSiaEh4HQ4UhU99w3dSbH9o6WqXN4o2BiclLhl7zR4Mibvgg/640?wx_fmt=png"></Pic>
 
 看起来非常科学。如果画个二维的振幅分布图：
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_png/JGibibkelET694UQSTSxsmQibPBc8Mt8iczYJq4v8PZG3qKtUagv25OS2dKialeysib7Er03xvfORYKZYSQCiabO1kobg/640?wx_fmt=png"></Pic>
 
 平方之后，得到实际的光强分布图：
 
-Image
-除了中心黄色亮斑和外面一圈红色光晕，你能看到第二个和第三个圈吗？
+<Pic src="https://mmbiz.qpic.cn/mmbiz_png/JGibibkelET685a5rxPXLibElY6oEgLE59OBKFgG3E0fhyPeC1urPpKKCGaEvdWvICiaOfIMZPRlFEL2aiaDV22pINg/640?wx_fmt=png">除了中心黄色亮斑和外面一圈红色光晕，你能看到第二个和第三个圈吗？</Pic>
 
 （我的Python代码太丑陋了，就不展示了）
 
 就这样，祝你做个好梦，祝梦里没有丑陋的贝塞尔函数和1.22。
 
-Image
-第一类贝塞尔函数：你瞅啥？
+$$\begin{aligned}
+J_1(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma(m+2)} {\left(\frac{x}{2}\right)}^{2m+1}\equiv\frac{1}{\pi} \int_0^\pi \cos (\tau - x \sin \tau) \,\mathrm{d}\tau
+\end{aligned}$$
+<p style={{textAlign: 'center', color: 'gray', fontSize: 'small'}}>第一类贝塞尔函数：你瞅啥？</p>

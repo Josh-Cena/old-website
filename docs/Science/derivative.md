@@ -4,9 +4,11 @@ title: 关于误差传递与导数运算的发现
 sidebar_label: Error propagation and derivatives
 ---
 
-export const Highlight = ({children}) => ( <p style={{
-      color: '#f00',
-    }}>{children}</p> );
+export const Pic = ({children, src}) => (
+    <div style={{textAlign: 'center'}}>
+        <img src={src} />
+        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+    </div>);
 
 > First published on Oct 5, 2019
 >
@@ -42,15 +44,8 @@ F=k\cdot\frac{Q_1Q_2}{r^n}
 
 下面是误差的相关计算公式，可以看到上面的原则是如何起作用的：
 
-<Highlight>
-
-**高能预警**
-</Highlight>
-
-<Highlight>
-
-**未做好心理准备请直接跳过公式**
-</Highlight>
+<p color="red"><b>高能预警</b></p>
+<p color="red"><b>未做好心理准备请直接跳过公式</b></p>
 
 设 $u=u±\Delta u$，$v=v±\Delta v$，则
 
@@ -70,10 +65,7 @@ $$\begin{aligned}
 
 （在除法公式中，我们认为误差的平方相较于值的平方来说可以忽略，所以得到了最后的式子。）
 
-<Highlight>
-
-**预警解除**
-</Highlight>
+<p color="red"><b>预警解除</b></p>
 
 总结来说，有如下公式：
 
@@ -91,7 +83,7 @@ $$\begin{aligned}
 
 其中的曲线便是 $y=f(x)$，而不断运动的直线的方程则是 $y-f(m)=g(m)(x-m)$。画出 $k=g(m)$ 的图形，长这样：
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_png/JGibibkelET68f5MoWZfb3aicRibA7AGLZyqFE4cuCibtmkptNIOserzAFRyCgajzvSMtQxub74fdoWqw8aF0MiaR6Xg/640?wx_fmt=png"></Pic>
 
 如果要计算导数，相当于算出 $g(m)$，或者说算出 $k$。
 
@@ -107,15 +99,8 @@ $$\displaystyle k=\frac{\Delta y}{\Delta x}=\lim_{\Delta m\to0}\frac{f(m+\Delta 
 
 现在就可以看一些导数的计算公式了。
 
-<Highlight>
-
-**高能预警**
-</Highlight>
-
-<Highlight>
-
-**未做好心理准备请直接跳过公式**
-</Highlight>
+<p color="red"><b>高能预警</b></p>
+<p color="red"><b>未做好心理准备请直接跳过公式</b></p>
 
 设有函数 $u=u(x)$，$v=v(x)$，则
 
@@ -137,10 +122,7 @@ $$\begin{aligned}
 \end{aligned}$$
 （其中乘除法的推导堪称“神来之笔”！）
 
-<Highlight>
-
-**预警解除**
-</Highlight>
+<p color="red"><b>预警解除</b></p>
 
 如果你看不懂，或者不想看，也没有关系，反正推导方法也不是吾辈能想得出来的。首先，你要知道，推导过程很高级；其次，你要记住几个公式：
 

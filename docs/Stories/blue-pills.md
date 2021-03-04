@@ -3,75 +3,56 @@ id: blue-pills
 title: Blue pills and a birthday
 ---
 
+export const Pic = ({children, src}) => (
+    <div style={{textAlign: 'center'}}>
+        <img src={src} />
+        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+    </div>);
+
 > First published on Sept 13, 2020
 >
 > Link: https://mp.weixin.qq.com/s/SUvSjZB6X3UOo_iFkz-nrQ
 
-> So the hearse ran out of gas
-> 
-> A passenger person grabbed a map
-> 
-> And the driver inside it contrived a new route to save the past
-> 
-> And checked his watch and grabbed a cab
-> 
-> A beautifully planned taxi cab
-> 
+> So the hearse ran out of gas  
+> A passenger person grabbed a map  
+> And the driver inside it contrived a new route to save the past  
+> And checked his watch and grabbed a cab  
+> A beautifully planned taxi cab  
 > A cab had it cleared out back and two men started to unpack
-
-> Driving once again
-> 
-> But now this time there were three men
-> 
-> And then I heard one of them say
-> 
-> I know the night will turn to gray
-> 
-> I know the stars will start to fade
-> 
-> When all the darkness fades away
-> 
-> We had to steal him from his fate
-> 
+>
+> Driving once again  
+> But now this time there were three men  
+> And then I heard one of them say  
+> I know the night will turn to gray  
+> I know the stars will start to fade  
+> When all the darkness fades away  
+> We had to steal him from his fate  
 > So he could see another day
-
-> Then I cracked open my box
-> 
-> Someone must have picked the lock
-> 
-> A little light revealed the spot
-> 
-> Where my fingernails had fought
-> 
-> Then I pushed it open more
-> 
-> Pushing up against the door
-> 
-> Then I sat up off the floor
-> 
-> and found the breath we're searching for
-> 
-> Then there were three men upfront
-> 
-> All I saw were backs of heads
-> 
+>
+> Then I cracked open my box  
+> Someone must have picked the lock  
+> A little light revealed the spot  
+> Where my fingernails had fought  
+> Then I pushed it open more  
+> Pushing up against the door  
+> Then I sat up off the floor  
+> and found the breath we're searching for  
+> Then there were three men upfront  
+> All I saw were backs of heads  
 > And then I asked them am I alive and well or am I dreaming dead
-
-> And then one turned around to say
-> 
-> We're driving toward the morning sun
-> 
-> Where all your blood is washed away
-> 
+>
+> And then one turned around to say  
+> We're driving toward the morning sun  
+> Where all your blood is washed away  
 > And all you did will be undone
 
 He woke up in his bed, sweat-soaked all over. 2:50, the clock read. Same dream, third time this week, he recalled, the exact same scene. He tried to refrain himself from thinking about it, but the more he held back, the more persistent the memories became, until his heavy breaths turned into a sob. “No,” he implored, “go to someone else’s dream!” But he knew this would be in vain. He realized, without that comforting hand at night he’s nothing, powerless in front of his own nightmares. Those voices echoed in his mind: “Coward! Coward! Slacker! Murderer! …”
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET6ibpNRJnUJeQabo5GmxCeqibvEAHQnOjd3GNW4o9OLxFu4cmYfQDNl34xic2BbJwcrF5qFRpdx1yK1TA/640?wx_fmt=jpeg"></Pic>
 
 In the dark of the night, as he lay in silence, the bell tower’s chiming came from afar, *bong*, *bong*, *bong*.
 
-
+<br />
 
 As he rose with the sun, an unnamable pain in the chest seized him—was it because of last night’s dream? Shuffling through the room, he collapsed on the couch under a splitting headache. In the midst of wild thoughts, he reached out for the little white bottle, standing harmlessly on the table. He held it close to make out the letters: D, O, X, E. That’s it, he thought, and lied back, still clutching to the bottle.
 
@@ -87,19 +68,19 @@ They kissed good-bye, then smiled at each other—both of their lips moved, but 
 
 That was four days ago. 
 
-
+<br />
 
 He took a deep breath, carefully scrutinizing the bottle for the last time, like how a condemned would examine his executioner. One pill and he would merrily enjoy a day of redemption; half a bottle, and he would say good-bye to this world—savior and destroyer enclosed in the same bottle. He had been pondering for days—weighing, comparing, debating. But all calculations led to the same result: an ending was all he needed. The crimes on his shoulders pushed him into the bottomless perdition, and in no way could he see salvation possible. He closed his eyes and felt his arm rising. The next moment, pills came sliding down his throat. He crossed his arms in front of his chest and comforted himself, enjoy the happiest moment of my life.
 
 When he opened his eyes, he was walking on the stone beach. For the hundredth time, he heard the tides beating the shoreline, as always in his late-night dreams. The salty smell filled his nostrils. Limbo, he determined it to be, in its most suitable form. But this time, no longer filled with fear or remorse, he rose his arms, in a challenging posture: “Show me what you’ve got!”
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET68y0M6bVwP2gu8LEDcRKFMc24HTr1CtmQaajUic3fT3ibdKhbCmQNYY81Tg8DAJ8SiayibB5YQic84t9GQ/640?wx_fmt=jpeg"></Pic>
 
 Lightning came crashing down. A cloud of furious ravens swooshed from the horizon. He felt the storm—and he shouted, “Rain down! Rain down on me!” As he fell to the ground, droplets of fluid splashed onto his face, warm, thick, blood-smelling. He sank into the bottomless darkness. 
 
 He didn’t know how long he’d stayed motionless. He stretched his limbs. They were as intact as they’d always been. He looked down, only seeing a black void. He stood up, but there was no sense of pressure from his legs. He searched for his legs with his right hand—nowhere could he feel it. In a peculiar manner, he stumbled a few paces forward, then sat on the floor—if there was a floor.
 
-
+<br />
 
 In this utter silence and darkness, when every sense became numb, all the memories rushed to his head. The bartender, who, despite his gray hair, resembled a saint in every way, leaned forward, with sincerity in his eyes: “Boy, you have to discover meaning in your life.”
 
@@ -115,17 +96,17 @@ The old man shook his head, then pointed his index finger at his chest and procl
 
 “Yes, he does. But sometimes you have to make it on your own. They said, don’t put Him to test—you can’t demand anything from Him.”
 
-
+<br />
 
 And now he’s here, putting God to his test, and he got no salvation from God—of course he won’t, since this test in and of itself is a sign of distrust, a blasphemy. He huddled up on the ground—the very first posture in his brief period of existence when he was still in a womb. His life has finished in a completed loop. This is going to be my resting place now, he thought. He tried to sing himself a sleeping chant, one that in his most distant memories used to be sung by his mother on stormy nights.
 
 *Numbness*.
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET6ibpNRJnUJeQabo5GmxCeqibvJzDWld29CbAGMe4cvlP440ZW4awNl0PKictKcHKgV6yQWCjotAYvwqA/640?wx_fmt=jpeg"></Pic>
 
 Then he started to sob again, on realizing this place could only be an alternative form of torture from God, but this time for eternity. He thought of the girl again, her angel eyes, her soft lips, her warm embrace, and deep in her soul, that sheltering geniality. He must have repeated the same sentence when he longed for an ending, “She’s the reason for me to live on.” But he gave up on her at the last moment. She was the missing weight on his scale. God, God Almighty! He cried out. He wandered around, trying to find a way out—but how could he if he couldn’t sense anything? In essence, he couldn’t even tell if he was actually moving, or only believing he was moving. But suddenly, he did hit something solid—a wooden wall, it turned out to be, extending in every direction. He felt it, inch by inch: its texture, grooves, and pores. Then he leaned against it, the only symbol of existence in this space of void.
 
-
+<br />
 
 After another eternity, there came an abrupt shake, like a car coming to an emergency brake. The shake pierced through him like a current of electricity, resuscitating his senses. He froze still. A faint but recognizable chiming filled the space, almost music to his ears: bong, bong. Seven of them, he counted. There were voices: “it’s time,” and he felt being lifted, then descending, as in an elevator going up-and-down. After that, everything settled again. 
 
@@ -145,7 +126,7 @@ Out somewhere, solemn voices started to speak in indistinguishable tones:
 
 There was a long pause.
 
-
+<br />
 
 He could no longer hold back his tears. He started banging at the board, scratching it with his nails. But it stood there, still and stiff, not even vibrating under his blows.
 
@@ -153,7 +134,7 @@ An infinite wall, stretching to the end of infinity in every direction, one you 
 
 He is, inevitably, facing his ultimate destination. This is a one-way trip with no stopover.
 
-
+<br />
 
 “Now the night is turning gray.”
 
@@ -163,11 +144,11 @@ He is, inevitably, facing his ultimate destination. This is a one-way trip with 
 
 “Yes. Even if that means more nights as well. We have to tell him that the creator loves him.”
 
-
+<br />
 
 There came a “click” in the void. A beam of sacred light shone in, almost blinding him. He squinted his eyes. It was from one edge of the wooden wall, like the gate to a divine kingdom which magically opened up a slit. He leaned against the wall, pushing hard against it with all his weight and strength. Gently, the gate opened up. Light flooded in, filling up every corner of the void, bathing him in this holy gift, and every pore of his absorbed greedily this nectar of life. He felt his feet on solid ground again. 
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET6ibpNRJnUJeQabo5GmxCeqibvVd0npMJ5ISzBljUq4jo0AAQD04QibdHpM3uFdK9zdNa66kdxqCLiaXgw/640?wx_fmt=jpeg"></Pic>
 
 The next moment he sat up on the floor, looking around. He’s sitting in a wooden box, with its lid slid to the side, whose inner side was scattered with dents and scratches. He spent a few seconds adjusting to the bright sunlight, which shone right through the windshield. The place he’s in looks suspiciously like a taxicab, a beautifully planned one, with its backseats removed, where he now sits upon. 
 
@@ -183,13 +164,13 @@ They didn’t look back. A voice came in no direction: “Son, I see your many s
 
 He looked up. The morning sun bloomed on the horizon, spreading its radiant flames of hope. A brand-new day is up on the rise, another chance to live.
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET6ibpNRJnUJeQabo5GmxCeqibvO9f1EuvIfZ7JiaRD68mfCricQ9eL2ot6OsruaUUBjspd8Qb6WbgM12sA/640?wx_fmt=jpeg"></Pic>
 
 They continued to talk. They talked about the meaning of life, about salvation, about the spirit’s love in all His people. The men told him, he was blessed; that they sent him an angel to guide him through his life, to shelter him from any hardships he will face. They told him his second life is not a gift from anyone but one he earned for himself, that he should live it with gratitude and cherishing. 
 
 The taxicab sped through the light, towards His kingdom.
 
-
+<br />
 
 He woke when a ray of light shone on his face. He put his hand in front of his eyes and observed the shift of shadows as he moved his fingers. Damn, I’m still alive! He silently exclaimed. The splitting headache prevented him from recalling anything, but he vaguely remembered light and three figures. He staggered into the kitchen, turned on the tap, and stuck his face under the running water. He caught glimpse of the calendar: it’s already been three days! He made a few calculations and realized that her birthday is *today*.
 
@@ -197,7 +178,7 @@ Birthday cake he hadn’t bought one; presents he had none. When the cold water 
 
 He turned off the tap, steadied himself with both hands on the edge of the sink, and stared at the water whirling down the bottom. She is his angel, he assured himself. But could she be imaginary? Could she just be the emblem of perfection in his sea of imagination? He laughed hysterically at this idea.
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET6ibpNRJnUJeQabo5GmxCeqibvWdcoDGoUjH0qulm5UoF5wlkaVnvdfaM3FJFjkNvXnDibMh3xtLDYOibw/640?wx_fmt=jpeg"></Pic>
 
 As the last drops of water seeped down into the bottomless hole, he heard the church bell strike twelve. Not long after, the doorbell rang.
 

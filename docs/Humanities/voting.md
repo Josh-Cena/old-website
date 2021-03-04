@@ -4,6 +4,12 @@ title: 选举的悖论
 sidebar_label: A voting paradox
 ---
 
+export const Pic = ({children, src}) => (
+    <div style={{textAlign: 'center'}}>
+        <img src={src} />
+        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+    </div>);
+
 > First published on Oct 23, 2020
 >
 > Link: https://mp.weixin.qq.com/s/FKrzNcdkfouqQTfGXWFdkw
@@ -220,11 +226,11 @@ E总是能胜出。但是，他却无法在任何一种上面提到的方法中�
 
 篇幅所限，无法完整地介绍阿罗定理的证明过程。放上维基百科的三张图：
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_png/JGibibkelET684DURia8RicvUFauUxLPPvpaaFABVyFfAic9wM249DmpJj3DzRNlv2yNCPx3A8bc3v6ZEzIrl1n4vpg/640?wx_fmt=png"></Pic>
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_png/JGibibkelET684DURia8RicvUFauUxLPPvpaLd8PDOx5lQhIBfX7TfEfMUGFy5xfficfsHcUEzE0u7og4bry0nwBcaA/640?wx_fmt=png"></Pic>
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_png/JGibibkelET684DURia8RicvUFauUxLPPvpacegfmaOJn9OZAXSnaia1Tuvo1JTfX7XPj1KH39Se3hcPbulnfeqyEEw/640?wx_fmt=png"></Pic>
 
 这叫做**阿罗不可能定理（Arrow's impossibility theorem）**：
 
@@ -236,7 +242,7 @@ Image
 
 至此，我们能否悲观地认定，民主必将是不可及的？实际上不必。且不说许多学者对阿罗的前提作出了弱化（尤其是无关项独立），并证明如果我们抛弃一些认识，仍然可以避免独裁者；虽然阿罗证明了绝对符合我们认识的民主不存在，但不代表我们就已经抵达了这个理论所框定的边界。就像卡诺热机从原理上否定了第二类永动机的可能，并不代表我们就不能对现有的热机效率作出改进——现有的选举制度远远称不上是民主的。回头看我们社会中最受全世界瞩目的，号称最先进的制度：
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET684DURia8RicvUFauUxLPPvpaokTicDE3sCwEU3xxo6s9xQiaAZdr22gYDI3jej7tuuiaG0MAUXyR0Alog/640?wx_fmt=jpeg"></Pic>
 
 这样逐渐崩塌的制度，真的是民主的么？
 

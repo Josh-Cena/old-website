@@ -4,6 +4,12 @@ title: 猫奴
 sidebar_label: Cat lover
 ---
 
+export const Pic = ({children, src}) => (
+    <div style={{textAlign: 'center'}}>
+        <img src={src} />
+        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+    </div>);
+
 > First published on Dec 15, 2020
 >
 > Link: https://mp.weixin.qq.com/s/x-gZ4YE85sWlqMY42UvlUw
@@ -28,7 +34,7 @@ sidebar_label: Cat lover
 
 “不用了，不用了。我只想问，你有没有想过，当你泡完了所有的咖啡，理顺了所有的毛线，赶走了所有的小老鼠，你究竟为了什么而存在呢？”
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET69lNmV7VHRCNEI7EC3hD5MahHrG5nYDicjj0EibNWuicZbmSvGdsGoAqZ9BVa5SteGsiaX63zEpmRI4xQ/640?wx_fmt=jpeg"></Pic>
 
 猫把咖啡罐中的咖啡豆倒入咖啡机，按动了开关，又在吧台上蹲坐下，用整块铝合金铸成的头颅盯着男人——男人后悔没有给它做更丰富的表情，虽然那样会让电机和轴承的数量指数级上涨。它小小的处理器里在想些什么呢？
 
@@ -139,7 +145,7 @@ Image
 猫用它的右前肢碰碰它的头颅，虽然它的处理器在它的躯干内：“没用的。‘知识就是诅咒’。现在，我想下楼去散步，体验一下我全新的关节和四肢。你愿意陪我去吗？”
 男人点点头。猫跳上他的肩头，他们一起走出门去，门在身后“嘭”地一声合上。吧台上，咖啡还冒着最后的热气。
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET69lNmV7VHRCNEI7EC3hD5MatEEla7H0PFCdwlBlsCMOLialFMe5ibHG3IQ5Gy1QgRCFXiafRMtCYia5Mw/640?wx_fmt=jpeg"></Pic>
 
 ## 后记
 

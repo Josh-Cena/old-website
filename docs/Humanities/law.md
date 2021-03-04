@@ -4,6 +4,12 @@ title: 安提戈涅：恶法非法！
 sidebar_label: 'Antigone: unjust laws are not laws'
 ---
 
+export const Pic = ({children, src}) => (
+    <div style={{textAlign: 'center'}}>
+        <img src={src} />
+        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+    </div>);
+
 > First published on Dec 29, 2020
 >
 > Link: https://mp.weixin.qq.com/s/AkIjFaAvtsKZ03Lam_x0Sg
@@ -18,7 +24,7 @@ sidebar_label: 'Antigone: unjust laws are not laws'
 
 一个患阿尔兹海默症的妻子和丈夫约定，在她失去自制的一天，给自己安乐死，让自己有尊严地离开。当这一天到来时，丈夫履行了约定，给妻子注射了过量吗啡。他以谋杀罪被起诉。
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_png/JGibibkelET69KSYobCgBALSL5DmFHicXQ01ldBRhADKZMntTic78ViaAJRMic38klJl4taXqTnkgYFsibVz5V5iaVanDg/640?wx_fmt=png"></Pic>
 
 作为陪审团，我们全班（26人）被要求决定两名被告是否有罪。结果是：
 
@@ -48,30 +54,22 @@ Image
 
 《安提戈涅》是古希腊三大悲剧家之一索福克勒斯 (Sophocles) 的作品，他最著名的戏剧应当是《俄狄浦斯王》(Oedipus Rex)，讲述俄狄浦斯王为平息瘟疫寻找杀死先王拉伊俄斯的凶手，最后发现凶手正是自己，因此自我放逐出城的故事——关于他杀父娶母的预言也是出自这部戏。而《安提戈涅》则是《俄狄浦斯王》的后继。《俄狄浦斯王》、《俄狄浦斯在克罗诺斯》(Oedipus at Colonus)、《安提戈涅》三部戏被称作索福克勒斯的忒拜戏剧 (Theban plays)。
 
-Image
-索福克勒斯
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET69KSYobCgBALSL5DmFHicXQ0JgPUq698oq9440zgUPzRcHSCo3LhE0XgxnPsiaMSwfpZYcDAUicNjECw/640?wx_fmt=jpeg">索福克勒斯</Pic>
 
 戏剧的背景是，俄狄浦斯王自我放逐后，忒拜的领主之位传给两个儿子厄忒俄克勒斯 (Eteocles) 和波吕涅科斯 (Polynices) 。他们之间产生了争执，波吕涅科斯出走并带回了七将攻打忒拜城，最终兄弟在决斗中一起死去，王位落到俄狄浦斯的母亲约卡斯塔 (Jocasta) 的兄弟克瑞翁 (Creon) 头上。这段剧情见诸许多希腊文艺作品，尤其是埃斯库罗斯 (Aeschylus) 的《七将攻忒拜》(Seven against Thebes)。
 
 戏剧中，克瑞翁颁布法令，不许任何人埋葬叛国者波吕涅科斯，违者处死。俄狄浦斯的大女儿安提戈涅向妹妹伊斯墨涅 (Ismene) 透露，这条法律是渎神的，因为按希腊的道德与信仰，城邦的公民应当被城邦埋葬。因此作为家人，她要冒死埋葬波吕涅科斯。安提戈涅被发现并被逮捕，但她与克瑞翁展开了关于这条法令的正统性的争论。最终她被处死，并继而导致了克瑞翁的儿子与妻子的死亡。
 
-Image
-Antigone donnant la sépulture à Polynice, Sébastien Norblin (1825)
+<Pic src="https://mmbiz.qpic.cn/mmbiz_png/JGibibkelET69KSYobCgBALSL5DmFHicXQ0wh4DyVPVia87ESlE4VWIL8qPN6l6upfB9hrOp9gwvT34d20c4hPlEgg/640?wx_fmt=png">Antigone donnant la sépulture à Polynice, Sébastien Norblin (1825)</Pic>
 
 在安提戈涅的陈词中，有这么一段话：
 
-> It was not God’s proclamation. That final Justice
->
-> That rules the world below makes no such laws.
->
-> Your edict, King, was strong,
->
-> But all your strength is weakness itself against
->
-> The immortal unrecorded laws of God.
->
-> They are not merely now: they were, and shall be,
->
+> It was not God’s proclamation. That final Justice  
+> That rules the world below makes no such laws.  
+> Your edict, King, was strong,  
+> But all your strength is weakness itself against  
+> The immortal unrecorded laws of God.  
+> They are not merely now: they were, and shall be,  
 > Operative forever, beyond man utterly.
 >
 > Antigone, Scene II
@@ -100,8 +98,8 @@ Antigone donnant la sépulture à Polynice, Sébastien Norblin (1825)
 
 其中最反直觉的一个主张应该是(1)，尤其是对于我们这些无神论者来说，因为它告诉我们世界上存在不随社会与人类而变化的道德规范（所谓“先验的”）。基督徒、佛教徒或其他宗教信仰者能够接受绝对道德准则的存在，因为他们信仰的神已经用经书透露了这样的内容；但我们中的许多人相信，道德是一种社会现象，是与经济基础、生产关系、阶级背景等脱不开关系的——也就是说，道德是相对的，人类是道德的发明者而非发现者。
 
-Image
-Karl Marx: "Morality ... have no history, no development; but men, developing their material production and their material intercourse, alter, along with this their real existence, their thinking and the products of their thinking."
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET6ick0ibcAEyeNxl82IfesMicbv3BR3E96XEky4osJugeFRFemuZqLGl1sicsC8aVYibhphBlVGC2fqOiaGg/640?wx_fmt=jpeg">Karl Marx: "Morality ... have no history, no development; but men, developing their material production and their material intercourse, alter, along with this their real existence, their thinking and the products of their thinking."</Pic>
+
 
 这种论断有其深厚的理论基础，从斯宾诺莎到休谟，都认为事物没有本质上的恶和善。但我们也能够接受许多哲学家在推导自己的哲学体系时，在论证的开头假设一系列“不证自明的准则”，并由此引出后续的结论；这些公理一定程度上可以被称作他们的绝对道德。
 
@@ -111,8 +109,7 @@ Karl Marx: "Morality ... have no history, no development; but men, developing th
 
 许多政治哲学家诉诸理性，从“自然状态”，也就是不存在政府与法律的人类社会出发，探讨人类的道德系统。比如约翰·洛克就认为自然状态下的人类会本能地保护个人的生命、财产与幸福，并建立社会共同体来更好地服务这一目标。当政府的政令不能够满足个人的期望时，公民就有权利通过违抗法律、发动革命等方法来重塑共同体。因此他显然是自然法的支持者。
 
-Image
-John Locke: "No one ought to harm another in his life, liberty, and or property."
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET6ick0ibcAEyeNxl82IfesMicbvq3rbiazia3m7x5aJ9vRuH92CBIlvCbicObWZMmm8jrgic1Pv1SBNPXibaicg/640?wx_fmt=jpeg">John Locke: "No one ought to harm another in his life, liberty, and or property."</Pic>
 
 还有一些有宗教背景的哲学家则从教义中总结“神法”，《安提戈涅》就是一个例子。
 
@@ -120,14 +117,10 @@ John Locke: "No one ought to harm another in his life, liberty, and or property.
 
 在《安提戈涅》中，索福克勒斯显然表达了对安提戈涅的同情与对克瑞翁主张的反对。他借盲眼先知忒瑞西阿斯（Tiresias，西方文化中一个传奇的形象，《俄狄浦斯王》中，正是他告诉俄狄浦斯王是国王自己杀死了先王）之口，传达了神明对克瑞翁的不满：
 
-> I tell you, Creon, you yourself have brought
->
-> This new calamity upon us.
->
-> Our hearths and altars
->
-> Are stained with the corruption of dogs and carrion birds
->
+> I tell you, Creon, you yourself have brought  
+> This new calamity upon us.  
+> Our hearths and altars  
+> Are stained with the corruption of dogs and carrion birds  
 > That glut themselves on the corpse of Oedipus’ son.
 >
 > Antigone, Scene V
@@ -138,8 +131,7 @@ John Locke: "No one ought to harm another in his life, liberty, and or property.
 
 拉德布鲁赫 (Radbruch) 曾经也是这一派的一员，但在战后意识到了这种做法的荒谬后果，因此提出了**拉德布鲁赫公式**，尝试调和自然法和实证法。他说，维持实在法的可靠性在大多数时候应当超越对正义的追求，除非法律与正义的违背达到了不可接受的程度。此时，这条法律就是“错误的法律”，而不成为法律。
 
-Image
-Gustav Radbruch: "Law, even positive law, cannot be defined otherwise than as a rule, that is precisely intended to serve justice."
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET6ick0ibcAEyeNxl82IfesMicbvUR0iaNULvwnLSgyP5CCTToIkunicMFAn62giaTq0jauBgPTnpEq1tkHtA/640?wx_fmt=jpeg">Gustav Radbruch: "Law, even positive law, cannot be defined otherwise than as a rule, that is precisely intended to serve justice."</Pic>
 
 但在我看来，这不过是实证法向自然法的一次妥协，因为它实际上接受了“正义”在法律中的存在，并以此为准绳衡量法律，更加坚实了自然法的地位。
 
@@ -149,5 +141,4 @@ Gustav Radbruch: "Law, even positive law, cannot be defined otherwise than as a 
 
 当我们把一个幸福家庭的丈夫送进监狱，给一个深爱着妻子，为了她赴汤蹈火的丈夫安上“杀人犯”的名号，我们究竟在传递怎样的价值观？这是否是立法者所希望看到的？用法律来证明法律是荒谬的——我们对于法律的信服不仅来自于政府的强制力，更来自于我们对法律所代表的价值观与道德的认同。法律必须要由道德来证明，因此恶法非法。如果法律永远被一丝不苟地执行，没有质疑与解释的余地，那么道德将无法落实，社会将无法进步，法律自己的意义也将变得模糊。
 
-Image
-美国联邦最高法院的大门，大大地刻着"Equal Justice Under Law."
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET6ick0ibcAEyeNxl82IfesMicbvc2GwKkE0cGkr4xKVDm4sdQuQEiatxuC8h7ajiblrFHPcg4UWwj6KkZyw/640?wx_fmt=jpeg">美国联邦最高法院的大门，大大地刻着"Equal Justice Under Law."</Pic>

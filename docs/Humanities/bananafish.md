@@ -4,11 +4,17 @@ title: 西摩·格拉斯：那个男人来了，那个男人走了
 sidebar_label: 'Seymour Glass: he comes, he goes'
 ---
 
+export const Pic = ({children, src}) => (
+    <div style={{textAlign: 'center'}}>
+        <img src={src} />
+        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+    </div>);
+
 > First published on Nov 21, 2020
 >
 > Link: https://mp.weixin.qq.com/s/ynD89NiwZ78ahO9XbCvKYg
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET6iclfJibqI531Lka7LicMGVyqjS1UGoWRbQmSW3vslYCkibyib5qoribqzh8Tibj1iceA7QlZPKsLicjk72v9g/640?wx_fmt=jpeg"></Pic>
 
 **J. D. 塞林格**
 
@@ -20,7 +26,7 @@ Image
 >
 >《香蕉鱼》的原文可见[链接](https://mp.weixin.qq.com/s/3cSJF64H6uImondQQDmt0g)。
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET69esHzfCCx9PYdZP72LvzXcDC0GSQSAyaHleEEWtNpIicJD8sRX30kPCy2E3oEouIT6TX1U583wy2Q/640?wx_fmt=jpeg"></Pic>
 
 《香蕉鱼》是塞林格在文坛上的亮相之作，也是格拉斯家族初次登场的作品。我觉得有必要事先声明，《香蕉鱼》并不是西摩唯一一次被提及——他的人生故事散落在《木匠们，把屋梁升高》(Raise high the beams, carpenters)、《西摩：小传》(Seymour: an introduction)、《弗兰妮和祖伊》(Franny and Zooey)，以及塞林格的终作《哈普沃兹16，1924》(Hapworth 16, 1924) 等中短篇小说中。只有当我们把这些作品一并纳入考虑时，才能对西摩其人有一个整体的、完整的认识，而不是陷入《香蕉鱼》神秘而模糊的描述中。
 
@@ -32,7 +38,7 @@ Image
 
 **西摩与这个世界的矛盾，在小说中通过两组空间的并置 (juxtaposition) 来设立。**
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET69esHzfCCx9PYdZP72LvzXcQRLVpJTM7JkQtoeq99ODqGeBveGRQicEOe8uydnMmWGtoJZCcStZzPw/640?wx_fmt=jpeg"></Pic>
 
 小说从一间酒店房间开始：这是一个阴暗、封闭、烟雾朦胧、充满了“小牛皮箱子和洗甲水气味”的空间，代表着成人的，极度物质主义的世界，属于穆里尔以及社会中的大多数人。而在另一边，西摩躺在干净的海滩上，远离尘世，远离人群，只有西比尔能找得到他，是独属于西摩的精神世界。这两个世界是如此割裂，以至于任何一方都无法掌握对方的行踪——而或许，他们也根本不在乎。这是《了不起的盖茨比》中的炉灰谷地和盖茨比宅邸：是世俗的与精神的、平庸的与高贵的并置，它们完全平行，完全不接触，而一旦两者产生了接触，灾难便随之而来。
 
@@ -42,13 +48,13 @@ Image
 
 而真正打破他脆弱的心理平衡的则是战争，或者说是他战后回到故土后巨大的不适应感。他从横尸遍野的欧洲战场上退下后，便被马上投入这个纸醉金迷的社会，他发现自己所为之而战的国家竟是如此浅薄而物质主义，人们都在讨论衣着，沉迷于时尚、穿着打扮和娱乐杂志，不再有人关心精神世界，所有人都失去了深度，变成了患上香蕉热的香蕉鱼。这使他无法接受，更使他恐惧，害怕自己也终将被社会同化，成为和周围的人一样的存在。
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET69esHzfCCx9PYdZP72LvzXcaNPo1tH4ErnMy3rBN8G6lBicHKEYYbR2mibP2IOnuvRYd7NQibv5LDic5A/640?wx_fmt=jpeg"></Pic>
 
 **西摩与世界的格格不入导致了他对庇护与理解的追求。**他在海滩上也不愿意脱下自己的浴袍，正是一种自我保护的体现——因为那一层衣物把他和他不愿面对的残酷现实相隔绝，给了他一点可靠与安全感。这种解读和后文西摩关于纹身的胡话相印证。纹身是比喻意义上的，代表了他的伤痛与疤痕，不愿也不能暴露给这个世界。
 
 但即便如此，他仍然渴望在世界上找到一个能理解他，和他共鸣的人。他起初寄希望于穆里尔。他寄给穆里尔的德国诗集，代表了他的审美与哲学，但穆里尔宁可把一个下午花在读《性是欢愉——还是地狱》这样琐碎八卦的读物上，也不愿花时间在学习德语，接近西摩的内心世界上；他把穆里尔叫做“1948年度精神流浪小姐”，也是他渴望唤起穆里尔的理解的一种方法，但穆里尔把它当成了一个孩子的玩笑，一笑置之。他无处寻觅抚慰，所有人都把他当作“说胡话的疯子”。穆里尔和母亲的电话交流中，我们读不出她对西摩境况的一点理解，而只是可怜与事不关己。他在自己的情感世界中，的确处于绝对的孤独状态。
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET6ibYjfVYLVAP8zIA5x2IW2ibJUD6TFRUaqC3wicV0dKugbQfRg0ic5vTNvGmO0oul4bwqrytnjxiajVL0w/640?wx_fmt=jpeg"></Pic>
 
 所以当我们分析西摩之死时，我猜我们真正该问的问题不是他为何而死，而是他为何没有死——没有早早地去死，而是偏偏在那个下午，在佛罗里达的阳光海滩边，举起了手枪？依照我对西摩的理解，我认为这既在他的计划中，又脱离了他的计划。
 
@@ -102,7 +108,7 @@ Image
 
 从某种意义上，他的确把西比尔当成了自己的灵魂伴侣。他希望西比尔能了解自己，因此把自己毫无保留地展现给了西比尔，他脱下代表着自我保护的浴袍便是最好的体现。他给西比尔讲述自己刚刚编出的香蕉鱼的故事，也是希望通过孩子能理解的方式表达自己的哲学。
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET6ibYjfVYLVAP8zIA5x2IW2ibJeOPmcT0w2DWoh7XCrmD8Qsh97MxyCHvLsqyNCVia1sHG74P7U0djFvA/640?wx_fmt=jpeg"></Pic>
 
 但正是在他和西比尔的这次谈话中，他逐渐坚定了离开世界的念头。西比尔宣布她爸爸要来的时候，他的第一反应是“我每时每刻都在等他来。每时每刻”。一方面这指的是西比尔马上要离开他，他等待着他们告别的那一天；但更深入地说，这说的是西比尔马上要随着她爸爸离开这个西摩的“海滩世界”，回到成人的“酒店世界”，回到物欲之中。想到这里，他说出那句“我正在严肃考虑这个问题呢。我正反过来复过去地想呢，西比尔，你一定会很想知道的。”与其说是关于要不要下水的矛盾，不如说是要不要自杀的矛盾。
 
@@ -110,7 +116,7 @@ Image
 
 因此他给西比尔留下了最后的礼物：足弓上的一吻。他祝福西比尔能永远留有那双纯洁的双脚，不要踏上任何污秽的、粗俗的事物；同时，他也感觉自己正在逐渐被玷污，失去高尚，因此陷入极度的自我怀疑和否定中，留下了最后一句话：“我两只脚挺正常，没他妈的一丁点儿值得别人盯着的”，然后下定决心，向这个从各个方向逼近他的世界作了告别，彻底脱离了这场缠斗。
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET69esHzfCCx9PYdZP72LvzXcN7yib5ubaBEQHMTEe6uOEgRAJOQV7qR27EC82LgyR4TNopAo48uFCiaQ/640?wx_fmt=jpeg"></Pic>
 
 在所有关于西摩的死亡原因的猜想中，我唯一不同意的是认为他婚姻失败，家庭不和。固然，他不受穆里尔的家人的待见，穆里尔和他之间也没什么共同语言；但在我理解的西摩的爱情观中，**爱是可以脱离其他一切而存在的。**
 
@@ -126,4 +132,4 @@ Image
 
 而西摩·格拉斯的故事，则成为了禅宗的公案，其深邃的哲思不在其“言”中，而尽在其“不言”中，留待读者解读。
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET69esHzfCCx9PYdZP72LvzXcsGb6Dvbse3Mks06bKrDKibWfwJgAdgTGsWIAnfwhUwXJcddBvODeruA/640?wx_fmt=jpeg"></Pic>

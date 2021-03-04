@@ -4,22 +4,22 @@ title: 关于血液、火焰与生命
 sidebar_label: About blood, flames, and life
 ---
 
+export const Pic = ({children, src}) => (
+    <div style={{textAlign: 'center'}}>
+        <img src={src} />
+        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+    </div>);
+
 > First published on Jan 2, 2021
 >
 > Link: https://mp.weixin.qq.com/s/1W5W18LHMRedhzXe-VhrTg
 
-> I'm burning up,
-> 
-> Like a fever that rages in the night
-> 
-> Spark me up,
-> 
-> I'm a firework
-> 
-> I'll burst into light
-> 
-> For it's better to burn out than to fade out of sight
-> 
+> I'm burning up,  
+> Like a fever that rages in the night  
+> Spark me up,  
+> I'm a firework  
+> I'll burst into light  
+> For it's better to burn out than to fade out of sight  
 > That's what someone told me anyway
 > 
 > Passenger—Fear of Fear
@@ -30,7 +30,7 @@ Josh Cena说过，生命就是无数氨基酸与核苷酸的联结。各种有�
 
 生命就是一个玻璃花瓶，是花瓶中装着的那朵血红的玫瑰花。花瓶碎裂的那一刻，玫瑰花瓣掉落一地，浸泡在水中，把水也染成了鲜红色。但玫瑰花仍然在怒放——生命还在这一刻留存。直到花瓣的边缘变得卷曲，光泽变得暗淡，红色的晚霞变成了黑色的夜晚，玫瑰花的血液变得冰冷，生命才会消散。
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET69YLiapxBjx3AmzoZ7tLSXCe7Y2YpjahpmZRj4zd01RT3d24ibhneTolaAD2PBt9icpCa8YhqpfjgvzA/640?wx_fmt=jpeg"></Pic>
 
 在花瓶的碎片边，摆着一盆火。火舌舔舐着周围的空气，像一头小兽用自己的四肢探索着这个世界。
 

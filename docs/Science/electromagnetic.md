@@ -4,6 +4,12 @@ title: 磁场中的线圈
 sidebar_label: Coil in a magnetic field
 ---
 
+export const Pic = ({children, src}) => (
+    <div style={{textAlign: 'center'}}>
+        <img src={src} />
+        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+    </div>);
+
 > First published on Jun 13, 2020
 >
 > Link: https://mp.weixin.qq.com/s/OzmfpOR0llD3-lawWt9UIg
@@ -16,11 +22,11 @@ sidebar_label: Coil in a magnetic field
 > - 线圈质量 $m=0.060\,\text{kg}$
 > - 线圈阻值 $R=0.12\,\text{Ω}$
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_png/JGibibkelET6icxXkheRQOhUib4eXZGtGqWsqxS1B7chB5K5ia1W0naHMcqicLFKQXUHMohcBCaKNnCBdBe0jsEQc3Aw/640?wx_fmt=png"></Pic>
 
 本题所问的内容不难；但是，我们所关心的是题目中给出的一项条件：速度 $v$ 关于时间 $t$ 的图像。大概画出题中所给的图：
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_png/JGibibkelET6icxXkheRQOhUib4eXZGtGqWsY1Ywngico4eEGnCM9gqicC6mgflRKDVgWyV9xrOCYEpvReIiaBvVHQB5Q/640?wx_fmt=png"></Pic>
 
 看起来，图像分为两段——一段是下降曲线，另一段则是水平直线，分界点位于 $(0.14, 3.0)$。定性地看，速度之所以下降，是因为线圈进入磁场的过程中，产生感应电流，AB段受到向左的安培力而减速；之后维持匀速，是因为各边都在磁场中，所受的安培力正好抵消。
 
@@ -102,6 +108,6 @@ v&=3.03\times\mathrm{e}^{-3.645\times 0.287}=1.06\,\mathrm{m\,s^{-1}}
 
 可以看出，由于速度较低，此时离开磁场需要多一倍的时间。完整的图像如下：
 
-Image
+<Pic src="https://mmbiz.qpic.cn/mmbiz_png/JGibibkelET6icxXkheRQOhUib4eXZGtGqWsZzgFsw6sjE81LEscI3yMH1Q2NLAJIhQa13BRNkzic6gxUjrKuH23NpA/640?wx_fmt=png"></Pic>
 
 至此，我们定量地完成了本题的分析。
