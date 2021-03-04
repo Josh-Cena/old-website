@@ -41,7 +41,7 @@ $$\begin{aligned}
 v=\lim_{\Delta t\to 0}\frac{\Delta d}{\Delta t}
 \end{aligned}$$
 
-在上一篇文章[关于误差传递与导数运算的发现](../derivative)中，已经介绍了导数的概念，一般式为：
+在上一篇文章[关于误差传递与导数运算的发现](../Science/derivative)中，已经介绍了导数的概念，一般式为：
 
 $$\begin{aligned}
 f'(x)=\lim_{\Delta x\to 0}\frac{\Delta f(x)}{\Delta x}
