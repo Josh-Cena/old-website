@@ -1,0 +1,39 @@
+.cv {
+  padding: 1em;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.cv h1 {
+  text-align: center;
+}
+
+.cv h2 {
+  margin-top: 20pt;
+  text-align: center;
+}
+
+.cv p {
+  font-size: large;
+}
+
+.cv ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 3pt;
+}
+
+.avatar {
+  margin-top: 20pt;
+  border-radius: 50%;
+  width: 250pt;
+}
+
+.links {
+  margin-top: 20pt;
+}
+
+.links li {
+  display: inline;
+  margin: 10pt;
+}

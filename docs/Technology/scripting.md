@@ -1,0 +1,324 @@
+---
+id: scripting
+title: 脚本爬取数据の初体验
+sidebar_label: First experience with script crawling
+---
+
+> First published on Oct 15, 2020
+>
+> Link: https://mp.weixin.qq.com/s/shQ9WRD0KyhIzSyrodff9A
+
+嗯，为了给我们正在搭建的社团管理网站添加一些初始信息，我决定去学校的平台上抓点全校社团的清单信息下来。
+
+Requests 一类的 Python 爬虫我从来没有实际用过，通过抓包也没有暴露任何 Request 参数，所以我也不晓得从何下手；因此，我选择了直接检查 AJAX 请求源码并批量构造 payload 的方法。毕竟，学校的平台是我的老朋友了，对于它的架构，还是比较了解的。（当然，有几位大佬比我了解：我还从来没有尝试绕过权限检查获取无法查看的数据过，下次搞定了再写个 write-up）
+
+我们要“爬取”的是社团信息页，它展示了所有社团的名字与介绍，但只显示在下拉菜单中选择的社团，而手动逐个选择再复制显然不现实。为此，我们要先知道获取并刷新页面上的社团信息的请求是从何处发出的。
+
+Image
+
+先定位到页面的js代码。看起来有三个外部脚本：`init category dropdown.js`、`init group dropdown.js`、`add group info.js`，以及一个页面内嵌的脚本：
+
+```javascript
+jQuery(document).ready(function() {
+  initCAScategoryDropDown.init();
+  $('#select_category').change(function(){
+    var selValue=$(this).children('option:selected').val();
+    initCASGroupsDropDown.init(selValue);
+  });
+  $('#select_group').change(function(){
+    var selValue=$(this).children('option:selected').val();
+    addGroupInfo.init(selValue);
+  });                    
+);
+```
+
+其中提到了两个元素：`#select_category` 和 `#select_group`。不难发现，这是右边的两个下拉菜单。逻辑是，先在第一个菜单中选择分组（Service, Academic等），再根据选择的项目更新第二个社团菜单。为了确定这一点，实际操作了一次：
+
+Image
+
+先在第一个菜单中选择 "Service"，`init_groups_dropdown.php` 被调用；再选择“信息化社”，`add_group_info.php` 被调用，符合上面的猜想。此时，就对后端的调用顺序有了大概的了解。
+
+我们最为关心的自然是实际将社团信息注入进页面的那个请求：`add_group_info`。查看它的js代码：
+
+```javascript
+var addGroupInfo = function () {
+  return {
+    init: function (valID) {
+      $.ajax({
+        url: 'php/cas_add_group_info.php',
+        dataType: 'json',
+        type: 'post',
+        data:{
+          groupid: valID
+        },
+        success: function (data) {
+          //$("#text_groupNo").val(data.groups[i].C_GroupNo);
+          //$("#text_foundtime").val(data.groups[i].C_FoundTime);
+          $("#span_group_name").empty();
+          var groupName = '';
+          groupName += '<h4>' + data.groups[0].C_NameC;
+          groupName += '(' + data.groups[0].C_NameE + ')</h4>';
+          $("#span_group_name").append(groupName);
+          $("#span_descriptionC").empty();
+          var DescC = '';
+          DescC += '<p>' + data.groups[0].C_DescriptionC + '</p>';
+          $("#span_descriptionC").append(DescC);
+          $("#span_descriptionE").empty();
+          var DescE = '';
+          DescE += '<p>' + data.groups[0].C_DescriptionE + '</p>';
+          $("#span_descriptionE").append(DescE);
+          $("#d_teamleader").empty();
+          var TeamLeader = '<div class="row">';
+          //alert(data.gmember.length);
+          for(var i=0; i < data.gmember.length; i++){
+            if (data.gmember[i].LeaderYes > 0){ 
+              TeamLeader += '<div class="col-md-4">';
+              TeamLeader += '<ul class="list-inline sidebar-tags">';
+              TeamLeader += '<li><a href="#"><i class="fa fa-user"></i>';
+              TeamLeader += data.gmember[i].S_Name + '(';
+              TeamLeader += data.gmember[i].S_Nickname + ')</a></li></ul>';
+              TeamLeader += 'Email: <a href="#">' + data.gmember[i].S_Email + '</a>';
+              TeamLeader += '<p>TELï¼š' + data.gmember[i].S_STel + '</p>';
+              TeamLeader += '</div>';
+            }
+          }
+          TeamLeader += '</div>';
+          $("#d_teamleader").append(TeamLeader);
+          /////////////////////////////////////////////////////////
+          $("#d_supervisor").empty();
+          var Supervisor = '';
+          if (data.supervisor.length != 0){
+            Supervisor += '<ul class="list-inline sidebar-tags" >';
+            Supervisor += '<li><a href="#"><i class="fa fa-user"></i>' + data.supervisor[0].T_Name;
+            Supervisor += '(' + data.supervisor[0].T_Nickname + ')</a></li></ul>';
+            Supervisor += 'Email: <a href="#">' + data.supervisor[0].T_Email +'</a>';
+            Supervisor += '<p>TELï¼š' + data.supervisor[0].T_MTel + '</p>';
+          }
+          $("#d_supervisor").append(Supervisor);
+          //////////////////////////////////////////////////////
+          $("#d_group_leader").empty();
+          var Groupleader = '';
+          for(var i=0; i < data.gmember.length; i++){
+            if (data.gmember[i].LeaderYes == 2){
+              Groupleader += '<ul class="list-inline sidebar-tags" >';
+              Groupleader += '<li><a href="#"><i class="fa fa-user"></i>' + data.gmember[0].S_Name;
+              Groupleader += '(' + data.gmember[0].S_Nickname + ')</a></li></ul>';
+              Groupleader += 'Email: <a href="#">' + data.gmember[0].S_Email +'</a>';
+              Groupleader += '<p>TELï¼š' + data.gmember[0].S_STel + '</p>';
+            }
+          }
+          $("#d_group_leader").append(Groupleader);
+          ///////////////////////////////////////////////////////
+          $("#s_tNumber").empty();
+          //alert(data.gmember.length);
+          var TNumber = '';
+          TNumber += data.gmember.length;
+          $("#s_tNumber").append(TNumber);
+          ///////////////////////////////////////////////////////
+          $("#u_teammate").empty();
+          var teammate = '';
+          //alert(data.gmember.length);
+          for(var i=0; i < data.gmember.length; i++){
+            teammate += '<li><a href="#"><i class="fa fa-user"></i>';
+            teammate += data.gmember[i].S_Name;
+            teammate += '(' + data.gmember[i].S_Nickname;
+            teammate += ')</a></li>';
+          }
+          $("#u_teammate").append(teammate);
+          if(data.projectyes == 0){
+            $('#d_projectyes').show();
+          }else{
+            $('#d_projectyes').hide();
+          }
+          $("#d_activity_records").empty();
+          var actrecord = '';
+          //alert(data.gmember.length);
+          for(var i=0; i < data.grecord.length; i++){
+            actrecord += '<ul class="blog-info"><li><i class="fa fa-calendar"></i>';
+            actrecord += data.grecord[i].C_Date.substr(0,10) + '</li>';
+            //actrecord += '<li><i class="fa fa-comments"></i>' + 17 +'</li>';
+            actrecord += '<li><i class="fa fa-tags"></i>';
+            actrecord += data.grecord[i].C_Theme + '</li></ul>';
+            actrecord += '<p>' + data.grecord[i].C_Reflection + '</p>';
+          }
+          $("#d_activity_records").append(actrecord);
+        },
+        error: function(){ 
+           alert('Request failed!');
+        },
+        beforeSend: function(){ 
+          //alert("Loading!...");
+        }
+      });
+    },
+    // ...其他函数
+  };
+}();
+```
+
+这个 `init()` 函数非常壮观。我们先定位到我们需要的几个信息：中英文名字和中英文简介，然后把其他无关信息（比如社员名单）都剔除。同时可以把 jQuery 操作 DOM 元素的指令也删除，改成输出到控制台。
+
+```javascript
+function init(valID) {
+  $.ajax({
+    url: 'php/cas_add_group_info.php',
+    dataType: 'json',
+    type: 'post',
+    data:{
+      groupid: valID
+    },
+    success: function (data) {
+      console.log(data.groups[0].C_NameC);
+      console.log(data.groups[0].C_NameE);
+      console.log(data.groups[0].C_DescriptionC);
+      console.log(data.groups[0].C_DescriptionE); 
+    }
+  });
+}
+```
+
+其中 `valID` 是 `#select_group` 的 option value，比如下面列出的这些：
+
+Image
+
+在发送请求时，只要提供一个 `valID` 就可以得到相应的社团信息：
+
+Image
+
+但是，这些 option value 并不是连续编码的，看起来非常随机。那么，为了获取每个分组对应的 option value 列表，就需要查看获取这一信息的 `init group dropdown.js`。
+
+```javascript
+var initCASGroupsDropDown = function () {
+  return {
+    init: function (initData) {
+      $.ajax({
+        url: 'php/cas_init_groups_dropdown.php',
+        dataType: 'json',
+        type: 'post',
+        data: {
+          categoryid: initData,
+        },
+        success: function (data) {
+          //alert(data[0].title);
+          $("#select_group").empty();
+          $("#select_group").append("<option value='0'>" + "选择分组 ..." +  "</option>");
+          for(var i=0; i < data.length; i++){
+            $("#select_group").append("<option value='" + data[i].C_GroupsID + "'>" + data[i].C_NameC +  "(" + data[i].C_GroupNo + ")</option>");
+          }
+        },
+        error: function(){ 
+           alert('Request Initdropdow failed2!');
+        },
+        beforeSend: function(){ 
+          //alert("Loading!...");
+        }
+      });
+    }
+  };
+}();
+```
+
+看来，每个分组对应的所有的 option value 被保存在 `C_GroupsID` 下。我们共有6个分组，分别对应了 `categoryid` 1~6；先写个简单的脚本，试试输出每个分组下的 `valID` 列表：
+
+```javascript
+for (let group = 1; group < 7; group++) {
+  $.ajax({
+    url: 'php/cas_init_groups_dropdown.php',
+    dataType: 'json',
+    type: 'post',
+    data: {
+      categoryid: group,
+    },
+    async: false,
+    success: function (data) {
+      let list = [];
+      for(let i = 0; i < data.length; i++){
+        list.push(data[i].C_GroupsID);
+      }
+      console.log(group + ": " + list);
+    },
+  });
+}
+```
+
+这些请求必须是同步的（AJAX 默认是异步请求），不然 `group` 和 `list` 无法一一对应。输出如下：
+
+Image
+
+有了这些数据，就可以逐个发送请求了。下面的代码把返回的数据输出成 `json` 格式：
+
+```javascript
+function getInfo(valID) {
+  let obj = {chnName: "", engName: "", chnDesc: "", engDesc: ""};
+  $.ajax({
+    url: 'php/cas_add_group_info.php',
+    dataType: 'json',
+    type: 'post',
+    data:{
+      groupid: valID
+    },
+    async: false,
+    success: function (data) {
+      obj.chnName = data.groups[0].C_NameC;
+      obj.engName = data.groups[0].C_NameE;
+      obj.chnDesc = data.groups[0].C_DescriptionC;
+      obj.engDesc = data.groups[0].C_DescriptionE; 
+    }
+  });
+  return obj;
+}
+
+let categoryList = [];
+
+for (let group = 1; group < 7; group++) {
+  $.ajax({
+    url: 'php/cas_init_groups_dropdown.php',
+    dataType: 'json',
+    type: 'post',
+    data: {
+      categoryid: group,
+    },
+    async: false,
+    success: function (data) {
+      let clubList = [];
+      for (let i = 0; i < data.length; i++)
+        clubList.push(getInfo(data[i].C_GroupsID));
+      categoryList.push(clubList);
+    },
+  });
+}
+
+console.log(JSON.stringify(categoryList));
+```
+
+看看输出：
+
+Image
+
+有 89.5kB 的信息，选择拷贝到编辑器。
+
+Image
+
+我们首先要把它分行并正确缩进，把其中 `\r\n` 的换行都替换成 `\n`。写几个正则解决这一问题：
+
+```text
+/(?<=[\[,])\[/ ==> "\n  ["   // 匹配所有二级列表的前括号并换行
+/(?<=\})\]/    ==> "\n  ]"   // 匹配所有二级列表的后括号并换行
+/\{/           ==> "\n    {" // 匹配所有对象的前括号并换行
+/\}/           ==> "\n    }" // 匹配所有对象的后括号并换行
+/"chnName":/   ==> '\n      "chnName": '
+/"engName":/   ==> '\n      "engName": '
+/"chnDesc":/   ==> '\n      "chnDesc": \n       '
+/"engDesc":/   ==> '\n      "engDesc": \n       '
+/\\r\\n/       ==> "\\n"
+```
+
+Image
+
+有了这些信息，就可以送进自己的网站里，生成社团列表了。
+
+还有一些挺有意义的东西可以做：比如，可以爬取所有已经消失的社团（也就是那些被跳过的编号）的信息。具体如何写脚本，应该是十分显然的，各位也可以模仿上文的过程自行尝试。几句吐槽：*看来公益/志愿者类社团都活不长啊……还有，魔方社也消失了是我没想到的。*
+
+---
+
+**声明**：本文未利用任何信息安全漏洞，请求规模也远在服务器承受能力之下。当然，该网站的安全漏洞一直都在，想获取正常手段无法查看的数据也不是那么困难，但这超过了本文的讨论范畴。

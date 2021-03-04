@@ -1,3 +1,8 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+
+const remarkMath = require('remark-math');
+const rehypeKatex = require('rehype-katex');
+
 module.exports = {
   title: 'Joshua Chen',
   tagline: 'Welcome to my personal page!',
@@ -16,6 +21,7 @@ module.exports = {
         src: 'img/logo.svg',
       },
       items: [
+        {to: 'CV', label: 'CV', position: 'left'},
         {
           to: 'docs/',
           activeBasePath: 'docs',
@@ -67,12 +73,43 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Sida Chen. Built with Docusaurus.`,
     },
   },
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
+      crossorigin: 'anonymous',
+    },
+  ],
+  scripts: [
+    {
+      src: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js',
+      integrity:
+        'sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4',
+      crossorigin: 'anonymous',
+      defer: true,
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/mhchem.min.js',
+      integrity:
+        'sha384-5gCAXJ0ZgozlShOzzT0OWArn7yCPGWVIvgo+BAd8NUKbCmulrJiQuCVR9cHlPHeG',
+      crossorigin: 'anonymous',
+      defer: true,
+    },
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [[rehypeKatex, { strict: false }]],
+        },
+        blog: {
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [[rehypeKatex, { strict: false }]],
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
