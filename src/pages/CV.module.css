@@ -46,3 +46,18 @@ html[data-theme='dark'] .icon {
   fill: rgba(255, 255, 255, 0.85);
   width: 24px;
 }
+
+.cardContainer {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}

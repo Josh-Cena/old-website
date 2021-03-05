@@ -1,5 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
+import useThemeContext from '@theme/hooks/useThemeContext';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -9,7 +10,8 @@ import styles from './styles.module.css';
 const features = [
   {
     title: '7-year programmer',
-    imageUrl: 'img/feature1.svg',
+    lightImageUrl: 'img/feature1.svg',
+    darkImageUrl: 'img/feature1-dark.svg',
     description: (
       <>
         Fluent with both front-end and back-end programming languages. 
@@ -18,34 +20,39 @@ const features = [
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: 'STEM explorer',
+    lightImageUrl: 'img/feature2.svg',
+    darkImageUrl: 'img/feature2-dark.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Gold medalist in physics, chemistry, and biology olympiads. Did extensive research
+        in STEM-related fields. Read more about my STEM experience in the <code>docs</code>.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Keen debater',
+    lightImageUrl: 'img/undraw_docusaurus_react.svg',
+    darkImageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Started public forum debating in 8th grade. Debated on topics including gene
+        editing, CJS, poverty alleviation, etc. Won regional &amp; national championships,
+        as well as multiple outstanding speakers. Currently doing World Schools.
       </>
     ),
   },
 ];
 
-function Feature({imageUrl, title, description}) {
-  const imgUrl = useBaseUrl(imageUrl);
+function Feature({lightImageUrl, darkImageUrl, title, description}) {
+  const lightImgUrl = useBaseUrl(lightImageUrl);
+  const darkImgUrl = useBaseUrl(darkImageUrl);
+  const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
   return (
     <div className={clsx('col col--4', styles.feature)}>
-      {imgUrl && (
+      {lightImgUrl && (
         <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
+          <img className={styles.featureImage} src={isDarkTheme ? darkImgUrl : lightImgUrl} alt={title} />
         </div>
       )}
       <h3>{title}</h3>

@@ -1,20 +1,70 @@
-type section = {
-   readonly title: string;
-   readonly items: string[]; 
-}
+import React, { ReactElement } from 'react';
+
+export type section = {
+  readonly sectionHead: string;
+  readonly items: ReactElement[]; 
+};
 
 export type sections = section[];
 
 const CV: sections = [
-    {
-        title: 'Who am I',
-        items: [
-            'Current 11th grade student at SWFLA',
-            'Current club leader of <a href="https://github.com/Computerization">Computerization</a>',
-            'Developer of <a href="https://github.com/Computerization/Enspire">Enspire</a>',
-            'Hardcore MINECRAFTer / Lay Clash Royale player',
-        ],
-    }
+  {
+    sectionHead: 'Me as scholar',
+    items: [
+      <>SWFLA &apos;22 IB curriculum</>,
+      <>&apos;20 BPhO top gold medalist, nationally ranked 3<sup>rd</sup></>,
+      <>&apos;20 UKChO gold medalist, nationally ranked 7<sup>th</sup></>,
+      <>&apos;20 USABO gold medalist</>,
+      <>Solo-studied college CS &amp; chemistry courses</>,
+    ],
+  },
+  {
+    sectionHead: 'Me as researcher',
+    items: [
+      <>Internship at SIOC: structural chemistry</>,
+    ],
+  },
+  {
+    sectionHead: 'Me as debater',
+    items: [
+      <>NSDA nationally ranked top 50</>,
+      <>NSDA &apos;20 national champion in WSD format</>,
+      <>NSDA &apos;20 spring Shanghai regional champion</>,
+      <>TOC &apos;21 octa finalist</>,
+      <>7-time NSDA outstanding speaker</>,
+      <>IPPF &apos;20 global &quot;Sweet 16&quot;</>,
+    ],
+  },
+  {
+    sectionHead: 'Me as programmer',
+    items: [
+      <>Current club leader of <a href="https://github.com/Computerization">Computerization</a></>,
+      <>Developer of <a href="https://github.com/Computerization/Enspire">Enspire</a></>,
+      <>USACO gold division</>,
+      <>LeetCode</>,
+    ],
+  },
+  {
+    sectionHead: 'Me as gamer',
+    items: [
+      <>7-year MINECRAFT player</>,
+      <>Operations and Tech manager of <a href="https://baterock-minecraft.github.io">BateRock</a> server</>,
+      <>Built functional redstone CPU in Minecraft</>,
+      <>Lay Clash Royale player: PB 6k trophies</>,
+    ],
+  },
+  {
+    sectionHead: 'More about me',
+    items: [
+      <>
+        Favorite color:
+        {' '}<span style={{backgroundColor: '#39cac4', padding: '2pt', borderRadius: '4pt'}}>
+          cyan
+        </span>
+        {' '}(<code>#39cac4</code>)
+      </>,
+    ]
+  }
 ];
 
 export default CV;
