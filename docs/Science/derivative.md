@@ -115,7 +115,7 @@ $$\begin{aligned}
 &=u'v+uv'\\\\
 \left(\frac uv\right)'&=\lim_{\Delta x\to 0}\frac{\dfrac{u(x+\Delta x)}{v(x+\Delta x)}-\dfrac{u(x)}{v(x)}}{\Delta x}\\
 &=\lim_{\Delta x\to 0}\frac{u(x+\Delta x)\cdot v(x)-u(x)\cdot v(x+\Delta x)}{v(x)\cdot v(x+\Delta x)\cdot\Delta x}\\
-&=\lim_{\Delta x\to 0}\frac{u(x+\Delta x)-u(x)}{v(x)\cdot v(x+\Delta x)\cdot\Delta x}-\lim_{\Delta x\to 0}\frac{u(x)\cdot v(x+\Delta x)-u(x)\cdot v(x)}{v(x)\cdot v(x+\Delta x)\cdot\Delta x}\\
+&=\lim_{\Delta x\to 0}\frac{u(x+\Delta x)\cdot v(x)-u(x)\cdot v(x)}{v(x)\cdot v(x+\Delta x)\cdot\Delta x}-\lim_{\Delta x\to 0}\frac{u(x)\cdot v(x+\Delta x)-u(x)\cdot v(x)}{v(x)\cdot v(x+\Delta x)\cdot\Delta x}\\
 &=\lim_{\Delta x\to 0}\frac{\dfrac{u(x+\Delta x)-u(x)}{\Delta x}}{v(x+\Delta x)}-\lim_{\Delta x\to 0}\frac{u(x)\cdot \dfrac{v(x+\Delta x)-v(x)}{\Delta x}}{v(x)\cdot v(x+\Delta x)}\\
 &=\frac{u'}{v}-\frac{uv'}{v^2}\\
 &=\frac{u'v-uv'}{v^2}\\

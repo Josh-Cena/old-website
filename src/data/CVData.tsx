@@ -27,7 +27,7 @@ const CV: sections = [
   {
     sectionHead: 'Me as debater',
     items: [
-      <>NSDA nationally ranked top 50</>,
+      <>NSDA <a href="http://www.nsda.cn/home/PersonRank">nationally ranked</a> top 50</>,
       <>NSDA &apos;20 national champion in WSD format</>,
       <>NSDA &apos;20 spring Shanghai regional champion</>,
       <>TOC &apos;21 octa finalist</>,
@@ -41,7 +41,8 @@ const CV: sections = [
       <>Current club leader of <a href="https://github.com/Computerization">Computerization</a></>,
       <>Developer of <a href="https://github.com/Computerization/Enspire">Enspire</a></>,
       <>USACO gold division</>,
-      <>LeetCode</>,
+      <>Full-stack developer</>,
+      <>Understanding of computer hardware</>,
     ],
   },
   {
@@ -58,8 +59,8 @@ const CV: sections = [
     items: [
       <>
         Favorite color:
-        {' '}<span style={{backgroundColor: '#39cac4', padding: '2pt', borderRadius: '4pt'}}>
-          cyan
+        {' '}<span style={{backgroundColor: '#39cac4', padding: '2pt', borderRadius: '4pt', color: 'black'}}>
+          turquoise
         </span>
         {' '}(<code>#39cac4</code>)
       </>,
