@@ -7,10 +7,23 @@
 
 import React, { ReactElement } from 'react';
 import Layout from '@theme/Layout';
+import useThemeContext from '@theme/hooks/useThemeContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './CV.module.css';
 
 import data from '../data/CVData';
 import Card from '../components/card';
+
+function Avatar() {
+  const lightUrl = useBaseUrl('img/logo.svg');
+  const darkUrl = useBaseUrl('img/logo-dark.svg');
+  const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
+  return (
+    <div className="text--center">
+      <img className={styles.avatar} src={isDarkTheme ? darkUrl : lightUrl} alt={'Avatar'} />
+    </div>
+  )
+}
 
 export default function CV(): ReactElement {
   return (
@@ -22,12 +35,7 @@ export default function CV(): ReactElement {
         <div className="container margin-vert--lg">
           <div className={styles.cv}>
             <h1>About me</h1>
-            <img
-              className={styles.avatar}
-              alt="Avatar"
-              src="/img/CV/avatar.jpg"
-            />
-            <br />
+            <Avatar />
             <h2>
               陈思达<br /><small>Joshua Chen</small>
             </h2>

@@ -16,6 +16,7 @@ const CV: sections = [
       <>&apos;20 UKChO gold medalist, nationally ranked 7<sup>th</sup></>,
       <>&apos;20 USABO gold medalist</>,
       <>Solo-studied college CS &amp; chemistry courses</>,
+      <>IBM <a href="https://www.qubitbyqubit.org/">QxQ</a> courses on quantum computing</>,
     ],
   },
   {
@@ -64,6 +65,10 @@ const CV: sections = [
         </span>
         {' '}(<code>#39cac4</code>)
       </>,
+      <>17,000+ hours of music listening each year</>,
+      <>Favorite genre: soft rock</>,
+      <>Favorite band: Coldplay</>,
+      <>Science fiction writer</>,
     ]
   }
 ];

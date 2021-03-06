@@ -22,7 +22,7 @@ module.exports = {
         srcDark: 'img/logo-dark.svg',
       },
       items: [
-        {to: 'CV', label: 'CV', position: 'left'},
+        {to: 'CV', label: 'Profile', position: 'left'},
         {
           to: 'docs/Science/cavalieri',
           activeBasePath: 'docs',
