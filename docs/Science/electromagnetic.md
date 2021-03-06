@@ -4,6 +4,8 @@ title: 磁场中的线圈
 sidebar_label: Coil in a magnetic field
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

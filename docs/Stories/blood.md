@@ -4,6 +4,8 @@ title: 关于血液、火焰与生命
 sidebar_label: About blood, flames, and life
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

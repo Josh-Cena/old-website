@@ -4,6 +4,8 @@ title: 收入与成本曲线
 sidebar_label: Revenue and cost curves
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

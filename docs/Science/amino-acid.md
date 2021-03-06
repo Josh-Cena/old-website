@@ -4,6 +4,8 @@ title: 氨基酸图鉴
 sidebar_label: All about that amino acids
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

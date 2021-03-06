@@ -4,6 +4,8 @@ title: 从基普乔格与马拉松讲起
 sidebar_label: Kipchoge and marathon
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

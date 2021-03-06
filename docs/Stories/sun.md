@@ -4,6 +4,8 @@ title: 太阳！太阳！
 sidebar_label: The Sun! The Sun!
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

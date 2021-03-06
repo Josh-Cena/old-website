@@ -4,6 +4,8 @@ title: （卑微的）圆周运动公式推导
 sidebar_label: Circular motion
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

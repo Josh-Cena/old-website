@@ -4,6 +4,8 @@ title: 关于误差传递与导数运算的发现
 sidebar_label: Error propagation and derivatives
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

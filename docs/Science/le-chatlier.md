@@ -4,6 +4,8 @@ title: 勒夏特列原理
 sidebar_label: Le Chatlier's Principle
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

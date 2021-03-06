@@ -4,6 +4,8 @@ title: 脚本爬取数据の初体验
 sidebar_label: First experience with script crawling
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

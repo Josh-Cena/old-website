@@ -4,6 +4,8 @@ title: 平面几何大宝鉴：祖暅原理的平面几何运用
 sidebar_label: Cavalieri principle in 2D geometry
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

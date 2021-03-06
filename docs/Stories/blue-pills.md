@@ -3,6 +3,8 @@ id: blue-pills
 title: Blue pills and a birthday
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

@@ -4,6 +4,8 @@ title: 西摩·格拉斯：那个男人来了，那个男人走了
 sidebar_label: 'Seymour Glass: he comes, he goes'
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

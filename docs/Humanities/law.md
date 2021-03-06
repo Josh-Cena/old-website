@@ -4,6 +4,8 @@ title: 安提戈涅：恶法非法！
 sidebar_label: 'Antigone: unjust laws are not laws'
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

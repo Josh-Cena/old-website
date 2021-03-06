@@ -4,6 +4,8 @@ title: 关于梦境、坠落与现实
 sidebar_label: About dreams, fall, and reality
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

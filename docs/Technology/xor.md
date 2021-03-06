@@ -4,6 +4,8 @@ title: 关于异或运算的一点随想
 sidebar_label: Random thoughts about XOR
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

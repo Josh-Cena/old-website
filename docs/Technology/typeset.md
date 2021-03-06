@@ -4,6 +4,8 @@ title: 如何做一个没有感情的排版机器
 sidebar_label: Typesetting with grace
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

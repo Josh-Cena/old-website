@@ -3,6 +3,8 @@ id: easy-tsims
 title: Introducing "Easy-TSIMS"
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

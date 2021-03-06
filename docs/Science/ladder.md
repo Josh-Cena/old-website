@@ -4,6 +4,8 @@ title: 又见辣鸡化学题 | 一格，两格，搭梯子
 sidebar_label: 'Building a ladder'
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

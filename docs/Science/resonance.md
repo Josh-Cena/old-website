@@ -4,6 +4,8 @@ title: 优雅地绘制共振式
 sidebar_label: Drawing resonance structures with elegance
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

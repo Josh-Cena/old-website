@@ -4,6 +4,8 @@ title: 猫奴
 sidebar_label: Cat lover
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

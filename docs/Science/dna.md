@@ -4,6 +4,8 @@ title: DNA中那几个碱基的故事
 sidebar_label: All about that base in the DNA
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

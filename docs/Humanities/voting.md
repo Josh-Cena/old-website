@@ -4,6 +4,8 @@ title: 选举的悖论
 sidebar_label: A voting paradox
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

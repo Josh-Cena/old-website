@@ -4,6 +4,8 @@ title: 天然GFP中的大设计
 sidebar_label: Grand design in wild-type GFP
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

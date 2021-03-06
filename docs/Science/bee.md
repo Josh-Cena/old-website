@@ -4,6 +4,8 @@ title: 辣 鸡 化学题 | 一切为了蜜蜂
 sidebar_label: All for the bees
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

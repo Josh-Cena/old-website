@@ -4,6 +4,8 @@ title: 圆孔衍射：迷の1.22
 sidebar_label: 'Circular aperture diffraction: the misterious 1.22'
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />
