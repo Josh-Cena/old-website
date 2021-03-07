@@ -21,6 +21,9 @@ jobs:
             - ~/.cache/yarn
           key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - run:
+          name: Change Urls
+          command: bash "./scripts/changeUrl.sh"
+      - run:
           name: Build Website
           command: yarn build
       - persist_to_workspace:
