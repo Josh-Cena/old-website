@@ -21,16 +21,6 @@ jobs:
             - ~/.cache/yarn
           key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - run:
-          name: Change Urls
-          command: bash "./scripts/changeUrl.sh"
-      - run:
-          name: Commit change
-          command: |
-            git config --global user.email "sidachen2003@gmail.com"
-            git config --global user.name "Josh-Cena"
-            git add .
-            git commit -m "Update URL"
-      - run:
           name: Build Website
           command: yarn build
       - persist_to_workspace:
@@ -50,7 +40,6 @@ jobs:
             git config --global user.email "sidachen2003@gmail.com"
             git config --global user.name "Josh-Cena"
             echo "machine github.com login Josh-Cena password $GITHUB_PA_TOKEN" > ~/.netrc
-            cat ./docs/Science/cavalieri.md
       - attach_workspace:
           at: .
       - run:

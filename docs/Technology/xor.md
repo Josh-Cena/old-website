@@ -175,7 +175,7 @@ A\oplus B=A'B+AB'=(A'+B)'+(A+B')'=(A'+AB)'+(B'+AB)'
 
 接下来，运用丰富的红石电路设计经验，就搞出来了：
 
-<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET6ickicicmsMd0DBoeWH4UjqXpE9cQke2iaoOHl6G11EPeDNCFFKe8JBicQTLShTYQeseTjib8YgymQHMI8g/640?wx_fmt=jpeg"></Pic>
+<Pic src={useBaseUrl("img/./docs/Technology/xor/JGibibkelET6ickicicmsMd0DBoeWH4UjqXpE9cQke2iaoOHl6G11EPeDNCFFKe8JBicQTLShTYQeseTjib8YgymQHMI8g.jpeg")}></Pic>
 
 从左至右，分别对应输入是00，01，11。这种设计，非常紧凑，但延时要比另一种也很常用的设计（虽然我个人不用）多 1 tick。
 

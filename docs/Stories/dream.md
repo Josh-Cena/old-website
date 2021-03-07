@@ -43,7 +43,7 @@ export const Pic = ({children, src}) => (
 
 可能正因如此，梦的最后总是下坠而非飞升，好像我们正在堕入地狱而非升上天堂。
 
-<Pic src="https://mmbiz.qpic.cn/mmbiz_jpg/JGibibkelET69KSYobCgBALSL5DmFHicXQ0QWuZyuHm9tkfIvR1O78FibXGqI7HZB8bAm7VSHbD1uHtT2yhZO7On2A/640?wx_fmt=jpeg"></Pic>
+<Pic src={useBaseUrl("img/./docs/Stories/dream/JGibibkelET69KSYobCgBALSL5DmFHicXQ0QWuZyuHm9tkfIvR1O78FibXGqI7HZB8bAm7VSHbD1uHtT2yhZO7On2A.jpeg")}></Pic>
 
 当你从五十层的高楼破窗而出，风声在耳边呼啸，冰冷的空气堵住了你的鼻子和嘴，压迫着你的肺，死亡从一缕飘散在空中的风，变成了一块坚实的地面，眼前的事物急剧放大——你正全速撞上去，去往另一个世界——那个世界被称作现实。
 
