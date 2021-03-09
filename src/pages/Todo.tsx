@@ -28,10 +28,10 @@ class Todo extends Component<todoProps, todoState> {
 
   constructor(props: todoProps) {
     super(props);
-    let history: string|null = localStorage.getItem("jc_todolistData");
     let list: todoItem[] = [];
-    if (history != null)
-      list = JSON.parse(history);
+    // let history: string|null = localStorage.getItem("jc_todolistData");
+    // if (history != null)
+    //   list = JSON.parse(history);
     this.state = {list: list};
 
     this.handler = {
