@@ -11,31 +11,33 @@ type itemProps = {
 };
 
 const Item = ({ item, handler }: itemProps): ReactElement => {
-  const [value, setValue] = React.useState(item.priority);
   return (
     <div className={classnames(styles.item, item.done ? styles.done : styles.todo)}>
-      <div className={styles.content}>
+      <div className={classnames(styles.content)}>
         <div>
+          <p>{item.name}</p>
+          <p>Due by: {item.deadline}</p>
+        </div>
+        <div>
+          <input
+            type="range"
+            defaultValue={item.priority}
+            min='0'
+            max='10'
+            onChange={(e) => handler.setPriority(item, parseInt(e.currentTarget.value))}
+            onMouseUp={(e) => handler.update()}
+          />
+          <span className={styles.priority}>{item.priority}</span>
+        </div>
+        <div className="card-actions">
           <input
             type="checkbox"
             defaultChecked={item.done}
             onChange={(e) => handler.toggle(item)}
           />
-          {item.name}{' '}{item.deadline}
-          <button className={styles.del} onClick={(e) => handler.remove(item)}>×</button>
-        </div>
-        <div>
-          <input
-            type="range"
-            value={value}
-            min='0'
-            max='10'
-            onChange={(e) => {
-              setValue(parseInt(e.currentTarget.value));
-              handler.setPriority(item, parseInt(e.currentTarget.value));
-            }}
-          />
-          <span className={styles.priority}>{item.priority}</span>
+          <a className={styles.del} onClick={(e) => handler.remove(item)}>
+            Delete
+          </a>
         </div>
       </div>
     </div>

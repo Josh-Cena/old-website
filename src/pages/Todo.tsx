@@ -2,6 +2,7 @@ import React, { ReactElement, Component } from 'react';
 import Layout from '@theme/Layout';
 import styles from './Todo.module.css';
 import Item from '../components/todoCard';
+import NewItem from '../components/newTodo';
 import v4 from 'uuid/v4';
 
 import type { todoItem } from '../data/todoData';
@@ -11,11 +12,11 @@ export type updateHandler = {
   remove: Function;
   setPriority: Function;
   rename: Function;
+  addItem: Function;
+  update: Function;
 }
 
-interface todoProps {
-
-}
+interface todoProps {}
 
 interface todoState {
   list: todoItem[];
@@ -29,13 +30,8 @@ class Todo extends Component<todoProps, todoState> {
     super(props);
     let history: string|null = localStorage.getItem("jc_todolistData");
     let list: todoItem[] = [];
-    if (history != null) {
+    if (history != null)
       list = JSON.parse(history);
-    } else {
-      list.push({id: v4(), name: "Todo item", priority: 0, deadline: "1", done: false})
-      list.push({id: v4(), name: "Todo item", priority: 0, deadline: "2", done: false})
-      list.push({id: v4(), name: "Todo item", priority: 0, deadline: "3", done: false})
-    }
     this.state = {list: list};
 
     this.handler = {
@@ -55,8 +51,7 @@ class Todo extends Component<todoProps, todoState> {
       },
       setPriority: (item: todoItem, value: number): void => {
         this.setState(state => {
-          let nlist = state.list.map(el => (el.id === item.id ? {...el, priority: value} : el))
-          nlist = nlist.sort((a: todoItem, b: todoItem): number => { return a.priority - b.priority });
+          let nlist = state.list.map(el => (el.id === item.id ? {...el, priority: value} : el));
           return {
             list: nlist
           }
@@ -64,22 +59,30 @@ class Todo extends Component<todoProps, todoState> {
       },
       rename: (item: todoItem): void => {
       },
+      addItem: (title: string, deadline: string, priority: number): void => {
+        this.setState(state => {
+          let nlist = state.list.concat(
+            [{id: v4(), name: title, priority: priority, deadline: deadline, done: false}]
+          );
+          nlist.sort((a: todoItem, b: todoItem): number => { return b.priority - a.priority });
+          return {
+            list: nlist
+          };
+        })
+      },
+      update: (): void => {
+        this.setState(state => {
+          let nlist = [...state.list];
+          nlist.sort((a: todoItem, b: todoItem): number => { return b.priority - a.priority });
+          return {
+            list: nlist
+          }
+        });
+      }
     };
-
-    this.addItem = this.addItem.bind(this)
   }
 
-  addItem(): void {
-    this.setState(state => {
-      return {
-        list: state.list.concat(
-          [{id: v4(), name: "Todo item", priority: 0, deadline: "1", done: false}]
-        )
-      };
-    })
-  };
-
-  render() {
+  render(): ReactElement {
     let todos: todoItem[] = this.state.list.filter(i => { return !i.done; });
     let dones: todoItem[] = this.state.list.filter(i => { return i.done; });
     
@@ -100,6 +103,7 @@ class Todo extends Component<todoProps, todoState> {
                     <Item key={item.id} item={item} handler={this.handler} />
                   )
                 )}
+                <NewItem handler={this.handler}></NewItem>
               </div>
               <h2>Done</h2>
               <div className={styles.cardContainer}>
@@ -109,8 +113,6 @@ class Todo extends Component<todoProps, todoState> {
                   )
                 )}
               </div>
-              <input placeholder="New item..." id={styles.addTextBox}/>
-              <button onClick={this.addItem}>Add</button>
             </div>
           </div>
         </main>
