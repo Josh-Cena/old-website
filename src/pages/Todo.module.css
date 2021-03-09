@@ -4,16 +4,16 @@
   text-align: center;
 }
 
-h1 {
+.todolist h1 {
   text-align: center;
 }
 
-h2 {
+.todolist .todolisth2 {
   margin-top: 20pt;
   text-align: center;
 }
 
-h2 span {
+.todolist h2 span {
   position: absolute;
   top: 1px;
   right: 5px;
@@ -40,12 +40,4 @@ h2 span {
   flex-flow: row wrap;
   justify-content: center;
   margin-bottom: 20px;
-}
-
-#addTextBox {
-  width: 60%;
-  height: 24px;
-  border-radius: 5px;
-  font-size: 18px;
-  text-indent: 10px;
 }
