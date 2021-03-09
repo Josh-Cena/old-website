@@ -1,0 +1,51 @@
+.todolist {
+  padding: 1em;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 20pt;
+  text-align: center;
+}
+
+h2 span {
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  border-radius: 23px;
+  line-height: 23px;
+  font-size: 18px;
+  text-align: center;
+  background: #DADADA;
+}
+
+.cardContainer {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#addTextBox {
+  width: 60%;
+  height: 24px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-indent: 10px;
+}

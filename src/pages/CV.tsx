@@ -1,10 +1,3 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 import React, { ReactElement } from 'react';
 import Layout from '@theme/Layout';
 import useThemeContext from '@theme/hooks/useThemeContext';
@@ -14,7 +7,7 @@ import styles from './CV.module.css';
 import data from '../data/CVData';
 import Card from '../components/card';
 
-function Avatar() {
+function Avatar(): ReactElement {
   const lightUrl = useBaseUrl('img/logo.svg');
   const darkUrl = useBaseUrl('img/logo-dark.svg');
   const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
@@ -41,7 +34,7 @@ export default function CV(): ReactElement {
             </h2>
             <div className={styles.cardContainer}>
               {data.map((section): ReactElement => (
-                <Card sectionHead={section.sectionHead} items={section.items} />
+                <Card key={section.sectionHead} sectionHead={section.sectionHead} items={section.items} />
               ))}
             </div>
             <ul className={styles.links}>

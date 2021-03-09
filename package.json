@@ -17,9 +17,11 @@
     "@mdx-js/react": "^1.6.21",
     "clsx": "^1.1.1",
     "react": "^16.8.4",
+    "react-bootstrap": "^1.5.1",
     "react-dom": "^16.8.4",
     "rehype-katex": "^4.0.0",
-    "remark-math": "3.0.1"
+    "remark-math": "3.0.1",
+    "uuidv4": "^6.2.6"
   },
   "browserslist": {
     "production": [
@@ -32,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "2.0.0-alpha.63"
   }
 }
