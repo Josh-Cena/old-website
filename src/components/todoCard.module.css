@@ -37,6 +37,18 @@ html[data-theme='dark'] .done {
   padding: 10px;
 }
 
+.todoTitle {
+  display: block;
+  font-size: large;
+  font-weight: bold;
+}
+
+.deadline {
+  display: block;
+  font-size: small;
+  color: gray;
+}
+
 input[type="checkbox"] {
   width: 16px;
   height: 16px;
@@ -44,22 +56,15 @@ input[type="checkbox"] {
   margin: 11px;
 }
 
+.rangeContainer {
+  margin-top: 20px;
+}
+
 .priority {
-  margin-left: 4px;
-  font-weight: bold;
-  width: 16px;
-  height: 16px;
+  font-size: small;
 }
 
 .del {
-  display: inline-block;
-  color: #dc3545;
-  text-align: center;
-  -webkit-user-select: none;
-  user-select: none;
   padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: .25rem;
   cursor: pointer;
 }

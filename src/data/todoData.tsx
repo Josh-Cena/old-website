@@ -1,7 +1,7 @@
 export type todoItem = {
   id: string;
   name: string;
-  deadline: string;
+  deadline: Date;
   done: boolean;
   priority: number;
 };

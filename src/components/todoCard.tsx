@@ -1,6 +1,8 @@
 import React, { ReactElement } from 'react';
 import classnames from 'classnames';
 import styles from './todoCard.module.css';
+import InputRange from 'react-input-range';
+import 'react-input-range/lib/css/index.css';
 
 import type { todoItem } from '../data/todoData';
 import type { updateHandler } from '../pages/Todo';
@@ -15,29 +17,33 @@ const Item = ({ item, handler }: itemProps): ReactElement => {
     <div className={classnames(styles.item, item.done ? styles.done : styles.todo)}>
       <div className={classnames(styles.content)}>
         <div>
-          <p>{item.name}</p>
-          <p>Due by: {item.deadline}</p>
+          <span className={styles.todoTitle}>{item.name}</span>
+          <span className={styles.deadline}>Due by: {`${item.deadline.getFullYear()}/${item.deadline.getMonth()+1}/${item.deadline.getDate()}`}</span>
         </div>
-        <div>
-          <input
-            type="range"
-            defaultValue={item.priority}
-            min='0'
-            max='10'
-            onChange={(e) => handler.setPriority(item, parseInt(e.currentTarget.value))}
-            onMouseUp={(e) => handler.update()}
-          />
-          <span className={styles.priority}>{item.priority}</span>
-        </div>
-        <div className="card-actions">
-          <input
-            type="checkbox"
-            defaultChecked={item.done}
-            onChange={(e) => handler.toggle(item)}
-          />
-          <a className={styles.del} onClick={(e) => handler.remove(item)}>
-            Delete
-          </a>
+        <div className={styles.rangeContainer}>
+          <div>
+            <span className={styles.priority}>
+              Priority: {item.priority}
+            </span>
+            <InputRange
+              value={item.priority}
+              minValue={0}
+              maxValue={10}
+              onChange={value => handler.setPriority(item, value)}
+              onChangeComplete={() => handler.update()}
+              formatLabel={() => ''}
+            />
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              defaultChecked={item.done}
+              onChange={() => handler.toggle(item)}
+            />
+            <a className={styles.del} onClick={(e) => handler.remove(item)}>
+              Delete
+            </a>
+          </div>
         </div>
       </div>
     </div>

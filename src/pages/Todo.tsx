@@ -3,17 +3,17 @@ import Layout from '@theme/Layout';
 import styles from './Todo.module.css';
 import Item from '../components/todoCard';
 import NewItem from '../components/newTodo';
-import v4 from 'uuid/v4';
+import uuid from 'uuid/v4';
 
 import type { todoItem } from '../data/todoData';
 
 export type updateHandler = {
-  toggle: Function;
-  remove: Function;
-  setPriority: Function;
-  rename: Function;
-  addItem: Function;
-  update: Function;
+  toggle: (item: todoItem) => void;
+  remove: (item: todoItem) => void;
+  setPriority: (item: todoItem, value: number) => void;
+  rename: (item: todoItem) => void;
+  addItem: (title: string, deadline: Date, priority: number) => void;
+  update: () => void;
 }
 
 interface todoProps {}
@@ -35,21 +35,21 @@ class Todo extends Component<todoProps, todoState> {
     this.state = {list: list};
 
     this.handler = {
-      toggle: (item: todoItem): void => {
+      toggle: item => {
         this.setState(state => {
           return {
             list: state.list.map(el => (el.id === item.id ? {...el, done: !item.done} : el))
           }
         });
       },
-      remove: (item: todoItem): void => {
+      remove: item => {
         this.setState(state => {
           return {
-            list: state.list.filter((i) => { return i.id !== item.id; }),
+            list: state.list.filter(el => { return el.id !== item.id; }),
           }
         });
       },
-      setPriority: (item: todoItem, value: number): void => {
+      setPriority: (item, value) => {
         this.setState(state => {
           let nlist = state.list.map(el => (el.id === item.id ? {...el, priority: value} : el));
           return {
@@ -57,12 +57,12 @@ class Todo extends Component<todoProps, todoState> {
           }
         });
       },
-      rename: (item: todoItem): void => {
+      rename: item => {
       },
-      addItem: (title: string, deadline: string, priority: number): void => {
+      addItem: (title, deadline, priority) => {
         this.setState(state => {
           let nlist = state.list.concat(
-            [{id: v4(), name: title, priority: priority, deadline: deadline, done: false}]
+            [{id: uuid(), name: title, priority: priority, deadline: deadline, done: false}]
           );
           nlist.sort((a: todoItem, b: todoItem): number => { return b.priority - a.priority });
           return {
@@ -70,7 +70,7 @@ class Todo extends Component<todoProps, todoState> {
           };
         })
       },
-      update: (): void => {
+      update: () => {
         this.setState(state => {
           let nlist = [...state.list];
           nlist.sort((a: todoItem, b: todoItem): number => { return b.priority - a.priority });

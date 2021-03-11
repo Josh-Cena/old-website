@@ -1,6 +1,10 @@
 import React, { ReactElement, Component } from 'react';
 import classnames from 'classnames';
 import styles from './newTodo.module.css';
+import DatePicker from 'react-datepicker';
+import InputRange from 'react-input-range';
+import 'react-datepicker/dist/react-datepicker.css';
+import 'react-input-range/lib/css/index.css';
 
 import type { updateHandler } from '../pages/Todo';
 
@@ -10,7 +14,7 @@ interface ntodoProps {
 
 interface ntodoState {
   name: string;
-  deadline: string;
+  deadline: Date;
   priority: number;
   editing: boolean;
 }
@@ -18,13 +22,13 @@ interface ntodoState {
 class NewTodo extends Component<ntodoProps, ntodoState> {
   constructor(props: ntodoProps) {
     super(props);
-    this.state = {name: '', deadline: '', priority: 0, editing: false};
+    this.state = {name: '', deadline: new Date(), priority: 0, editing: false};
   }
 
   addItem(): void {
     this.props.handler.addItem(this.state.name, this.state.deadline, this.state.priority);
     this.setState(state => {
-      return {name: '', deadline: '', priority: 0, editing: false};
+      return {name: '', deadline: new Date(), priority: 0, editing: false};
     });
   }
 
@@ -34,7 +38,7 @@ class NewTodo extends Component<ntodoProps, ntodoState> {
     });
   }
 
-  changeDeadline(ndeadline: string): void {
+  changeDeadline(ndeadline: Date): void {
     this.setState(state => {
       return {...state, deadline: ndeadline};
     });
@@ -52,34 +56,43 @@ class NewTodo extends Component<ntodoProps, ntodoState> {
         {!this.state.editing && (
           <div
             className={styles.cover}
-            onClick={e => this.setState(state => {return {...state, editing: true}})}
+            onClick={() => this.setState(state => {return {...state, editing: true}})}
           >+</div>
         )}
         <div className={classnames(styles.content)}>
           <div>
-            <p><input
-              placeholder="New item..."
-              value={this.state.name}
-              onChange={e => this.changeName(e.currentTarget.value)}
-            /></p>
-            <p>Due by: <input
-              placeholder="Deadline..."
-              value={this.state.deadline}
-              onChange={e => this.changeDeadline(e.currentTarget.value)}
-            /></p>
+            <span>
+              <input
+                className={styles.todoTitle}
+                placeholder="New item..."
+                value={this.state.name}
+                onChange={e => this.changeName(e.currentTarget.value)}
+              />
+            </span>
+            <span className={styles.deadline}>
+              Due by: 
+              <DatePicker
+                selected={this.state.deadline}
+                onChange={(date: Date) => this.changeDeadline(date)}
+              />
+            </span>
           </div>
-          <div>
-            <input
-              type="range"
-              value={this.state.priority}
-              min='0'
-              max='10'
-              onChange={e => this.changePriority(parseInt(e.currentTarget.value))}
-            />
-            <span className={styles.priority}>{this.state.priority}</span>
-          </div>
-          <div>
-            <a className={styles.del} onClick={e => this.addItem()}>Add</a>
+          <div className={styles.cardActions}>
+            <div>
+              <span className={styles.priority}>
+                Priority: {this.state.priority}
+              </span>
+              <InputRange
+                value={this.state.priority}
+                minValue={0}
+                maxValue={10}
+                onChange={value => this.changePriority(value)}
+                formatLabel={() => ''}
+              />
+            </div>
+            <div>
+              <a className={styles.del} onClick={() => this.addItem()}>Add</a>
+            </div>
           </div>
         </div>
       </div>

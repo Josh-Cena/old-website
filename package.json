@@ -18,7 +18,9 @@
     "clsx": "^1.1.1",
     "react": "^16.8.4",
     "react-bootstrap": "^1.5.1",
+    "react-datepicker": "^3.6.0",
     "react-dom": "^16.8.4",
+    "react-input-range": "^1.3.0",
     "rehype-katex": "^4.0.0",
     "remark-math": "3.0.1",
     "uuidv4": "^6.2.6"
