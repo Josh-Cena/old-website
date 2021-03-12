@@ -10,8 +10,8 @@ import styles from './styles.module.css';
 const features = [
   {
     title: '7-year programmer',
-    lightImageUrl: 'img/feature1.svg',
-    darkImageUrl: 'img/feature1-dark.svg',
+    lightImageUrl: 'img/frontpage/feature1.svg',
+    darkImageUrl: 'img/frontpage/feature1-dark.svg',
     description: (
       <>
         Fluent with both front-end and back-end programming languages. 
@@ -21,8 +21,8 @@ const features = [
   },
   {
     title: 'STEM explorer',
-    lightImageUrl: 'img/feature2.svg',
-    darkImageUrl: 'img/feature2-dark.svg',
+    lightImageUrl: 'img/frontpage/feature2.svg',
+    darkImageUrl: 'img/frontpage/feature2-dark.svg',
     description: (
       <>
         Gold medalist in physics, chemistry, and biology olympiads. Did extensive research
@@ -32,8 +32,8 @@ const features = [
   },
   {
     title: 'Keen debater',
-    lightImageUrl: 'img/undraw_docusaurus_react.svg',
-    darkImageUrl: 'img/undraw_docusaurus_react.svg',
+    lightImageUrl: 'img/frontpage/undraw_docusaurus_react.svg',
+    darkImageUrl: 'img/frontpage/undraw_docusaurus_react.svg',
     description: (
       <>
         Started public forum debating in 8th grade. Debated on topics including gene
