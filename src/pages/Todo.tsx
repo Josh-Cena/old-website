@@ -1,9 +1,9 @@
 import React, { ReactElement, Component } from 'react';
 import Layout from '@theme/Layout';
+import uuid from 'uuid/v4';
 import styles from './Todo.module.css';
 import Item from '../components/todoCard';
 import NewItem from '../components/newTodo';
-import uuid from 'uuid/v4';
 
 import type { todoItem } from '../data/todoData';
 
@@ -83,9 +83,9 @@ class Todo extends Component<todoProps, todoState> {
   }
 
   render(): ReactElement {
-    let todos: todoItem[] = this.state.list.filter(i => { return !i.done; });
-    let dones: todoItem[] = this.state.list.filter(i => { return i.done; });
-    
+    const todos: todoItem[] = this.state.list.filter(i => { return !i.done; });
+    const dones: todoItem[] = this.state.list.filter(i => { return i.done; });
+
     return (
       <Layout
         title="Todo list"

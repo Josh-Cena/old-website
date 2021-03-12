@@ -67,13 +67,6 @@ html[data-theme='dark'] .additem {
   color: gray;
 }
 
-input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-  margin: 11px;
-}
-
 .cardActions {
   margin-top: 20px;
 }

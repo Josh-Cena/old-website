@@ -1,22 +1,3 @@
-.item {
-  width: 300px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin: 15px;
-  min-width: 0;
-  background-color: #fff;
-  background-clip: border-box;
-  border-radius: .25rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-}
-
-html[data-theme='dark'] .item {
-  background: rgba(255, 255, 255, 0.09);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
-}
-
 .todo {
   border-top: 5px solid rgb(255, 59, 48);
 }
@@ -31,40 +12,4 @@ html[data-theme='dark'] .todo {
 
 html[data-theme='dark'] .done {
   border-top: 5px solid rgb(48, 209, 88);
-}
-
-.content {
-  padding: 10px;
-}
-
-.todoTitle {
-  display: block;
-  font-size: large;
-  font-weight: bold;
-}
-
-.deadline {
-  display: block;
-  font-size: small;
-  color: gray;
-}
-
-input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-  margin: 11px;
-}
-
-.rangeContainer {
-  margin-top: 20px;
-}
-
-.priority {
-  font-size: small;
-}
-
-.del {
-  padding: .375rem .75rem;
-  cursor: pointer;
 }

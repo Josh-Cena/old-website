@@ -1,11 +1,31 @@
 import React, { ReactElement } from 'react';
 import classnames from 'classnames';
+import useThemeContext from '@theme/hooks/useThemeContext';
+import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
+import Checkbox from '@material-ui/core/Checkbox';
+import Slider from '@material-ui/core/Slider';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 import styles from './todoCard.module.css';
-import InputRange from 'react-input-range';
-import 'react-input-range/lib/css/index.css';
 
 import type { todoItem } from '../data/todoData';
 import type { updateHandler } from '../pages/Todo';
+
+const useStyles = makeStyles({
+  root: {
+    width: 300,
+    margin: 15,
+  },
+  title: {
+    fontSize: 14,
+  },
+  pos: {
+    marginBottom: 12,
+  },
+});
 
 type itemProps = {
   item: todoItem;
@@ -13,40 +33,55 @@ type itemProps = {
 };
 
 const Item = ({ item, handler }: itemProps): ReactElement => {
+  const classes = useStyles();
+  const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
+  const theme = createMuiTheme({
+    palette: {
+      type: isDarkTheme ? 'dark' : 'light',
+      primary: {
+        light: '#4dcfca',
+        main: '#39cac4',
+        dark: '#31b8b2',
+      },
+    },
+  });
+
   return (
-    <div className={classnames(styles.item, item.done ? styles.done : styles.todo)}>
-      <div className={classnames(styles.content)}>
-        <div>
-          <span className={styles.todoTitle}>{item.name}</span>
-          <span className={styles.deadline}>Due by: {`${item.deadline.getFullYear()}/${item.deadline.getMonth()+1}/${item.deadline.getDate()}`}</span>
-        </div>
-        <div className={styles.rangeContainer}>
-          <div>
+    <ThemeProvider theme={theme}>
+      <Card className={classnames(classes.root, item.done ? styles.done : styles.todo)}>
+        <CardContent>
+          <Typography variant="h5" component="h2">
+            {item.name}
+          </Typography>
+          <Typography className={classes.pos} color="textSecondary">
+            Due by: {`${item.deadline.getFullYear()}/${item.deadline.getMonth()+1}/${item.deadline.getDate()}`}
+          </Typography>
+          <Typography variant="body2" component="p">
             <span className={styles.priority}>
               Priority: {item.priority}
             </span>
-            <InputRange
+            <Slider
               value={item.priority}
-              minValue={0}
-              maxValue={10}
-              onChange={value => handler.setPriority(item, value)}
-              onChangeComplete={() => handler.update()}
-              formatLabel={() => ''}
+              min={0}
+              max={10}
+              marks
+              onChange={(e, value) => handler.setPriority(item, value)}
+              onChangeCommitted={() => handler.update()}
             />
-          </div>
-          <div>
-            <input
-              type="checkbox"
-              defaultChecked={item.done}
-              onChange={() => handler.toggle(item)}
-            />
-            <a className={styles.del} onClick={(e) => handler.remove(item)}>
-              Delete
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Checkbox
+            defaultChecked={item.done}
+            color="primary"
+            onChange={() => handler.toggle(item)}
+          />
+          <Button size="small" onClick={() => handler.remove(item)}>
+            Delete
+          </Button>
+        </CardActions>
+      </Card>
+    </ThemeProvider>
   );
 }
 

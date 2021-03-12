@@ -1,103 +1,116 @@
-import React, { ReactElement, Component } from 'react';
+import React, { ReactElement, useState } from 'react';
 import classnames from 'classnames';
-import styles from './newTodo.module.css';
-import DatePicker from 'react-datepicker';
-import InputRange from 'react-input-range';
-import 'react-datepicker/dist/react-datepicker.css';
-import 'react-input-range/lib/css/index.css';
+import useThemeContext from '@theme/hooks/useThemeContext';
+import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import TextField from '@material-ui/core/TextField';
+import Slider from '@material-ui/core/Slider';
+import DateFnsUtils from '@date-io/date-fns';
+import {
+  MuiPickersUtilsProvider,
+  KeyboardDatePicker,
+} from '@material-ui/pickers';
 
+import styles from './newTodo.module.css';
 import type { updateHandler } from '../pages/Todo';
 
-interface ntodoProps {
+const useStyles = makeStyles({
+  root: {
+    width: 300,
+    margin: 15,
+  },
+  pos: {
+    marginBottom: 12,
+  },
+});
+
+type ntodoProps = {
   handler: updateHandler;
 }
 
-interface ntodoState {
-  name: string;
-  deadline: Date;
-  priority: number;
-  editing: boolean;
-}
+const NewTodo = ({ handler }: ntodoProps): ReactElement => {
+  const classes = useStyles();
+  const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
+  const theme = createMuiTheme({
+    palette: {
+      type: isDarkTheme ? 'dark' : 'light',
+      primary: {
+        light: '#4dcfca',
+        main: '#39cac4',
+        dark: '#31b8b2',
+      },
+    },
+  });
+  const [item, setItem] = useState({
+    name: '',
+    deadline: new Date(),
+    priority: 0,
+    editing: false,
+  });
 
-class NewTodo extends Component<ntodoProps, ntodoState> {
-  constructor(props: ntodoProps) {
-    super(props);
-    this.state = {name: '', deadline: new Date(), priority: 0, editing: false};
-  }
-
-  addItem(): void {
-    this.props.handler.addItem(this.state.name, this.state.deadline, this.state.priority);
-    this.setState(state => {
-      return {name: '', deadline: new Date(), priority: 0, editing: false};
-    });
-  }
-
-  changeName(nname: string): void {
-    this.setState(state => {
-      return {...state, name: nname};
-    });
-  }
-
-  changeDeadline(ndeadline: Date): void {
-    this.setState(state => {
-      return {...state, deadline: ndeadline};
-    });
-  }
-
-  changePriority(npriority: number): void {
-    this.setState(state => {
-      return {...state, priority: npriority};
-    });
-  }
-
-  render(): ReactElement {
-    return (
-      <div className={classnames(styles.additem)}>
-        {!this.state.editing && (
+  return (
+    <ThemeProvider theme={theme}>
+      <Card className={classnames(classes.root, styles.additem)}>
+        {!item.editing && (
           <div
             className={styles.cover}
-            onClick={() => this.setState(state => {return {...state, editing: true}})}
+            onClick={() => setItem({...item, editing: true})}
           >+</div>
         )}
-        <div className={classnames(styles.content)}>
-          <div>
-            <span>
-              <input
-                className={styles.todoTitle}
-                placeholder="New item..."
-                value={this.state.name}
-                onChange={e => this.changeName(e.currentTarget.value)}
-              />
+        <CardContent>
+          <TextField
+            label="New item"
+            multiline
+            variant="outlined"
+            margin="normal"
+            value={item.name}
+            onChange={e => setItem({...item, name: e.currentTarget.value})}
+          />
+          <MuiPickersUtilsProvider utils={DateFnsUtils}>
+            <KeyboardDatePicker
+              label="Deadline"
+              disableToolbar
+              variant="inline"
+              inputVariant="outlined"
+              margin="normal"
+              format="yyyy/M/d"
+              value={item.deadline}
+              onChange={value => setItem({...item, deadline: value})}
+            />
+          </MuiPickersUtilsProvider>
+          <Typography variant="body2" component="p">
+            <span className={styles.priority}>
+              Priority: {item.priority}
             </span>
-            <span className={styles.deadline}>
-              Due by: 
-              <DatePicker
-                selected={this.state.deadline}
-                onChange={(date: Date) => this.changeDeadline(date)}
-              />
-            </span>
-          </div>
-          <div className={styles.cardActions}>
-            <div>
-              <span className={styles.priority}>
-                Priority: {this.state.priority}
-              </span>
-              <InputRange
-                value={this.state.priority}
-                minValue={0}
-                maxValue={10}
-                onChange={value => this.changePriority(value)}
-                formatLabel={() => ''}
-              />
-            </div>
-            <div>
-              <a className={styles.del} onClick={() => this.addItem()}>Add</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
+            <Slider
+              value={item.priority}
+              min={0}
+              max={10}
+              marks
+              onChange={(e, value) => setItem({...item, priority: value})}
+            />
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button size="small" onClick={() => {
+            handler.addItem(item.name, item.deadline, item.priority);
+            setItem({name: '', deadline: new Date(), priority: 0, editing: false});
+          }}>
+            Add
+          </Button>
+          <Button size="small" onClick={() => {
+            setItem({name: '', deadline: new Date(), priority: 0, editing: false});
+          }}>
+            Cancel
+          </Button>
+        </CardActions>
+      </Card>
+    </ThemeProvider>
+  );
 }
 
 export default NewTodo;

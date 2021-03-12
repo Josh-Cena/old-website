@@ -13,20 +13,6 @@
   text-align: center;
 }
 
-.todolist h2 span {
-  position: absolute;
-  top: 1px;
-  right: 5px;
-  display: inline-block;
-  width: 23px;
-  height: 23px;
-  border-radius: 23px;
-  line-height: 23px;
-  font-size: 18px;
-  text-align: center;
-  background: #DADADA;
-}
-
 .cardContainer {
   -webkit-box-align: center;
   -ms-flex-align: center;
