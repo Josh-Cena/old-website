@@ -4,9 +4,16 @@
         <title>Joshua Chen Blog</title>
         <link>https://josh-cena.github.io/blog</link>
         <description>Joshua Chen Blog</description>
-        <lastBuildDate>Sat, 27 Feb 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 09 Mar 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Building a docusaurus app]]></title>
+            <link>https://josh-cena.github.io/blog/2021/03/09/docusaurus</link>
+            <guid>Building a docusaurus app</guid>
+            <pubDate>Tue, 09 Mar 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[I switched to Docusaurus in March as framework for this website. This blog summarizes my experience.]]></description>
+        </item>
         <item>
             <title><![CDATA[Hello world!]]></title>
             <link>https://josh-cena.github.io/blog/2021/02/27/hello</link>
