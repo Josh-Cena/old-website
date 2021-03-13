@@ -95,7 +95,22 @@ class Todo extends Component<todoProps, todoState> {
           <div className="container margin-vert--lg">
             <div className={styles.todolist}>
               <h1>Todo list</h1>
-              <p>A convenient todo list. Run on your own browser.</p>
+              <p style={{textAlign: 'left'}}>
+                <b>Note: </b>This is not intended to be functional, but merely
+                a showcase of what I had once created. That was probably
+                my first independent project, originally with plain HTML/CSS/JavaScript,
+                later refactored with Vue. It was committed to{' '}
+                <a
+                  href="https://github.com/Computerization/New-member-practice-commit/tree/master/2019/Josh-Cena/Joshua-Todolist%20with%20vue"
+                >
+                  our club's repo
+                </a>. Looking back at those days when I was green and ignorant,
+                there were a lot worth reminiscing. The only unfortunate thing was
+                that the original version used Vue and here I had to use React; plus,
+                to match the page style, I drastically modified everything. So it's
+                like the ship of Theseus—every single line of code has been changed,
+                but believe it or not, it's still the same Todo list project.
+              </p>
               <h2>Todo</h2>
               <div className={styles.cardContainer}>
                 {todos.map(

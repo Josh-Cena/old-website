@@ -31,16 +31,7 @@ html[data-theme='dark'] .cover:hover {
 }
 
 .additem {
-  width: 300px;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  margin: 15px;
-  min-width: 0;
-  background-color: #fff;
-  background-clip: border-box;
-  border-radius: .25rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-top: 5px solid rgb(255, 59, 48);
 }

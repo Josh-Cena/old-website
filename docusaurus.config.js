@@ -5,7 +5,7 @@ const rehypeKatex = require('rehype-katex');
 
 module.exports = {
   title: 'Joshua Chen',
-  tagline: 'Welcome to my personal page!',
+  tagline: '"Zesty scholar"',
   url: 'https://josh-cena.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -63,6 +63,23 @@ module.exports = {
           ],
         },
         {
+          title: 'Social',
+          items: [
+            {
+              label: 'Zhihu',
+              href: 'https://www.zhihu.com/people/joshcena',
+            },
+            {
+              label: 'Discord',
+              href: 'https://discord.gg/AU7X2HtnDK',
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/sida-chen-9592361b9/',
+            },
+          ],
+        },
+        {
           title: 'More',
           items: [
             {
@@ -72,10 +89,6 @@ module.exports = {
             {
               label: 'GitHub',
               href: 'https://github.com/Josh-Cena',
-            },
-            {
-              label: 'Zhihu',
-              href: 'https://www.zhihu.com/people/joshcena',
             },
             {
               label: 'WeChat official account',

@@ -18,6 +18,9 @@ const useStyles = makeStyles({
   root: {
     width: 300,
     margin: 15,
+    backgroundColor: '#fff',
+    borderRadius: '.25rem',
+    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)',
   },
   title: {
     fontSize: 14,
@@ -48,7 +51,7 @@ const Item = ({ item, handler }: itemProps): ReactElement => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Card className={classnames(classes.root, item.done ? styles.done : styles.todo)}>
+      <Card className={classnames(classes.root, styles.card, item.done ? styles.done : styles.todo)}>
         <CardContent>
           <Typography variant="h5" component="h2">
             {item.name}

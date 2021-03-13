@@ -22,6 +22,9 @@ const useStyles = makeStyles({
   root: {
     width: 300,
     margin: 15,
+    backgroundColor: '#fff',
+    borderRadius: '.25rem',
+    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)',
   },
   pos: {
     marginBottom: 12,
