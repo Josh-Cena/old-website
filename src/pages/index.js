@@ -32,8 +32,8 @@ const features = [
   },
   {
     title: 'Keen debater',
-    lightImageUrl: 'img/frontpage/undraw_docusaurus_react.svg',
-    darkImageUrl: 'img/frontpage/undraw_docusaurus_react.svg',
+    lightImageUrl: 'img/frontpage/feature3.svg',
+    darkImageUrl: 'img/frontpage/feature3-dark.svg',
     description: (
       <>
         Started public forum debating in 8th grade. Debated on topics including gene
