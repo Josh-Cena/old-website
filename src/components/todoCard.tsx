@@ -68,7 +68,7 @@ const Item = ({ item, handler }: itemProps): ReactElement => {
               min={0}
               max={10}
               marks
-              onChange={(e, value) => handler.setPriority(item, value)}
+              onChange={(e, value) => handler.setPriority(item, (value as number))}
               onChangeCommitted={() => handler.update()}
             />
           </Typography>

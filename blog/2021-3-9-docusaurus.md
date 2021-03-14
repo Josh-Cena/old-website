@@ -52,12 +52,16 @@ $ yarn start
 
 And then there's lots of customization to be made. Docusaurus has dummy contents scattered everywhere, and it will take some time hunting them all down. Take a look at [this commit](https://github.com/Josh-Cena/Personal-page/commit/a5f2566068a5f915b75b39f8aabfe139f58125ef) for most of the work that needs to be done. A short checklist:
 
-- Remove all pre-existing docs and blogs and add some real contents. Modify `/sidebars.js` as needed.
-- Select a theme color for the page. I used `#39cac4`, reason given in the <a href={useBaseUrl("CV/")}>profile</a>. Consult [this tool](https://v2.docusaurus.io/docs/styling-layout#styling-your-site-with-infima) for different shades, and paste them in `/src/css/custom.css`.
-- Draw a logo for the webpage. Most might use the GitHub avatar or a photo, but I did draw a logo which *then* became my new GitHub avatar. If you wish, re-draw the feature images on the front page as well.
-- Browse through `/docusaurus.config.js` line-by-line and make necessary modifications.
-- Browse through `/src/pages/index.js` line-by-line and make necessary modifications.
-- $\text{\KaTeX}$ is a **must** for me. Add it by running
+1. Remove all pre-existing docs and blogs and add some real contents. Modify `/sidebars.js` as needed.
+2. Select a theme color for the page. I used `#39cac4`, reason given in the <a href={useBaseUrl("CV/")}>profile</a>. Consult [this tool](https://v2.docusaurus.io/docs/styling-layout#styling-your-site-with-infima) for different shades, and paste them in `/src/css/custom.css`.
+3. Draw a logo for the webpage. Most might use the GitHub avatar or a photo, but I did draw a logo which *then* became my new GitHub avatar. If you wish, re-draw the feature images on the front page as well.
+4. Browse through `/docusaurus.config.js` line-by-line and make necessary modifications.
+5. Browse through `/src/pages/index.js` line-by-line and make necessary modifications.
+6. To enable TypeScript support, run `yarn add @docusaurus/module-type-aliases`. Then add the file to the root:
+```typescript title="types.d.ts"
+/// <reference types="@docusaurus/module-type-aliases" />
+```
+7. $\text{\KaTeX}$ is a **must** for me. Add it by running
 
 ```bash
 $ yarn add rehype-katex

@@ -69,7 +69,7 @@ const NewTodo = ({ handler }: ntodoProps): ReactElement => {
             label="New item"
             multiline
             variant="outlined"
-            margin="normal"
+            margin="dense"
             value={item.name}
             onChange={e => setItem({...item, name: e.currentTarget.value})}
           />
@@ -79,7 +79,7 @@ const NewTodo = ({ handler }: ntodoProps): ReactElement => {
               disableToolbar
               variant="inline"
               inputVariant="outlined"
-              margin="normal"
+              margin="dense"
               format="yyyy/M/d"
               value={item.deadline}
               onChange={value => setItem({...item, deadline: value})}
@@ -94,7 +94,7 @@ const NewTodo = ({ handler }: ntodoProps): ReactElement => {
               min={0}
               max={10}
               marks
-              onChange={(e, value) => setItem({...item, priority: value})}
+              onChange={(e, value) => setItem({...item, priority: (value as number)})}
             />
           </Typography>
         </CardContent>

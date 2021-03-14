@@ -25,7 +25,7 @@ module.exports = {
         {to: 'CV', label: 'Profile', position: 'left'},
         {to: 'Todo', label: 'Todo list', position: 'left'},
         {
-          to: 'docs/Science/cavalieri',
+          to: 'docs/about',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
