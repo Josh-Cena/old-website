@@ -31,7 +31,7 @@ jobs:
 
   deploy-gh-pages:
     docker:
-      - image: circleci/node:12.10.0
+      - image: circleci/node:12.16.1
     steps:
       - checkout
       - run:
