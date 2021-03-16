@@ -13,17 +13,17 @@
   },
   "dependencies": {
     "@date-io/date-fns": "1.x",
-    "@docusaurus/core": "2.0.0-alpha.70",
-    "@docusaurus/preset-classic": "2.0.0-alpha.70",
+    "@docusaurus/core": "2.0.0-alpha.72",
+    "@docusaurus/preset-classic": "2.0.0-alpha.72",
     "@material-ui/core": "^4.11.3",
     "@material-ui/pickers": "^3.2.10",
     "@mdx-js/react": "^1.6.21",
     "clsx": "^1.1.1",
     "date-fns": "^2.19.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "rehype-katex": "^4.0.0",
-    "remark-math": "3.0.1",
+    "remark-math": "4.0.0",
     "uuidv4": "^6.2.6"
   },
   "browserslist": {
