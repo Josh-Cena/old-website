@@ -3,7 +3,9 @@ id: docusaurus
 title: Docusaurus help
 ---
 
-> The Docusaurus docs is actually fun. I kept it for later reference.
+:::note
+The Docusaurus docs is actually fun. I kept it for later reference.
+:::
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
 
