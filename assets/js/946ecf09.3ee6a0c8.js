@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[35],{108:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Automating bulk file processing","permalink":"/blog/2021/03/12/bash"},{"title":"Building a docusaurus app","permalink":"/blog/2021/03/09/docusaurus"},{"title":"Hello world!","permalink":"/blog/2021/02/27/hello"}]}')}}]);

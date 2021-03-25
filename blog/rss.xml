@@ -4,9 +4,16 @@
         <title>Joshua Chen Blog</title>
         <link>https://josh-cena.github.io/blog</link>
         <description>Joshua Chen Blog</description>
-        <lastBuildDate>Fri, 12 Mar 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 15 Mar 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Choosing a color palette]]></title>
+            <link>https://josh-cena.github.io/blog/2021/03/15/color</link>
+            <guid>Choosing a color palette</guid>
+            <pubDate>Mon, 15 Mar 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[{children}]]></description>
+        </item>
         <item>
             <title><![CDATA[Automating bulk file processing]]></title>
             <link>https://josh-cena.github.io/blog/2021/03/12/bash</link>
