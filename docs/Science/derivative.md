@@ -46,8 +46,8 @@ F=k\cdot\frac{Q_1Q_2}{r^n}
 
 下面是误差的相关计算公式，可以看到上面的原则是如何起作用的：
 
-<p color="red"><b>高能预警</b></p>
-<p color="red"><b>未做好心理准备请直接跳过公式</b></p>
+<p style={{color: 'red'}}><b>高能预警</b></p>
+<p style={{color: 'red'}}><b>未做好心理准备请直接跳过公式</b></p>
 
 设 $u=u±\Delta u$，$v=v±\Delta v$，则
 
@@ -67,7 +67,7 @@ $$\begin{aligned}
 
 （在除法公式中，我们认为误差的平方相较于值的平方来说可以忽略，所以得到了最后的式子。）
 
-<p color="red"><b>预警解除</b></p>
+<p style={{color: 'red'}}><b>预警解除</b></p>
 
 总结来说，有如下公式：
 
@@ -93,7 +93,9 @@ $$\begin{aligned}
 
 如果要计算 $A(m,f(m))$ 这一点上的导数，可以设它前进了很小很小的距离 $\Delta m$ 到了 $A'(m+\Delta m, f(m+\Delta m))$。所以，过 $A$ 的该曲线的切线斜率 $k$ 便是
 
-$$\displaystyle k=\frac{\Delta y}{\Delta x}=\lim_{\Delta m\to0}\frac{f(m+\Delta m)-f(m)}{\Delta m}$$
+$$\begin{aligned}
+k=\frac{\Delta y}{\Delta x}=\lim_{\Delta m\to0}\frac{f(m+\Delta m)-f(m)}{\Delta m}
+\end{aligned}$$
 
 其中 $\lim$ 表示 $\Delta m$ 无限趋近于 $0$，但不能达到。它只表示一种条件而没有真正的意义，操作它时尽可放心。
 
@@ -101,8 +103,8 @@ $$\displaystyle k=\frac{\Delta y}{\Delta x}=\lim_{\Delta m\to0}\frac{f(m+\Delta 
 
 现在就可以看一些导数的计算公式了。
 
-<p color="red"><b>高能预警</b></p>
-<p color="red"><b>未做好心理准备请直接跳过公式</b></p>
+<p style={{color: 'red'}}><b>高能预警</b></p>
+<p style={{color: 'red'}}><b>未做好心理准备请直接跳过公式</b></p>
 
 设有函数 $u=u(x)$，$v=v(x)$，则
 
@@ -124,7 +126,7 @@ $$\begin{aligned}
 \end{aligned}$$
 （其中乘除法的推导堪称“神来之笔”！）
 
-<p color="red"><b>预警解除</b></p>
+<p style={{color: 'red'}}><b>预警解除</b></p>
 
 如果你看不懂，或者不想看，也没有关系，反正推导方法也不是吾辈能想得出来的。首先，你要知道，推导过程很高级；其次，你要记住几个公式：
 
