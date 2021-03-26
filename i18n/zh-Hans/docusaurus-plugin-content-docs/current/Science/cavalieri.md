@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Sept 25, 2019
+> 首次发布于2019年9月25日
 >
-> Link: https://mp.weixin.qq.com/s/15D5f4zl5FG7Azl7gcZrxg
+> 原文链接：https://mp.weixin.qq.com/s/15D5f4zl5FG7Azl7gcZrxg
 
 > 祖暅在求球体积时，使用一个原理：“幂势既同，则积不容异”。“幂”是截面积，“势”是立体的高。意思是两个同高的立体，如在等高处的截面积相等，则体积相等。更详细点说就是，界于两个平行平面之间的两个立体，被任一平行于这两个平面的平面所截，如果两个截面的面积相等，则这两个立体的体积相等。上述原理在中国被称为祖暅原理，国外则一般称之为卡瓦列利原理。
 >

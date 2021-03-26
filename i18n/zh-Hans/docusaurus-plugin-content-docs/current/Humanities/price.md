@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Jun 27, 2020
+> 首次发布于2020年6月27日
 >
-> Link: https://mp.weixin.qq.com/s/yMTDAgsCygTRSYnfZkuhHg
+> 原文链接：https://mp.weixin.qq.com/s/yMTDAgsCygTRSYnfZkuhHg
 
 在很久之前的经济课上，有这样一幅图，展示了垄断竞争市场下的公司长期收益-成本曲线 (long-run cost and revenue curves of a monopolistically competitive firm)：
 

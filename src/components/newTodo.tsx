@@ -15,6 +15,8 @@ import {
   KeyboardDatePicker,
 } from '@material-ui/pickers';
 
+import Translate from '@docusaurus/Translate';
+
 import styles from './newTodo.module.css';
 import type { updateHandler } from '../pages/Todo';
 
@@ -66,7 +68,7 @@ const NewTodo = ({ handler }: ntodoProps): ReactElement => {
         )}
         <CardContent>
           <TextField
-            label="New item"
+            label={<Translate id='todo.new'>New item</Translate>}
             multiline
             variant="outlined"
             margin="dense"
@@ -75,7 +77,7 @@ const NewTodo = ({ handler }: ntodoProps): ReactElement => {
           />
           <MuiPickersUtilsProvider utils={DateFnsUtils}>
             <KeyboardDatePicker
-              label="Deadline"
+              label={<Translate id='todo.due'>Deadline</Translate>}
               disableToolbar
               variant="inline"
               inputVariant="outlined"
@@ -87,7 +89,7 @@ const NewTodo = ({ handler }: ntodoProps): ReactElement => {
           </MuiPickersUtilsProvider>
           <Typography variant="body2" component="p">
             <span className={styles.priority}>
-              Priority: {item.priority}
+              <Translate id='todo.priority'>Priority: </Translate>{item.priority}
             </span>
             <Slider
               value={item.priority}
@@ -103,12 +105,12 @@ const NewTodo = ({ handler }: ntodoProps): ReactElement => {
             handler.addItem(item.name, item.deadline, item.priority);
             setItem({name: '', deadline: new Date(), priority: 0, editing: false});
           }}>
-            Add
+            <Translate id='todo.add'>Add</Translate>
           </Button>
           <Button size="small" onClick={() => {
             setItem({name: '', deadline: new Date(), priority: 0, editing: false});
           }}>
-            Cancel
+            <Translate id='todo.cancel'>Cancel</Translate>
           </Button>
         </CardActions>
       </Card>

@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Sept 1, 2019
+> 首次发布于2019年9月1日
 >
-> Link: https://zhuanlan.zhihu.com/p/80586814
+> 原文链接：https://zhuanlan.zhihu.com/p/80586814
 
 这几章讲的是逻辑设计的基础：布尔运算。
 

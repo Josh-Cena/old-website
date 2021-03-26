@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Jan 8, 2021
+> 首次发布于2021年1月8日
 >
-> Link: https://mp.weixin.qq.com/s/BKh6Wgf30bSYQLlJYIUiSw
+> 原文链接：https://mp.weixin.qq.com/s/BKh6Wgf30bSYQLlJYIUiSw
 
 我们上物理课时，学到了圆孔衍射中的“艾里斑”现象。
 

@@ -3,9 +3,9 @@ id: light
 title: 关于太阳、灯光与星空
 ---
 
-> First published on Nov 22, 2020
+> 首次发布于2020年11月22日
 >
-> Link: https://mp.weixin.qq.com/s/S_JSnBz7AeKjDQk4MD8Tew
+> 原文链接：https://mp.weixin.qq.com/s/S_JSnBz7AeKjDQk4MD8Tew
 
 > It was this celestial splendor that suddenly made me realize how little time, how little life, I had left. My sense of the heavens’ beauty, of eternity, was inseparably mixed for me with a sense of transience — and death.
 >

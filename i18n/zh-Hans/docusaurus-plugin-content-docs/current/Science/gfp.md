@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Oct 1, 2020
+> 首次发布于2020年10月1日
 >
-> Link: https://mp.weixin.qq.com/s/VrFpvUU5W4GUlqhXtYigZQ
+> 原文链接：https://mp.weixin.qq.com/s/VrFpvUU5W4GUlqhXtYigZQ
 
 在我的青春还没有结束的时候（误），曾经在有机所周老师（我现在便在他的实验室搬砖）的课上近距离接触了绿色荧光蛋白（Green Fluorescent Protein, GFP），并且人生中第一次体验了柱子——那应该是迄今为止最美妙的一次过柱子经历了。
 

@@ -1,6 +1,6 @@
 ---
 id: about
-title: About the docs
+title: 关于这些文章
 ---
 
 export const Pic = ({children, src}) => (
@@ -9,17 +9,15 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-When I was building this website, I was in a dilemma. Mostly, about the positioning—what should I post? What's the target audience? What should I establish myself as? How seriously should I take it?
+当我开始建造这个网站的时候，我需要作出不少抉择。最重要的是关于网站的定位——我应该发些什么？我的目标群体是谁？我应该给自己立什么人设？我应该多认真地对待它？
 
-I've written a lot, some in Chinese, some in English, scattered in random corners over the Internet. To list several sources:
+我已经写了不少东西了，有些用中文，有些用英文，散布在网络的各个角落。列举几个来源：
 
-- Weixin (WeChat) official account: https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwMzI0ODk0NA==&scene=124#wechat_redirect
-  - This is like **the** blog platform in China, since WeChat is **the** texting software. I doubt if there's any blogger not writing in WeChat.
-- Zhihu: https://www.zhihu.com/people/joshcena
-  - The Chinese-equivalent of Quora. I post purely-academic articles here because users tend to be more educated and have patience and incentive to read these boring notes.
+- 微信公众平台：https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwMzI0ODk0NA==&scene=124#wechat_redirect
+- 知乎：https://www.zhihu.com/people/joshcena
 
-As you see, the list now is primarily composed of Chinese forums. I hardly know any Western platform that welcomes writers to write long articles—it seems the tradition is to have a personal page, i.e., a blog site.
+如你所见，这个清单现在主要是国内的平台。我不了解多少外国的平台，不知道哪些欢迎写手们来写长文——看起来，大家最普遍的做法是设立一个个人网站。
 
-So here it is—my own personal site. In the `Docs` section, the articles are designed to be *reusable*: they simply convey information; while the articles in the `Blog` are more *one-time use*: they record my experiences. If you want to see how I learned to use tools like TypeScript or Apache, look into the Blogs; if you want to learn something (math, economics, biology, anything), you'd better look at the Docs.
+所以，现在你看到的就是我的个人网站。在`文章`部分，文章都是*可复用的*：它们只传达信息；在`博客`部分的文章就更加*一次性*：它们记录了我的经历。如果你想看我是如何学习使用 TypeScript 或者 Apache 这样的工具的，你可以去博客；如果你想要学点东西（数学、经济、生物，什么都行），你更应该看文章。
 
-I do need to warn non-Chinese readers, though, that because I'm lazy, most of the articles in the Docs are migrated from Chinese platforms and thus are Chinese. You may use a translating software, but I do not guarantee the quality or correctness of results. Anyways, I hope you'll learn something, or know more about what I've done.
+我希望你能学到点什么，或者了解更多我所达成的。

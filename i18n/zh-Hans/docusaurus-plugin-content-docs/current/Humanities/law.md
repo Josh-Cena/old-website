@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Dec 29, 2020
+> 首次发布于2020年12月29日
 >
-> Link: https://mp.weixin.qq.com/s/AkIjFaAvtsKZ03Lam_x0Sg
+> 原文链接：https://mp.weixin.qq.com/s/AkIjFaAvtsKZ03Lam_x0Sg
 
 在知识论课上，作为“知识与价值观”这一部分的实例，我们看了两集美剧《波士顿法律》(Boston Legal) 的片段，是两个非常有趣的庭审案例。
 

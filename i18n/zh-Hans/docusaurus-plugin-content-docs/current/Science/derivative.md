@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Oct 5, 2019
+> 首次发布于2019年10月5日
 >
-> Link: https://mp.weixin.qq.com/s/eYSzE_GJ-gQ_hMAPx8240Q
+> 原文链接：https://mp.weixin.qq.com/s/eYSzE_GJ-gQ_hMAPx8240Q
 
 这张图已经包含了所有我想表达的东西。如果你看得一头雾水，那么后面两节是为你准备的。如果你已经明白了它在表达什么，那你基本就已经读完了这篇文章，直接去第三节吧。
 

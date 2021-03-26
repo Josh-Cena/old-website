@@ -10,6 +10,10 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
+> First published on May 4, 2020
+>
+> Link: https://zhuanlan.zhihu.com/p/137847051
+
 本文主要介绍数字电路的实现方法。使用的包为 $\text{CircuiTi}k\text{Z}$ 。（首次出现，标准拼写以示尊敬）主要信息来自于官方文档以及一些TikZ的使用经验。
 
 注意：circuitikz在2020年4月19日发布了1.1.0版本，提供了IEEE标准的逻辑门。对于数字电路绘制帮助极大，但未包含在TeX Live 2020发行版中，请务必记得更新。具体更新方法因发行版和系统不同而有差异。

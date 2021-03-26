@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Oct 23, 2020
+> 首次发布于2020年10月23日
 >
-> Link: https://mp.weixin.qq.com/s/FKrzNcdkfouqQTfGXWFdkw
+> 原文链接：https://mp.weixin.qq.com/s/FKrzNcdkfouqQTfGXWFdkw
 
 *\*本文是一篇理论密集的文章。得出的结论与政体无关，与意识形态无关。*
 

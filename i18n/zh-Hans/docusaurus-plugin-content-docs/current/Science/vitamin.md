@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Mar 6, 2021
+> 首次发布于2021年3月6日
 >
-> Link: https://mp.weixin.qq.com/s/JAlL8UWK5HoUHB_mZx1jpA
+> 原文链接：https://mp.weixin.qq.com/s/JAlL8UWK5HoUHB_mZx1jpA
 
 :::note
 本文由<span style={{color: 'orange'}}>全能的 Lynn</span> 友情撰写，作为《[氨基酸图鉴](../Science/amino-acid)》的后继，供各位参与生物竞赛的读者们参考。

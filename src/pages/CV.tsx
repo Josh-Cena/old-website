@@ -4,6 +4,8 @@ import useThemeContext from '@theme/hooks/useThemeContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './CV.module.css';
 
+import Translate from '@docusaurus/Translate';
+
 import data from '../data/CVData';
 import Card from '../components/card';
 
@@ -27,7 +29,7 @@ export default function CV(): ReactElement {
       <main>
         <div className="container margin-vert--lg">
           <div className={styles.cv}>
-            <h1>About me</h1>
+            <h1><Translate id='CV.title'>About me</Translate></h1>
             <Avatar />
             <h2>
               陈思达<br /><small>Joshua Chen</small>

@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Dec 3, 2020
+> 首次发布于2020年12月3日
 >
-> Link: https://mp.weixin.qq.com/s/S4_N5f-4BM7x8tFZTUS0xA
+> 原文链接：https://mp.weixin.qq.com/s/S4_N5f-4BM7x8tFZTUS0xA
 
 这是你以为的 DNA 的样子：
 

@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Jan 2, 2021
+> 首次发布于2021年1月2日
 >
-> Link: https://mp.weixin.qq.com/s/1W5W18LHMRedhzXe-VhrTg
+> 原文链接：https://mp.weixin.qq.com/s/1W5W18LHMRedhzXe-VhrTg
 
 > I'm burning up,  
 > Like a fever that rages in the night  

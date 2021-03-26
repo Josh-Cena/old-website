@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Oct 15, 2020
+> 首次发布于2020年10月15日
 >
-> Link: https://mp.weixin.qq.com/s/shQ9WRD0KyhIzSyrodff9A
+> 原文链接：https://mp.weixin.qq.com/s/shQ9WRD0KyhIzSyrodff9A
 
 嗯，为了给我们正在搭建的社团管理网站添加一些初始信息，我决定去学校的平台上抓点全校社团的清单信息下来。
 

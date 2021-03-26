@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Aug 31, 2019
+> 首次发布于2019年8月31日
 >
-> Link: https://zhuanlan.zhihu.com/p/80456225
+> 原文链接：https://zhuanlan.zhihu.com/p/80456225
 
 我们先跳开数字电路内容，看看凡是讲计算机系统就绕不开的编码问题。
 

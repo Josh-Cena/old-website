@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Sept 18, 2019
+> 首次发布于2019年9月18日
 >
-> Link: https://mp.weixin.qq.com/s/nBy4ScJTYmZ07-VopTzxGg
+> 原文链接：https://mp.weixin.qq.com/s/nBy4ScJTYmZ07-VopTzxGg
 
 <p style={{color: 'orange'}}>面试算法题警告</p>
 <p style={{color: 'orange'}}>Minecraft教程警告</p>

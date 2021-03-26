@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Sept 12, 2019
+> 首次发布于2019年9月12日
 >
-> Link: https://zhuanlan.zhihu.com/p/80693923
+> 原文链接：https://zhuanlan.zhihu.com/p/80693923
 
 逻辑代数系统由基本公式、常用公式、基本规则三部分构成。掌握了这些，设计出的电路可以尽可能地简单，减少故障几率和元件使用；编程时，如果掌握了逻辑函数化简，也能增加条件判断式的可读性，避免写出垃圾代码。
 

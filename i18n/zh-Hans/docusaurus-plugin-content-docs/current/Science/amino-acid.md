@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Feb 7, 2021
+> 首次发布于2021年2月7日
 >
-> Link: https://mp.weixin.qq.com/s/N-sn-xfwGFd4mFI85Ls4hA
+> 原文链接：https://mp.weixin.qq.com/s/N-sn-xfwGFd4mFI85Ls4hA
 
 :::note
 这是一篇纯技术的文章。我写它的原因，是发现自己无论如何也搞不清所有的氨基酸，但在研究蛋白结构时，不能根据结构式反应出对应的氨基酸会带来很多不便。这篇图鉴收集了20种氨基酸的基本信息和常见用途，希望能通过拉近和它们的距离，更方便地记住它们。

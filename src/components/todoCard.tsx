@@ -11,6 +11,8 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import styles from './todoCard.module.css';
 
+import Translate from '@docusaurus/Translate';
+
 import type { todoItem } from '../data/todoData';
 import type { updateHandler } from '../pages/Todo';
 
@@ -57,11 +59,11 @@ const Item = ({ item, handler }: itemProps): ReactElement => {
             {item.name}
           </Typography>
           <Typography className={classes.pos} color="textSecondary">
-            Due by: {`${item.deadline.getFullYear()}/${item.deadline.getMonth()+1}/${item.deadline.getDate()}`}
+            <Translate id='todo.due'>Due by: </Translate>{`${item.deadline.getFullYear()}/${item.deadline.getMonth()+1}/${item.deadline.getDate()}`}
           </Typography>
           <Typography variant="body2" component="p">
             <span className={styles.priority}>
-              Priority: {item.priority}
+              <Translate id='todo.priority'>Priority: </Translate>{item.priority}
             </span>
             <Slider
               value={item.priority}
@@ -80,7 +82,7 @@ const Item = ({ item, handler }: itemProps): ReactElement => {
             onChange={() => handler.toggle(item)}
           />
           <Button size="small" onClick={() => handler.remove(item)}>
-            Delete
+            <Translate id='todo.delete'>Delete</Translate>
           </Button>
         </CardActions>
       </Card>

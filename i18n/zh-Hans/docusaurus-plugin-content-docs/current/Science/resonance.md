@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Nov 5, 2020
+> 首次发布于2020年11月5日
 >
-> Link: https://mp.weixin.qq.com/s/JkPWJCHHlBQxe7ChLlvOVg
+> 原文链接：https://mp.weixin.qq.com/s/JkPWJCHHlBQxe7ChLlvOVg
 
 高中学习的共振式的定义是：同等正确的路易斯结构式。而“正确的路易斯结构式”的定义是：
 

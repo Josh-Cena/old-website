@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Dec 15, 2020
+> 首次发布于2020年12月15日
 >
-> Link: https://mp.weixin.qq.com/s/x-gZ4YE85sWlqMY42UvlUw
+> 原文链接：https://mp.weixin.qq.com/s/x-gZ4YE85sWlqMY42UvlUw
 
 “马文，马文，”男人坐在沙发上，看着猫在吧台上跳上跳下，“生命、宇宙和一切的答案是什么？”
 

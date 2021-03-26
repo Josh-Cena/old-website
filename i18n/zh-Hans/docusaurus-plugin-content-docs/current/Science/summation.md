@@ -3,9 +3,9 @@ id: summation
 title: 把求和符号用出花来
 ---
 
-> First published on Nov 3, 2020
+> 首次发布于2020年11月3日
 >
-> Link: https://mp.weixin.qq.com/s/tB2EaRngiu3p5Z4p9gJplA
+> 原文链接：https://mp.weixin.qq.com/s/tB2EaRngiu3p5Z4p9gJplA
 
 这是人人都会的求和符号用法，高一便学过的用于数列求和的表达方法：
 

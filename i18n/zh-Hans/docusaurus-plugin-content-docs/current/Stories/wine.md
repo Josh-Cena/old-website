@@ -3,9 +3,9 @@ id: wine
 title: 关于酒、深夜与笔
 ---
 
-> First published on Nov 22, 2020
+> 首次发布于2020年11月22日
 >
-> Link: https://mp.weixin.qq.com/s/MSqUVJfc6jhsUAbdvKUaEg
+> 原文链接：https://mp.weixin.qq.com/s/MSqUVJfc6jhsUAbdvKUaEg
 
 > Wine comes in at the mouth  
 > And love comes in at the eye;  

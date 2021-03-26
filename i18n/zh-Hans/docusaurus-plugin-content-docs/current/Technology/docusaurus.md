@@ -1,10 +1,12 @@
 ---
 id: docusaurus
-title: Docusaurus help
+title: Docusaurus 帮助指南
 ---
 
 :::note
-The Docusaurus docs is actually fun. I kept it for later reference.
+Docusaurus 初始化时创建的占位文件还是非常好玩的。我在这里保存它们，以备日后参考。
+
+本文完全未经更改，也未翻译。
 :::
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).

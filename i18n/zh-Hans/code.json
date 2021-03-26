@@ -154,5 +154,173 @@
   "theme.common.skipToMainContent": {
     "message": "跳到主要内容",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "front.features.feat1.title": {
+    "message": "7年编程经验"
+  },
+  "front.features.feat1": {
+    "message": "熟练掌握前后端编程语言。在使用矢量绘图语言 Asymptote 与排版语言 LaTeX 上经验丰富。"
+  },
+  "front.features.feat2.title": {
+    "message": "STEM探索者"
+  },
+  "front.features.feat2": {
+    "message": "物理、化学、生物奥赛金奖得主。在 STEM 相关领域有广泛研究。你可以在{section}部分中读到更多我的科学学习经历。"
+  },
+  "front.features.feat2.section": {
+    "message": "文章"
+  },
+  "front.features.feat3.title": {
+    "message": "执着的辩手"
+  },
+  "front.features.feat3": {
+    "message": "从8年级起参加公共论坛辩论。辩题包括基因编辑、刑法系统、扶贫，等等。曾获地区及全国冠军，屡次获得优秀辩手称号。目前正在参加世界学校辩论。"
+  },
+  "front.about": {
+    "message": "关于我"
+  },
+  "CV.title": {
+    "message": "关于我"
+  },
+  "CV.sec1": {
+    "message": "作为学习者"
+  },
+  "CV.sec1.item1": {
+    "message": "SWFLA 22届 IB 课程体系"
+  },
+  "CV.sec1.item2": {
+    "message": "2020 BPhO 超级金奖，全国第三名"
+  },
+  "CV.sec1.item3": {
+    "message": "2020 UKChO 金奖，全国第七名"
+  },
+  "CV.sec1.item4": {
+    "message": "2020 USABO 金奖"
+  },
+  "CV.sec1.item5": {
+    "message": "自学本科计算机与化学课程"
+  },
+  "CV.sec1.item6": {
+    "message": "IBM 关于量子计算的 {link} 课程"
+  },
+  "CV.sec2": {
+    "message": "作为研究者"
+  },
+  "CV.sec2.item1": {
+    "message": "上海有机所实习：结构化学"
+  },
+  "CV.sec3": {
+    "message": "作为辩手"
+  },
+  "CV.sec3.item1": {
+    "message": "NSDA {link}前50"
+  },
+  "CV.sec3.item1.link": {
+    "message": "全国排名"
+  },
+  "CV.sec3.item2": {
+    "message": "NSDA 2020 世界学校辩论全国冠军"
+  },
+  "CV.sec3.item3": {
+    "message": "NSDA 2020 春季上海地区冠军"
+  },
+  "CV.sec3.item4": {
+    "message": "TOC 2021 十六强"
+  },
+  "CV.sec3.item5": {
+    "message": "7次获得 NSDA 优秀辩手"
+  },
+  "CV.sec3.item6": {
+    "message": "IPPF 2020 全球十六强"
+  },
+  "CV.sec4": {
+    "message": "作为编程者"
+  },
+  "CV.sec4.item1": {
+    "message": "现任{link}社长"
+  },
+  "CV.sec4.item1.link": {
+    "message": "信息化社"
+  },
+  "CV.sec4.item2": {
+    "message": "{link}开发者"
+  },
+  "CV.sec4.item3": {
+    "message": "USACO 金组"
+  },
+  "CV.sec4.item4": {
+    "message": "全栈开发者"
+  },
+  "CV.sec4.item5": {
+    "message": "了解计算机硬件"
+  },
+  "CV.sec5": {
+    "message": "作为玩家"
+  },
+  "CV.sec5.item1": {
+    "message": "7年 MINECRAFT 玩家"
+  },
+  "CV.sec5.item2": {
+    "message": "{link} 服务器运营与技术经理"
+  },
+  "CV.sec5.item3": {
+    "message": "在 Minecraft 中建造了可运行的红石 CPU"
+  },
+  "CV.sec5.item4": {
+    "message": "休闲皇室战争玩家：最高6000杯"
+  },
+  "CV.sec6": {
+    "message": "更多"
+  },
+  "CV.sec6.item1": {
+    "message": "最喜欢的颜色：{color} ({code})"
+  },
+  "CV.sec6.item2": {
+    "message": "17000小时以上听歌记录"
+  },
+  "CV.sec6.item3": {
+    "message": "最喜欢的音乐风格：软摇滚"
+  },
+  "CV.sec6.item4": {
+    "message": "最喜欢的乐队：Coldplay"
+  },
+  "CV.sec6.item5": {
+    "message": "科幻小说写手"
+  },
+  "todo.title": {
+    "message": "待办清单"
+  },
+  "todo.desc": {
+    "message": "{note} 这个项目的目的不是为了实用性，而只是为了展示我曾经做出的东西。那可能是我的第一个独立项目，一开始是用原生 HTML-CSS-JavaScript 制作的，后来又用 Vue 重构了。它被上传到了{link}。回首我的那些又傻又经验不足的时候，还是有很多值得回忆的。唯一一件不幸的事情，是我最初的版本用的是 Vue，但在这里不得不用 React；并且，为了让它和整个网站的风格协调，我又把所有样式都魔改了一遍。所以这就像忒修斯之船一样——每一行代码都改过了，但是不管你信不信，这还是那个 Todo list 项目。"
+  },
+  "todo.desc.note": {
+    "message": "备注："
+  },
+  "todo.desc.link": {
+    "message": "我们社团的仓库"
+  },
+  "todo.todoTitle": {
+    "message": "待办"
+  },
+  "todo.doneTitle": {
+    "message": "已完成"
+  },
+  "todo.due": {
+    "message": "截止日期："
+  },
+  "todo.priority": {
+    "message": "优先级："
+  },
+  "todo.new": {
+    "message": "新项目"
+  },
+  "todo.delete": {
+    "message": "删除"
+  },
+  "todo.add": {
+    "message": "添加"
+  },
+  "todo.cancel": {
+    "message": "取消"
   }
 }

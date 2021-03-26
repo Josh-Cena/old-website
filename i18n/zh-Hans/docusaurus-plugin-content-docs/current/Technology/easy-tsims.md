@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Jan 22, 2021
+> 首次发布于2021年1月22日
 >
-> Link: https://mp.weixin.qq.com/s/y--UoBa6jJjQJwMl0jpn4g
+> 原文链接：https://mp.weixin.qq.com/s/y--UoBa6jJjQJwMl0jpn4g
 
 我从去年就开始研究我们学校的信息平台 (TSIMS) 了。比如这篇文章中所写的。
 

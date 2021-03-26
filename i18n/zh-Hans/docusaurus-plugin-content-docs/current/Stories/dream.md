@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Jan 2, 2021
+> 首次发布于2021年1月2日
 >
-> Link: https://mp.weixin.qq.com/s/gLPwsms14ZAF6iGfbsgiCw
+> 原文链接：https://mp.weixin.qq.com/s/gLPwsms14ZAF6iGfbsgiCw
 
 当大家都以为我之前的三篇文章只是纯水文时，我打算继续把这个话题《陈意非的随谈》写下去。（毕竟隔壁Josh Cena也有一个随谈，不能落后啊）
 

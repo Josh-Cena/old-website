@@ -9,9 +9,9 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
-> First published on Feb 11, 2020
+> 首次发布于2020年2月11日
 >
-> Link: https://mp.weixin.qq.com/s/JDL99tg0AVufYazP6TfGkw
+> 原文链接：https://mp.weixin.qq.com/s/JDL99tg0AVufYazP6TfGkw
 
 在某个平行时空中，还有四天就是英国化学奥赛了......但很不幸，在我们的时空，这并没有发生。所以，我花了半个小时，研究了一道 辣 鸡 化学题。
 
