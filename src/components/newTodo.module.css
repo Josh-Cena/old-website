@@ -47,15 +47,8 @@ html[data-theme='dark'] .additem {
   padding: 10px;
 }
 
-.todoTitle {
-  display: block;
-  font-size: large;
-}
-
-.deadline {
-  display: block;
-  font-size: small;
-  color: gray;
+.field {
+  width: 90%;
 }
 
 .cardActions {

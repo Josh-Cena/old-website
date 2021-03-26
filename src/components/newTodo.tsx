@@ -69,6 +69,7 @@ const NewTodo = ({ handler }: ntodoProps): ReactElement => {
         <CardContent>
           <TextField
             label={<Translate id='todo.new'>New item</Translate>}
+            className={styles.field}
             multiline
             variant="outlined"
             margin="dense"
@@ -78,6 +79,7 @@ const NewTodo = ({ handler }: ntodoProps): ReactElement => {
           <MuiPickersUtilsProvider utils={DateFnsUtils}>
             <KeyboardDatePicker
               label={<Translate id='todo.due'>Deadline</Translate>}
+              className={styles.field}
               disableToolbar
               variant="inline"
               inputVariant="outlined"
