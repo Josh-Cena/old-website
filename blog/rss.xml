@@ -4,9 +4,16 @@
         <title>Joshua Chen Blog</title>
         <link>https://josh-cena.github.io/blog</link>
         <description>Joshua Chen Blog</description>
-        <lastBuildDate>Mon, 15 Mar 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 25 Mar 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Running a Laravel app]]></title>
+            <link>https://josh-cena.github.io/blog/2021/03/25/laravel</link>
+            <guid>Running a Laravel app</guid>
+            <pubDate>Thu, 25 Mar 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Recently I came upon a Laravel project: SAM, the legacy system of our club. As an absolute newcomer in backend, I had zero idea how I should start the app.]]></description>
+        </item>
         <item>
             <title><![CDATA[Choosing a color palette]]></title>
             <link>https://josh-cena.github.io/blog/2021/03/15/color</link>
