@@ -12,6 +12,10 @@ export const Pic = ({children, src}) => (
         <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
     </div>);
 
+> First published on Aug 31, 2019
+>
+> Link: https://zhuanlan.zhihu.com/p/80456225
+
 我们先跳开数字电路内容，看看凡是讲计算机系统就绕不开的编码问题。
 
 ## 一、数制

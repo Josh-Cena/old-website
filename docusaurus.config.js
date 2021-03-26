@@ -99,6 +99,10 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Sida Chen. Built with Docusaurus.`,
     },
+    prism: {
+      theme: require('prism-react-renderer/themes/github'),
+      darkTheme: require('prism-react-renderer/themes/dracula'),
+    },
   },
   stylesheets: [
     {

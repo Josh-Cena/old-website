@@ -13,8 +13,8 @@ module.exports = {
     ],
     Zhihu: [
       {
-        'Digital circuit notes': ['Digital/note1','Digital/note2','Digital/note3'],
-        'LaTeX': [],
+        'Digital circuit notes': ['Digital/note1','Digital/note2','Digital/note3','Digital/note4'],
+        'LaTeX': ['LaTeX/circuitikz'],
       }
     ]
   },
