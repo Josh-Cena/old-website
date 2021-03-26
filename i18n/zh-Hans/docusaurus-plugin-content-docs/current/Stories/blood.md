@@ -1,0 +1,54 @@
+---
+id: blood
+title: 关于血液、火焰与生命
+---
+
+export const Pic = ({children, src}) => (
+    <div style={{textAlign: 'center'}}>
+        <img src={src} />
+        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+    </div>);
+
+> First published on Jan 2, 2021
+>
+> Link: https://mp.weixin.qq.com/s/1W5W18LHMRedhzXe-VhrTg
+
+> I'm burning up,  
+> Like a fever that rages in the night  
+> Spark me up,  
+> I'm a firework  
+> I'll burst into light  
+> For it's better to burn out than to fade out of sight  
+> That's what someone told me anyway
+> 
+> Passenger—Fear of Fear
+
+Josh Cena说过，生命就是无数氨基酸与核苷酸的联结。各种有机分子自发地堆叠成键，形成多级结构，丰富多样的形态在自然选择的驱使下，一个个地被创造，自我意识从“一大堆相互缔结的神经元和分子互相作用”中诞生。生命是奇迹，因为它在一个混沌而无序的宇宙中创造了秩序与理性。
+
+但陈意非要歌颂生命中的原始力量。生命的奇迹不在于精巧的大脑，不在于强健的肢体，不在于坚硬的骨骼，而在于炽热的血液。冬日里，向手心哈出一口气，于是热气顺着血管流向整个身体；奔跑时，沸腾的生命力在心脏中翻滚；无数的物质刺激着自己的感官，于是热血涌上头顶，泪水从眼眶流出。他感受到自己还活着。
+
+生命就是一个玻璃花瓶，是花瓶中装着的那朵血红的玫瑰花。花瓶碎裂的那一刻，玫瑰花瓣掉落一地，浸泡在水中，把水也染成了鲜红色。但玫瑰花仍然在怒放——生命还在这一刻留存。直到花瓣的边缘变得卷曲，光泽变得暗淡，红色的晚霞变成了黑色的夜晚，玫瑰花的血液变得冰冷，生命才会消散。
+
+<Pic src="/zh-Hans/img/./docs/Stories/blood/JGibibkelET69YLiapxBjx3AmzoZ7tLSXCe7Y2YpjahpmZRj4zd01RT3d24ibhneTolaAD2PBt9icpCa8YhqpfjgvzA.jpeg"></Pic>
+
+在花瓶的碎片边，摆着一盆火。火舌舔舐着周围的空气，像一头小兽用自己的四肢探索着这个世界。
+
+陈意非感受着火焰散发出的光明与热量。他说过自己喜欢光明；但火焰的光明和太阳、星空都不一样，火焰是动感的，是充满力量的。火焰也是一个鲜活的生命体。我们的血管里流淌的又何尝不是生命的火焰？
+
+他觉得很困，但又前所未有地清醒。他浑身的生命力都被火焰点燃了，血液在流淌，玫瑰花在盛开。他活着。他要高声唱歌，他要拍手跺脚，他要周游世界——他还有生命可以燃烧。但窗关着，门也关着，他无处可去。于是他只能在地板上坐下，盯着火盆。视线逐渐模糊了，只剩下一团翕动着的亮光。
+
+火焰逐渐变小，变小，直到最后一只伸出的触手缩回了炭火堆中。黝黑的木炭眨着眼睛，在他的耳畔低语。
+
+它说，生命的意义在于绽放。
+
+它说，生命的意义在于飞翔。
+
+它说，生命是精彩的。
+
+它说，生命是痛苦的。
+
+它说，生命只有一次，不要在沉默中淡去。
+
+它说，生命只有一次，要像焰火一样点燃。
+
+他说，生命真是美好啊。

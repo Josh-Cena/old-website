@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Josh-Cena",
+    "description": "The title in the navbar"
+  },
+  "item.label.Profile": {
+    "message": "简介",
+    "description": "Navbar item with label Profile"
+  },
+  "item.label.Todo list": {
+    "message": "待办清单",
+    "description": "Navbar item with label Todo list"
+  },
+  "item.label.Docs": {
+    "message": "文章",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Blog": {
+    "message": "博客",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

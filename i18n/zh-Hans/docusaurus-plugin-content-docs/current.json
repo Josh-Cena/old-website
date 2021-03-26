@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.About": {
+    "message": "关于本站",
+    "description": "The label for category About in sidebar docs"
+  },
+  "sidebar.docs.category.Weixin official account": {
+    "message": "微信公众平台",
+    "description": "The label for category Weixin official account in sidebar docs"
+  },
+  "sidebar.docs.category.Science": {
+    "message": "科学",
+    "description": "The label for category Science in sidebar docs"
+  },
+  "sidebar.docs.category.Technology": {
+    "message": "技术",
+    "description": "The label for category Technology in sidebar docs"
+  },
+  "sidebar.docs.category.Humanities": {
+    "message": "人文",
+    "description": "The label for category Humanities in sidebar docs"
+  },
+  "sidebar.docs.category.Short stories": {
+    "message": "小说",
+    "description": "The label for category Short stories in sidebar docs"
+  },
+  "sidebar.docs.category.Zhihu": {
+    "message": "知乎",
+    "description": "The label for category Zhihu in sidebar docs"
+  },
+  "sidebar.docs.category.Digital circuit notes": {
+    "message": "数字电路学习笔记",
+    "description": "The label for category Digital circuit notes in sidebar docs"
+  },
+  "sidebar.docs.category.LaTeX": {
+    "message": "LaTeX",
+    "description": "The label for category LaTeX in sidebar docs"
+  }
+}

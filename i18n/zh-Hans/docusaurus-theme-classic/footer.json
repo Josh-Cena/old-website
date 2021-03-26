@@ -1,0 +1,58 @@
+{
+  "link.title.Docs": {
+    "message": "文章",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Social": {
+    "message": "社交",
+    "description": "The title of the footer links column with title=Social in the footer"
+  },
+  "link.title.More": {
+    "message": "更多",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Science": {
+    "message": "科学",
+    "description": "The label of footer link with label=Science linking to docs/Science/amino-acid"
+  },
+  "link.item.label.Technology": {
+    "message": "技术",
+    "description": "The label of footer link with label=Technology linking to docs/Technology/easy-tsims"
+  },
+  "link.item.label.Humanities": {
+    "message": "人文",
+    "description": "The label of footer link with label=Humanities linking to docs/Humanities/law"
+  },
+  "link.item.label.Short stories": {
+    "message": "小说",
+    "description": "The label of footer link with label=Short stories linking to docs/Stories/red-pills"
+  },
+  "link.item.label.Zhihu": {
+    "message": "知乎",
+    "description": "The label of footer link with label=Zhihu linking to https://www.zhihu.com/people/joshcena"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "The label of footer link with label=Discord linking to https://discord.gg/AU7X2HtnDK"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "领英",
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/in/sida-chen-9592361b9/"
+  },
+  "link.item.label.Blog": {
+    "message": "博客",
+    "description": "The label of footer link with label=Blog linking to blog"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/Josh-Cena"
+  },
+  "link.item.label.WeChat official account": {
+    "message": "微信公众平台",
+    "description": "The label of footer link with label=WeChat official account linking to https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwMzI0ODk0NA==&scene=124#wechat_redirect"
+  },
+  "copyright": {
+    "message": "陈思达版权所有 © 2021. 使用 Docusaurus 搭建.",
+    "description": "The footer copyright"
+  }
+}

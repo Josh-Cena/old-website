@@ -10,16 +10,28 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon/favicon.ico',
+  favicon: '/img/favicon/favicon.ico',
   organizationName: 'Josh-Cena', // Usually your GitHub org/user name.
   projectName: 'Josh-Cena.github.io', // Usually your repo name.
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'zh-Hans'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      'zh-Hans': {
+        label: '中文',
+      },
+    },
+  },
   themeConfig: {
     navbar: {
       title: 'Josh-Cena',
       logo: {
         alt: 'JC',
-        src: 'img/logo.svg',
-        srcDark: 'img/logo-dark.svg',
+        src: '/img/logo.svg',
+        srcDark: '/img/logo-dark.svg',
       },
       items: [
         {to: 'CV', label: 'Profile', position: 'left'},
@@ -31,6 +43,10 @@ module.exports = {
           position: 'left',
         },
         {to: 'blog', label: 'Blog', position: 'left'},
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
         {
           href: 'https://github.com/Josh-Cena',
           label: 'GitHub',
