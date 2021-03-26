@@ -4,8 +4,6 @@ title: 数字电路学习笔记（一）：前言
 sidebar_label: 'Note 1: Prescript'
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

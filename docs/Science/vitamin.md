@@ -4,8 +4,6 @@ title: 维生素图鉴
 sidebar_label: All about that vitamins
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />
@@ -37,7 +35,7 @@ export const Pic = ({children, src}) => (
 
 ## 维生素 A
 
-<Pic src={useBaseUrl("img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wbYopWPvHCAibTvhzZp8aFopVjNoZJd5raGorAdsXpsPAwmcUnlE9aiaA.png")}></Pic>
+<Pic src="/img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wbYopWPvHCAibTvhzZp8aFopVjNoZJd5raGorAdsXpsPAwmcUnlE9aiaA.png"></Pic>
 
 维生素 A 包括了视黄醇 (retinol)、视黄醛 (retinal)、视黄酸 (retinoic acid) 以及多种类胡萝卜素 (carotene)（其中我们最熟悉的是 β-胡萝卜素，也就是视黄醇的二聚体）。由于从食物中摄取的视黄醇不稳定，因此它在细胞中又以视黄酯 (retinyl ester) 的形式储存。虽然维生素 A 的形式多种多样，但它们都有一个称为视黄基的活性基团。
 
@@ -55,7 +53,7 @@ export const Pic = ({children, src}) => (
 
 ### 维生素 B<sub>1</sub>
 
-<Pic src={useBaseUrl("img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wIIKePZGgQVkchqQSgibWce5qaFKDNiaV8jeqkPk2blwmiaSWQ066KlXcg.png")}></Pic>
+<Pic src="/img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wIIKePZGgQVkchqQSgibWce5qaFKDNiaV8jeqkPk2blwmiaSWQ066KlXcg.png"></Pic>
 
 维生素 B<sub>1</sub> 是一类硫胺 (Thiamine)，但它们在人体内往往以羟基被磷酸化的形式发挥作用，如焦磷酸硫胺 (TPP) 是糖类和氨基酸在代谢过程中的辅酶，酵母的发酵也需要 TPP 来进行。
 
@@ -65,7 +63,7 @@ export const Pic = ({children, src}) => (
 
 ### 维生素 B<sub>2</sub>
 
-<Pic src={useBaseUrl("img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2w0Mrtt0aTJCicBAJcR3YnmEmqBhxQVjlO7QOHmoU07H5MBFib1ic5uF0QA.png")}></Pic>
+<Pic src="/img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2w0Mrtt0aTJCicBAJcR3YnmEmqBhxQVjlO7QOHmoU07H5MBFib1ic5uF0QA.png"></Pic>
 
 维生素 B<sub>2</sub> 又称核黄素 (riboflavin)，它的得名来源于分子中的核糖醇（核糖醇是一种五元糖，它形成了核黄素的氮原子上连的那条侧链）。
 
@@ -77,7 +75,7 @@ export const Pic = ({children, src}) => (
 
 ### 维生素 B<sub>3</sub>
 
-<Pic src={useBaseUrl("img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wYT2SX37vaT5p66DSxUkyU1bJCtNqsz7v0AlINXAz7MQIw0WXLvoIRw.png")}></Pic>
+<Pic src="/img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wYT2SX37vaT5p66DSxUkyU1bJCtNqsz7v0AlINXAz7MQIw0WXLvoIRw.png"></Pic>
 
 维生素 B<sub>3</sub> 即烟酸 (niacin)。
 
@@ -89,7 +87,7 @@ export const Pic = ({children, src}) => (
 
 ### 维生素 B<sub>5</sub>
 
-<Pic src={useBaseUrl("img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wFAOPIjEcnKxbUXsibnXLZiaCz2KKQ09rOECL1ial9pVuic2EpnxsrhlP9w.png")}></Pic>
+<Pic src="/img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wFAOPIjEcnKxbUXsibnXLZiaCz2KKQ09rOECL1ial9pVuic2EpnxsrhlP9w.png"></Pic>
 
 维生素 B<sub>5</sub> 又称泛酸 (Pantothenic acid)，这是因为它几乎在每一种食物中都存在。因此，泛酸缺乏症非常罕见，以至于几乎没有关于它的研究和病例。
 
@@ -97,7 +95,7 @@ export const Pic = ({children, src}) => (
 
 ### 维生素 B<sub>6</sub>
 
-<Pic src={useBaseUrl("img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wmJexSQPD3GN1aPbmsunoR3DeU5a4bQnBfpE0NTtyDCokOTCTDNibpbQ.png")}></Pic>
+<Pic src="/img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wmJexSQPD3GN1aPbmsunoR3DeU5a4bQnBfpE0NTtyDCokOTCTDNibpbQ.png"></Pic>
 
 维生素 B<sub>6</sub> 的主要活性形式是磷酸吡哆醛 (Pyridoxal phosphate)。
 
@@ -107,7 +105,7 @@ export const Pic = ({children, src}) => (
 
 ### 维生素 B<sub>7</sub>
 
-<Pic src={useBaseUrl("img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wLRT3BS5u72NN4oQ4hhwajHkjcricfVEfj4T98tnsej5rZXHic7RTSuJA.png")}></Pic>
+<Pic src="/img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wLRT3BS5u72NN4oQ4hhwajHkjcricfVEfj4T98tnsej5rZXHic7RTSuJA.png"></Pic>
 
 维生素 B<sub>7</sub> 又称生物素 (Biotin)。
 
@@ -117,7 +115,7 @@ export const Pic = ({children, src}) => (
 
 ### 维生素 B<sub>9</sub>
 
-<Pic src={useBaseUrl("img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wpYkiatoxZfun7fNfb6jNQcbqXM6PDEZibxXumG7iaibFRvZdY1W2B0XTRg.png")}></Pic>
+<Pic src="/img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wpYkiatoxZfun7fNfb6jNQcbqXM6PDEZibxXumG7iaibFRvZdY1W2B0XTRg.png"></Pic>
 
 维生素 B<sub>9</sub> 即叶酸 (folic acid)，得名于它在绿叶蔬菜中的高含量。
 
@@ -127,7 +125,7 @@ export const Pic = ({children, src}) => (
 
 ### 维生素 B<sub>12</sub>
 
-<Pic src={useBaseUrl("img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wE7E77SHYqBVYFHgM1ibH3KI4pcCju0SqPm717Ff3iaIiabsYjmX7Zslpw.jpeg")}>负责排版/画图的JC：“对不起，我放弃努力了”</Pic>
+<Pic src="/img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wE7E77SHYqBVYFHgM1ibH3KI4pcCju0SqPm717Ff3iaIiabsYjmX7Zslpw.jpeg">负责排版/画图的JC：“对不起，我放弃努力了”</Pic>
 
 维生素 B<sub>12</sub> 是结构最复杂的维生素，它包含了一组含钴化合物，主要形式是氰钴胺 (cyanocobalamin)。
 
@@ -139,7 +137,7 @@ export const Pic = ({children, src}) => (
 
 ## 维生素 C
 
-<Pic src={useBaseUrl("img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wwltr52YM5YiaXNztOJXpn7ftjZON9zmN6gHsViaTuvPzPSPppzcUtia7A.png")}></Pic>
+<Pic src="/img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wwltr52YM5YiaXNztOJXpn7ftjZON9zmN6gHsViaTuvPzPSPppzcUtia7A.png"></Pic>
 
 维生素 C 可能是我们最熟悉的一种维生素：它是第一种实现人工合成的维生素，维生素 C 片在大量的工业生产中甚至成为了药品智商税的代名词。我们往往在感冒流行期泡上一杯维生素 C 泡腾片；水果商也总是乐此不疲地在水果的包装上标上维生素 C 的含量，甚至连软糖也要加点维生素 C 来提高售价。实际上，维生素 C 除了像它的别名“抗坏血酸” (ascorbic acid) 所说的能防治坏血病，对感冒并不能起到什么作用。
 
@@ -153,7 +151,7 @@ export const Pic = ({children, src}) => (
 
 ## 维生素 D
 
-<Pic src={useBaseUrl("img/./docs/Science/vitamin/JGibibkelET6833J4ib84HylTtxb48P7f5bL3ZtDelEB0oB1ibFkxvQP0vuDH0ozukpYEROx9oX0jBnHviaFIlKIBCg.png")}></Pic>
+<Pic src="/img/./docs/Science/vitamin/JGibibkelET6833J4ib84HylTtxb48P7f5bL3ZtDelEB0oB1ibFkxvQP0vuDH0ozukpYEROx9oX0jBnHviaFIlKIBCg.png"></Pic>
 
 维生素 D 是一类类固醇衍生物，它最常见的形式是维生素 D2（麦角钙化醇 Ergocalciferol）和维生素 D3（胆钙化醇 cholecalciferol），其中胆钙化醇可以由人体在接受紫外线照射后合成。虽然维生素 D 能被人体合成，但由于不同人群接受的日照量不同，所以仍然被列为维生素。胆钙化醇在肝脏内转化为骨化二醇，再于肾脏内转化为骨化三醇，这是维生素 D 在人体内主要的活性形式。
 
@@ -165,7 +163,7 @@ export const Pic = ({children, src}) => (
 
 ## 维生素 E
 
-<Pic src={useBaseUrl("img/./docs/Science/vitamin/JGibibkelET6833J4ib84HylTtxb48P7f5bXQXcGpTxCqYGFCDmmM7WJ83c8hZjqd2a45suWIo8fu2Y1RFCicv4KYg.png")}></Pic>
+<Pic src="/img/./docs/Science/vitamin/JGibibkelET6833J4ib84HylTtxb48P7f5bXQXcGpTxCqYGFCDmmM7WJ83c8hZjqd2a45suWIo8fu2Y1RFCicv4KYg.png"></Pic>
 
 维生素 E 的同效维生素包括了 4 种生育酚和 4 种生育三烯酚，它们在苯甲醇环上甲基的数量和位置上有分别。维生素 E 的得名最早来自于它被发现对大鼠的繁殖起到作用。
 作为一种脂溶性抗氧化剂，维生素 E 通过提供氢原子来清除自由基。它的脂溶性也使它能够融入细胞膜中，保护细胞膜的完整性。此外，维生素 E 还可以保护维生素 A 不受氧化破坏、防止血小板过度凝集、减少空气污染对肺部的破坏等。神经递质的产生会伴随大量自由基的产生，因此维生素 E 也是相当必要的。
@@ -174,7 +172,7 @@ export const Pic = ({children, src}) => (
 
 ## 维生素 K
 
-<Pic src={useBaseUrl("img/./docs/Science/vitamin/JGibibkelET6833J4ib84HylTtxb48P7f5bdCjAicyBQOdKibIPMJic6xImk1pgIE7OsQfHhSibq8F2Nf4LTkAVy0Ragw.png")}></Pic>
+<Pic src="/img/./docs/Science/vitamin/JGibibkelET6833J4ib84HylTtxb48P7f5bdCjAicyBQOdKibIPMJic6xImk1pgIE7OsQfHhSibq8F2Nf4LTkAVy0Ragw.png"></Pic>
 
 维生素 K 往往是一种被人遗忘的维生素，它是一类萘醌的衍生物。维生素 K 又能细分成维生素 K<sub>1</sub>（叶绿醌 phytomenadione）和维生素 K<sub>2</sub>（甲萘醌 menadione）。
 

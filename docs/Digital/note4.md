@@ -4,8 +4,6 @@ title: 数字电路学习笔记（四）：逻辑代数系统
 sidebar_label: 'Note 4: Boolean arithmetic system'
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

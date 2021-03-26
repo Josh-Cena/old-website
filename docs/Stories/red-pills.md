@@ -3,8 +3,6 @@ id: red-pills
 title: Red pills for Christmas
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />
@@ -21,7 +19,7 @@ Through the white veil, a figure emerged, treading past the lonely lampposts. Cl
 
 He stopped at a bus station that stood in the snow like an ancient temple, waiting for its pilgrims. The station bathed the faint red-and-green aura from the Christmas lights lining its edges, the only sign of the holiday in the area. He walked under the roof and collapsed on the bench. The simple move seemed to have taken all his strength and sanity. He took a sip from the liquor bottle and stretched himself.
 
-<Pic src={useBaseUrl("img/./docs/Stories/red-pills/JGibibkelET6ibuHt44ic2KEfu8MDPj3UYkZMWkZMkicqMzDgtKuRhpdefXniarv1icdmkKAJE6Zd1Mj7uLP6yNMSeo2w.jpeg")}></Pic>
+<Pic src="/img/./docs/Stories/red-pills/JGibibkelET6ibuHt44ic2KEfu8MDPj3UYkZMWkZMkicqMzDgtKuRhpdefXniarv1icdmkKAJE6Zd1Mj7uLP6yNMSeo2w.jpeg"></Pic>
 
 How long do I have to wait? He wondered as he looked around. No sign of his bus. Okay, I’ll keep on waiting. He assured himself.
 
@@ -37,7 +35,7 @@ He smiled as he looked out through the shop window at the twinkling stars. The w
 
 Four more bars of the prelude, then an ascending scale that levitated the music to the first theme. “Swoosh—bang”—Fireworks bloomed on the star-embellished velvet night sky, the explosions almost masking away the piano. Red, green, yellow, white—one after another, they interwove colorful threads until the little CD shop, with the neighboring houses, was enclosed under a dome of blinding light.
 
-<Pic src={useBaseUrl("img/./docs/Stories/red-pills/JGibibkelET68HkGibeMTL5FvUuUyPWZA1FxPytfD4EOZYPnJM3tmN95xPIicadA4VE8GsNwhuwe9eO5fIfzKgWbJw.jpeg")}></Pic>
+<Pic src="/img/./docs/Stories/red-pills/JGibibkelET68HkGibeMTL5FvUuUyPWZA1FxPytfD4EOZYPnJM3tmN95xPIicadA4VE8GsNwhuwe9eO5fIfzKgWbJw.jpeg"></Pic>
 
 He was watching the fireworks in awe when the blow of a horn pierced through the splattering. Above the buildings opposite the street, the dome opened up a slit, exposing the black background; three figures were hovering in midair, their backs all facing him. He saw them whispering to each other as they stood there solemnly, their curly hair emitting a faint glow, their hands pointing towards the far horizon. They were bearing gifts of gold, frankincense, and myrrh, he knew for sure—but did they have gifts for him? Did he deserve any gift? Before he heard an answer, the figures disappeared, leaving behind three brightly shining stars.
 
@@ -45,7 +43,7 @@ The melody flowed towards the second verse. The door opened again, this time wel
 
 The buildings went alight one by one. Their Christmas lights flickered red and green, little chandeliers of hope in the dark of night. The stream of lights flowed all the way down the street, down the hill, towards the far shoreline where the city meets the sea. He had a feeling that it was a divine road paved exclusively for him, late when the whole city was asleep.
 
-<Pic src={useBaseUrl("img/./docs/Stories/red-pills/JGibibkelET68HkGibeMTL5FvUuUyPWZA1Fkkiav2lemhm4otvP05TVZBQAbiarcPBOv29sgSLfl0qhkBJYaMI7nR2g.jpeg")}></Pic>
+<Pic src="/img/./docs/Stories/red-pills/JGibibkelET68HkGibeMTL5FvUuUyPWZA1Fkkiav2lemhm4otvP05TVZBQAbiarcPBOv29sgSLfl0qhkBJYaMI7nR2g.jpeg"></Pic>
 
 A crescendo scale, then fortississimo whacking of the same chord several times, leading the way to the second chorus. Music was running riot. He leaned forward on his seat, fingers pressed tight against the keys. His blood was ignited, his veins circulated with fire. The heat resurrected his long-stiff body, making him feel the vibrant spirit of life again. Tonight, he had everything, right here, right now, in this room filled with the aroma of roasted turkey and champagne, with clangs of glasses and people telling each other the most terrible of jokes. An old man’s voice echoed in his ears: “Live with gratitude and cherishing. Live every day like a gift.”
 
@@ -65,7 +63,7 @@ That was the moment when the last chorus arrived with all its affection and burs
 
 The music concluded in the last major chord. His fingertips still lingered on the keys, his head bent low, his heart pounding, his mouth opened wide trying to catch his breath. He heard himself laughing deep inside. The roof was almost torn off by the storm of stomping and cheering. He had never been more alive.
 
-<Pic src={useBaseUrl("img/./docs/Stories/red-pills/JGibibkelET68HkGibeMTL5FvUuUyPWZA1FzjXlVG6giazDbrErmJFMnrnP5vlibLgaiclQ3jM6UD7lxGXU1vBZVNICg.jpeg")}></Pic>
+<Pic src="/img/./docs/Stories/red-pills/JGibibkelET68HkGibeMTL5FvUuUyPWZA1FzjXlVG6giazDbrErmJFMnrnP5vlibLgaiclQ3jM6UD7lxGXU1vBZVNICg.jpeg"></Pic>
 
 And the next moment, everything fell back to pitch-black. A gust of wind blew in through the open door, sobering him up. He quivered. Where did all the people go? He looked around in puzzlement. Where is this place? His mind was like a kite fluttering wildly in a storm. No more music. No more light. He was just lying under hangover in a CD store, deserted on this Christmas eve.
 

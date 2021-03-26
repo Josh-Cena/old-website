@@ -4,8 +4,6 @@ title: 数字电路学习笔记（三）：基本逻辑
 sidebar_label: 'Note 3: Basic boolean logic'
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

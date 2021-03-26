@@ -4,8 +4,6 @@ title: 收入与成本曲线
 sidebar_label: Revenue and cost curves
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />
@@ -18,7 +16,7 @@ export const Pic = ({children, src}) => (
 
 在很久之前的经济课上，有这样一幅图，展示了垄断竞争市场下的公司长期收益-成本曲线 (long-run cost and revenue curves of a monopolistically competitive firm)：
 
-<Pic src={useBaseUrl("img/./docs/Humanities/price/JGibibkelET6ibuaHjMuS5MicolBQqyfVOVicCqaPLWU7Zp0bwaW3la6ZicxyCx7mMpMuicFbMWZiaF7tlN8GCTjllE1vQ.png")}></Pic>
+<Pic src="/img/./docs/Humanities/price/JGibibkelET6ibuaHjMuS5MicolBQqyfVOVicCqaPLWU7Zp0bwaW3la6ZicxyCx7mMpMuicFbMWZiaF7tlN8GCTjllE1vQ.png"></Pic>
 
 然后，引发了某位问题男孩的问题：
 
@@ -26,7 +24,7 @@ export const Pic = ({children, src}) => (
 
 他随手画了这样一个反例：
 
-<Pic src={useBaseUrl("img/./docs/Humanities/price/JGibibkelET6ibuaHjMuS5MicolBQqyfVOVicRxNlLGN3pF0pZO1I42Eovwba3IRLxMFKTAZkKAicoLvgrrPjGFbDw7w.png")}></Pic>
+<Pic src="/img/./docs/Humanities/price/JGibibkelET6ibuaHjMuS5MicolBQqyfVOVicRxNlLGN3pF0pZO1I42Eovwba3IRLxMFKTAZkKAicoLvgrrPjGFbDw7w.png"></Pic>
 
 一时竟无人能反驳。当时我的证明误入歧途，因此未能当场给出答案。事实上，这个证明并不复杂。本文将要用数学证明两个命题：
 

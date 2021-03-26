@@ -6,8 +6,6 @@ author_image_url: https://avatars.githubusercontent.com/u/55398995?s=460&u=88dc0
 tags: [front end, personal page]
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 I switched to Docusaurus in March as framework for this website. This blog summarizes my experience.
 
 <!-- truncate -->
@@ -16,7 +14,7 @@ I switched to Docusaurus in March as framework for this website. This blog summa
 
 The dark period when this website was built with Vue is crucified for eternity in the [git history of the GH pages repo](https://github.com/Josh-Cena/Personal-page/tree/202beb7770e17fbc6ab30bce4d928bf678ecc5e8).
 
-<img src={useBaseUrl("img/blog/2021-3-9/page.jpg")}></img>
+<img src="/img/blog/2021-3-9/page.jpg"></img>
 
 Well, I'm not condemning Vue—it is powerful. Powerful, indeed, since you can virtually build anything off it. The school club administration system that I'm currently developing uses Vue for front-end, for example. The blame is probably on me, that I don't have much time to spare to build everything from scratch.
 
@@ -53,7 +51,7 @@ $ yarn start
 And then there's lots of customization to be made. Docusaurus has dummy contents scattered everywhere, and it will take some time hunting them all down. Take a look at [this commit](https://github.com/Josh-Cena/Personal-page/commit/a5f2566068a5f915b75b39f8aabfe139f58125ef) for most of the work that needs to be done. A short checklist:
 
 1. Remove all pre-existing docs and blogs and add some real contents. Modify `/sidebars.js` as needed.
-2. Select a theme color for the page. I used `#39cac4`, reason given in the <a href={useBaseUrl("CV/")}>profile</a>. Consult [this tool](https://v2.docusaurus.io/docs/styling-layout#styling-your-site-with-infima) for different shades, and paste them in `/src/css/custom.css`.
+2. Select a theme color for the page. I used `#39cac4`, reason given in the <a href="/CV/">profile</a>. Consult [this tool](https://v2.docusaurus.io/docs/styling-layout#styling-your-site-with-infima) for different shades, and paste them in `/src/css/custom.css`.
 3. Draw a logo for the webpage. Most might use the GitHub avatar or a photo, but I did draw a logo which *then* became my new GitHub avatar. If you wish, re-draw the feature images on the front page as well.
 4. Browse through `/docusaurus.config.js` line-by-line and make necessary modifications.
 5. Browse through `/src/pages/index.js` line-by-line and make necessary modifications.

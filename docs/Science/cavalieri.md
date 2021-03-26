@@ -4,8 +4,6 @@ title: 平面几何大宝鉴：祖暅原理的平面几何运用
 sidebar_label: Cavalieri principle in 2D geometry
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />
@@ -22,13 +20,13 @@ export const Pic = ({children, src}) => (
 
 “两个同高的立体，如在等高处的截面积相等，则体积相等”，这也可以类比到二维中的图形面积问题：“两个同宽的图形，如在等宽处的截线段长相等，则面积相等”。或者说：两个图形夹在两平行线间，且与平行线相接，作这两条平行线间的第三条平行线 $\ell$ ，如果对于所有的 $\ell$，它在这两个图形内的部分都相等，则这两个图形面积相等。
 
-<Pic src={useBaseUrl("img/./docs/Science/cavalieri/JGibibkelET68EfhySWuOboVia7FJX8ehwIAicTz2be2JDN7HIibwibjrpYPP1bTCr1TrjDicauU0P6BLCgFIibZK42GCQ.png")}></Pic>
+<Pic src="/img/./docs/Science/cavalieri/JGibibkelET68EfhySWuOboVia7FJX8ehwIAicTz2be2JDN7HIibwibjrpYPP1bTCr1TrjDicauU0P6BLCgFIibZK42GCQ.png"></Pic>
 
 比如图中，如果对于每一条平行线（用虚线表示），都有 $d_1=d_2$（也可能是若干线段长之和），那么这两个图形面积相等。
 
 证明的方法，一是直觉上说，可以想象一个图形是由无数线段组成的，那么如果这些线段沿同一方向平移，平移出的新图形的面积就一定不会变化。
 
-<Pic src={useBaseUrl("img/./docs/Science/cavalieri/JGibibkelET68EfhySWuOboVia7FJX8ehwIq7rKuUtU2fmNPBsE5ZlW0U1LeeLIdNXFqDa2dr7VLFNOPleZyFAicsQ.png")}></Pic>
+<Pic src="/img/./docs/Science/cavalieri/JGibibkelET68EfhySWuOboVia7FJX8ehwIq7rKuUtU2fmNPBsE5ZlW0U1LeeLIdNXFqDa2dr7VLFNOPleZyFAicsQ.png"></Pic>
 
 第二种，可以通过穷竭法，用无穷多的矩形来逼近它们的面积，也可以有同样的结论，即对于任意两个和左平行线距离相等，宽度相等的矩形，由于它们的长 $d_1$ 和 $d_2$ 也相等，所以 $S_1=S_2$。同理，在任何一个位置，矩形面积也是相等的。而这些矩形的宽趋向于无穷小时，它们的面积之和便相等。
 
@@ -44,7 +42,7 @@ $$\begin{aligned}
 
 因此，我们可以用这个工具，来解决一些棘手的面积问题。比如：
 
-<Pic src={useBaseUrl("img/./docs/Science/cavalieri/JGibibkelET68EfhySWuOboVia7FJX8ehwINMicRNErQECUAT61ibpmzQYRMKhvmbcKXlQuNENnOZ8OFPkl66dnSsfA.jpeg")}>（来源见水印）</Pic>
+<Pic src="/img/./docs/Science/cavalieri/JGibibkelET68EfhySWuOboVia7FJX8ehwINMicRNErQECUAT61ibpmzQYRMKhvmbcKXlQuNENnOZ8OFPkl66dnSsfA.jpeg">（来源见水印）</Pic>
 
 好，看到题，立刻列式：
 
@@ -58,11 +56,11 @@ $$\begin{aligned}
 
 在文中，采用的是直接用梯形逼近的方法；如果我们想要一种更通式化的方法，还可以先用“祖暅原理推广”，把它转化为一个关于 $x$ 轴对称的二维图形：
 
-<Pic src={useBaseUrl("img/./docs/Science/cavalieri/JGibibkelET68EfhySWuOboVia7FJX8ehwIL0eR3P3ktCbbfFKE6SfLYE3VCfrB4nibzUkSoibdRtkOmvO65nu1Mictw.png")}></Pic>
+<Pic src="/img/./docs/Science/cavalieri/JGibibkelET68EfhySWuOboVia7FJX8ehwIL0eR3P3ktCbbfFKE6SfLYE3VCfrB4nibzUkSoibdRtkOmvO65nu1Mictw.png"></Pic>
 
 其中上、下两条曲线分别为 $y=-x^2+x$ 和 $y=x^2-x$。至于为什么可以这么转化，是因为如果作 $y$ 轴的平行线，被下面一条曲线和 $y=x$ 所截的线段正好是 $d(x)=x-x^2$ 的关系，而这个图形又是关于 $y=x$ 对称的。
 
-<Pic src={useBaseUrl("img/./docs/Science/cavalieri/JGibibkelET68EfhySWuOboVia7FJX8ehwIvhZefO4cHbMYoN8ELI5Dg5rNjMTCAtlArXQuNMQgJg7RBRGYyrTpCA.png")}></Pic>
+<Pic src="/img/./docs/Science/cavalieri/JGibibkelET68EfhySWuOboVia7FJX8ehwIvhZefO4cHbMYoN8ELI5Dg5rNjMTCAtlArXQuNMQgJg7RBRGYyrTpCA.png"></Pic>
 
 而计算由两个抛物线围成的图形的面积，就会方便很多——比如用穷竭法，积分法，甚至是抛物线与直线围成的面积的公式，等等（该公式可能会在以后的某篇文章中作推导）。
 

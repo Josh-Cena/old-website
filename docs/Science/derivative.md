@@ -4,8 +4,6 @@ title: 关于误差传递与导数运算的发现
 sidebar_label: Error propagation and derivatives
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />
@@ -85,7 +83,7 @@ $$\begin{aligned}
 
 其中的曲线便是 $y=f(x)$，而不断运动的直线的方程则是 $y-f(m)=g(m)(x-m)$。画出 $k=g(m)$ 的图形，长这样：
 
-<Pic src={useBaseUrl("img/./docs/Science/derivative/JGibibkelET68f5MoWZfb3aicRibA7AGLZyqFE4cuCibtmkptNIOserzAFRyCgajzvSMtQxub74fdoWqw8aF0MiaR6Xg.png")}></Pic>
+<Pic src="/img/./docs/Science/derivative/JGibibkelET68f5MoWZfb3aicRibA7AGLZyqFE4cuCibtmkptNIOserzAFRyCgajzvSMtQxub74fdoWqw8aF0MiaR6Xg.png"></Pic>
 
 如果要计算导数，相当于算出 $g(m)$，或者说算出 $k$。
 

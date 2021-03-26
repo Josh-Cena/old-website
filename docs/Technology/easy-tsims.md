@@ -3,8 +3,6 @@ id: easy-tsims
 title: Introducing "Easy-TSIMS"
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />
@@ -23,7 +21,7 @@ export const Pic = ({children, src}) => (
 
 每到学期末，同学们就会有各种各样对 TSIMS 的奇怪需求。这些需求都可以通过一些简单的脚本或者审查元素修改实现，但如果缺乏相关知识，还是难以操作。因此，我决定用 chrome 插件的方式集成这些功能，让 TSIMS 的使用更加人性化。Easy TSIMS 应运而生，Chrome, Edge, QQ 等 chromium 内核浏览器的用户都可以使用。
 
-<Pic src={useBaseUrl("img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiaqkcjqa8v3oTdqJXYbdqVZFJa3cn2NcEe9UD8UW7QK7ibBalMUReM7uQ.png")}></Pic>
+<Pic src="/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiaqkcjqa8v3oTdqJXYbdqVZFJa3cn2NcEe9UD8UW7QK7ibBalMUReM7uQ.png"></Pic>
 
 :::note TL; DR
 此插件的功能包括：
@@ -40,23 +38,23 @@ export const Pic = ({children, src}) => (
 
 激发我做这个插件的事情，是系统会在结业式前，隐藏“成长报告”页面的入口，就像这样：
 
-<Pic src={useBaseUrl("img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiafuUicksft9C2AiaUOFKhibT4cu7ux4aiczq8kmRn8h3jjFqk5e0ib1oRnBg.png")}></Pic>
+<Pic src="/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiafuUicksft9C2AiaUOFKhibT4cu7ux4aiczq8kmRn8h3jjFqk5e0ib1oRnBg.png"></Pic>
 
 但是，此时实际上在后端已经上传了数据，比如学期总评、班主任评语等，因此只要能访问页面，就能看到这些信息。而且，就像 TSIMS 的许多狗血操作一样，这个入口隐藏是通过设置 `style="display: none;"` 实现的……
 
-<Pic src={useBaseUrl("img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMia4ZShagKeZr6XFA3K1ehZ27Z6jBFRAmpTbMcx0ibrP5g0tNNtwTxn1Cg.png")}></Pic>
+<Pic src="/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMia4ZShagKeZr6XFA3K1ehZ27Z6jBFRAmpTbMcx0ibrP5g0tNNtwTxn1Cg.png"></Pic>
 
 只要能够打开浏览器开发者模式，找到这个元素，把 `style` 元素删掉，就结束了。但就这么一个操作，也有不少人需要别人帮忙。因此，这成为了我的插件第一个实现的功能。
 
 实现的方法是一个 content script。它会在加载页面时，搜索导航栏中所有包含 `style` 的元素，然后把 `style` 修改为“浅灰色”。启用插件后，效果如下：
 
-<Pic src={useBaseUrl("img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiamBqmkQMs0xw9DDK4Naz9LQIf4TXZHcnRRrAdibh46U5ALdibCqANTM8A.png")}>注意到 TSIMS 站名也发生了亿点点变化。那是我奇怪的恶趣味。</Pic>
+<Pic src="/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiamBqmkQMs0xw9DDK4Naz9LQIf4TXZHcnRRrAdibh46U5ALdibCqANTM8A.png">注意到 TSIMS 站名也发生了亿点点变化。那是我奇怪的恶趣味。</Pic>
 
 当然，这里90%的被隐藏入口都是本就没用的页面，它们对应的后端接口并未开启，所以即使进去，也不能做什么有意义的操作。
 
 这个功能有点简单了。所以我又决定给一些页面增加功能。首先引起我注意的是“活动记录”页面。每个期末，同学们都会在上面填写本学期的社团活动记录。它长这个样子：
 
-<Pic src={useBaseUrl("img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiax9H4XwT2TzaUSUbuA7moSDkJbQk5UT9P4KV8ZaFbmBBknbrR6b2oicQ.png")}></Pic>
+<Pic src="/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiax9H4XwT2TzaUSUbuA7moSDkJbQk5UT9P4KV8ZaFbmBBknbrR6b2oicQ.png"></Pic>
 
 它反人类的地方主要有三：
 
@@ -72,7 +70,7 @@ export const Pic = ({children, src}) => (
 
 既然已经能知道当前页面的名字，我决定同时解决一下标签页标题的问题。因为页面是 ajaxify 的，实际上一直停在 `home.html` 页面，所以标签页的标题也始终叫 TSIMS | homepage，现在，可以在页面跳转时修改标题。
 
-<Pic src={useBaseUrl("img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiaN4sYk8qTu6tkO1s1CX1GykQbj1J8vkJuk2uxibibfJdCzjUicqhum0meg.png")}></Pic>
+<Pic src="/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiaN4sYk8qTu6tkO1s1CX1GykQbj1J8vkJuk2uxibibfJdCzjUicqhum0meg.png"></Pic>
 
 这样，就要符合直觉多了。
 
@@ -82,15 +80,15 @@ export const Pic = ({children, src}) => (
 
 要重写的脚本文件是 http://101.230.1.163/ajax/cas_add_record_info.js，更具体地说，我们把目光放在了负责“记录列表”渲染的 `addInfo` 函数上。（顺便吐槽，这个代码写的是真的差——各种字符串拼接和 `var` 的作用域外调用，看得我几乎脑溢血……我把整个文件重写了一遍，从280行缩减到150行）
 
-<Pic src={useBaseUrl("img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiavRLqfbCyAAsG799N3X8x4JgnpEGicic1s4WAgRgZQI2ZWuNBQotty7bg.png")}>原本的 野 兽 代 码</Pic>
+<Pic src="/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiavRLqfbCyAAsG799N3X8x4JgnpEGicic1s4WAgRgZQI2ZWuNBQotty7bg.png">原本的 野 兽 代 码</Pic>
 
-<Pic src={useBaseUrl("img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiayDMdicmSXLZen0eKGU1pekibzibBvtjAn7GBzLOPcjLByibOIrUJd4qFLQ.png")}>重定义的函数，仍然非常野兽</Pic>
+<Pic src="/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiayDMdicmSXLZen0eKGU1pekibzibBvtjAn7GBzLOPcjLByibOIrUJd4qFLQ.png">重定义的函数，仍然非常野兽</Pic>
 
 完成之后，把这个文件声明成网页可以访问的 web accessible resource，然后注入到页面中原脚本的后面即可。
 
 现在，每条记录都可以完整显示，也可以点击收起。点击“Reuse”后，可以直接将除日期外的所有信息填到对应的输入框中。将描述稍作修改后，就可以再次提交了。
 
-<Pic src={useBaseUrl("img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiaPXia8446Kd1rtrqdSGVsVrmDNzHTusgBHqSibD7Twv1eZoAEsJyibQdFw.png")}></Pic>
+<Pic src="/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiaPXia8446Kd1rtrqdSGVsVrmDNzHTusgBHqSibD7Twv1eZoAEsJyibQdFw.png"></Pic>
 
 另外，现在添加活动记录后，提交按钮不会被禁用。可以直接填写下一篇记录。
 

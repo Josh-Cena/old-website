@@ -4,8 +4,6 @@ title: 用LaTeX优雅地绘制数字电路
 sidebar_label: 'Drawing digital circuits with LaTeX'
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />

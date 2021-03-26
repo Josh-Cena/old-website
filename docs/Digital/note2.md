@@ -4,8 +4,6 @@ title: 数字电路学习笔记（二）：数制与编码
 sidebar_label: 'Note 2: Numerical systems and encoding'
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 export const Pic = ({children, src}) => (
     <div style={{textAlign: 'center'}}>
         <img src={src} />
