@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://josh-cena.github.io/blog</id>
+    <title>Joshua Chen Blog</title>
+    <updated>2021-03-25T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://josh-cena.github.io/blog"/>
+    <subtitle>Joshua Chen Blog</subtitle>
+    <icon>https://josh-cena.github.io/img/favicon/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Running a Laravel app]]></title>
+        <id>Running a Laravel app</id>
+        <link href="https://josh-cena.github.io/zh-Hans/blog/2021/03/25/laravel"/>
+        <updated>2021-03-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Recently I came upon a Laravel project: SAM, the legacy system of our club. As an absolute newcomer in backend, I had zero idea how I should start the app.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Choosing a color palette]]></title>
+        <id>Choosing a color palette</id>
+        <link href="https://josh-cena.github.io/zh-Hans/blog/2021/03/15/color"/>
+        <updated>2021-03-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[{children}]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Automating bulk file processing]]></title>
+        <id>Automating bulk file processing</id>
+        <link href="https://josh-cena.github.io/zh-Hans/blog/2021/03/12/bash"/>
+        <updated>2021-03-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Thou shalt not modify 30 files by hand.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building a docusaurus app]]></title>
+        <id>Building a docusaurus app</id>
+        <link href="https://josh-cena.github.io/zh-Hans/blog/2021/03/09/docusaurus"/>
+        <updated>2021-03-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I switched to Docusaurus in March as framework for this website. This blog summarizes my experience.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello world!]]></title>
+        <id>Hello world!</id>
+        <link href="https://josh-cena.github.io/zh-Hans/blog/2021/02/27/hello"/>
+        <updated>2021-02-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[`text]]></summary>
+    </entry>
+</feed>
