@@ -8,32 +8,32 @@
     <subtitle>Joshua Chen Blog</subtitle>
     <icon>https://josh-cena.github.io/img/favicon/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Running a Laravel app]]></title>
-        <id>Running a Laravel app</id>
+        <title type="html"><![CDATA[运行 Laravel 应用]]></title>
+        <id>运行 Laravel 应用</id>
         <link href="https://josh-cena.github.io/zh-Hans/blog/2021/03/25/laravel"/>
         <updated>2021-03-25T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Recently I came upon a Laravel project: SAM, the legacy system of our club. As an absolute newcomer in backend, I had zero idea how I should start the app.]]></summary>
+        <summary type="html"><![CDATA[最近我遇到了一个 Laravel 项目：SAM，它是我们社团的历史项目。作为后端的纯新手，我对如何启动应用完全没有想法。]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Choosing a color palette]]></title>
-        <id>Choosing a color palette</id>
+        <title type="html"><![CDATA[选择配色方案]]></title>
+        <id>选择配色方案</id>
         <link href="https://josh-cena.github.io/zh-Hans/blog/2021/03/15/color"/>
         <updated>2021-03-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[{children}]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Automating bulk file processing]]></title>
-        <id>Automating bulk file processing</id>
+        <title type="html"><![CDATA[自动化文件处理]]></title>
+        <id>自动化文件处理</id>
         <link href="https://josh-cena.github.io/zh-Hans/blog/2021/03/12/bash"/>
         <updated>2021-03-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Thou shalt not modify 30 files by hand.]]></summary>
+        <summary type="html"><![CDATA[汝毋手动修改 30 个文件。]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Building a docusaurus app]]></title>
-        <id>Building a docusaurus app</id>
+        <title type="html"><![CDATA[搭建 Docusaurus 应用]]></title>
+        <id>搭建 Docusaurus 应用</id>
         <link href="https://josh-cena.github.io/zh-Hans/blog/2021/03/09/docusaurus"/>
         <updated>2021-03-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[I switched to Docusaurus in March as framework for this website. This blog summarizes my experience.]]></summary>
+        <summary type="html"><![CDATA[我在三月把这个网页迁移到了 Docusaurus。这篇博文总结了我的经历。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello world!]]></title>

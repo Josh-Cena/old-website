@@ -8,32 +8,32 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
-            <title><![CDATA[Running a Laravel app]]></title>
+            <title><![CDATA[运行 Laravel 应用]]></title>
             <link>https://josh-cena.github.io/zh-Hans/blog/2021/03/25/laravel</link>
-            <guid>Running a Laravel app</guid>
+            <guid>运行 Laravel 应用</guid>
             <pubDate>Thu, 25 Mar 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Recently I came upon a Laravel project: SAM, the legacy system of our club. As an absolute newcomer in backend, I had zero idea how I should start the app.]]></description>
+            <description><![CDATA[最近我遇到了一个 Laravel 项目：SAM，它是我们社团的历史项目。作为后端的纯新手，我对如何启动应用完全没有想法。]]></description>
         </item>
         <item>
-            <title><![CDATA[Choosing a color palette]]></title>
+            <title><![CDATA[选择配色方案]]></title>
             <link>https://josh-cena.github.io/zh-Hans/blog/2021/03/15/color</link>
-            <guid>Choosing a color palette</guid>
+            <guid>选择配色方案</guid>
             <pubDate>Mon, 15 Mar 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[{children}]]></description>
         </item>
         <item>
-            <title><![CDATA[Automating bulk file processing]]></title>
+            <title><![CDATA[自动化文件处理]]></title>
             <link>https://josh-cena.github.io/zh-Hans/blog/2021/03/12/bash</link>
-            <guid>Automating bulk file processing</guid>
+            <guid>自动化文件处理</guid>
             <pubDate>Fri, 12 Mar 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Thou shalt not modify 30 files by hand.]]></description>
+            <description><![CDATA[汝毋手动修改 30 个文件。]]></description>
         </item>
         <item>
-            <title><![CDATA[Building a docusaurus app]]></title>
+            <title><![CDATA[搭建 Docusaurus 应用]]></title>
             <link>https://josh-cena.github.io/zh-Hans/blog/2021/03/09/docusaurus</link>
-            <guid>Building a docusaurus app</guid>
+            <guid>搭建 Docusaurus 应用</guid>
             <pubDate>Tue, 09 Mar 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[I switched to Docusaurus in March as framework for this website. This blog summarizes my experience.]]></description>
+            <description><![CDATA[我在三月把这个网页迁移到了 Docusaurus。这篇博文总结了我的经历。]]></description>
         </item>
         <item>
             <title><![CDATA[Hello world!]]></title>
