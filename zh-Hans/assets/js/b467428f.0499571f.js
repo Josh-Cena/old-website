@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[56],{129:function(a){a.exports=JSON.parse('{"allTagsPath":"/zh-Hans/blog/tags","slug":"\u540e\u7aef","name":"\u540e\u7aef","count":1,"permalink":"/zh-Hans/blog/tags/\u540e\u7aef"}')}}]);
