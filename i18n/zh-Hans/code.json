@@ -275,6 +275,9 @@
   "CV.sec6.item1": {
     "message": "最喜欢的颜色：{color} ({code})"
   },
+  "CV.sec6.item1.color": {
+    "message": "绿松石色"
+  },
   "CV.sec6.item2": {
     "message": "17000小时以上听歌记录"
   },
