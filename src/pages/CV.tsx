@@ -35,8 +35,8 @@ export default function CV(): ReactElement {
               陈思达<br /><small>Joshua Chen</small>
             </h2>
             <div className={styles.cardContainer}>
-              {data.map((section): ReactElement => (
-                <Card key={section.sectionHead} sectionHead={section.sectionHead} items={section.items} />
+              {data.map((section, index): ReactElement => (
+                <Card key={index} sectionHead={section.sectionHead} items={section.items} />
               ))}
             </div>
             <ul className={styles.links}>
