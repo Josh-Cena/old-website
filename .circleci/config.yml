@@ -4,7 +4,7 @@ jobs:
 
   build:
     docker:
-      - image: circleci/node:12.16.1
+      - image: circleci/node:15.12.0
     steps:
       - checkout
       - restore_cache:
@@ -31,7 +31,7 @@ jobs:
 
   deploy-gh-pages:
     docker:
-      - image: circleci/node:12.16.1
+      - image: circleci/node:15.12.0
     steps:
       - checkout
       - run:
