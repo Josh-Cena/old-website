@@ -4,9 +4,16 @@
         <title>Joshua Chen Blog</title>
         <link>https://josh-cena.github.io/blog</link>
         <description>Joshua Chen Blog</description>
-        <lastBuildDate>Thu, 25 Mar 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Apr 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[千彘文]]></title>
+            <link>https://josh-cena.github.io/zh-Hans/blog/2021/04/01/zhi</link>
+            <guid>千彘文</guid>
+            <pubDate>Thu, 01 Apr 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[愚人节快乐！]]></description>
+        </item>
         <item>
             <title><![CDATA[运行 Laravel 应用]]></title>
             <link>https://josh-cena.github.io/zh-Hans/blog/2021/03/25/laravel</link>
