@@ -55,8 +55,8 @@ export default function Todo(): ReactElement {
     }
   };
 
-  const todos: todoItem[] = list.filter(i => !i.done);
-  const dones: todoItem[] = list.filter(i => i.done);
+  const todos = list.filter(i => !i.done);
+  const dones = list.filter(i => i.done);
 
   return (
     <Layout

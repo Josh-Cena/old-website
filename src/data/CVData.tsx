@@ -25,7 +25,7 @@ const CV: sections = [
     items: [
       <Translate id='CV.sec2.item1'>Internship at SIOC: structural chemistry</Translate>,
       <Translate id='CV.sec2.item2'>Research with MIT: cybersecurity strategies</Translate>,
-      <Translate id='CV.sec2.item2'>Independent research: Fake video detection with deep learning</Translate>,
+      <Translate id='CV.sec2.item3'>Independent research: Fake video detection with deep learning</Translate>,
     ],
   },
   {
