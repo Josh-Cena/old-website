@@ -4,12 +4,12 @@ title: 平面几何大宝鉴：祖暅原理的平面几何运用
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
-> 首次发布于2019年9月25日
+> 首次发布于 2019 年 9 月 25 日
 >
 > 原文链接：https://mp.weixin.qq.com/s/15D5f4zl5FG7Azl7gcZrxg
 
@@ -31,9 +31,11 @@ export const Pic = ({children, src}) => (
 
 第三种，通过积分，即因为同一横坐标的 $d_1$ 都等于 $d_2$，所以有
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \int f(x)\,\mathrm{d}x=\int g(x)\,\mathrm{d}x
-\end{aligned}$$
+\end{aligned}
+$$
 
 其中 $f(x)$，$g(x)$ 分别等于 $d_1$，$d_2$ 在 $x$ 处的值。
 
@@ -45,9 +47,11 @@ $$\begin{aligned}
 
 好，看到题，立刻列式：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \int_0^1\left(\sqrt{x}-x^2\right)\,\mathrm{d}x=\frac 13
-\end{aligned}$$
+\end{aligned}
+$$
 
 <p style={{fontSize: 'large', color: 'orange', textAlign: 'center'}}>此  题  完  结</p>
 
@@ -67,4 +71,4 @@ $$\begin{aligned}
 
 ---
 
-还不仅如此，祖暅原理甚至可以应用于任意维度——无论是二维、三维，甚至更高维，都是适用的。而这个原理，竟在1500年前，便已由老祖宗提出，足见中华民族的智慧。同时，祖氏父子还利用此原理，成功计算出了球体体积公式，并用算筹这种极原始的工具做开方运算，把圆周率计算到了3.1415926~3.1415927的精度。所以，我们要继承先人的精神，更加努力地学习理科知识，继续为祖国理科事业的发展而奋斗。
+还不仅如此，祖暅原理甚至可以应用于任意维度——无论是二维、三维，甚至更高维，都是适用的。而这个原理，竟在 1500 年前，便已由老祖宗提出，足见中华民族的智慧。同时，祖氏父子还利用此原理，成功计算出了球体体积公式，并用算筹这种极原始的工具做开方运算，把圆周率计算到了 3.1415926~3.1415927 的精度。所以，我们要继承先人的精神，更加努力地学习理科知识，继续为祖国理科事业的发展而奋斗。

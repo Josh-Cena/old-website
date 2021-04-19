@@ -4,12 +4,12 @@ title: Introducing "Easy-TSIMS"
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
-> 首次发布于2021年1月22日
+> 首次发布于 2021 年 1 月 22 日
 >
 > 原文链接：https://mp.weixin.qq.com/s/y--UoBa6jJjQJwMl0jpn4g
 
@@ -28,7 +28,7 @@ export const Pic = ({children, src}) => (
 
 ✔️ 显示隐藏的页面入口；  
 ✔️ 根据页面内容修改标签名字；  
-✔️ 更人性化的CAS活动记录填写界面；  
+✔️ 更人性化的 CAS 活动记录填写界面；  
 ✔️ （奇怪的）站名修改
 
 目前，你可以在 https://github.com/Josh-Cena/Easy-TSIMS 下载这个插件和它的源代码，点击 "↓ Code" > "Download ZIP" 即可。下载后，你既可以添加封装好的 `.crx` 文件，也可以添加整个 `extension` 文件夹。至于在 chrome webstore 上线，则可能要等到项目做足准备之后。
@@ -50,7 +50,7 @@ export const Pic = ({children, src}) => (
 
 <Pic src="/zh-Hans/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiamBqmkQMs0xw9DDK4Naz9LQIf4TXZHcnRRrAdibh46U5ALdibCqANTM8A.png">注意到 TSIMS 站名也发生了亿点点变化。那是我奇怪的恶趣味。</Pic>
 
-当然，这里90%的被隐藏入口都是本就没用的页面，它们对应的后端接口并未开启，所以即使进去，也不能做什么有意义的操作。
+当然，这里 90%的被隐藏入口都是本就没用的页面，它们对应的后端接口并未开启，所以即使进去，也不能做什么有意义的操作。
 
 这个功能有点简单了。所以我又决定给一些页面增加功能。首先引起我注意的是“活动记录”页面。每个期末，同学们都会在上面填写本学期的社团活动记录。它长这个样子：
 
@@ -58,7 +58,7 @@ export const Pic = ({children, src}) => (
 
 它反人类的地方主要有三：
 
-1. “活动描述”栏只显示前15个字符，而且这是在前端渲染页面的脚本中写死的，因此不能通过审查 HTML 元素获得完整内容；
+1. “活动描述”栏只显示前 15 个字符，而且这是在前端渲染页面的脚本中写死的，因此不能通过审查 HTML 元素获得完整内容；
 2. 每次提交后输入框被清空，需要重新填写不少重复的信息（虽然理论上也没理由批量填写，毕竟复制粘贴记录是非常不好的行为。但是你懂的，这样的需求总是存在的）
 3. 填写一条记录后，无论成功还是失败，保存按钮都会被禁用，只能通过在“活动组”菜单中修改选项再选回来来重新启用，否则不能继续填写下一条记录。
 
@@ -78,7 +78,7 @@ export const Pic = ({children, src}) => (
 
 第一种方案遇到的问题是，由于从点击链接，插件开始处理页面跳转事件到页面加载完毕之间有一段时间差，当插件开始重写逻辑时，按钮元素不一定已经被加载。是否能正确运行，完全取决于网速。因此，它最终被放弃了。
 
-要重写的脚本文件是 http://101.230.1.163/ajax/cas_add_record_info.js，更具体地说，我们把目光放在了负责“记录列表”渲染的 `addInfo` 函数上。（顺便吐槽，这个代码写的是真的差——各种字符串拼接和 `var` 的作用域外调用，看得我几乎脑溢血……我把整个文件重写了一遍，从280行缩减到150行）
+要重写的脚本文件是 http://101.230.1.163/ajax/cas_add_record_info.js，更具体地说，我们把目光放在了负责“记录列表”渲染的 `addInfo` 函数上。（顺便吐槽，这个代码写的是真的差——各种字符串拼接和 `var` 的作用域外调用，看得我几乎脑溢血……我把整个文件重写了一遍，从 280 行缩减到 150 行）
 
 <Pic src="/zh-Hans/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiavRLqfbCyAAsG799N3X8x4JgnpEGicic1s4WAgRgZQI2ZWuNBQotty7bg.png">原本的 野 兽 代 码</Pic>
 
@@ -94,7 +94,7 @@ export const Pic = ({children, src}) => (
 
 这就是该插件目前的功能。下一步将会继续完善 CAS 记录的相关功能，也会采纳其他改进建议。如果你有任何想法，欢迎在 GitHub repo: https://github.com/Josh-Cena/Easy-TSIMS 下提 issue 或开 pull request，也可以给作者发邮件，或通过其他方式联系我。
 
-最后，感谢<span style={{color: 'orange'}}>全能的 Lynn</span>给插件画了个logo，也感谢某个<span style={{color: 'orange'}}>无氧呼吸产物</span>（各种意义上）给我提供了 To Suffer In My School 的创意。
+最后，感谢<span style={{color: 'orange'}}>全能的 Lynn</span>给插件画了个 logo，也感谢某个<span style={{color: 'orange'}}>无氧呼吸产物</span>（各种意义上）给我提供了 To Suffer In My School 的创意。
 
 ## 声明
 

@@ -4,18 +4,19 @@ title: 磁场中的线圈
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
-> 首次发布于2020年6月13日
+> 首次发布于 2020 年 6 月 13 日
 >
 > 原文链接：https://mp.weixin.qq.com/s/OzmfpOR0llD3-lawWt9UIg
 
 一道物理题目：
 
 > 一个边长为 $\ell$ 的矩形线圈在光滑的桌面上以速度 $v$ 匀速移动。线圈在移动过程中，穿过了一个垂直于桌面向上的匀强磁场，磁感强度为 $B$。已知如下物理量：
+>
 > - 边长 $\ell=0.54\,\text{m}$
 > - 磁感强度 $B=0.30\,\text{T}$
 > - 线圈质量 $m=0.060\,\text{kg}$
@@ -27,83 +28,101 @@ export const Pic = ({children, src}) => (
 
 <Pic src="/zh-Hans/img/./docs/Science/electromagnetic/JGibibkelET6icxXkheRQOhUib4eXZGtGqWsY1Ywngico4eEGnCM9gqicC6mgflRKDVgWyV9xrOCYEpvReIiaBvVHQB5Q.png"></Pic>
 
-看起来，图像分为两段——一段是下降曲线，另一段则是水平直线，分界点位于 $(0.14, 3.0)$。定性地看，速度之所以下降，是因为线圈进入磁场的过程中，产生感应电流，AB段受到向左的安培力而减速；之后维持匀速，是因为各边都在磁场中，所受的安培力正好抵消。
+看起来，图像分为两段——一段是下降曲线，另一段则是水平直线，分界点位于 $(0.14, 3.0)$。定性地看，速度之所以下降，是因为线圈进入磁场的过程中，产生感应电流，AB 段受到向左的安培力而减速；之后维持匀速，是因为各边都在磁场中，所受的安培力正好抵消。
 
 下面，可以定量地推导出第一段图像的方程。
 
 从法拉第定律推导安培力的大小：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \varepsilon&=\frac{\mathrm{d}\phi}{\mathrm{d}t}=B\ell v\\
 I&=\frac{\varepsilon}{R}=\frac{B\ell v}{R}\\
 F&=BI\ell=\frac{B^2\ell^2v}{R}
-\end{aligned}$$
+\end{aligned}
+$$
 
 从安培力列出关于速度的微分方程：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 a=\frac{F}{m}\Longrightarrow \frac{\mathrm{d}v}{\mathrm{d}t}=\frac{B^2\ell^2v}{Rm}
-\end{aligned}$$
+\end{aligned}
+$$
 
 同时欣喜地发现，它是可分离的。因此，不难解出 $v$ 关于 $t$ 的关系式：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \int\frac{1}{v}\,\mathrm{d}v&=-\int\frac{B^2\ell^2}{Rm}\,\mathrm{d}t\\
 \ln v&=-\frac{B^2\ell^2}{Rm}\cdot t+C\\
 v&=C\cdot\mathrm{e}^{-B^2\ell^2/Rm}
-\end{aligned}$$
+\end{aligned}
+$$
 
 其中还发现，由于 $t=0$ 时，$v=v_i$，因此可以将常数 $C$ 用更有意义的物理量代替：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 v&=v_i\cdot\exp\left(-\frac{B^2\ell^2}{Rm}\cdot t\right)\\
 &=5\cdot\mathrm{e}^{-3.645t}
-\end{aligned}$$
+\end{aligned}
+$$
 
 在代入各个物理量的值后，便得到第一段曲线的方程。
 
-为了求出分界点的位置，我们要找到线圈的位移正好为 $\ell$ 的时刻。此时，整个线圈完全进入磁场，CD段开始受到安培力，线圈回到受力平衡状态，加速度变为0。继续对 $v$ 积分求出位移的公式：
+为了求出分界点的位置，我们要找到线圈的位移正好为 $\ell$ 的时刻。此时，整个线圈完全进入磁场，CD 段开始受到安培力，线圈回到受力平衡状态，加速度变为 0。继续对 $v$ 积分求出位移的公式：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 s&=\int v\,\mathrm{d}t\\
 &=\int v_i\cdot\exp\left(-\frac{B^2\ell^2}{Rm}\cdot t\right)\,\mathrm{d}t\\
 &=\frac{v_iRm}{B^2\ell^2}\exp\left(-\frac{B^2\ell^2}{Rm}\cdot t\right)
-\end{aligned}$$
+\end{aligned}
+$$
 
 因此，只要解下面这个方程即可：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \int_0^t v\,\mathrm{d}t&=\ell\\
 \frac{v_iRm}{B^2\ell^2}-\frac{v_iRm}{B^2\ell^2}\exp\left(-\frac{B^2\ell^2}{Rm}\cdot t\right)&=\ell\\
 \exp\left(-\frac{B^2\ell^2}{Rm}\cdot t\right)&=1-\frac{B^2\ell^3}{v_iRm}
-\end{aligned}$$
+\end{aligned}
+$$
 
 至此，我们还有一个小发现：当等式右边为负，即 $\displaystyle\frac{B^2\ell^3}{v_iRm}$ 过大时，方程无解。此时对应的情况是安培力过大，以至于初速度不足以支持整个线圈进入磁场，线圈被反向加速，退出了磁场，位移从未达到 $\ell$。
 
 继续解方程，并代入各个物理量的值：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 t&=-\frac{Rm}{B^2\ell^2}\ln\left(1-\frac{B^2\ell^3}{v_iRm}\right)\\
 &=-0.274\times \ln(1-0.39366)\\
 &=0.137\,\text{s}
-\end{aligned}$$
+\end{aligned}
+$$
 
 此时，线圈的速度为
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 v=5\times\mathrm{e}^{-3.645\times 0.137}=3.03\,\mathrm{m\,s^{-1}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 这和我们读出的 $(0.14, 3.0)$ 几乎一致。因此，我们发现，原图实际上是十分精准的。
 
 我们还可以用同样的公式求出线圈离开时的速度。由于安培力方向不变，速度将会继续减少，因此公式符号不变；此时初速度应代入算出的 $3.03\,\text{m/s}$。$t_0$ 为线圈开始离开磁场的时间。
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 t&=-\frac{Rm}{B^2\ell^2}\ln\left(1-\frac{B^2\ell^3}{v_iRm}\right)+t_0\\
 &=-0.274\times \ln(1-0.64924)+t_0\\
 &=(0.287+t_0)\,\text{s}\\
 v&=3.03\times\mathrm{e}^{-3.645\times 0.287}=1.06\,\mathrm{m\,s^{-1}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 可以看出，由于速度较低，此时离开磁场需要多一倍的时间。完整的图像如下：
 

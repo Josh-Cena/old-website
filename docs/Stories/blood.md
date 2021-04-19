@@ -5,10 +5,10 @@ sidebar_label: About blood, flames, and life
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
 > First published on Jan 2, 2021
 >
@@ -21,10 +21,10 @@ export const Pic = ({children, src}) => (
 > I'll burst into light  
 > For it's better to burn out than to fade out of sight  
 > That's what someone told me anyway
-> 
+>
 > Passenger—Fear of Fear
 
-Josh Cena说过，生命就是无数氨基酸与核苷酸的联结。各种有机分子自发地堆叠成键，形成多级结构，丰富多样的形态在自然选择的驱使下，一个个地被创造，自我意识从“一大堆相互缔结的神经元和分子互相作用”中诞生。生命是奇迹，因为它在一个混沌而无序的宇宙中创造了秩序与理性。
+Josh Cena 说过，生命就是无数氨基酸与核苷酸的联结。各种有机分子自发地堆叠成键，形成多级结构，丰富多样的形态在自然选择的驱使下，一个个地被创造，自我意识从“一大堆相互缔结的神经元和分子互相作用”中诞生。生命是奇迹，因为它在一个混沌而无序的宇宙中创造了秩序与理性。
 
 但陈意非要歌颂生命中的原始力量。生命的奇迹不在于精巧的大脑，不在于强健的肢体，不在于坚硬的骨骼，而在于炽热的血液。冬日里，向手心哈出一口气，于是热气顺着血管流向整个身体；奔跑时，沸腾的生命力在心脏中翻滚；无数的物质刺激着自己的感官，于是热血涌上头顶，泪水从眼眶流出。他感受到自己还活着。
 

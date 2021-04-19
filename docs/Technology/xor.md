@@ -5,10 +5,10 @@ sidebar_label: Random thoughts about XOR
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
 > First published on Sept 18, 2019
 >
@@ -66,7 +66,7 @@ export const Pic = ({children, src}) => (
 >
 > 链接：48. 旋转图像 - 力扣（LeetCode）
 
-题目本身不难，但绝大多数算法时间都是1ms（java数据），精益求精的程序猿肯定会想尽办法再从这里面抠出1ms来；那么，不改变算法的情况下，有哪些细节可以优化呢？
+题目本身不难，但绝大多数算法时间都是 1ms（java 数据），精益求精的程序猿肯定会想尽办法再从这里面抠出 1ms 来；那么，不改变算法的情况下，有哪些细节可以优化呢？
 在原地改变数组的算法中，几乎一定会涉及两数的交换；如果要写出一个 `swap(int a, int b)` 函数，绝大多数人写出来应该类似这样：
 
 ```java
@@ -102,7 +102,7 @@ a = a ^ b = (a ^ b) ^ a //代入原本a与b的值
           = b           //成功交换
 ```
 
-由于一般的编译器不可能发现并优化成这种方法，因此需要程序员本人了解它并使用。而且，这样的算法，性能果然得到了一定提升，从1ms变成0ms，成功碾压100%的java程序，的确是异常神奇呢……
+由于一般的编译器不可能发现并优化成这种方法，因此需要程序员本人了解它并使用。而且，这样的算法，性能果然得到了一定提升，从 1ms 变成 0ms，成功碾压 100%的 java 程序，的确是异常神奇呢……
 
 ## 二、再接再厉
 
@@ -142,7 +142,7 @@ public int singleNumber(int[] nums) {
 }
 ```
 
-因为把整个数组全部按位异或后，相同的数都两两抵消，变成0了，一堆0在一起运算，仍然是0；0和那个孤单的数异或，结果便是那个数本身。
+因为把整个数组全部按位异或后，相同的数都两两抵消，变成 0 了，一堆 0 在一起运算，仍然是 0；0 和那个孤单的数异或，结果便是那个数本身。
 
 所以，只要看到“相同”“重复出现”等字样，就应当把思路往异或上去靠。
 
@@ -150,24 +150,28 @@ public int singleNumber(int[] nums) {
 
 格雷码的得出，除了比较繁琐的递归法外，还有一种异或法：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 G_3&=B_3\\
 G_2&=B_3\oplus B_2\\
 G_1&=B_2\oplus B_1\\
 G_0&=B_1\oplus B_0
-\end{aligned}$$
+\end{aligned}
+$$
 
-格雷码是为了杜绝进位时出现多个数位改变的情况；而在上面的算式中，如果两个数位（用 $B$ 表示）同时从11变成00，格雷码数位（用 $G$ 表示）仍然保持为0。
+格雷码是为了杜绝进位时出现多个数位改变的情况；而在上面的算式中，如果两个数位（用 $B$ 表示）同时从 11 变成 00，格雷码数位（用 $G$ 表示）仍然保持为 0。
 
-## 四、Minecraft中的异或门
+## 四、Minecraft 中的异或门
 
 来讲讲如何在 Minecraft 中建造异或门。
 
 Minecraft 中只提供了或门（两个输入端用红石线相连）和非门（红石火把）；那么，任务就是把异或用或和非来表示。
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 A\oplus B=A'B+AB'=(A'+B)'+(A+B')'=(A'+AB)'+(B'+AB)'
-\end{aligned}$$
+\end{aligned}
+$$
 
 至于为什么要写成最后的形式而不是倒数第二个式子，就需要一些逻辑设计的经验了。最后一种看似更繁琐，实际上独立项从四个变成了三个，便于电路设计。
 
@@ -175,6 +179,6 @@ A\oplus B=A'B+AB'=(A'+B)'+(A+B')'=(A'+AB)'+(B'+AB)'
 
 <Pic src="/img/./docs/Technology/xor/JGibibkelET6ickicicmsMd0DBoeWH4UjqXpE9cQke2iaoOHl6G11EPeDNCFFKe8JBicQTLShTYQeseTjib8YgymQHMI8g.jpeg"></Pic>
 
-从左至右，分别对应输入是00，01，11。这种设计，非常紧凑，但延时要比另一种也很常用的设计（虽然我个人不用）多 1 tick。
+从左至右，分别对应输入是 00，01，11。这种设计，非常紧凑，但延时要比另一种也很常用的设计（虽然我个人不用）多 1 tick。
 
 由此可见，异或运算的确是一种十分实用，潜力无限的工具。希望大家能使用好它。

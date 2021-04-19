@@ -3,7 +3,7 @@ id: wine
 title: 关于酒、深夜与笔
 ---
 
-> 首次发布于2020年11月22日
+> 首次发布于 2020 年 11 月 22 日
 >
 > 原文链接：https://mp.weixin.qq.com/s/MSqUVJfc6jhsUAbdvKUaEg
 

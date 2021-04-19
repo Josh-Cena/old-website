@@ -3,7 +3,7 @@ id: suicide
 title: 一个男人决定去死
 ---
 
-> 首次发布于2020年9月28日
+> 首次发布于 2020 年 9 月 28 日
 >
 > 原文链接：https://mp.weixin.qq.com/s/SNFmGdxKdPHCvnMLH8FOew
 

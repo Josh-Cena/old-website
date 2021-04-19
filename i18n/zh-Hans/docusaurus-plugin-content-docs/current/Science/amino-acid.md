@@ -4,42 +4,42 @@ title: 氨基酸图鉴
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
-> 首次发布于2021年2月7日
+> 首次发布于 2021 年 2 月 7 日
 >
 > 原文链接：https://mp.weixin.qq.com/s/N-sn-xfwGFd4mFI85Ls4hA
 
 :::note
-这是一篇纯技术的文章。我写它的原因，是发现自己无论如何也搞不清所有的氨基酸，但在研究蛋白结构时，不能根据结构式反应出对应的氨基酸会带来很多不便。这篇图鉴收集了20种氨基酸的基本信息和常见用途，希望能通过拉近和它们的距离，更方便地记住它们。
+这是一篇纯技术的文章。我写它的原因，是发现自己无论如何也搞不清所有的氨基酸，但在研究蛋白结构时，不能根据结构式反应出对应的氨基酸会带来很多不便。这篇图鉴收集了 20 种氨基酸的基本信息和常见用途，希望能通过拉近和它们的距离，更方便地记住它们。
 :::
 
-形而上地说，一个氨基酸就是一个同时包含了羧基和胺基的分子。所有生物的蛋白质水解出的氨基酸都是L-α-氨基酸，也就是它们的胺基都位于α碳上，并且α碳的手性呈L构型。可以这样表示所有的L-α-氨基酸：
+形而上地说，一个氨基酸就是一个同时包含了羧基和胺基的分子。所有生物的蛋白质水解出的氨基酸都是 L-α-氨基酸，也就是它们的胺基都位于 α 碳上，并且 α 碳的手性呈 L 构型。可以这样表示所有的 L-α-氨基酸：
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumbHScF3UlNDHuFu6ZCgy5KaleRHbQL4F4pxcXssGrk4Yarz0iahjQTbA.png"></Pic>
 
-在之后的结构式中，我们不会特别注明α碳的手性，但会把主链用灰色弱化。如果把结构式转写成化学式，则为 H<sub>2</sub>N-CH(-R)-COOH，或 R-C<sub>2</sub>H<sub>4</sub>O<sub>2</sub>N。
+在之后的结构式中，我们不会特别注明 α 碳的手性，但会把主链用灰色弱化。如果把结构式转写成化学式，则为 H<sub>2</sub>N-CH(-R)-COOH，或 R-C<sub>2</sub>H<sub>4</sub>O<sub>2</sub>N。
 
-每种氨基酸都有一个三字母缩写和一个单字母缩写。三字母缩写往往取英语名的前三个字母，特例：色氨酸Tryptophan-Trp；异亮氨酸Isoleucine-Ile；天冬酰胺Asparagine，谷氨酰胺Glutamine-Asn, Gln。至于单字母缩写，则在安排时遵循一定顺序。
+每种氨基酸都有一个三字母缩写和一个单字母缩写。三字母缩写往往取英语名的前三个字母，特例：色氨酸 Tryptophan-Trp；异亮氨酸 Isoleucine-Ile；天冬酰胺 Asparagine，谷氨酰胺 Glutamine-Asn, Gln。至于单字母缩写，则在安排时遵循一定顺序。
 
-- 独占一种首字母的氨基酸，直接用首字母命名：半胱氨酸Cysteine-C；组氨酸Histidine-H；异亮氨酸Isoleucine-I；甲硫氨酸Methionine-M；丝氨酸Serine-S；缬氨酸Valine-V。
-- 首字母重复的，出现频率高的优先用首字母命名：丙氨酸Alanine-A；甘氨酸Glycine-G；亮氨酸Leucine-L；脯氨酸Proline-P；苏氨酸Threonine-T。
-- 剩下的，尽量用能联想到读音的字母：精氨酸Arginine-R；苯丙氨酸Phenylalanine-F；酪氨酸Tyrosine-Y；色氨酸Tryptophan-W。
-- 再后面，就随意安排剩下的字母：天冬氨酸Aspartic acid-D；谷氨酸Glutamic acid-E；天冬酰胺Asparagine-N；谷氨酰胺Glutamine-Q；赖氨酸Lysine-K。
-- 最后发现的两种基本氨基酸，捞走了剩下的可用的字母：吡咯赖氨酸Pyrrolysine-O；硒代半胱氨酸Selenocysteine-U。
-- B表示天冬氨酸/天冬酰胺族、Z表示谷氨酸/谷氨酰胺族，X按习惯表示任意氨基酸。这样，只剩J从未使用了。
+- 独占一种首字母的氨基酸，直接用首字母命名：半胱氨酸 Cysteine-C；组氨酸 Histidine-H；异亮氨酸 Isoleucine-I；甲硫氨酸 Methionine-M；丝氨酸 Serine-S；缬氨酸 Valine-V。
+- 首字母重复的，出现频率高的优先用首字母命名：丙氨酸 Alanine-A；甘氨酸 Glycine-G；亮氨酸 Leucine-L；脯氨酸 Proline-P；苏氨酸 Threonine-T。
+- 剩下的，尽量用能联想到读音的字母：精氨酸 Arginine-R；苯丙氨酸 Phenylalanine-F；酪氨酸 Tyrosine-Y；色氨酸 Tryptophan-W。
+- 再后面，就随意安排剩下的字母：天冬氨酸 Aspartic acid-D；谷氨酸 Glutamic acid-E；天冬酰胺 Asparagine-N；谷氨酰胺 Glutamine-Q；赖氨酸 Lysine-K。
+- 最后发现的两种基本氨基酸，捞走了剩下的可用的字母：吡咯赖氨酸 Pyrrolysine-O；硒代半胱氨酸 Selenocysteine-U。
+- B 表示天冬氨酸/天冬酰胺族、Z 表示谷氨酸/谷氨酰胺族，X 按习惯表示任意氨基酸。这样，只剩 J 从未使用了。
 
-如果要做氨基酸序列检索（常用的比如BLAST算法），那么序列往往就是用这25个字母表示的。
+如果要做氨基酸序列检索（常用的比如 BLAST 算法），那么序列往往就是用这 25 个字母表示的。
 
-这篇文章中，我们把20种DNA碱基所编码的氨基酸，按它们侧链的化学性质，分成了4类：
+这篇文章中，我们把 20 种 DNA 碱基所编码的氨基酸，按它们侧链的化学性质，分成了 4 类：
 
-- 疏水氨基酸，8种；
-- 中性氨基酸，7种；
-- 碱性氨基酸，3种；
-- 酸性氨基酸，2种。
+- 疏水氨基酸，8 种；
+- 中性氨基酸，7 种；
+- 碱性氨基酸，3 种；
+- 酸性氨基酸，2 种。
 
 疏水氨基酸的侧链是非极性的，大部分是烃基或芳香基；碱性氨基酸的侧链含有碱性的胺基，因此在水溶液中容易吸引氢离子从而带正电；酸性氨基酸的侧链含有酸性的羧基，因此在水溶液中容易给出氢离子从而带负电。中性、碱性和酸性氨基酸又合称亲水氨基酸，或极性氨基酸。
 
@@ -50,7 +50,7 @@ export const Pic = ({children, src}) => (
 ### 丙氨酸 Alanine
 
 - 缩写：Ala (A)
-- 取代基：甲基    -CH<sub>3</sub>
+- 取代基：甲基 -CH<sub>3</sub>
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum89pQSqgKBPaeHresJukxTHrHC7VqwXfIN5HgtsnsGgjrlYg1icjKgbQ.png"></Pic>
 
@@ -59,16 +59,16 @@ export const Pic = ({children, src}) => (
 ### 缬氨酸 Valine
 
 - 缩写：Val (V)
-- 取代基：异丙基    -CH(-CH<sub>3</sub>)-CH<sub>3</sub>
+- 取代基：异丙基 -CH(-CH<sub>3</sub>)-CH<sub>3</sub>
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumZDJVHCvr9zbyNyibAB76gO2PIMStaQ7TRiaK4bvXM4Zzu17lyrNzemgA.png"></Pic>
 
-把丙氨酸的甲基上再插两个甲基，就变成了缬氨酸。它的命名来自缬草酸，后者是正戊酸，缬氨酸的系统命名则是2-胺基-异戊酸。
+把丙氨酸的甲基上再插两个甲基，就变成了缬氨酸。它的命名来自缬草酸，后者是正戊酸，缬氨酸的系统命名则是 2-胺基-异戊酸。
 
 ### 亮氨酸 Leucine
 
 - 缩写：Leu (L)
-- 取代基：异丁基    -CH<sub>2</sub>-CH(-CH<sub>3</sub>)-CH<sub>3</sub>
+- 取代基：异丁基 -CH<sub>2</sub>-CH(-CH<sub>3</sub>)-CH<sub>3</sub>
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum2HEkiafU3yR5ZoSjtNg7KKe3RRur7tpW0puzj5rYuDpibUfg26u0aIUQ.png"></Pic>
 
@@ -77,35 +77,35 @@ export const Pic = ({children, src}) => (
 ### 异亮氨酸 Isoleucine
 
 - 缩写：Ile (I)
-- 取代基：仲丁基    -CH(-CH<sub>3</sub>)-CH<sub>2</sub>-CH<sub>3</sub>
+- 取代基：仲丁基 -CH(-CH<sub>3</sub>)-CH<sub>2</sub>-CH<sub>3</sub>
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumTickfdibDHV5363nROIp2hIVibgiarwOSMYVPhcV0tNALcRlQTQIWHmyLg.png"></Pic>
 
-把亮氨酸的甲基从β碳挪到α碳，就变成了异亮氨酸。
+把亮氨酸的甲基从 β 碳挪到 α 碳，就变成了异亮氨酸。
 
 缬氨酸、亮氨酸、异亮氨酸合称支链氨基酸 (Branched-chain amino acid, BCAA)。支链氨基酸是骨骼肌的主要构成部分，也是一种健身补剂，对肌肉合成、减轻运动疲劳有一定作用。
 
 ### 脯氨酸 Proline
 
 - 缩写：Pro (P)
-- 取代基：吡咯烷（经环化）    -C<sub>3</sub>H<sub>6</sub>
+- 取代基：吡咯烷（经环化） -C<sub>3</sub>H<sub>6</sub>
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum9II54MqJXzzCCicLYtjCcTicjibfD5JtZDUZic6iaUOlw28mcDGLmkibsqXA.png"></Pic>
 
 脯氨酸是氨基酸中唯一一种仲胺，也就是 R<sub>2</sub>NH，而不是 RNH<sub>2</sub>。可以把它看作是先连一个丙基，然后环化形成的吡咯烷。
 
-由于氮原子被环锁死，因此它在蛋白中成的C-N键不能随意旋转，而是被固定在一个二面角。这使得它成为典型的α螺旋破坏者，往往出现在螺旋的最末端。就像这个meme所说的：
+由于氮原子被环锁死，因此它在蛋白中成的 C-N 键不能随意旋转，而是被固定在一个二面角。这使得它成为典型的 α 螺旋破坏者，往往出现在螺旋的最末端。就像这个 meme 所说的：
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumrmhwWV3rGZ3oJeEXM3y367k3vXHVFCib1XgAtuhHGk29icibwtOAANvIQ.jpeg"></Pic>
 
-它旁边的甘氨酸同样是α螺旋破坏者，在之后会提到。
+它旁边的甘氨酸同样是 α 螺旋破坏者，在之后会提到。
 
 连续的脯氨酸和羟基脯氨酸组成的蛋白有刚性的结构，因此这样形成的二级结构非常稳定，是胶原蛋白中的主要结构。
 
 ### 苯丙氨酸 Phenylalanine
 
 - 缩写：Phe (F)
-- 取代基：苯甲基    -CH<sub>2</sub>-C<sub>6</sub>H<sub>5</sub>
+- 取代基：苯甲基 -CH<sub>2</sub>-C<sub>6</sub>H<sub>5</sub>
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumsVgMDmYam0HP7N11OhlRnic8TXrrv4M8UUNbnvOPR6PYEoLaL9nTD3w.png"></Pic>
 
@@ -116,46 +116,46 @@ export const Pic = ({children, src}) => (
 ### 色氨酸 Tryptophan
 
 - 缩写：Trp (W)
-- 取代基：吲哚基甲基    -CH<sub>2</sub>-C<sub>8</sub>H<sub>6</sub>N
+- 取代基：吲哚基甲基 -CH<sub>2</sub>-C<sub>8</sub>H<sub>6</sub>N
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum5iczV0fyMeaBW8oo1oZHIgs0ibFWC2DIsiaceLtpchOfZl5IrkiaLNoKnQ.png"></Pic>
 
-在丙氨酸上加一个吲哚基，就变成了色氨酸。它的命名可能来自于它在280nm的强烈吸收峰，要比另外两种芳香氨基酸：苯丙氨酸和酪氨酸高得多。（记得在[天然 GFP 中的大设计](../Science/gfp)中提到过，共轭体系越大，吸收峰的波长就越长，但这几个的共轭体系都没有大到吸收峰位于可见光区域。）
+在丙氨酸上加一个吲哚基，就变成了色氨酸。它的命名可能来自于它在 280nm 的强烈吸收峰，要比另外两种芳香氨基酸：苯丙氨酸和酪氨酸高得多。（记得在[天然 GFP 中的大设计](../Science/gfp)中提到过，共轭体系越大，吸收峰的波长就越长，但这几个的共轭体系都没有大到吸收峰位于可见光区域。）
 
-它最重要的用处是在人体内作为血清素，也就是5-羟色胺的前体。血清素是一种神经抑制剂，能调节睡眠与情绪，血清素水平不足是抑郁症一大病因。
+它最重要的用处是在人体内作为血清素，也就是 5-羟色胺的前体。血清素是一种神经抑制剂，能调节睡眠与情绪，血清素水平不足是抑郁症一大病因。
 
 ### 甲硫氨酸 Methionine
 
 - 缩写：Met (M)
-- 取代基：2-甲硫基乙基    -CH<sub>2</sub>-CH<sub>2</sub>-S-CH<sub>3</sub>
+- 取代基：2-甲硫基乙基 -CH<sub>2</sub>-CH<sub>2</sub>-S-CH<sub>3</sub>
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum3rSujTh7qnenwzs35OFvDpgfp9uics4MDa0qkm1YmKZESu3rfPCVFKw.png"></Pic>
 
 鸡蛋蛋白中很常见的氨基酸。我有一段记忆：在某次胡搞的化学实验中，我们将蛋清溶解后，向剩下的胶状不溶物中加入稀盐酸，产生了浓郁的臭鸡蛋味。这大概率就是甲硫氨酸的分解产生的硫化氢。
 
-甲硫氨酸的密码子是AUG，这同时也是转录的启动子，因此在许多未经过修饰的蛋白中，氮端第一个氨基酸就是甲硫氨酸。（比如野生型绿色荧光蛋白）
+甲硫氨酸的密码子是 AUG，这同时也是转录的启动子，因此在许多未经过修饰的蛋白中，氮端第一个氨基酸就是甲硫氨酸。（比如野生型绿色荧光蛋白）
 
-在硫上再连一个腺苷，就变成了*S*-腺苷甲硫氨酸 (SAM)。这是一种甲基供体，在人体内用于许多甲基转移反应。SAM可以作为膳食补品买到，功能包括保护肝脏、治疗关节炎等。
+在硫上再连一个腺苷，就变成了*S*-腺苷甲硫氨酸 (SAM)。这是一种甲基供体，在人体内用于许多甲基转移反应。SAM 可以作为膳食补品买到，功能包括保护肝脏、治疗关节炎等。
 
 ## 中性氨基酸
 
 ### 甘氨酸 Glycine
 
 - 缩写：Gly (G)
-- 取代基：氢    -H
+- 取代基：氢 -H
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumaByNib6768icENHaCHZRcSLiadINyAscmZmPle4IqI3FvVwQibzqs9iaUAw.png"></Pic>
 
 最简单的氨基酸，也是唯一一种没有手性的氨基酸（因为两边都是氢原子，没有不对称中心）。有些分类会把它归进疏水氨基酸，但一个氢原子到底是疏水基还是亲水基也不好说，因此只能根据整个分子的性质，把它归进亲水氨基酸。它的命名来自于它的甜味，甜度可以和蔗糖相媲美。但作为食品添加剂，甘氨酸的用量被严格限制，因为过多摄入甘氨酸会影响其他氨基酸摄取。
 
-相比同样简单的丙氨酸，甘氨酸实在太自由了，可以随意转动，因此反而会破坏很多二级结构的稳定性，比如α-螺旋。但因为它位阻最小，因此形成许多特殊结构时，需要在末端有一个不占空间的甘氨酸，比如在[天然 GFP 中的大设计](../Science/gfp)中提到的生色团，就需要一个不碍事的Gly67。同理，在胶原蛋白中，需要每隔两个氨基酸（通常是脯氨酸）就有一个甘氨酸，因为没有别的氨基酸能挤在由脯氨酸形成的狭小键角中。
+相比同样简单的丙氨酸，甘氨酸实在太自由了，可以随意转动，因此反而会破坏很多二级结构的稳定性，比如 α-螺旋。但因为它位阻最小，因此形成许多特殊结构时，需要在末端有一个不占空间的甘氨酸，比如在[天然 GFP 中的大设计](../Science/gfp)中提到的生色团，就需要一个不碍事的 Gly67。同理，在胶原蛋白中，需要每隔两个氨基酸（通常是脯氨酸）就有一个甘氨酸，因为没有别的氨基酸能挤在由脯氨酸形成的狭小键角中。
 
-甘氨酸也是除了γ-氨基丁酸 (GABA) 以外另一种重要的抑制作用神经递质，有心情舒缓的作用。
+甘氨酸也是除了 γ-氨基丁酸 (GABA) 以外另一种重要的抑制作用神经递质，有心情舒缓的作用。
 
 ### 丝氨酸 Serine
 
 - 缩写：Ser (S)
-- 取代基：羟甲基    -CH<sub>2</sub>-OH
+- 取代基：羟甲基 -CH<sub>2</sub>-OH
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum7czaHJI81RjJbddXKMNWn2qFEYjKdiaunhuVKSwhsLHibsX0rYfszznw.png"></Pic>
 
@@ -164,7 +164,7 @@ export const Pic = ({children, src}) => (
 ### 苏氨酸 Threonine
 
 - 缩写：Thr (T)
-- 取代基：1-羟基乙基    -CH(-OH)-CH<sub>2</sub>
+- 取代基：1-羟基乙基 -CH(-OH)-CH<sub>2</sub>
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum4m2SS5hicObQUwNicbfzZibCTxyFas7XkTxyvsQLicfCh5yzPvJ7SBgs4g.png"></Pic>
 
@@ -175,7 +175,7 @@ export const Pic = ({children, src}) => (
 ### 半胱氨酸 Cysteine
 
 - 缩写：Cys (C)
-- 取代基：巯甲基   -CH<sub>2</sub>-SH
+- 取代基：巯甲基 -CH<sub>2</sub>-SH
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumeYQAicn6NUD3FY43YE8FFzYgzibrmiaf652M75soCbAQW90ibzkTKogM9A.png"></Pic>
 
@@ -188,18 +188,18 @@ export const Pic = ({children, src}) => (
 ### 酪氨酸 Tyrosine
 
 - 缩写：Tyr (Y)
-- 取代基：对羟基苯甲基    -CH<sub>2</sub>-C<sub>6</sub>H<sub>4</sub>-OH
+- 取代基：对羟基苯甲基 -CH<sub>2</sub>-C<sub>6</sub>H<sub>4</sub>-OH
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumFsjRbpyHYulf21m7Cocc08jnWhy89iaT1raLxAkLfZibSL7acIGWkthw.png"></Pic>
 
 它最早从乳酪中分离出来，因此得名。比起苯丙氨酸，它在对位上多了一个酚羟基。因此它和丝氨酸、苏氨酸功能类似，也是氢键的给体受体，同时也能被蛋白激酶作用。
 
-有一类细胞受体，叫做受体酪氨酸激酶 (Receptor Tyrosine Kinase, RTK)，是除了G蛋白偶联受体以外最重要的受体，它便是通过细胞膜内侧的酪氨酸被磷酸化来传递信息。
+有一类细胞受体，叫做受体酪氨酸激酶 (Receptor Tyrosine Kinase, RTK)，是除了 G 蛋白偶联受体以外最重要的受体，它便是通过细胞膜内侧的酪氨酸被磷酸化来传递信息。
 
 ### 天冬酰胺 Asparagine
 
 - 缩写：Asn (N)
-- 取代基：胺基甲酰甲基    -CH<sub>2</sub>-CONH<sub>2</sub>
+- 取代基：胺基甲酰甲基 -CH<sub>2</sub>-CONH<sub>2</sub>
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumDZoticl5DDTbamZKwIZtEybTnXnic8cxCf0Ux86P74WfDBSaOh7OThpA.png"></Pic>
 
@@ -210,7 +210,7 @@ export const Pic = ({children, src}) => (
 ### 谷氨酰胺 Glutamine
 
 - 缩写：Gln (Q)
-- 取代基：胺基甲酰乙基    -CH<sub>2</sub>-CH<sub>2</sub>-CONH<sub>2</sub>
+- 取代基：胺基甲酰乙基 -CH<sub>2</sub>-CH<sub>2</sub>-CONH<sub>2</sub>
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumbm2PurZ8j112xub4OicHQIoL7fTD6IwbGQGDiaRUkdW4O5icmrkmeHiadQ.png"></Pic>
 
@@ -223,7 +223,7 @@ export const Pic = ({children, src}) => (
 ### 赖氨酸 Lysine
 
 - 缩写：Lys (K)
-- 取代基：4-胺基丁基    -CH<sub>2</sub>-CH<sub>2</sub>-CH<sub>2</sub>-CH<sub>2</sub>-NH<sub>2</sub>
+- 取代基：4-胺基丁基 -CH<sub>2</sub>-CH<sub>2</sub>-CH<sub>2</sub>-CH<sub>2</sub>-NH<sub>2</sub>
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumPkWia7icONJoibicoNMkKiaApsghN5EHTxBv8hwAgjvU5ZaovbtyT98t4ibQ.png"></Pic>
 
@@ -238,7 +238,7 @@ export const Pic = ({children, src}) => (
 ### 组氨酸 Histidine
 
 - 缩写：His (H)
-- 取代基：咪唑基甲基    -CH<sub>2</sub>-C<sub>3</sub>H<sub>5</sub>N<sub>2</sub>
+- 取代基：咪唑基甲基 -CH<sub>2</sub>-C<sub>3</sub>H<sub>5</sub>N<sub>2</sub>
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumfGnlLTCHpXSoEntFKFNrI0nWTZ3EJb8iaYPYHsIxOjOMyib6pXV4oRjg.png"></Pic>
 
@@ -246,12 +246,12 @@ export const Pic = ({children, src}) => (
 
 组氨酸脱羧后得到组胺，这是一种血管扩张剂，可以缓解心绞痛，在炎症反应中也会被释放。
 
-蛋白结构解析中，有一种常见的技术，是在设计蛋白时，添加由几个组氨酸组成的His-tag。由于咪唑基的配位作用，这样的蛋白可以和镍柱中的镍离子鳌合，从而被分离出来，然后再用大剂量咪唑溶液洗脱，即得较纯的目标蛋白溶液。
+蛋白结构解析中，有一种常见的技术，是在设计蛋白时，添加由几个组氨酸组成的 His-tag。由于咪唑基的配位作用，这样的蛋白可以和镍柱中的镍离子鳌合，从而被分离出来，然后再用大剂量咪唑溶液洗脱，即得较纯的目标蛋白溶液。
 
 ### 精氨酸 Arginine
 
 - 缩写：Arg (R)
-- 取代基：3-胍基丙基    -CH<sub>2</sub>-CH<sub>2</sub>-CH<sub>2</sub>-NH-C(=NH)-NH<sub>2</sub>
+- 取代基：3-胍基丙基 -CH<sub>2</sub>-CH<sub>2</sub>-CH<sub>2</sub>-NH-C(=NH)-NH<sub>2</sub>
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumyWdq18d8UWHAjhbD62YFXuV7icAJEcawJfUyicSxEG1gGib124SHZIOJg.png"></Pic>
 
@@ -264,7 +264,7 @@ export const Pic = ({children, src}) => (
 ### 天冬氨酸 Aspartic acid
 
 - 缩写：Asp (D)
-- 取代基：乙羧基    -CH<sub>2</sub>-COOH
+- 取代基：乙羧基 -CH<sub>2</sub>-COOH
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumNUhKgKaMUquMDt4wsucCjIcmI2x14asMibx1qHOicIeqvLsmuuIeEmxg.png"></Pic>
 
@@ -277,7 +277,7 @@ export const Pic = ({children, src}) => (
 ### 谷氨酸 Glutamic acid
 
 - 缩写：Glu (E)
-- 取代基：丙羧基    -CH<sub>2</sub>-CH<sub>2</sub>-COOH
+- 取代基：丙羧基 -CH<sub>2</sub>-CH<sub>2</sub>-COOH
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumPDeM1eOZGUichIUgJLsyAJXkLl3UT7SAYSAnA0xibSHg0LIuicZXTktVw.png"></Pic>
 
@@ -285,11 +285,11 @@ export const Pic = ({children, src}) => (
 
 它的钠盐因为被作为味精而广为人知。在高温下，谷氨酸离子脱水生成焦谷氨酸，使得味精变得苦涩，因此味精不能经受高温。这个脱水反应会使得侧链的羧基和主链的胺基成环，因此在肽链中，可以封闭氮端。
 
-谷氨酸是非常重要的兴奋性神经递质，可以刺激学习、记忆，NMDA、AMPA受体都是通过谷氨酸工作的。
+谷氨酸是非常重要的兴奋性神经递质，可以刺激学习、记忆，NMDA、AMPA 受体都是通过谷氨酸工作的。
 
 谷氨酸和天冬氨酸都常出现在蛋白的负电中心。镰状细胞贫血就是血红蛋白中的一个谷氨酸突变成了非极性的缬氨酸，从而影响了它的二级结构，使血红蛋白容易在低氧环境下发生多聚，从而成链。
 
-如果把这20种氨基酸塞进一张图鉴里：
+如果把这 20 种氨基酸塞进一张图鉴里：
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET69JKpFcOrUaxBicy6xJBFd5GicXwEo7VV77sicjb8TwBaMAPKu8rqSMBwlnqtXRnQcYAlx6t7I55WpmA.png"></Pic>
 
@@ -297,10 +297,10 @@ export const Pic = ({children, src}) => (
 
 <Pic src="/zh-Hans/img/./docs/Science/amino-acid/JGibibkelET69JKpFcOrUaxBicy6xJBFd5GFibymrM8oTsp5ogL9ztAziaUvY8bVcWPq4QEFpiculK0ukozazmx8rZtg.png"></Pic>
 
-最后一提：20种氨基酸中，有8种人体不能合成而必须从外部摄取，它们被称为“必需氨基酸”：缬氨酸、亮氨酸、异亮氨酸、苯丙氨酸、色氨酸、甲硫氨酸、苏氨酸、赖氨酸。
+最后一提：20 种氨基酸中，有 8 种人体不能合成而必须从外部摄取，它们被称为“必需氨基酸”：缬氨酸、亮氨酸、异亮氨酸、苯丙氨酸、色氨酸、甲硫氨酸、苏氨酸、赖氨酸。
 
 另外，半胱氨酸、酪氨酸分别由甲硫氨酸、苯丙氨酸直接合成，后者则是必需氨基酸，因此前者称为半必需氨基酸。还有，组氨酸婴幼儿不能正常合成。
 
-剩下9种氨基酸，丙氨酸来自糖酵解产生的丙酮酸的胺化，丝氨酸来自同一路径产生的3-磷酸甘油酸的氧化、胺化、水解，甘氨酸来自丝氨酸脱去侧链，也可以在肝脏中直接由二氧化碳和游离氨合成，天冬氨酸、天冬酰胺来自三羧酸循环中草酰乙酸的胺化，谷氨酸、谷氨酰胺来自同一循环中的2-氧戊二酸的胺化，精氨酸来自小肠中由谷氨酸和谷氨酰胺合成的瓜氨酸的胺化，脯氨酸来自谷氨酸半醛的环化、还原。
+剩下 9 种氨基酸，丙氨酸来自糖酵解产生的丙酮酸的胺化，丝氨酸来自同一路径产生的 3-磷酸甘油酸的氧化、胺化、水解，甘氨酸来自丝氨酸脱去侧链，也可以在肝脏中直接由二氧化碳和游离氨合成，天冬氨酸、天冬酰胺来自三羧酸循环中草酰乙酸的胺化，谷氨酸、谷氨酰胺来自同一循环中的 2-氧戊二酸的胺化，精氨酸来自小肠中由谷氨酸和谷氨酰胺合成的瓜氨酸的胺化，脯氨酸来自谷氨酸半醛的环化、还原。
 
 下次，当你听到“色氨酸”、“半胱氨酸”等名字时，希望能对它们有点感觉。

@@ -1,114 +1,115 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 
-const remarkMath = require('remark-math');
-const rehypeKatex = require('rehype-katex');
+const remarkMath = require("remark-math");
+const rehypeKatex = require("rehype-katex");
 
 module.exports = {
-  title: 'Joshua Chen',
+  title: "Joshua Chen",
   tagline: '"Zesty scholar"',
-  url: 'https://josh-cena.github.io',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: '/img/favicon/favicon.ico',
-  organizationName: 'Josh-Cena', // Usually your GitHub org/user name.
-  projectName: 'Josh-Cena.github.io', // Usually your repo name.
+  url: "https://josh-cena.github.io",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "/img/favicon/favicon.ico",
+  organizationName: "Josh-Cena", // Usually your GitHub org/user name.
+  projectName: "Josh-Cena.github.io", // Usually your repo name.
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'zh-Hans'],
+    defaultLocale: "en",
+    locales: ["en", "zh-Hans"],
     localeConfigs: {
       en: {
-        label: 'English',
+        label: "English",
       },
-      'zh-Hans': {
-        label: '中文',
+      "zh-Hans": {
+        label: "中文",
       },
     },
   },
   themeConfig: {
     navbar: {
-      title: 'Josh-Cena',
+      title: "Josh-Cena",
       logo: {
-        alt: 'JC',
-        src: '/img/logo.svg',
-        srcDark: '/img/logo-dark.svg',
+        alt: "JC",
+        src: "/img/logo.svg",
+        srcDark: "/img/logo-dark.svg",
       },
       items: [
-        {to: 'CV', label: 'Profile', position: 'left'},
-        {to: 'Todo', label: 'Todo list', position: 'left'},
+        { to: "CV", label: "Profile", position: "left" },
+        { to: "Todo", label: "Todo list", position: "left" },
         {
-          to: 'docs/about',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          to: "docs/about",
+          activeBasePath: "docs",
+          label: "Docs",
+          position: "left",
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        { to: "blog", label: "Blog", position: "left" },
         {
-          type: 'localeDropdown',
-          position: 'right',
+          type: "localeDropdown",
+          position: "right",
         },
         {
-          href: 'https://github.com/Josh-Cena',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/Josh-Cena",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Science',
-              to: 'docs/Science/amino-acid',
+              label: "Science",
+              to: "docs/Science/amino-acid",
             },
             {
-              label: 'Technology',
-              to: 'docs/Technology/easy-tsims',
+              label: "Technology",
+              to: "docs/Technology/easy-tsims",
             },
             {
-              label: 'Humanities',
-              to: 'docs/Humanities/law',
+              label: "Humanities",
+              to: "docs/Humanities/law",
             },
             {
-              label: 'Short stories',
-              to: 'docs/Stories/red-pills',
+              label: "Short stories",
+              to: "docs/Stories/red-pills",
             },
           ],
         },
         {
-          title: 'Social',
+          title: "Social",
           items: [
             {
-              label: 'Zhihu',
-              href: 'https://www.zhihu.com/people/joshcena',
+              label: "Zhihu",
+              href: "https://www.zhihu.com/people/joshcena",
             },
             {
-              label: 'Discord',
-              href: 'https://discord.gg/AU7X2HtnDK',
+              label: "Discord",
+              href: "https://discord.gg/AU7X2HtnDK",
             },
             {
-              label: 'LinkedIn',
-              href: 'https://www.linkedin.com/in/sida-chen-9592361b9/',
+              label: "LinkedIn",
+              href: "https://www.linkedin.com/in/sida-chen-9592361b9/",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: "Blog",
+              to: "blog",
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/Josh-Cena',
+              label: "GitHub",
+              href: "https://github.com/Josh-Cena",
             },
             {
-              label: 'WeChat official account',
-              href: 'https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwMzI0ODk0NA==&scene=124#wechat_redirect',
+              label: "WeChat official account",
+              href:
+                "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwMzI0ODk0NA==&scene=124#wechat_redirect",
             },
           ],
         },
@@ -116,42 +117,43 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Sida Chen. Built with Docusaurus.`,
     },
     prism: {
-      additionalLanguages: ['java', 'php', 'sql', 'latex'],
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/dracula'),
+      additionalLanguages: ["java", "php", "sql", "latex"],
+      theme: require("prism-react-renderer/themes/github"),
+      darkTheme: require("prism-react-renderer/themes/dracula"),
     },
   },
   stylesheets: [
     {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
-      type: 'text/css',
+      href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css",
+      type: "text/css",
       integrity:
-        'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
-      crossorigin: 'anonymous',
+        "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X",
+      crossorigin: "anonymous",
     },
   ],
   scripts: [
     {
-      src: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js',
+      src: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js",
       integrity:
-        'sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4',
-      crossorigin: 'anonymous',
+        "sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4",
+      crossorigin: "anonymous",
       defer: true,
     },
     {
-      src: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/mhchem.min.js',
+      src:
+        "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/mhchem.min.js",
       integrity:
-        'sha384-5gCAXJ0ZgozlShOzzT0OWArn7yCPGWVIvgo+BAd8NUKbCmulrJiQuCVR9cHlPHeG',
-      crossorigin: 'anonymous',
+        "sha384-5gCAXJ0ZgozlShOzzT0OWArn7yCPGWVIvgo+BAd8NUKbCmulrJiQuCVR9cHlPHeG",
+      crossorigin: "anonymous",
       defer: true,
     },
   ],
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           remarkPlugins: [remarkMath],
           rehypePlugins: [[rehypeKatex, { strict: false }]],
         },
@@ -160,7 +162,7 @@ module.exports = {
           rehypePlugins: [[rehypeKatex, { strict: false }]],
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],

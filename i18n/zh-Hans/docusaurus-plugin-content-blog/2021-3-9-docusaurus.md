@@ -30,17 +30,17 @@ tags: [前端, 个人网页]
 2. 我没法搭建自动部署。CI 总是失败，而[官方文档](https://cli.vuejs.org/guide/deployment.html#platform-guides)也没帮多少忙，因为我用的 CI/CD 应用是 CircleCI。**这不是 Vue 的问题，是我的问题。**我只是希望有个模板，我可以直接抄来用，可惜对于 Vue 来说这不存在。
 3. 我在用户界面设计上经验不足。硬编码的 CSS 在电脑屏幕上看起来很好，但到手机屏幕上就乱套了。而且，Vuetify 这个 UI 框架用起来实在是太深奥了。
 
-总地来说，我希望有个工具，可以用30分钟做点*什么*出来，而不是用30天把*什么*都做出来。Docusaurus 在这方面表现不错，可以实现敏捷开发。
+总地来说，我希望有个工具，可以用 30 分钟做点*什么*出来，而不是用 30 天把*什么*都做出来。Docusaurus 在这方面表现不错，可以实现敏捷开发。
 
 我已经搭过两个 Docusaurus 应用了：我们的[信息化社](https://computerization.io)的主页，以及[Baterock 服务器](https://baterock-minecraft.github.io)的主页。它们的技术栈一模一样，所以的确有我可以即刻搬来用的模式。
 
 也许我不该把 Vue 和 Docusaurus 相比较，就像你不会把刀和叉相比，但我只是想给我迁移到 Docusaurus 找几个理由。它可以直接上传 Markdown 文件，也有可以用来插入其他 React 组件的 React API。然而，我的确得从头学 React，因为我一直用的是 Vue，而 Vue 和 React 之间的巨大差异也值得让我再写篇文章。（而那可能是个更值得引战的题目。在这场圣战中，我还是站在 Vue 的一边。）
 
-我还是不知道 Docusaurus 是不是搭建个人网页最好的工具（比如我认识的几个人都用 WordPress），但我还是决定用我熟悉的工具。Docusaurus 最初的目的其实是为了给开源项目存储文档，所以才叫 *"Doc"*-usaurus。但它用来存储文章和博客看起来也不错。
+我还是不知道 Docusaurus 是不是搭建个人网页最好的工具（比如我认识的几个人都用 WordPress），但我还是决定用我熟悉的工具。Docusaurus 最初的目的其实是为了给开源项目存储文档，所以才叫 _"Doc"_-usaurus。但它用来存储文章和博客看起来也不错。
 
 ## 搭建应用
 
-我花了800字讲些有的没的。开始进入正题。要初始化一个 Docusaurus 项目，只需要：
+我花了 800 字讲些有的没的。开始进入正题。要初始化一个 Docusaurus 项目，只需要：
 
 ```bash
 $ npx @docusaurus/init@latest init personal-page classic
@@ -56,9 +56,11 @@ $ yarn start
 4. 逐行浏览`/docusaurus.config.js`，做必要的改动。
 5. 逐行浏览`/src/pages/index.js`，做必要的改动。
 6. 要启用 TypeScript 支持，在命令行运行`yarn add @docusaurus/module-type-aliases`，然后把下列文件添加到根目录：
+
 ```typescript title="types.d.ts"
 /// <reference types="@docusaurus/module-type-aliases" />
 ```
+
 7. $\text{\KaTeX}$对我来说**必不可少**。可以这么安装它：
 
 ```bash

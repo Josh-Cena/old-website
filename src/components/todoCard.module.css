@@ -1,4 +1,4 @@
-html[data-theme='dark'] .card {
+html[data-theme="dark"] .card {
   background: rgba(255, 255, 255, 0.09);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
 }
@@ -7,7 +7,7 @@ html[data-theme='dark'] .card {
   border-top: 5px solid rgb(255, 59, 48);
 }
 
-html[data-theme='dark'] .todo {
+html[data-theme="dark"] .todo {
   border-top: 5px solid rgb(255, 69, 58);
 }
 
@@ -15,6 +15,6 @@ html[data-theme='dark'] .todo {
   border-top: 5px solid rgb(52, 199, 89);
 }
 
-html[data-theme='dark'] .done {
+html[data-theme="dark"] .done {
   border-top: 5px solid rgb(48, 209, 88);
 }

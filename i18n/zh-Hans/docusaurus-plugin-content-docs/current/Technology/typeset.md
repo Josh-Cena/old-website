@@ -4,12 +4,12 @@ title: 如何做一个没有感情的排版机器
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
-> 首次发布于2020年6月18日
+> 首次发布于 2020 年 6 月 18 日
 >
 > 原文链接：https://mp.weixin.qq.com/s/AM0tlHO9C8lExRgu8RpG1w
 
@@ -25,7 +25,7 @@ export const Pic = ({children, src}) => (
 
 有一个常见的误区：认为文章只需注重内容，而无需关注形式。这种观点非常片面。优秀的排版是优秀的文章中不可缺少的一部分——这至少有三个理由。
 
-首先，从最实用主义的角度，排版的一大作用在于避免歧义，增加文章清晰度和准确度。以 Stack exchange 上的一篇回答为例： 
+首先，从最实用主义的角度，排版的一大作用在于避免歧义，增加文章清晰度和准确度。以 Stack exchange 上的一篇回答为例：
 
 > $K_2[Fe(CN)_6]$
 >
@@ -37,7 +37,7 @@ export const Pic = ({children, src}) => (
 
 而造成这种“函数”与“化学式”之间的歧义的原因，正是在于化学式没有使用正体而是用了斜体。有些人认为，这种错误在绝大多数时候能够通过上下文区分；但是总会有难以区别的时候。并且，与其让读者花费额外的时间处理信息，不如在传递信息时就使其尽可能地准确。
 
-其次，好的排版能够使读者最大程度地关注内容，而不会被杂乱的版式干扰，提升了读者接受信息的效率。有这样一个论断：*Good typography (like good organization) is something you do not notice.* (Tantau, 52) 优秀的排版恰恰是使得人们不会注意到的排版。以某本 C++ 信竞参考书作为反面教材，以下是我从中复刻出的一页：
+其次，好的排版能够使读者最大程度地关注内容，而不会被杂乱的版式干扰，提升了读者接受信息的效率。有这样一个论断：_Good typography (like good organization) is something you do not notice._ (Tantau, 52) 优秀的排版恰恰是使得人们不会注意到的排版。以某本 C++ 信竞参考书作为反面教材，以下是我从中复刻出的一页：
 
 <Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69Rqicxh5VdMQ5gPibfS0YezQYlIibIux3WOib4VOUrhdrDjuT5wUDpC7Oemhxoj0D4YM6xAEShHCfecA.jpeg"></Pic>
 
@@ -49,23 +49,23 @@ export const Pic = ({children, src}) => (
 
 ## 二、如何排出精致的版式
 
-我个人是 LaTeX 的忠实用户。用 LaTeX，可以轻松地排出统一而精美的版式；但这不代表 MS Word 不能做到同样的效果——虽然可能会花费更多的时间。一个大概的比方：低级的 Word 使用者可以用20%的时间排出3分的效果；平均水平的 LaTeX 使用者可以用60%的时间排出7分的效果；而高级的 Word 使用者则可以用100%的时间排出10分的效果。由于 LaTeX 对于绝大多数人来说太难以上手，本文所有的建议都可以在 MS Word 中实现，提供的插图也都是 Word 中的截图。
+我个人是 LaTeX 的忠实用户。用 LaTeX，可以轻松地排出统一而精美的版式；但这不代表 MS Word 不能做到同样的效果——虽然可能会花费更多的时间。一个大概的比方：低级的 Word 使用者可以用 20%的时间排出 3 分的效果；平均水平的 LaTeX 使用者可以用 60%的时间排出 7 分的效果；而高级的 Word 使用者则可以用 100%的时间排出 10 分的效果。由于 LaTeX 对于绝大多数人来说太难以上手，本文所有的建议都可以在 MS Word 中实现，提供的插图也都是 Word 中的截图。
 
 ### 一、正文：字体、字号、各种间距
 
-排版设计中，将字体分为三类：***衬线体 (Serif)***、***非衬线体 (Sans serif)***、***等宽体 (Monospace)***。
+排版设计中，将字体分为三类：**_衬线体 (Serif)_**、**_非衬线体 (Sans serif)_**、**_等宽体 (Monospace)_**。
 
 <Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicCWicN5WMjRrcAvJMibH7ibs4YNNMiaRCzDicGC4VHHsoHUByrFtWvjAvibYg.png"></Pic>
 
 它们之间的区别应该是比较显而易见的。一般的论文，往往用衬线体，这也是最安全的选择。非衬线体很少出现在学术文章的正文中，但可能用于标题；等宽体则大量用于代码中。一篇文章中每种字体不应使用超过两种，在同一个语境中，也不应切换字体。
 
-字号、行距、段距等，首先要遵循文章接受者的要求；如果没有明文规定，则推荐用12号（小四）、1.5倍行距、6磅段前距。标题要适当增加字号、段前距，如一级标题可以增大到18磅字号，18磅段前距，并加粗。
+字号、行距、段距等，首先要遵循文章接受者的要求；如果没有明文规定，则推荐用 12 号（小四）、1.5 倍行距、6 磅段前距。标题要适当增加字号、段前距，如一级标题可以增大到 18 磅字号，18 磅段前距，并加粗。
 
 不同的标题层级要分清。可以用 Word 的标题功能辅助建立文本大纲。如果已经设为了标题后又更新了段落格式，再次点击标题按钮，则可以将这个格式应用于所有同级标题。
 
 <Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicxzwAwnK2ojd9gu5y5dr8Ka5GqtgticSgBWLnhIyk57hSXrrXkSQnnqg.png"></Pic>
 
-Word 的棘手之处之一就在于有时正文的格式会发生混乱。建议不要在第一遍创作时调整格式，而留至完成大概的创作后统一调整，这样可以防止漏过一些细节。如果还要做更精细的调整，可以了解一下LaTeX👍
+Word 的棘手之处之一就在于有时正文的格式会发生混乱。建议不要在第一遍创作时调整格式，而留至完成大概的创作后统一调整，这样可以防止漏过一些细节。如果还要做更精细的调整，可以了解一下 LaTeX👍
 
 最后，在正文中要避免用粗体和不同的颜色。如果表示强调突出，可以用斜体。
 
@@ -91,9 +91,9 @@ https://apastyle.apa.org/style-grammar-guidelines/italics-quotations/italics
 
 <Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET6icDFANIONdGibfELHBibTicdFEh9ia2buhqk2z1KliaXSUggPYc5b8swD26SWXKia5AShAkSaGZ283bqY9Q.png"></Pic>
 
-选择左边还是右边？由于 $\mathrm{d}$ 在我的理解中是一种算子，因此符合规则3，应该使用正体，也就是右边，而这也是大多数有追求的人的选择；但实际上，近年来的期刊，尤其是美国的一些期刊，开始偏向左边的写法。这种做法，应该是把 $dx$ 看成了一个完整的实体参与运算。因此，两种公式写法都是可以接受的。
+选择左边还是右边？由于 $\mathrm{d}$ 在我的理解中是一种算子，因此符合规则 3，应该使用正体，也就是右边，而这也是大多数有追求的人的选择；但实际上，近年来的期刊，尤其是美国的一些期刊，开始偏向左边的写法。这种做法，应该是把 $dx$ 看成了一个完整的实体参与运算。因此，两种公式写法都是可以接受的。
 
-除此之外，一切物理量、物理常量、未知数等，都使用斜体。IUPAC指南中提到，一个简单的判断是否应该用斜体的标准是问自己：“这个字母是否代表一个值？这个值能不能改变？”
+除此之外，一切物理量、物理常量、未知数等，都使用斜体。IUPAC 指南中提到，一个简单的判断是否应该用斜体的标准是问自己：“这个字母是否代表一个值？这个值能不能改变？”
 
 ### 三、数学公式：保持统一而整洁的版式
 
@@ -109,7 +109,7 @@ https://apastyle.apa.org/style-grammar-guidelines/italics-quotations/italics
 2. 在所有表示数学内容的地方都使用公式模式，哪怕只是一个 $f(x)$，一个 $l$，都至少要用斜体以和正文区别；
 3. 公式字体要和正文字体统一。由于正文中使用了宋体 / Times New Roman 的组合，在排版公式时如果也能用 Times New Roman 而不是 Cambria Math，会显得更加统一。但在 Word 中，这种调整非常繁琐，还会导致一些空白处理得比较混乱，因此不推荐。
 
-除此之外，还有一点需要格外注意。Word 的公式分为两类：***行内模式***和***展示模式***。如果公式单独占据一行，会用展示模式；如果公式周围有其他文本，则会用行内模式。展示模式会强制居中，并且在巨算符上下标的处理上有区别。
+除此之外，还有一点需要格外注意。Word 的公式分为两类：**_行内模式_**和**_展示模式_**。如果公式单独占据一行，会用展示模式；如果公式周围有其他文本，则会用行内模式。展示模式会强制居中，并且在巨算符上下标的处理上有区别。
 
 <Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicpsR4SG5xd3NcE2bqT7gBlWlQFDEaaOZTF4bXgbo6vic8pVaHYlNGLsw.png"></Pic>
 
@@ -173,7 +173,7 @@ https://apastyle.apa.org/style-grammar-guidelines/italics-quotations/italics
 
 ### 六、图表：整洁最重要
 
-浩如烟海的图表类型，详细规范足够写成一本书。事实上，还真有这样的书，比如 Edward R. Tufte 的 *The Visual Display of Quantitative Information*。限于篇幅，我们只讲指导原则。
+浩如烟海的图表类型，详细规范足够写成一本书。事实上，还真有这样的书，比如 Edward R. Tufte 的 _The Visual Display of Quantitative Information_。限于篇幅，我们只讲指导原则。
 
 仍然用两幅图作对比：
 
@@ -185,7 +185,7 @@ https://apastyle.apa.org/style-grammar-guidelines/italics-quotations/italics
 
 1. 突出恰当的内容。第一张图中，坐标轴用了灰色+细线以将其隐去，而突出图中的重点：曲面。
 2. 和正文统一的样式。此处的样式，包括箭头形状、字体、字号、主色调、线的粗细等。
-3. ***绝对***不要用渐变色和图案填充。它们除了增加视觉干扰，没有任何明显的效果。除非必要，否则也不要为坐标系添加网格。
+3. **_绝对_**不要用渐变色和图案填充。它们除了增加视觉干扰，没有任何明显的效果。除非必要，否则也不要为坐标系添加网格。
 4. 尽量保持色调的统一，选择同一色系，不要用太多对比色；
 5. 不要用虚线的线型或线的粗细来区分不同的曲线。用不同的颜色。
 
@@ -197,6 +197,6 @@ https://apastyle.apa.org/style-grammar-guidelines/italics-quotations/italics
 
 ## 参考资料.
 
-IUPAC. *Quantities, Units and Symbols in Physical Chemistry*. 3rd Edition. RSC Publishing, 2007.
+IUPAC. _Quantities, Units and Symbols in Physical Chemistry_. 3rd Edition. RSC Publishing, 2007.
 
-Tantau, Till. *The TikZ and PGF Packages*. 12 Jun, 2007. 20 Feb, 2020. <http://mirrors.hit.edu.cn/CTAN/graphics/pgf/contrib/tikz-page/tikz-page.pdf>
+Tantau, Till. _The TikZ and PGF Packages_. 12 Jun, 2007. 20 Feb, 2020. <http://mirrors.hit.edu.cn/CTAN/graphics/pgf/contrib/tikz-page/tikz-page.pdf>

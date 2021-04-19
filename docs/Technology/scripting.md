@@ -5,10 +5,10 @@ sidebar_label: First experience with script crawling
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
 > First published on Oct 15, 2020
 >
@@ -22,7 +22,7 @@ Requests 一类的 Python 爬虫我从来没有实际用过，通过抓包也没
 
 <Pic src="/img/./docs/Technology/scripting/JGibibkelET6ibSNIrDEiaLeaGew1FKn213nrlzVDLbibNBGXf7AUkwosNrHpMW4TTIFXvmlbcdf9OgNiaGE5UXcgSIg.png"></Pic>
 
-先定位到页面的js代码。看起来有三个外部脚本：`init category dropdown.js`、`init group dropdown.js`、`add group info.js`，以及一个页面内嵌的脚本：
+先定位到页面的 js 代码。看起来有三个外部脚本：`init category dropdown.js`、`init group dropdown.js`、`add group info.js`，以及一个页面内嵌的脚本：
 
 ```javascript
 jQuery(document).ready(function() {
@@ -34,132 +34,142 @@ jQuery(document).ready(function() {
   $('#select_group').change(function(){
     var selValue=$(this).children('option:selected').val();
     addGroupInfo.init(selValue);
-  });                    
+  });
 );
 ```
 
-其中提到了两个元素：`#select_category` 和 `#select_group`。不难发现，这是右边的两个下拉菜单。逻辑是，先在第一个菜单中选择分组（Service, Academic等），再根据选择的项目更新第二个社团菜单。为了确定这一点，实际操作了一次：
+其中提到了两个元素：`#select_category` 和 `#select_group`。不难发现，这是右边的两个下拉菜单。逻辑是，先在第一个菜单中选择分组（Service, Academic 等），再根据选择的项目更新第二个社团菜单。为了确定这一点，实际操作了一次：
 
 <Pic src="/img/./docs/Technology/scripting/JGibibkelET6ibSNIrDEiaLeaGew1FKn213nSsZSeJP8K3YzylnS7tmHnKjmorq7XglaQuHCA0aeSVNd0GJQBH0phg.png"></Pic>
 
 先在第一个菜单中选择 "Service"，`init_groups_dropdown.php` 被调用；再选择“信息化社”，`add_group_info.php` 被调用，符合上面的猜想。此时，就对后端的调用顺序有了大概的了解。
 
-我们最为关心的自然是实际将社团信息注入进页面的那个请求：`add_group_info`。查看它的js代码：
+我们最为关心的自然是实际将社团信息注入进页面的那个请求：`add_group_info`。查看它的 js 代码：
 
 ```javascript
-var addGroupInfo = function () {
+var addGroupInfo = (function () {
   return {
     init: function (valID) {
       $.ajax({
-        url: 'php/cas_add_group_info.php',
-        dataType: 'json',
-        type: 'post',
-        data:{
-          groupid: valID
+        url: "php/cas_add_group_info.php",
+        dataType: "json",
+        type: "post",
+        data: {
+          groupid: valID,
         },
         success: function (data) {
           //$("#text_groupNo").val(data.groups[i].C_GroupNo);
           //$("#text_foundtime").val(data.groups[i].C_FoundTime);
           $("#span_group_name").empty();
-          var groupName = '';
-          groupName += '<h4>' + data.groups[0].C_NameC;
-          groupName += '(' + data.groups[0].C_NameE + ')</h4>';
+          var groupName = "";
+          groupName += "<h4>" + data.groups[0].C_NameC;
+          groupName += "(" + data.groups[0].C_NameE + ")</h4>";
           $("#span_group_name").append(groupName);
           $("#span_descriptionC").empty();
-          var DescC = '';
-          DescC += '<p>' + data.groups[0].C_DescriptionC + '</p>';
+          var DescC = "";
+          DescC += "<p>" + data.groups[0].C_DescriptionC + "</p>";
           $("#span_descriptionC").append(DescC);
           $("#span_descriptionE").empty();
-          var DescE = '';
-          DescE += '<p>' + data.groups[0].C_DescriptionE + '</p>';
+          var DescE = "";
+          DescE += "<p>" + data.groups[0].C_DescriptionE + "</p>";
           $("#span_descriptionE").append(DescE);
           $("#d_teamleader").empty();
           var TeamLeader = '<div class="row">';
           //alert(data.gmember.length);
-          for(var i=0; i < data.gmember.length; i++){
-            if (data.gmember[i].LeaderYes > 0){ 
+          for (var i = 0; i < data.gmember.length; i++) {
+            if (data.gmember[i].LeaderYes > 0) {
               TeamLeader += '<div class="col-md-4">';
               TeamLeader += '<ul class="list-inline sidebar-tags">';
               TeamLeader += '<li><a href="#"><i class="fa fa-user"></i>';
-              TeamLeader += data.gmember[i].S_Name + '(';
-              TeamLeader += data.gmember[i].S_Nickname + ')</a></li></ul>';
-              TeamLeader += 'Email: <a href="#">' + data.gmember[i].S_Email + '</a>';
-              TeamLeader += '<p>TELï¼š' + data.gmember[i].S_STel + '</p>';
-              TeamLeader += '</div>';
+              TeamLeader += data.gmember[i].S_Name + "(";
+              TeamLeader += data.gmember[i].S_Nickname + ")</a></li></ul>";
+              TeamLeader +=
+                'Email: <a href="#">' + data.gmember[i].S_Email + "</a>";
+              TeamLeader += "<p>TELï¼š" + data.gmember[i].S_STel + "</p>";
+              TeamLeader += "</div>";
             }
           }
-          TeamLeader += '</div>';
+          TeamLeader += "</div>";
           $("#d_teamleader").append(TeamLeader);
           /////////////////////////////////////////////////////////
           $("#d_supervisor").empty();
-          var Supervisor = '';
-          if (data.supervisor.length != 0){
+          var Supervisor = "";
+          if (data.supervisor.length != 0) {
             Supervisor += '<ul class="list-inline sidebar-tags" >';
-            Supervisor += '<li><a href="#"><i class="fa fa-user"></i>' + data.supervisor[0].T_Name;
-            Supervisor += '(' + data.supervisor[0].T_Nickname + ')</a></li></ul>';
-            Supervisor += 'Email: <a href="#">' + data.supervisor[0].T_Email +'</a>';
-            Supervisor += '<p>TELï¼š' + data.supervisor[0].T_MTel + '</p>';
+            Supervisor +=
+              '<li><a href="#"><i class="fa fa-user"></i>' +
+              data.supervisor[0].T_Name;
+            Supervisor +=
+              "(" + data.supervisor[0].T_Nickname + ")</a></li></ul>";
+            Supervisor +=
+              'Email: <a href="#">' + data.supervisor[0].T_Email + "</a>";
+            Supervisor += "<p>TELï¼š" + data.supervisor[0].T_MTel + "</p>";
           }
           $("#d_supervisor").append(Supervisor);
           //////////////////////////////////////////////////////
           $("#d_group_leader").empty();
-          var Groupleader = '';
-          for(var i=0; i < data.gmember.length; i++){
-            if (data.gmember[i].LeaderYes == 2){
+          var Groupleader = "";
+          for (var i = 0; i < data.gmember.length; i++) {
+            if (data.gmember[i].LeaderYes == 2) {
               Groupleader += '<ul class="list-inline sidebar-tags" >';
-              Groupleader += '<li><a href="#"><i class="fa fa-user"></i>' + data.gmember[0].S_Name;
-              Groupleader += '(' + data.gmember[0].S_Nickname + ')</a></li></ul>';
-              Groupleader += 'Email: <a href="#">' + data.gmember[0].S_Email +'</a>';
-              Groupleader += '<p>TELï¼š' + data.gmember[0].S_STel + '</p>';
+              Groupleader +=
+                '<li><a href="#"><i class="fa fa-user"></i>' +
+                data.gmember[0].S_Name;
+              Groupleader +=
+                "(" + data.gmember[0].S_Nickname + ")</a></li></ul>";
+              Groupleader +=
+                'Email: <a href="#">' + data.gmember[0].S_Email + "</a>";
+              Groupleader += "<p>TELï¼š" + data.gmember[0].S_STel + "</p>";
             }
           }
           $("#d_group_leader").append(Groupleader);
           ///////////////////////////////////////////////////////
           $("#s_tNumber").empty();
           //alert(data.gmember.length);
-          var TNumber = '';
+          var TNumber = "";
           TNumber += data.gmember.length;
           $("#s_tNumber").append(TNumber);
           ///////////////////////////////////////////////////////
           $("#u_teammate").empty();
-          var teammate = '';
+          var teammate = "";
           //alert(data.gmember.length);
-          for(var i=0; i < data.gmember.length; i++){
+          for (var i = 0; i < data.gmember.length; i++) {
             teammate += '<li><a href="#"><i class="fa fa-user"></i>';
             teammate += data.gmember[i].S_Name;
-            teammate += '(' + data.gmember[i].S_Nickname;
-            teammate += ')</a></li>';
+            teammate += "(" + data.gmember[i].S_Nickname;
+            teammate += ")</a></li>";
           }
           $("#u_teammate").append(teammate);
-          if(data.projectyes == 0){
-            $('#d_projectyes').show();
-          }else{
-            $('#d_projectyes').hide();
+          if (data.projectyes == 0) {
+            $("#d_projectyes").show();
+          } else {
+            $("#d_projectyes").hide();
           }
           $("#d_activity_records").empty();
-          var actrecord = '';
+          var actrecord = "";
           //alert(data.gmember.length);
-          for(var i=0; i < data.grecord.length; i++){
-            actrecord += '<ul class="blog-info"><li><i class="fa fa-calendar"></i>';
-            actrecord += data.grecord[i].C_Date.substr(0,10) + '</li>';
+          for (var i = 0; i < data.grecord.length; i++) {
+            actrecord +=
+              '<ul class="blog-info"><li><i class="fa fa-calendar"></i>';
+            actrecord += data.grecord[i].C_Date.substr(0, 10) + "</li>";
             //actrecord += '<li><i class="fa fa-comments"></i>' + 17 +'</li>';
             actrecord += '<li><i class="fa fa-tags"></i>';
-            actrecord += data.grecord[i].C_Theme + '</li></ul>';
-            actrecord += '<p>' + data.grecord[i].C_Reflection + '</p>';
+            actrecord += data.grecord[i].C_Theme + "</li></ul>";
+            actrecord += "<p>" + data.grecord[i].C_Reflection + "</p>";
           }
           $("#d_activity_records").append(actrecord);
         },
-        error: function(){ 
-           alert('Request failed!');
+        error: function () {
+          alert("Request failed!");
         },
-        beforeSend: function(){ 
+        beforeSend: function () {
           //alert("Loading!...");
-        }
+        },
       });
     },
     // ...其他函数
   };
-}();
+})();
 ```
 
 这个 `init()` 函数非常壮观。我们先定位到我们需要的几个信息：中英文名字和中英文简介，然后把其他无关信息（比如社员名单）都剔除。同时可以把 jQuery 操作 DOM 元素的指令也删除，改成输出到控制台。
@@ -167,18 +177,18 @@ var addGroupInfo = function () {
 ```javascript
 function init(valID) {
   $.ajax({
-    url: 'php/cas_add_group_info.php',
-    dataType: 'json',
-    type: 'post',
-    data:{
-      groupid: valID
+    url: "php/cas_add_group_info.php",
+    dataType: "json",
+    type: "post",
+    data: {
+      groupid: valID,
     },
     success: function (data) {
       console.log(data.groups[0].C_NameC);
       console.log(data.groups[0].C_NameE);
       console.log(data.groups[0].C_DescriptionC);
-      console.log(data.groups[0].C_DescriptionE); 
-    }
+      console.log(data.groups[0].C_DescriptionE);
+    },
   });
 }
 ```
@@ -194,51 +204,61 @@ function init(valID) {
 但是，这些 option value 并不是连续编码的，看起来非常随机。那么，为了获取每个分组对应的 option value 列表，就需要查看获取这一信息的 `init group dropdown.js`。
 
 ```javascript
-var initCASGroupsDropDown = function () {
+var initCASGroupsDropDown = (function () {
   return {
     init: function (initData) {
       $.ajax({
-        url: 'php/cas_init_groups_dropdown.php',
-        dataType: 'json',
-        type: 'post',
+        url: "php/cas_init_groups_dropdown.php",
+        dataType: "json",
+        type: "post",
         data: {
           categoryid: initData,
         },
         success: function (data) {
           //alert(data[0].title);
           $("#select_group").empty();
-          $("#select_group").append("<option value='0'>" + "选择分组 ..." +  "</option>");
-          for(var i=0; i < data.length; i++){
-            $("#select_group").append("<option value='" + data[i].C_GroupsID + "'>" + data[i].C_NameC +  "(" + data[i].C_GroupNo + ")</option>");
+          $("#select_group").append(
+            "<option value='0'>" + "选择分组 ..." + "</option>"
+          );
+          for (var i = 0; i < data.length; i++) {
+            $("#select_group").append(
+              "<option value='" +
+                data[i].C_GroupsID +
+                "'>" +
+                data[i].C_NameC +
+                "(" +
+                data[i].C_GroupNo +
+                ")</option>"
+            );
           }
         },
-        error: function(){ 
-           alert('Request Initdropdow failed2!');
+        error: function () {
+          alert("Request Initdropdow failed2!");
         },
-        beforeSend: function(){ 
+        beforeSend: function () {
           //alert("Loading!...");
-        }
+        },
       });
-    }
+    },
   };
-}();
+})();
 ```
 
-看来，每个分组对应的所有的 option value 被保存在 `C_GroupsID` 下。我们共有6个分组，分别对应了 `categoryid` 1~6；先写个简单的脚本，试试输出每个分组下的 `valID` 列表：
+看来，每个分组对应的所有的 option value 被保存在 `C_GroupsID` 下。我们共有 6 个分组，分别对应了 `categoryid` 1~6；先写个简单的脚本，试试输出每个分组下的 `valID` 列表：
 
 ```javascript
 for (let group = 1; group < 7; group++) {
   $.ajax({
-    url: 'php/cas_init_groups_dropdown.php',
-    dataType: 'json',
-    type: 'post',
+    url: "php/cas_init_groups_dropdown.php",
+    dataType: "json",
+    type: "post",
     data: {
       categoryid: group,
     },
     async: false,
     success: function (data) {
       let list = [];
-      for(let i = 0; i < data.length; i++){
+      for (let i = 0; i < data.length; i++) {
         list.push(data[i].C_GroupsID);
       }
       console.log(group + ": " + list);
@@ -255,21 +275,21 @@ for (let group = 1; group < 7; group++) {
 
 ```javascript
 function getInfo(valID) {
-  let obj = {chnName: "", engName: "", chnDesc: "", engDesc: ""};
+  let obj = { chnName: "", engName: "", chnDesc: "", engDesc: "" };
   $.ajax({
-    url: 'php/cas_add_group_info.php',
-    dataType: 'json',
-    type: 'post',
-    data:{
-      groupid: valID
+    url: "php/cas_add_group_info.php",
+    dataType: "json",
+    type: "post",
+    data: {
+      groupid: valID,
     },
     async: false,
     success: function (data) {
       obj.chnName = data.groups[0].C_NameC;
       obj.engName = data.groups[0].C_NameE;
       obj.chnDesc = data.groups[0].C_DescriptionC;
-      obj.engDesc = data.groups[0].C_DescriptionE; 
-    }
+      obj.engDesc = data.groups[0].C_DescriptionE;
+    },
   });
   return obj;
 }
@@ -278,9 +298,9 @@ let categoryList = [];
 
 for (let group = 1; group < 7; group++) {
   $.ajax({
-    url: 'php/cas_init_groups_dropdown.php',
-    dataType: 'json',
-    type: 'post',
+    url: "php/cas_init_groups_dropdown.php",
+    dataType: "json",
+    type: "post",
     data: {
       categoryid: group,
     },
@@ -323,7 +343,7 @@ console.log(JSON.stringify(categoryList));
 
 有了这些信息，就可以送进自己的网站里，生成社团列表了。
 
-还有一些挺有意义的东西可以做：比如，可以爬取所有已经消失的社团（也就是那些被跳过的编号）的信息。具体如何写脚本，应该是十分显然的，各位也可以模仿上文的过程自行尝试。几句吐槽：*看来公益/志愿者类社团都活不长啊……还有，魔方社也消失了是我没想到的。*
+还有一些挺有意义的东西可以做：比如，可以爬取所有已经消失的社团（也就是那些被跳过的编号）的信息。具体如何写脚本，应该是十分显然的，各位也可以模仿上文的过程自行尝试。几句吐槽：_看来公益/志愿者类社团都活不长啊……还有，魔方社也消失了是我没想到的。_
 
 ---
 

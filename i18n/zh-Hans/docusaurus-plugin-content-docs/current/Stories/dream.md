@@ -4,16 +4,16 @@ title: 关于梦境、坠落与现实
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
-> 首次发布于2021年1月2日
+> 首次发布于 2021 年 1 月 2 日
 >
 > 原文链接：https://mp.weixin.qq.com/s/gLPwsms14ZAF6iGfbsgiCw
 
-当大家都以为我之前的三篇文章只是纯水文时，我打算继续把这个话题《陈意非的随谈》写下去。（毕竟隔壁Josh Cena也有一个随谈，不能落后啊）
+当大家都以为我之前的三篇文章只是纯水文时，我打算继续把这个话题《陈意非的随谈》写下去。（毕竟隔壁 Josh Cena 也有一个随谈，不能落后啊）
 
 我会分享一些我写作中的想法以及常用的意象，尝试解构它们的含义——而其他时候，我只是脑洞突发，想讲一点魔幻的小故事。
 

@@ -4,18 +4,19 @@ title: 关于误差传递与导数运算的发现
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
-> 首次发布于2019年10月5日
+> 首次发布于 2019 年 10 月 5 日
 >
 > 原文链接：https://mp.weixin.qq.com/s/eYSzE_GJ-gQ_hMAPx8240Q
 
 这张图已经包含了所有我想表达的东西。如果你看得一头雾水，那么后面两节是为你准备的。如果你已经明白了它在表达什么，那你基本就已经读完了这篇文章，直接去第三节吧。
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \Delta(u\pm v)&=\Delta u+\Delta v\\
 \Delta(uv)&=\Delta u\cdot v+u\cdot\Delta v\\
 \Delta\left(\frac uv\right)&=\frac{\Delta u\cdot v+u\cdot\Delta v}{v^2}
@@ -23,7 +24,8 @@ $$\begin{aligned}
 (u\pm v)'&=u'\pm v'\\
 (uv)'&=u'v+uv'\\
 \left(\frac uv\right)'&=\frac{u'v-uv'}{v^2}\\
-\end{aligned}$$
+\end{aligned}
+$$
 
 我们先看看，误差与导数分别是什么。
 
@@ -31,11 +33,13 @@ $$\begin{aligned}
 
 误差表示的是值的取值范围。在实验科学中，几乎不可能得到完全准确的数字，所以结论中往往含有误差。比如，库仑定律
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 F=k\cdot\frac{Q_1Q_2}{r^n}
-\end{aligned}$$
+\end{aligned}
+$$
 
-其中 $n$ 的值一般取 $2$，而最初库仑的实验表明，$n$ 大概是  $2.00±0.04$。这里的 $±0.04$，便表示在 $1.96$ 到 $2.04$ 间，所有的实数都是符合实验结论的。
+其中 $n$ 的值一般取 $2$，而最初库仑的实验表明，$n$ 大概是 $2.00±0.04$。这里的 $±0.04$，便表示在 $1.96$ 到 $2.04$ 间，所有的实数都是符合实验结论的。
 
 所以说，如果有 $m=x±\Delta x$，则 $m∈[x-\Delta x, x+\Delta x]$。其中 $x$ 的部分叫作值，$\Delta x$ 叫作误差。
 
@@ -48,7 +52,8 @@ F=k\cdot\frac{Q_1Q_2}{r^n}
 
 设 $u=u±\Delta u$，$v=v±\Delta v$，则
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \Delta(u\pm v)&=\frac{(u\pm v)_{\max}-(u\pm v)_{\min}}{2}\\
 &=\frac{u+\Delta u\pm v+\Delta v-(u-\Delta u\pm v-\Delta v)}{2}\\
 &=\Delta u+\Delta v\\\\
@@ -60,7 +65,8 @@ $$\begin{aligned}
 &=\frac{2\Delta uv+2u\Delta v}{2(v+\Delta v)(v-\Delta v)}\\
 &=\frac{\Delta uv+u\Delta v}{(v)^2-(\Delta v)^2}\\
 &=\frac{\Delta u\cdot v+u\cdot\Delta v}{v^2}
-\end{aligned}$$
+\end{aligned}
+$$
 
 （在除法公式中，我们认为误差的平方相较于值的平方来说可以忽略，所以得到了最后的式子。）
 
@@ -68,11 +74,13 @@ $$\begin{aligned}
 
 总结来说，有如下公式：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \Delta(u\pm v)&=\Delta u+\Delta v\\
 \Delta(uv)&=\Delta u\cdot v+u\cdot\Delta v\\
 \Delta\left(\frac uv\right)&=\frac{\Delta u\cdot v+u\cdot\Delta v}{v^2}
-\end{aligned}$$
+\end{aligned}
+$$
 
 ## 二、导数
 
@@ -90,9 +98,11 @@ $$\begin{aligned}
 
 如果要计算 $A(m,f(m))$ 这一点上的导数，可以设它前进了很小很小的距离 $\Delta m$ 到了 $A'(m+\Delta m, f(m+\Delta m))$。所以，过 $A$ 的该曲线的切线斜率 $k$ 便是
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 k=\frac{\Delta y}{\Delta x}=\lim_{\Delta m\to0}\frac{f(m+\Delta m)-f(m)}{\Delta m}
-\end{aligned}$$
+\end{aligned}
+$$
 
 其中 $\lim$ 表示 $\Delta m$ 无限趋近于 $0$，但不能达到。它只表示一种条件而没有真正的意义，操作它时尽可放心。
 
@@ -105,7 +115,8 @@ k=\frac{\Delta y}{\Delta x}=\lim_{\Delta m\to0}\frac{f(m+\Delta m)-f(m)}{\Delta 
 
 设有函数 $u=u(x)$，$v=v(x)$，则
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 (u\pm v)'&=\lim_{\Delta x\to 0}\frac{u(x+\Delta x)\pm v(x+\Delta x)-(u(x)\pm v(x))}{\Delta x}\\
 &=\lim_{\Delta x\to 0}\frac{u(x+\Delta x)-u(x)}{\Delta x}\pm\lim_{\Delta x\to 0}\frac{v(x+\Delta x)-v(x)}{\Delta x}\\
 &=u'\pm v'\\\\
@@ -120,18 +131,22 @@ $$\begin{aligned}
 &=\lim_{\Delta x\to 0}\frac{\dfrac{u(x+\Delta x)-u(x)}{\Delta x}}{v(x+\Delta x)}-\lim_{\Delta x\to 0}\frac{u(x)\cdot \dfrac{v(x+\Delta x)-v(x)}{\Delta x}}{v(x)\cdot v(x+\Delta x)}\\
 &=\frac{u'}{v}-\frac{uv'}{v^2}\\
 &=\frac{u'v-uv'}{v^2}\\
-\end{aligned}$$
+\end{aligned}
+$$
+
 （其中乘除法的推导堪称“神来之笔”！）
 
 <p style={{color: 'red'}}><b>预警解除</b></p>
 
 如果你看不懂，或者不想看，也没有关系，反正推导方法也不是吾辈能想得出来的。首先，你要知道，推导过程很高级；其次，你要记住几个公式：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 (u\pm v)'&=u'\pm v'\\
 (uv)'&=u'v+uv'\\
 \left(\frac uv\right)'&=\frac{u'v-uv'}{v^2}\\
-\end{aligned}$$
+\end{aligned}
+$$
 
 ## 三、比较
 
@@ -139,19 +154,23 @@ $$\begin{aligned}
 
 误差传递公式：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \Delta(u\pm v)&=\Delta u+\Delta v\\
 \Delta(uv)&=\Delta u\cdot v+u\cdot\Delta v\\
 \Delta\left(\frac uv\right)&=\frac{\Delta u\cdot v+u\cdot\Delta v}{v^2}
-\end{aligned}$$
+\end{aligned}
+$$
 
 导数计算公式：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 (u\pm v)'&=u'\pm v'\\
 (uv)'&=u'v+uv'\\
 \left(\frac uv\right)'&=\frac{u'v-uv'}{v^2}\\
-\end{aligned}$$
+\end{aligned}
+$$
 
 可以看出，它们除了符号差异以外十分相像；为什么会有这种相似呢？
 

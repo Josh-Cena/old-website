@@ -30,13 +30,13 @@ But problems soon emerged. To name a few:
 2. I failed to set up auto deployment. CI constantly failed, and the [official documentation](https://cli.vuejs.org/guide/deployment.html#platform-guides) didn't help much with handling CircleCI, the CI/CD app I'm using. **This is not Vue's problem, but mine.** I just want some paradigm that I can directly copy from, which unfortunately was not available.
 3. I don't have much experience with UI designs. The hard-coded CSS that looks good on a computer screen becomes messed up on a mobile screen. In addition, the UI framework Vuetify was too profound to work with.
 
-In short, I want a tool that I can spend 30 minutes building *something*, not spending 30 days building *everything*. Docusaurus is good in this respect for its rapid development.
+In short, I want a tool that I can spend 30 minutes building _something_, not spending 30 days building _everything_. Docusaurus is good in this respect for its rapid development.
 
 I've already built two docusaurus apps. The homepage for [our Computerization club](https://computerization.io), and the homepage for the [Baterock server](https://baterock-minecraft.github.io). They had the exact same tech stack, so there indeed exists a paradigm that I can readily use.
 
 Maybe I shouldn't have compared Vue with Docusaurus, just like one won't compare a knife to a fork, but I was simply illustrating the point of my migration to Docusaurus. It supported hosting Markdown documents, and also exposed React APIs to build other components. However, I did have to learn React since I've always worked with Vue, and the striking difference between Vue and React may be yet another topic worth reflecting on. (And that might be a holy war worth fighting. In this war I still stand with Vue.)
 
-I still don't know if Docusaurus is the best tool to use for a personal webpage (for example, several people I know use Wordpress), but I decided to stick to what I'm familiar with. The primary purpose of Docusaurus, in fact, is to host documentation for open-source projects, hence the word *"Doc"*-usaurus. But it looks equally good for hosting articles and blog posts.
+I still don't know if Docusaurus is the best tool to use for a personal webpage (for example, several people I know use Wordpress), but I decided to stick to what I'm familiar with. The primary purpose of Docusaurus, in fact, is to host documentation for open-source projects, hence the word _"Doc"_-usaurus. But it looks equally good for hosting articles and blog posts.
 
 ## Building the app
 
@@ -52,13 +52,15 @@ And then there's lots of customization to be made. Docusaurus has dummy contents
 
 1. Remove all pre-existing docs and blogs and add some real contents. Modify `/sidebars.js` as needed.
 2. Select a theme color for the page. I used `#39cac4`, reason given in the <a href="/CV/">profile</a>. Consult [this tool](https://v2.docusaurus.io/docs/styling-layout#styling-your-site-with-infima) for different shades, and paste them in `/src/css/custom.css`.
-3. Draw a logo for the webpage. Most might use the GitHub avatar or a photo, but I did draw a logo which *then* became my new GitHub avatar. If you wish, re-draw the feature images on the front page as well.
+3. Draw a logo for the webpage. Most might use the GitHub avatar or a photo, but I did draw a logo which _then_ became my new GitHub avatar. If you wish, re-draw the feature images on the front page as well.
 4. Browse through `/docusaurus.config.js` line-by-line and make necessary modifications.
 5. Browse through `/src/pages/index.js` line-by-line and make necessary modifications.
 6. To enable TypeScript support, run `yarn add @docusaurus/module-type-aliases`. Then add the file to the root:
+
 ```typescript title="types.d.ts"
 /// <reference types="@docusaurus/module-type-aliases" />
 ```
+
 7. $\text{\KaTeX}$ is a **must** for me. Add it by running
 
 ```bash

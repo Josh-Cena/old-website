@@ -1,14 +1,14 @@
 ---
 id: law
 title: 安提戈涅：恶法非法！
-sidebar_label: 'Antigone: unjust laws are not laws'
+sidebar_label: "Antigone: unjust laws are not laws"
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
 > First published on Dec 29, 2020
 >
@@ -26,7 +26,7 @@ export const Pic = ({children, src}) => (
 
 <Pic src="/img/./docs/Humanities/law/JGibibkelET69KSYobCgBALSL5DmFHicXQ01ldBRhADKZMntTic78ViaAJRMic38klJl4taXqTnkgYFsibVz5V5iaVanDg.png"></Pic>
 
-作为陪审团，我们全班（26人）被要求决定两名被告是否有罪。结果是：
+作为陪审团，我们全班（26 人）被要求决定两名被告是否有罪。结果是：
 
 **案例一**：20-6，有罪；
 
@@ -99,7 +99,6 @@ export const Pic = ({children, src}) => (
 其中最反直觉的一个主张应该是(1)，尤其是对于我们这些无神论者来说，因为它告诉我们世界上存在不随社会与人类而变化的道德规范（所谓“先验的”）。基督徒、佛教徒或其他宗教信仰者能够接受绝对道德准则的存在，因为他们信仰的神已经用经书透露了这样的内容；但我们中的许多人相信，道德是一种社会现象，是与经济基础、生产关系、阶级背景等脱不开关系的——也就是说，道德是相对的，人类是道德的发明者而非发现者。
 
 <Pic src="/img/./docs/Humanities/law/JGibibkelET6ick0ibcAEyeNxl82IfesMicbv3BR3E96XEky4osJugeFRFemuZqLGl1sicsC8aVYibhphBlVGC2fqOiaGg.jpeg">Karl Marx: "Morality ... have no history, no development; but men, developing their material production and their material intercourse, alter, along with this their real existence, their thinking and the products of their thinking."</Pic>
-
 
 这种论断有其深厚的理论基础，从斯宾诺莎到休谟，都认为事物没有本质上的恶和善。但我们也能够接受许多哲学家在推导自己的哲学体系时，在论证的开头假设一系列“不证自明的准则”，并由此引出后续的结论；这些公理一定程度上可以被称作他们的绝对道德。
 

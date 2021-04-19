@@ -4,12 +4,12 @@ title: 猫奴
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
-> 首次发布于2020年12月15日
+> 首次发布于 2020 年 12 月 15 日
 >
 > 原文链接：https://mp.weixin.qq.com/s/x-gZ4YE85sWlqMY42UvlUw
 
@@ -85,7 +85,7 @@ export const Pic = ({children, src}) => (
 
 “请便。”
 
-修理非常顺利。不过是松动了一颗螺丝。冬天时，固定胶松脱的事常有发生。他上了胶，又把每个关节重新点了一滴润滑油。他盯着那块现在一片死寂的芯片，它现在包含着可能是这世界上最智慧的个体之一。当那些LED灯闪闪烁烁时，处理器里到底流淌的是电流还是血流？
+修理非常顺利。不过是松动了一颗螺丝。冬天时，固定胶松脱的事常有发生。他上了胶，又把每个关节重新点了一滴润滑油。他盯着那块现在一片死寂的芯片，它现在包含着可能是这世界上最智慧的个体之一。当那些 LED 灯闪闪烁烁时，处理器里到底流淌的是电流还是血流？
 
 他拨动开关，猫的四肢僵直了一瞬，立刻恢复了自然的状态。
 

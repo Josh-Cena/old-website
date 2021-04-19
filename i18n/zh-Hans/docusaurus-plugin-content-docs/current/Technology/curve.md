@@ -4,12 +4,12 @@ title: 如何画一条等宽的曲带
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
-> 首次发布于2021年3月28日
+> 首次发布于 2021 年 3 月 28 日
 >
 > 原文链接：https://mp.weixin.qq.com/s/s3iIqw9Y1PCi5Hf2LNybyQ
 
@@ -33,19 +33,23 @@ export const Pic = ({children, src}) => (
 
 然后，由于切线斜率$k_1=f'(m)$，而法线斜率是它的负倒数$k_2=-\frac{1}{f'(m)}$。这样就不难算出两条虚线段的长。
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \cos\theta&=\pm\sqrt{\frac{1}{1+\tan^2\theta}}=\pm\frac{f'(m)}{\sqrt{1+f'(m)^2}},\\\sin\theta&=\tan\theta\cos\theta=\mp\frac{1}{\sqrt{1+f'(m)^2}}
-\end{aligned}$$
+\end{aligned}
+$$
 
-因为做了开方操作，产生了±号——这个±号是合理的，因为我们没有确定过曲线的移动方向。比如图中的情况，就是$cos$取负号，$sin$取正号；而如果朝反方向移动，两个符号就要反过来。
+因为做了开方操作，产生了 ± 号——这个 ± 号是合理的，因为我们没有确定过曲线的移动方向。比如图中的情况，就是$cos$取负号，$sin$取正号；而如果朝反方向移动，两个符号就要反过来。
 
 得到两条线段长后，就不难得到$\color{blue}{\text{A'}}$的坐标了。
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \color{red}{(m,f(m))}\mapsto\color{blue}{\left(m\pm w\frac{f'(m)}{\sqrt{1+f'(m)^2}},f(m)\mp w\frac{1}{\sqrt{1+f'(m)^2}}\right)}
-\end{aligned}$$
+\end{aligned}
+$$
 
-这个坐标看起来很像回事。只要在曲线上多采一点坐标，就可以用Python画一条曲线出来。为了检验公式的正确性，我选择了$y=x^2$，将这条曲线向外平移1个单位。
+这个坐标看起来很像回事。只要在曲线上多采一点坐标，就可以用 Python 画一条曲线出来。为了检验公式的正确性，我选择了$y=x^2$，将这条曲线向外平移 1 个单位。
 
 ```python
 import numpy as np
@@ -111,7 +115,7 @@ plt.show()
 
 <Pic src="/img/./docs/Technology/curve/JGibibkelET69kvA5qMPE6En5bAQibJ83DGVViavdaFU5DyjlKUpYN0pgBwxHqu7t4ymVUCXW3CZX5icawIMBjGlkCg.png"></Pic>
 
-事实上，许多矢量绘图软件得到的效果就是这样的，比如TeX中的TikZ，如果把线粗设成2cm，画出的就是这样的曲线：
+事实上，许多矢量绘图软件得到的效果就是这样的，比如 TeX 中的 TikZ，如果把线粗设成 2cm，画出的就是这样的曲线：
 
 <Pic src="/img/./docs/Technology/curve/JGibibkelET6iczCS5DbIFTyRXwqNhiczPUlrqmqkia6qSTxTKuAiaf6WiagdEmZELE3WmPRW6ic6Eunib3naeuVjm7ouCw.png"></Pic>
 
@@ -121,57 +125,73 @@ plt.show()
 
 那么临界情况是什么？事实上，尖角正是来自于“消失的点”：如果两条从左右分别移动而来的曲线交汇了，那么就会出现尖角，因此还是要从点消失的条件出发。在抛物线的例子里，如果一个点坐标为$(m,m^2)$，而它的像的横坐标 > 0，那么它消失了。代入变换公式：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 m-w\frac{2m}{\sqrt{1+4m^2}}&>0\\
 w\frac{2}{\sqrt{1+4m^2}}&>1\\
 w^2-\frac{1}{4}&>m^2
-\end{aligned}$$
+\end{aligned}
+$$
 
 使它无解的条件是$w<0.5$。因此只要移动距离小于$0.5$，就不会有消失的点。
 一般地说，如果$f'(k)=0$，那么找一点$(m,f(m)),m < k$，假设它在变换后消失了，代入变换公式：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 m-w\frac{f'(m)}{\sqrt{1+f'(m)^2}}&>k\\
 \text{i. } f'(x)>0: \frac{m-k}{f'(m)}&>\frac{w}{\sqrt{1+f'(m)^2}}\\
 \text{ii. } f'(x)<0: \frac{m-k}{f'(m)}&<\frac{w}{\sqrt{1+f'(m)^2}}\\
-\end{aligned}$$
+\end{aligned}
+$$
 
-注意到，情况 i 的大于号左边为负，右边为正，因此肯定无解。这对应的是“凸曲线向外移”的情况。而我们要做的就是找到情况 ii 中使得$m$无解的$w$取值范围。如果把 ii 的不等式整理成一个函数$g(m)$平移$w$个单位的表达式： 
+注意到，情况 i 的大于号左边为负，右边为正，因此肯定无解。这对应的是“凸曲线向外移”的情况。而我们要做的就是找到情况 ii 中使得$m$无解的$w$取值范围。如果把 ii 的不等式整理成一个函数$g(m)$平移$w$个单位的表达式：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \frac{\sqrt{1+f'(m)^2}}{f'(m)}(m-k)-w<0
-\end{aligned}$$
+\end{aligned}
+$$
 
-就不难理解，要求的是$w$的范围，使得在$m=k$附近，$g(m)-w$恒为正。那么把$g(m)$求个导，找它的最小值点。 
+就不难理解，要求的是$w$的范围，使得在$m=k$附近，$g(m)-w$恒为正。那么把$g(m)$求个导，找它的最小值点。
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 g'(m)=\frac{\sqrt{f'(m)^2+1}}{f'(m)}-\frac{f''(m)(m-k)}{f'(m)^2\sqrt{f'(m)^2+1}}&=0\\
 f'(m)^3+f'(m)-f''(m)(m-k)&=0
-\end{aligned}$$
+\end{aligned}
+$$
 
-经过一堆不太严谨的操作，我们发现，它的解正是$m=k$：也就是，随着$w$的增加，第一个消失的点不是别的点，正是顶点——这在多试验几种形状之后，也可以观察到。那么，只要求出在$m=k$处的$g(m)$的值，就知道$w$的最大值。但此时，$\frac{m-k}{f'(m)}$是一个0/0型的极限，因此掏出洛必达法则。 
+经过一堆不太严谨的操作，我们发现，它的解正是$m=k$：也就是，随着$w$的增加，第一个消失的点不是别的点，正是顶点——这在多试验几种形状之后，也可以观察到。那么，只要求出在$m=k$处的$g(m)$的值，就知道$w$的最大值。但此时，$\frac{m-k}{f'(m)}$是一个 0/0 型的极限，因此掏出洛必达法则。
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \lim_{m\to k}\frac{m-k}{f'(m)}\sqrt{1+f'(m)^2}=\frac{1}{f''(k)}\sqrt{1+f'(k)^2}=\frac{1}{f''(k)}
-\end{aligned}$$
+\end{aligned}
+$$
 
 这便是$w$的最大值。
 
 :::note
-如果你对曲率了解的话，你会知道，我们推导出的正是函数在$x=k$这一点的密切圆半径： 
-$$\begin{aligned}
+如果你对曲率了解的话，你会知道，我们推导出的正是函数在$x=k$这一点的密切圆半径：
+
+$$
+\begin{aligned}
 r=\frac{\left(1+f'(k)^2\right)^{3/2}}{|f''(k)|}
-\end{aligned}$$
-而由于$f'(k)=0$，分子为1，化简便得正文中的公式。
+\end{aligned}
+$$
+
+而由于$f'(k)=0$，分子为 1，化简便得正文中的公式。
 :::
 
-如果代入$k=0$，就可以算出0.5，和前文推导一致。对于$y=\sin x$，由于$f$有周期性质，不妨设$k=\frac{\pi}{2}$。 
+如果代入$k=0$，就可以算出 0.5，和前文推导一致。对于$y=\sin x$，由于$f$有周期性质，不妨设$k=\frac{\pi}{2}$。
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 w_{\max}=\frac{1}{-\sin(\pi/2)}=-1
-\end{aligned}$$
+\end{aligned}
+$$
 
-——这里算出了一个负数，因为实际上在$x=\frac{\pi}{2}$的左侧，$f'(x)>0$，此时的移动方向和上面推导中假设的方向相反。无论如何，我们知道只要sin曲线的移动距离小于1，就不会有尖角出现。之前给出的图中，平移距离为1，刚好是临界情况。验算一下，当平移距离为0.8时：
+——这里算出了一个负数，因为实际上在$x=\frac{\pi}{2}$的左侧，$f'(x)>0$，此时的移动方向和上面推导中假设的方向相反。无论如何，我们知道只要 sin 曲线的移动距离小于 1，就不会有尖角出现。之前给出的图中，平移距离为 1，刚好是临界情况。验算一下，当平移距离为 0.8 时：
 
 <Pic src="/img/./docs/Technology/curve/JGibibkelET69kvA5qMPE6En5bAQibJ83DGibNjImfHAqS9xNOzAFHIb8Ig0ObumIsp5DRCZUZnFdsJeKZ9Qqa4UOA.png"></Pic>
 
@@ -181,18 +201,22 @@ w_{\max}=\frac{1}{-\sin(\pi/2)}=-1
 
 <Pic src="/img/./docs/Technology/curve/JGibibkelET6ibuNBXDj8aYE7peXQibSYqcm3iaMiaqyzuHTqNnsPPeXf6Z4w2UrWfxhlA2p0QvhJj6FAlHvFV4oIlSQ.png"></Pic>
 
-我说，只要把导数换成隐函数的导数即可。 
+我说，只要把导数换成隐函数的导数即可。
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \color{red}{(m,n)}\mapsto\color{blue}{\left(m\pm w\frac{f'(m,n)}{\sqrt{1+f'(m,n)^2}},n\mp w\frac{1}{\sqrt{1+f'(m,n)^2}}\right)}
-\end{aligned}$$
+\end{aligned}
+$$
 
-圆太无聊了，我们代一个心形曲线进去（参数形式便于编程）： 
+圆太无聊了，我们代一个心形曲线进去（参数形式便于编程）：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 &\begin{cases}x=16\sin^3 t\\y=13\cos t-5\cos 2t-2\cos 3t-\cos 4t\end{cases}\\
 &\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{4\sin 4t+6\sin 3t+10\sin 2t-13\sin t}{48\sin^2 t\cos t}
-\end{aligned}$$
+\end{aligned}
+$$
 
 就能得到变换后的坐标。
 
@@ -264,7 +288,7 @@ plt.show()
 
 <Pic src="/img/./docs/Technology/curve/JGibibkelET69kvA5qMPE6En5bAQibJ83DGaM9xibhjbaAf4BXpeSIoZuOSicBNEiabMgw7Dh8JZGtRJt7hKcs7oy4mQ.png">有多根曲线和蓝曲线对应</Pic>
 
-我用TikZ给他画了个曲线，说明现有的程序也处理不了这种情况：
+我用 TikZ 给他画了个曲线，说明现有的程序也处理不了这种情况：
 
 <Pic src="/img/./docs/Technology/curve/JGibibkelET6iczCS5DbIFTyRXwqNhiczPUlxYvlKH5LqxPqsvh2iakNzpib5tDg0UCYA7J3A0FWc4rQQOGCZ2aVicGEQ.png"></Pic>
 

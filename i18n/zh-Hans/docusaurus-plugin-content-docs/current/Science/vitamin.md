@@ -4,12 +4,12 @@ title: 维生素图鉴
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
-> 首次发布于2021年3月6日
+> 首次发布于 2021 年 3 月 6 日
 >
 > 原文链接：https://mp.weixin.qq.com/s/JAlL8UWK5HoUHB_mZx1jpA
 
@@ -124,7 +124,7 @@ export const Pic = ({children, src}) => (
 
 ### 维生素 B<sub>12</sub>
 
-<Pic src="/zh-Hans/img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wE7E77SHYqBVYFHgM1ibH3KI4pcCju0SqPm717Ff3iaIiabsYjmX7Zslpw.jpeg">负责排版/画图的JC：“对不起，我放弃努力了”</Pic>
+<Pic src="/zh-Hans/img/./docs/Science/vitamin/JGibibkelET68attas1W3QEHSAJNxEja2wE7E77SHYqBVYFHgM1ibH3KI4pcCju0SqPm717Ff3iaIiabsYjmX7Zslpw.jpeg">负责排版/画图的 JC：“对不起，我放弃努力了”</Pic>
 
 维生素 B<sub>12</sub> 是结构最复杂的维生素，它包含了一组含钴化合物，主要形式是氰钴胺 (cyanocobalamin)。
 
@@ -183,6 +183,6 @@ export const Pic = ({children, src}) => (
 
 ---
 
-你可能注意到了，我们介绍的13种维生素是：A, B<sub>1</sub>, B<sub>2</sub>, B<sub>3</sub>, B<sub>5</sub>, B<sub>6</sub>, B<sub>7</sub>, B<sub>9</sub>, B<sub>12</sub>, C, D, E, K。那么B<sub>4</sub>, B<sub>8</sub>, B<sub>9</sub>, F, G 在哪里？实际上，它们来自于生物化学的原始时代，那个维生素定义还非常随性的时候。腺嘌呤 (adenine)、胆碱 (choline)、肉毒碱 (carnitine) 都曾被称为维生素 B<sub>4</sub>，但经过严格定义后，被排除出了维生素之列。同样地，维生素 B<sub>8</sub> 一磷酸腺苷 (AMP) 以及其他的许多 B 族维生素都被剔除了。维生素 F 是必需脂肪，现在已不被称为维生素。维生素 G 和 H 现在被叫做 B<sub>2</sub> 和 B<sub>7</sub>。
+你可能注意到了，我们介绍的 13 种维生素是：A, B<sub>1</sub>, B<sub>2</sub>, B<sub>3</sub>, B<sub>5</sub>, B<sub>6</sub>, B<sub>7</sub>, B<sub>9</sub>, B<sub>12</sub>, C, D, E, K。那么 B<sub>4</sub>, B<sub>8</sub>, B<sub>9</sub>, F, G 在哪里？实际上，它们来自于生物化学的原始时代，那个维生素定义还非常随性的时候。腺嘌呤 (adenine)、胆碱 (choline)、肉毒碱 (carnitine) 都曾被称为维生素 B<sub>4</sub>，但经过严格定义后，被排除出了维生素之列。同样地，维生素 B<sub>8</sub> 一磷酸腺苷 (AMP) 以及其他的许多 B 族维生素都被剔除了。维生素 F 是必需脂肪，现在已不被称为维生素。维生素 G 和 H 现在被叫做 B<sub>2</sub> 和 B<sub>7</sub>。
 
 总结一下，维生素是个大袋子，什么都能往里装。它们功能多样，摄入途径不同，但都对人体的正常工作起了至关重要的作用。

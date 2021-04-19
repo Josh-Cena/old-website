@@ -1,24 +1,24 @@
 ---
 id: circuitikz
 title: 用LaTeX优雅地绘制数字电路
-sidebar_label: 'Drawing digital circuits with LaTeX'
+sidebar_label: "Drawing digital circuits with LaTeX"
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
 > First published on May 4, 2020
 >
 > Link: https://zhuanlan.zhihu.com/p/137847051
 
-本文主要介绍数字电路的实现方法。使用的包为 $\text{CircuiTi}k\text{Z}$ 。（首次出现，标准拼写以示尊敬）主要信息来自于官方文档以及一些TikZ的使用经验。
+本文主要介绍数字电路的实现方法。使用的包为 $\text{CircuiTi}k\text{Z}$ 。（首次出现，标准拼写以示尊敬）主要信息来自于官方文档以及一些 TikZ 的使用经验。
 
-注意：circuitikz在2020年4月19日发布了1.1.0版本，提供了IEEE标准的逻辑门。对于数字电路绘制帮助极大，但未包含在TeX Live 2020发行版中，请务必记得更新。具体更新方法因发行版和系统不同而有差异。
+注意：circuitikz 在 2020 年 4 月 19 日发布了 1.1.0 版本，提供了 IEEE 标准的逻辑门。对于数字电路绘制帮助极大，但未包含在 TeX Live 2020 发行版中，请务必记得更新。具体更新方法因发行版和系统不同而有差异。
 
-## 一、导入Circuitikz
+## 一、导入 Circuitikz
 
 导言区写`\usepackage{circuitikz}`即可。 同时还可以在导言区做一些全局设置，比如：
 
@@ -35,7 +35,7 @@ export const Pic = ({children, src}) => (
 \end{circuitikz}
 ```
 
-也可以在开始环境时声明一个缩放比例。因为CircuiTikZ提供的逻辑门普遍偏大（个人感觉），所以我会把整个图缩小到0.7倍。
+也可以在开始环境时声明一个缩放比例。因为 CircuiTikZ 提供的逻辑门普遍偏大（个人感觉），所以我会把整个图缩小到 0.7 倍。
 
 ```tex
 \begin{circuitikz}[scale=0.7, transform shape] %必须添加transform shape选项才能正常缩放CircuiTikZ
@@ -43,16 +43,16 @@ export const Pic = ({children, src}) => (
 \end{circuitikz}
 ```
 
-## 二、TikZ基础
+## 二、TikZ 基础
 
-介绍CircuiTikZ之前，有必要介绍TikZ中的一些基础功能。CircuiTikZ只不过是TikZ的一个包装，所以所有下述的的TikZ指令都可以在CircuiTikZ中使用。
+介绍 CircuiTikZ 之前，有必要介绍 TikZ 中的一些基础功能。CircuiTikZ 只不过是 TikZ 的一个包装，所以所有下述的的 TikZ 指令都可以在 CircuiTikZ 中使用。
 
-TikZ的图形主要由三部分构成：坐标（coordinate），路径（path），节点（node）。它们大致的关系如下：
+TikZ 的图形主要由三部分构成：坐标（coordinate），路径（path），节点（node）。它们大致的关系如下：
 
 - 节点是*位于*一个坐标的二维结构；
 - 路径是*连接*若干个坐标的一维结构。
 
-每一条TikZ的指令大概都长这样：
+每一条 TikZ 的指令大概都长这样：
 
 ```tex
 \command[options] <other information>; %一定要有结尾的分号
@@ -70,9 +70,9 @@ TikZ的图形主要由三部分构成：坐标（coordinate），路径（path�
 
 <Pic src="https://pic4.zhimg.com/80/v2-911f9f1e0c0988336976d476442e8093_720w.jpg"></Pic>
 
-此处还用了`\draw`指令，但暂时不必在意，只需知道我们生成了一个从`(0,0)`到`(5,5)`，间隔为1的网格即可。注意到这个指令给三个选项赋了值：网格线的间距`step`，以及两个绘制选项`gray`和`very thin`，表示颜色和线的粗细。
+此处还用了`\draw`指令，但暂时不必在意，只需知道我们生成了一个从`(0,0)`到`(5,5)`，间隔为 1 的网格即可。注意到这个指令给三个选项赋了值：网格线的间距`step`，以及两个绘制选项`gray`和`very thin`，表示颜色和线的粗细。
 
-声明坐标时，我们实际上做的是把TikZ中的”笔尖“移到了那个位置，从那里开始绘制图形。在笔尖确定的情况下，我们也可以使用相对坐标，根据上一个坐标的偏移量来声明下一个坐标。如果笔尖位于`(x,y)`，那么下一个坐标可以用`+(a,b)`或者`++(a,b)`来表示，意为“将笔尖向右移动`a`，向上移动`b`”，即`(x+a,y+b)`。一个加号和两个加号的区别在于两个加号声明的相对坐标会变成新的“笔尖位置”，而一个加号的坐标不会影响“笔尖位置”，笔尖仍然留在`(x,y)`上——但这只会在声明第二个相对坐标时有区别。下面的代码会生成一样的网格图案：
+声明坐标时，我们实际上做的是把 TikZ 中的”笔尖“移到了那个位置，从那里开始绘制图形。在笔尖确定的情况下，我们也可以使用相对坐标，根据上一个坐标的偏移量来声明下一个坐标。如果笔尖位于`(x,y)`，那么下一个坐标可以用`+(a,b)`或者`++(a,b)`来表示，意为“将笔尖向右移动`a`，向上移动`b`”，即`(x+a,y+b)`。一个加号和两个加号的区别在于两个加号声明的相对坐标会变成新的“笔尖位置”，而一个加号的坐标不会影响“笔尖位置”，笔尖仍然留在`(x,y)`上——但这只会在声明第二个相对坐标时有区别。下面的代码会生成一样的网格图案：
 
 ```tex
 \begin{circuitikz}[scale=0.7, transform shape]
@@ -82,7 +82,7 @@ TikZ的图形主要由三部分构成：坐标（coordinate），路径（path�
 
 ### 2、路径
 
-一个路径是连接若干个点的线。最简单的声明路径的方法（也是在CircuiTikZ中少数派得上用场的方法之一）：
+一个路径是连接若干个点的线。最简单的声明路径的方法（也是在 CircuiTikZ 中少数派得上用场的方法之一）：
 
 ```tex
 \begin{circuitikz}[scale=0.7, transform shape]
@@ -91,7 +91,7 @@ TikZ的图形主要由三部分构成：坐标（coordinate），路径（path�
 \end{circuitikz}
 ```
 
-在这个指令中，`\path`表示一个路径，`--`连接了两个坐标`(1,1)`和`(4,5)`。这样，就在这两个点之间连接了一条线段。 但是，现在只是声明了路径，为了让TikZ真的去画它，还需要显式地给一个`draw`：
+在这个指令中，`\path`表示一个路径，`--`连接了两个坐标`(1,1)`和`(4,5)`。这样，就在这两个点之间连接了一条线段。 但是，现在只是声明了路径，为了让 TikZ 真的去画它，还需要显式地给一个`draw`：
 
 ```tex
 \begin{circuitikz}[scale=0.7, transform shape]
@@ -140,7 +140,7 @@ TikZ的图形主要由三部分构成：坐标（coordinate），路径（path�
 
 ### 3、节点
 
-一个节点是一个微型的TikZ图形。一般我们用它添加文字，也可以用它画一些小图形。节点是一个二维图形，它会按预先设置好的一个锚点来对齐设定的坐标。
+一个节点是一个微型的 TikZ 图形。一般我们用它添加文字，也可以用它画一些小图形。节点是一个二维图形，它会按预先设置好的一个锚点来对齐设定的坐标。
 
 ```tex
 \begin{circuitikz}[scale=0.7, transform shape]
@@ -198,7 +198,7 @@ TikZ的图形主要由三部分构成：坐标（coordinate），路径（path�
 
 要注意的是，要用`(a.north)`而不只是`(a)`，因为后者所代表的坐标是在"A"的中央，而前者才是之前声明的`(1,1)`这个点。
 
-利用节点，可以绘制一些我们并不清楚真实坐标的点。但是，如果用相对坐标，就需要我们同时知道横纵坐标的偏移量。如果我们只知道一个偏移量，而知道另一个的绝对坐标，又如何处理？此时需要使用tikz library `calc` 中的`let`语法：
+利用节点，可以绘制一些我们并不清楚真实坐标的点。但是，如果用相对坐标，就需要我们同时知道横纵坐标的偏移量。如果我们只知道一个偏移量，而知道另一个的绝对坐标，又如何处理？此时需要使用 tikz library `calc` 中的`let`语法：
 
 ```tex
 \draw let \p<数字> = (节点) in ...
@@ -216,9 +216,9 @@ TikZ的图形主要由三部分构成：坐标（coordinate），路径（path�
 
 <Pic src="https://pic4.zhimg.com/80/v2-23ad627961a9cd6169424a334eac00cb_720w.jpg"></Pic>
 
-## 三、CircuiTikZ中的元件
+## 三、CircuiTikZ 中的元件
 
-CircuiTikZ中有两类元件：“路径类”和“节点类”。基本所有的数字电路元件都属于节点式，所以只举一例路径类的绘制方法。
+CircuiTikZ 中有两类元件：“路径类”和“节点类”。基本所有的数字电路元件都属于节点式，所以只举一例路径类的绘制方法。
 
 ```tex
 \begin{circuitikz}[scale=0.7, transform shape]
@@ -298,10 +298,11 @@ CircuiTikZ中有两类元件：“路径类”和“节点类”。基本所有�
 - 反施密特电路：`inv schmitt port`；
 - 缓冲门：`buffer port`
 
-更多的关于电路绘制的技术细节可以见CircuiTikZ官方文档：
+更多的关于电路绘制的技术细节可以见 CircuiTikZ 官方文档：
 
-[CircuiTikZ文档](http://mirrors.sjtug.sjtu.edu.cn/ctan/graphics/pgf/contrib/circuitikz/doc/circuitikzmanual.pdf)
+[CircuiTikZ 文档](http://mirrors.sjtug.sjtu.edu.cn/ctan/graphics/pgf/contrib/circuitikz/doc/circuitikzmanual.pdf)
 ​
+
 ## 四、实例
 
 以一位比较器为例：
@@ -370,9 +371,9 @@ CircuiTikZ中有两类元件：“路径类”和“节点类”。基本所有�
 
 <Pic src="https://pic1.zhimg.com/80/v2-cd12fd05fd9a277b53527029f7e9fa7c_720w.jpg"></Pic>
 
-其中还用了一个小语法：在大括号之间的内容会被TikZ的数学引擎计算。所以`{\x2-0.5cm}`有类似`(\x2,\y2)+(-0.5,0)`的效果。`to`中包含的`-*`选项会在线路末端生成一个小黑圆表示连接点。这是CircuiTikZ提供的连接方式，而不是TikZ的，所以只有在用`to`时才能使用，如果用`--`则不行。
+其中还用了一个小语法：在大括号之间的内容会被 TikZ 的数学引擎计算。所以`{\x2-0.5cm}`有类似`(\x2,\y2)+(-0.5,0)`的效果。`to`中包含的`-*`选项会在线路末端生成一个小黑圆表示连接点。这是 CircuiTikZ 提供的连接方式，而不是 TikZ 的，所以只有在用`to`时才能使用，如果用`--`则不行。
 
-最后，延长导线，添加输入输出标签。对于文字标签，有一个注意：由于在最前面设置了`scale=0.7`，会导致文字偏小；所以我们要手动再把文字比例调回来。（这是CircuiTikZ中一个不合理的地方，TikZ的缩放不影响文字） 调整方法是再为文字节点添加`scale={1/0.7}`。
+最后，延长导线，添加输入输出标签。对于文字标签，有一个注意：由于在最前面设置了`scale=0.7`，会导致文字偏小；所以我们要手动再把文字比例调回来。（这是 CircuiTikZ 中一个不合理的地方，TikZ 的缩放不影响文字） 调整方法是再为文字节点添加`scale={1/0.7}`。
 
 ```tex
 \begin{circuitikz}[scale=0.7, transform shape]

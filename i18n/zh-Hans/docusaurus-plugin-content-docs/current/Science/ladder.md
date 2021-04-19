@@ -4,12 +4,12 @@ title: 又见辣鸡化学题 | 一格，两格，搭梯子
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
-> 首次发布于2021年1月18日
+> 首次发布于 2021 年 1 月 18 日
 >
 > 原文链接：https://mp.weixin.qq.com/s/YGxj3ZUDjoqYZzJTnS6JAw
 
@@ -19,13 +19,13 @@ export const Pic = ({children, src}) => (
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET685a5rxPXLibElY6oEgLE59ObQQvFtThMRiagV3u8pgwuF0zLP7w4cEhIKqf76klOyFiaaxHAEMEEPkA.png"></Pic>
 
-我甚至在和别人押题的时候透露了自己的观察：2019年考<span style={{color:'green'}}>氮</span>，2020年肯定考<span style={{color:'yellow'}}>硫</span>！就这样，我在四月时信心满满地踏上了考场，并成功被自己的押题技巧折服……然后，白给。
+我甚至在和别人押题的时候透露了自己的观察：2019 年考<span style={{color:'green'}}>氮</span>，2020 年肯定考<span style={{color:'yellow'}}>硫</span>！就这样，我在四月时信心满满地踏上了考场，并成功被自己的押题技巧折服……然后，白给。
 
-当然，这不影响我的获奖和不错的全国排名。但一道题目全部白给，给我留下了深深的阴影。于是，一年后，我重新拾起了这道题目，在一番研究后，发现它的难度相比2019年，的确要简单不少。希望我分析完题目后，你也能有同感。
+当然，这不影响我的获奖和不错的全国排名。但一道题目全部白给，给我留下了深深的阴影。于是，一年后，我重新拾起了这道题目，在一番研究后，发现它的难度相比 2019 年，的确要简单不少。希望我分析完题目后，你也能有同感。
 
 （如果你是大佬，不要鄙视我在这种题目上白给）
 
-本题来自UKChO 2020。题目：
+本题来自 UKChO 2020。题目：
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET6ick0ibcAEyeNxl82IfesMicbvibLCOMyADgKWxX4d5WNFJPvMXGQQAqQibwibOicH8fBvl68uoicianuKsC4g.png"></Pic>
 
@@ -59,7 +59,7 @@ export const Pic = ({children, src}) => (
 
 这两步都完全可以通过对底物性质的了解得到，而不必明白它背后的机理。氢化铝锂、硼氢化钠为代表的还原剂，以及取代羟基用的甲磺酰氯，都已经是英国化奥的老面孔，需要能立刻反应出它们对应的反应。但接下来，就需要不少技巧了。
 
-向B中加入硫化钠与乙醇。
+向 B 中加入硫化钠与乙醇。
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET69c0vqtsX992BHFlpwxpFKic9t9BT5MB7hKMtJgGUva2dbxz0QYg16KmXWnOxd3KCXkQMMZ4DS0WYA.png"></Pic>
 
@@ -71,7 +71,7 @@ export const Pic = ({children, src}) => (
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET69YLiapxBjx3AmzoZ7tLSXCeLG7Zdv6HfBtMCUruaTOkkRHuvg171audu8wmpwibfYkicNPBs0NgNjqA.jpeg"></Pic>
 
-C加入过氧化氢后，得到了一个硫氧双键。如果对杂环反应比较了解，就应当明白这里发生的是类似四氢噻吩被氧化的反应，过氧化氢会氧化硫原子，在上面再加一个氧原子，因此反推出C的结构。
+C 加入过氧化氢后，得到了一个硫氧双键。如果对杂环反应比较了解，就应当明白这里发生的是类似四氢噻吩被氧化的反应，过氧化氢会氧化硫原子，在上面再加一个氧原子，因此反推出 C 的结构。
 
 ## C.
 
@@ -81,7 +81,7 @@ C加入过氧化氢后，得到了一个硫氧双键。如果对杂环反应比�
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET6ick0ibcAEyeNxl82IfesMicbvpOXdblXYyR1ibhSic3PoK7lGpE1vGsT6YCUFRdqKP46nxohWUick5nVIg.jpeg"></Pic>
 
-关于硫的机理，在往年从未如此重要——以前出现的甲磺酰氯，几乎都马上在下一步离去了，而不会进一步反应。得到C既需要不少积累，也需要一点运气与灵感。不过得不到它，也不影响后续推导。不要被它影响了心态。
+关于硫的机理，在往年从未如此重要——以前出现的甲磺酰氯，几乎都马上在下一步离去了，而不会进一步反应。得到 C 既需要不少积累，也需要一点运气与灵感。不过得不到它，也不影响后续推导。不要被它影响了心态。
 
 继续反应，加入磺酰氯。
 
@@ -89,7 +89,7 @@ C加入过氧化氢后，得到了一个硫氧双键。如果对杂环反应比�
 
 同样，有不止一种解题思路。磺酰氯是一种常见的氯化剂，因此猜到它在底物上添加了一个氯原子。
 
-如果用质谱数据推D的分子质量，要注意到 $68.3\% + 21.8\% = 90.1\%$；剩下的 $9.9%$，可以猜是165.00。这样算得D的平均分子质量为 $164.01×0.683 + 165.00×0.099 + 166.00×0.218 = 164.54\,\text{g/mol}$，而原物质的分子质量为 $130.20\,\text{g/mol}$，也可以推断出用一个Cl (35.45)取代了一个H (1.008)。
+如果用质谱数据推 D 的分子质量，要注意到 $68.3\% + 21.8\% = 90.1\%$；剩下的 $9.9%$，可以猜是 165.00。这样算得 D 的平均分子质量为 $164.01×0.683 + 165.00×0.099 + 166.00×0.218 = 164.54\,\text{g/mol}$，而原物质的分子质量为 $130.20\,\text{g/mol}$，也可以推断出用一个 Cl (35.45)取代了一个 H (1.008)。
 
 但这个氯原子取代在哪里？这需要一点对机理的认识。由于磺酰氯的氯化遵循自由基机理（和氯气很像；事实上，SO<sub>2</sub>Cl<sub>2</sub> 可以被认为是在反应中分解成了 SO<sub>2</sub> 和 Cl<sub>2</sub>。另一方面，亚磺酰氯 SOCl<sub>2</sub> 则提供的是氯离子，因此是亲核取代机理），而亚磺酰基（S=O）包含双键，是一个非常典型的自由基活化基团，因此，SO<sub>2</sub>Cl<sub>2</sub> 氯代时会选择靠近活化基团的烃基。
 
@@ -103,11 +103,11 @@ C加入过氧化氢后，得到了一个硫氧双键。如果对杂环反应比�
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET69YLiapxBjx3AmzoZ7tLSXCedhW6EBuxDHs4S9rKpaCuYNa2DkdP0fth42ynxeBZFgqNtXeicjc51zA.png"></Pic>
 
-同时有一个剧透性质的提示：这是个强碱。因此我们不用考虑叔丁醇钾的具体性质，而只用把它当作一个碱来看待。（事实上，叔丁醇钾是比氢氧化钾还强的碱。）和叔丁醇钾同理的，还有LDA，也是一个与世无争的碱。
+同时有一个剧透性质的提示：这是个强碱。因此我们不用考虑叔丁醇钾的具体性质，而只用把它当作一个碱来看待。（事实上，叔丁醇钾是比氢氧化钾还强的碱。）和叔丁醇钾同理的，还有 LDA，也是一个与世无争的碱。
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET6ibp22yfGQRTNG3uEC1ibHxbmyos0UsYxvNicjCpKLXUj3Hch5dKAqCCa9Aagag8Sw0QyAZEXufRcG5w.png">二异丙基氨基锂（LDA），这玩意在前几年频频出现</Pic>
 
-碱最常见的作用就是脱质子，尤其是注意到此处生成负离子。原物质中的酸性碳只有亚磺酰基的两个α-碳，在这里不大看得出哪个才是最终答案，因此姑且认为它们都是正确答案。
+碱最常见的作用就是脱质子，尤其是注意到此处生成负离子。原物质中的酸性碳只有亚磺酰基的两个 α-碳，在这里不大看得出哪个才是最终答案，因此姑且认为它们都是正确答案。
 
 ## E.
 
@@ -115,7 +115,7 @@ C加入过氧化氢后，得到了一个硫氧双键。如果对杂环反应比�
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET69YLiapxBjx3AmzoZ7tLSXCeGTm1Y1SaGwNjcjMVurSeYCPbm8THGwObFrL5fR1qgJ3xopW0WRq0ew.png"></Pic>
 
-顺带一提，生产中不使用氢氧化钠作为碱的原因，是为了避免发生取代反应。由于叔丁醇盐和LDA负离子的位阻特别大，不容易通过S<sub>N</sub>2反应取代氯，而只能作为碱催化消除反应。如果用氢氧化钠，就会有羟基取代氯原子。所以说叔丁醇“与世无争”。
+顺带一提，生产中不使用氢氧化钠作为碱的原因，是为了避免发生取代反应。由于叔丁醇盐和 LDA 负离子的位阻特别大，不容易通过 S<sub>N</sub>2 反应取代氯，而只能作为碱催化消除反应。如果用氢氧化钠，就会有羟基取代氯原子。所以说叔丁醇“与世无争”。
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET6ibp22yfGQRTNG3uEC1ibHxbm9AvO605RywNKkVAQKTZsr4v6WCfervIibfAwWWY38S6I6RCutYku7GA.png">氢氧根离子：体积微小，来去自如</Pic>
 
@@ -131,31 +131,31 @@ C加入过氧化氢后，得到了一个硫氧双键。如果对杂环反应比�
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET69YLiapxBjx3AmzoZ7tLSXCeeIl7RicF26wHmSIIdRnkQ43nSvcMarERxLOvXQDGAiazkT0CFLh71j6w.png"></Pic>
 
-这样我们就同时得到了E和F的结构。
+这样我们就同时得到了 E 和 F 的结构。
 
-接下来，F发生分解，放出了气体，剩下一个碳氢化合物。
+接下来，F 发生分解，放出了气体，剩下一个碳氢化合物。
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET69YLiapxBjx3AmzoZ7tLSXCen1rP02GRnejnsLJUNyRYDVFpemiagBSCYicVWhsTuvjgO2yVDHIX8dbQ.png"></Pic>
 
-X气体式量 $48.06\,\text{g/mol}$ ，在满篇是硫的前提下很容易猜到是 SO 气体。但是你很可能不知道一氧化硫这东西的存在性——事实上，它仅作为反应副产物出现，很快就会二聚成 S<sub>2</sub>O<sub>2</sub>。教科书上唯一提到一氧化硫的地方，就是加热环乙亚砜，生成一氧化硫和乙烯。因此套用同样的反应机理，得到G和X。
+X 气体式量 $48.06\,\text{g/mol}$ ，在满篇是硫的前提下很容易猜到是 SO 气体。但是你很可能不知道一氧化硫这东西的存在性——事实上，它仅作为反应副产物出现，很快就会二聚成 S<sub>2</sub>O<sub>2</sub>。教科书上唯一提到一氧化硫的地方，就是加热环乙亚砜，生成一氧化硫和乙烯。因此套用同样的反应机理，得到 G 和 X。
 
 ## G & X.
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET69YLiapxBjx3AmzoZ7tLSXCeoBwjXWEtkicSS9U7zLp5eCZekdKDo4QBDELPh9xCu76PSWlytib2YIwA.png"></Pic>
 
-而此处G甚至提供了两个提示：碳氢化合物，以及C13核磁谱。可以先用核磁谱验算一下，$141.7\,\text{ppm} = \ce{C=C}$；$44.1\,\text{ppm} = \ce{R^3CH}$；$20.8\,\text{ppm} = \ce{R^2CH2}$，正好对应。
+而此处 G 甚至提供了两个提示：碳氢化合物，以及 C13 核磁谱。可以先用核磁谱验算一下，$141.7\,\text{ppm} = \ce{C=C}$；$44.1\,\text{ppm} = \ce{R^3CH}$；$20.8\,\text{ppm} = \ce{R^2CH2}$，正好对应。
 
 接下来是铜催化的加成二聚反应，就有了最后的“梯烷”。
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET69YLiapxBjx3AmzoZ7tLSXCepxTaPKLEKAFej5Gpo6bofHXl41KsqbzWeR3gTTsZj1lDCxD4Jr7nsA.png"></Pic>
 
-这么一条路径需要对不少反应有了解，比如氯化、亲核取代、亚砜受热分解等等。其实也可以倒推，通过最后的梯烷结构和“二聚反应”的提示应该可以得到G的结构（只要把产物对称地切成两块即可），X也不难猜出，但究竟有多少人有水平据此反推出F，却没有水平正着做出来，我表示怀疑。
+这么一条路径需要对不少反应有了解，比如氯化、亲核取代、亚砜受热分解等等。其实也可以倒推，通过最后的梯烷结构和“二聚反应”的提示应该可以得到 G 的结构（只要把产物对称地切成两块即可），X 也不难猜出，但究竟有多少人有水平据此反推出 F，却没有水平正着做出来，我表示怀疑。
 
 还没有做完。后面一步，锰催化的氯化。
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET69YLiapxBjx3AmzoZ7tLSXCeuiclNJGaIwsh3Eibd6LuXM3yYXm1JicNjA6GWYgIUibOG7NssAVaPk5v2g.png"></Pic>
 
-可以看到，后面的反应物都是在角上有个取代基，这个碳原子显然是在这一步被活化的，因此得到H的结构。
+可以看到，后面的反应物都是在角上有个取代基，这个碳原子显然是在这一步被活化的，因此得到 H 的结构。
 
 ## H.
 
@@ -171,33 +171,33 @@ X气体式量 $48.06\,\text{g/mol}$ ，在满篇是硫的前提下很容易猜�
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET69YLiapxBjx3AmzoZ7tLSXCemq6jSOeticA9Qfb2aRXYXS5hYpI0efhEn32aT63LYMmXbW7kdqyf9qQ.png"></Pic>
 
-又出现了一个C13核磁谱，这个核磁谱很复杂，不过一个双键的 $140\,\text{ppm}$ 峰还是很明显的，可以验证消去反应的猜想。
+又出现了一个 C13 核磁谱，这个核磁谱很复杂，不过一个双键的 $140\,\text{ppm}$ 峰还是很明显的，可以验证消去反应的猜想。
 
 在一顿合成连上了一条侧链后，加入了氟化氢。这里的那条波浪键表示不确定是顺式构型还是反式构型。
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET6ibp22yfGQRTNG3uEC1ibHxbm7AWXBeLlB8gt34LgicXGsFNsLgdGf9cGCAyXiawSc7plRXvcHqAn4qYQ.png"></Pic>
 
-氟化氢与吡啶的络合物是一种专用的试剂，叫做Olah试剂。它是比纯氟化氢更安全的氟化剂。但我摊牌了：我不知道在有硅烃基的情况下，它到底是怎么反应的……所以我又去查了文献，找到了这个脱硅机理：[^2]
+氟化氢与吡啶的络合物是一种专用的试剂，叫做 Olah 试剂。它是比纯氟化氢更安全的氟化剂。但我摊牌了：我不知道在有硅烃基的情况下，它到底是怎么反应的……所以我又去查了文献，找到了这个脱硅机理：[^2]
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET6ibp22yfGQRTNG3uEC1ibHxbmQbpqZeKyIr86B9Z4x60H1uKNWBxvug5iantwFndOdsRDelpQmeU5n1w.png"></Pic>
 
-用HF-Py体系，可以把O-Si键切断，变为OH。这样得到J。
+用 HF-Py 体系，可以把 O-Si 键切断，变为 OH。这样得到 J。
 
 ## J.
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET6ibp22yfGQRTNG3uEC1ibHxbm3w4WBwIyAWWeD2eTeavtvnZOjJwUbWM1icyxlP3SibDU3nM9x7JRzsXA.png"></Pic>
 
-这实在是太勉强了。考试时，可能要么倒推（保证自己能根据三氧化铬的氧化性推出K，知道碳链末端是个羟基，然后对比J的前体中双键的位置，综合出J的结构），要么只能靠蒙……
+这实在是太勉强了。考试时，可能要么倒推（保证自己能根据三氧化铬的氧化性推出 K，知道碳链末端是个羟基，然后对比 J 的前体中双键的位置，综合出 J 的结构），要么只能靠蒙……
 
 最后一个物质，镍催化的氢化反应，显然加成了双键，不解释。
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET6ibp22yfGQRTNG3uEC1ibHxbmx72g1Bd2xiagIBcCTPYQsjPBGRBPhODO278E1iaLju4SMQf3UqNjC3ZA.png"></Pic>
 
-## K. 
+## K.
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET6ibp22yfGQRTNG3uEC1ibHxbmiaMWTg6JxaVvM1suEicw7QwaJa62dlAD3oHlJYOMdJFbxnmFpU1qWibVA.png"></Pic>
 
-最后一步其实也可以作为考点的（如果通过倒推得到K那么的确是考点），酸性三氧化铬作为氧化剂，把羟基氧化成羧基。有同样作用的物质包括高锰酸钾、重铬酸钾等。
+最后一步其实也可以作为考点的（如果通过倒推得到 K 那么的确是考点），酸性三氧化铬作为氧化剂，把羟基氧化成羧基。有同样作用的物质包括高锰酸钾、重铬酸钾等。
 
 <Pic src="/zh-Hans/img/./docs/Science/ladder/JGibibkelET6ibp22yfGQRTNG3uEC1ibHxbmKDu66OiaxGaPZBxYBOru20mV2kltibEzRrdnFicONTAdeGRB7viaic7TFjA.png"></Pic>
 
@@ -205,9 +205,9 @@ X气体式量 $48.06\,\text{g/mol}$ ，在满篇是硫的前提下很容易猜�
 
 本题难点可能在于是否有充足的时间钻研这道题。经过前五道题的磨练，很可能已经理智全无了。同时，题目对各种反应机理考察得非常全面，加成、消去、取代、氧化、还原都有涉及，关键就在于对每种反应的底物是否熟悉。许多机理可能比较陌生，如果一步误入歧途，就很难再爬出来了，所以一定要正推和反推结合。
 
-今年许多中间产物都出现了<span style={{color: 'yellow'}}>硫</span>元素，也考了几个硫相关的机理。因此，我大胆在考前押题，2021年考<span style={{color: 'green'}}>硼</span>化合物。如果押中……请看我继续白给。
+今年许多中间产物都出现了<span style={{color: 'yellow'}}>硫</span>元素，也考了几个硫相关的机理。因此，我大胆在考前押题，2021 年考<span style={{color: 'green'}}>硼</span>化合物。如果押中……请看我继续白给。
 
 ## 参考资料
 
-[^1]: Xu, Jiaxi. "Recent synthesis of thietanes." *Beilstein journal of organic chemistry* vol.16 1357-1410. 22 Jun. 2020, doi:10.3762/bjoc.16.116
+[^1]: Xu, Jiaxi. "Recent synthesis of thietanes." _Beilstein journal of organic chemistry_ vol.16 1357-1410. 22 Jun. 2020, doi:10.3762/bjoc.16.116
 [^2]: E. Ābele. "Recent advances in activation of silicon bonds by fluoride ion." Latvian Journal of Chemistry. No. 3 173-191. 2012, doi:10.2478/v10161-012-0014-y

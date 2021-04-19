@@ -4,10 +4,10 @@ title: Red pills for Christmas
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
 > First published on Dec 25, 2020
 >
@@ -71,8 +71,8 @@ He stood up from the chair behind the cashier. The tiny shop was crowded with sh
 
 ## Postscript
 
-Christmas lights was this one song that I once promised to play for a girl at Christmas but didn’t get a chance to. Plus, I wasn’t able to purchase a tenth-anniversary vinyl version of this song, so I was pretty upset. (It cost quite a fortune anyway.) This morning, I received a marvelous *A Rush of Blood to the Head* vinyl record as Christmas present from that girl. Well, in return, here is how I would play this song for her—not on the piano, but on paper. I hope she likes it.
+Christmas lights was this one song that I once promised to play for a girl at Christmas but didn’t get a chance to. Plus, I wasn’t able to purchase a tenth-anniversary vinyl version of this song, so I was pretty upset. (It cost quite a fortune anyway.) This morning, I received a marvelous _A Rush of Blood to the Head_ vinyl record as Christmas present from that girl. Well, in return, here is how I would play this song for her—not on the piano, but on paper. I hope she likes it.
 
-Red pills are by no doubt a tribute to the *Matrix*. Last time, when I wrote *[Blue pills and a birthday](../Stories/blue-pills)*, someone asked me if blue pills had anything to do with the movie. My answer back then was no—they just referred to the anti-depression drug. But the idea got the point since that story was certainly meant to be dreamy and fantastical. So this one hopefully gets soberer. Recently there have been some political claims about “taking the red pill”; well, I have no interest in such business. This story is about some personal feelings, about how eventually everyone has to come back to reality. This is also another story with elements of Christianity, which has proven to be a challenge for me.
+Red pills are by no doubt a tribute to the _Matrix_. Last time, when I wrote _[Blue pills and a birthday](../Stories/blue-pills)_, someone asked me if blue pills had anything to do with the movie. My answer back then was no—they just referred to the anti-depression drug. But the idea got the point since that story was certainly meant to be dreamy and fantastical. So this one hopefully gets soberer. Recently there have been some political claims about “taking the red pill”; well, I have no interest in such business. This story is about some personal feelings, about how eventually everyone has to come back to reality. This is also another story with elements of Christianity, which has proven to be a challenge for me.
 
 I almost wasn’t able to finish this and had to leave the draft to someone else who would help me. But then I said to myself, “Dude, it’s Christmas!”, so anyway, I did make it. In addition, I made a minor last-minute edit to the ending. Everyone, have yourself a merry little Christmas!

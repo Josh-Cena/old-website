@@ -4,10 +4,10 @@ title: 关于这些文章
 ---
 
 export const Pic = ({children, src}) => (
-    <div style={{textAlign: 'center'}}>
-        <img src={src} />
-        <p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-    </div>);
+<div style={{textAlign: 'center'}}>
+<img src={src} />
+<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
+</div>);
 
 当我开始建造这个网站的时候，我需要作出不少抉择。最重要的是关于网站的定位——我应该发些什么？我的目标群体是谁？我应该给自己立什么人设？我应该多认真地对待它？
 
