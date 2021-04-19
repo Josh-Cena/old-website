@@ -37,7 +37,7 @@ type itemProps = {
   handler: updateHandler;
 };
 
-const Item = ({ item, handler }: itemProps): ReactElement => {
+export default function Item({ item, handler }: itemProps): ReactElement {
   const classes = useStyles();
   const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
   const theme = createMuiTheme({
@@ -89,5 +89,3 @@ const Item = ({ item, handler }: itemProps): ReactElement => {
     </ThemeProvider>
   );
 }
-
-export default Item;
