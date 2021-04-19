@@ -108,7 +108,7 @@ class Todo extends Component<todoProps, todoState> {
                     </a>
                   }}
                 >
-                  {'{note} This is not intended to be functional, but merely a showcase of what I had once created. That was probably my first independent project, originally with plain HTML/CSS/JavaScript, later refactored with Vue. It was committed to {link}. Looking back at those days when I was green and ignorant, there were a lot worth reminiscing. The only unfortunate thing was that the original version used Vue and here I had to use React; plus, to match the page style, I drastically modified everything. So it\'s like the ship of Theseus—every single line of code has been changed, but believe it or not, it\'s still the same Todo list project.'}
+                  {'{note} This is not intended to be functional, but merely a showcase of what I had once created. That was probably my first independent project, originally with plain HTML/CSS/JavaScript, later refactored with Vue. It was committed to {link}. Every time I look back at those days when I was green and ignorant, I find a lot of experiences worth reminiscing, and this has always been one of them. The only unfortunate thing was that the original version used Vue and here I had to use React; plus, to match the page style, I drastically modified everything. So it\'s like the ship of Theseus—every single line of code has been changed, but believe it or not, it\'s still the same Todo list project.'}
                 </Translate>
               </p>
               <h2><Translate id='todo.todoTitle'>Todo</Translate></h2>

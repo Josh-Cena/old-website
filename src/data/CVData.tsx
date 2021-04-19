@@ -24,6 +24,8 @@ const CV: sections = [
     sectionHead: <Translate id='CV.sec2'>Me as researcher</Translate>,
     items: [
       <Translate id='CV.sec2.item1'>Internship at SIOC: structural chemistry</Translate>,
+      <Translate id='CV.sec2.item2'>Research with MIT: cybersecurity strategies</Translate>,
+      <Translate id='CV.sec2.item2'>Independent research: Fake video detection with deep learning</Translate>,
     ],
   },
   {
@@ -71,7 +73,7 @@ const CV: sections = [
       >
         {'Favorite color: {color} ({code})'}
       </Translate>,
-      <Translate id='CV.sec6.item2'>17,000+ hours of music listening each year</Translate>,
+      <Translate id='CV.sec6.item2'>1,200+ hours of music listening each year</Translate>,
       <Translate id='CV.sec6.item3'>Favorite genre: soft rock</Translate>,
       <Translate id='CV.sec6.item4'>Favorite band: Coldplay</Translate>,
       <Translate id='CV.sec6.item5'>Science fiction writer</Translate>,

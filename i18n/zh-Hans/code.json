@@ -209,6 +209,12 @@
   "CV.sec2.item1": {
     "message": "上海有机所实习：结构化学"
   },
+  "CV.sec2.item2": {
+    "message": "MIT 研究项目：网络安全策略"
+  },
+  "CV.sec2.item3": {
+    "message": " 独立科研：深度学习视频鉴伪"
+  },
   "CV.sec3": {
     "message": "作为辩手"
   },
@@ -279,7 +285,7 @@
     "message": "绿松石色"
   },
   "CV.sec6.item2": {
-    "message": "17000小时以上听歌记录"
+    "message": "年均1200小时以上听歌记录"
   },
   "CV.sec6.item3": {
     "message": "最喜欢的音乐风格：软摇滚"
