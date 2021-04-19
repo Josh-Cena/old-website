@@ -19,6 +19,7 @@ import Translate from '@docusaurus/Translate';
 
 import styles from './newTodo.module.css';
 import type { updateHandler } from '../pages/Todo';
+import { myDate } from '../data/todoData';
 
 const useStyles = makeStyles({
   root: {
@@ -52,7 +53,7 @@ const NewTodo = ({ handler }: ntodoProps): ReactElement => {
   });
   const [item, setItem] = useState({
     name: '',
-    deadline: new Date(),
+    deadline: new myDate(),
     priority: 0,
     editing: false,
   });
@@ -85,8 +86,8 @@ const NewTodo = ({ handler }: ntodoProps): ReactElement => {
               inputVariant="outlined"
               margin="dense"
               format="yyyy/M/d"
-              value={item.deadline}
-              onChange={value => setItem({...item, deadline: value})}
+              value={item.deadline.toDate()}
+              onChange={value => setItem({...item, deadline: new myDate(value)})}
             />
           </MuiPickersUtilsProvider>
           <Typography variant="body2" component="p">
@@ -105,12 +106,12 @@ const NewTodo = ({ handler }: ntodoProps): ReactElement => {
         <CardActions>
           <Button size="small" onClick={() => {
             handler.addItem(item.name, item.deadline, item.priority);
-            setItem({name: '', deadline: new Date(), priority: 0, editing: false});
+            setItem({name: '', deadline: new myDate(), priority: 0, editing: false});
           }}>
             <Translate id='todo.add'>Add</Translate>
           </Button>
           <Button size="small" onClick={() => {
-            setItem({name: '', deadline: new Date(), priority: 0, editing: false});
+            setItem({name: '', deadline: new myDate(), priority: 0, editing: false});
           }}>
             <Translate id='todo.cancel'>Cancel</Translate>
           </Button>

@@ -59,7 +59,7 @@ export default function Item({ item, handler }: itemProps): ReactElement {
             {item.name}
           </Typography>
           <Typography className={classes.pos} color="textSecondary">
-            <Translate id='todo.due'>Due by: </Translate>{`${item.deadline.getFullYear()}/${item.deadline.getMonth()+1}/${item.deadline.getDate()}`}
+            <Translate id='todo.due'>Due by: </Translate>{`${item.deadline.year}/${item.deadline.month}/${item.deadline.day}`}
           </Typography>
           <Typography variant="body2" component="p">
             <span className={styles.priority}>

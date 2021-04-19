@@ -7,14 +7,14 @@ import NewItem from '../components/newTodo';
 
 import Translate from '@docusaurus/Translate';
 
-import type { todoItem } from '../data/todoData';
+import type { todoItem, myDate } from '../data/todoData';
 
 export type updateHandler = {
   toggle: (item: todoItem) => void;
   remove: (item: todoItem) => void;
   setPriority: (item: todoItem, value: number) => void;
   rename: (item: todoItem) => void;
-  addItem: (title: string, deadline: Date, priority: number) => void;
+  addItem: (title: string, deadline: myDate, priority: number) => void;
   update: () => void;
 }
 
@@ -25,6 +25,9 @@ export default function Todo(): ReactElement {
     if (history !== null)
       setList(JSON.parse(history));
   }, []);
+  useEffect(() => {
+    localStorage.setItem("jc_todolistData", JSON.stringify(list));
+  }, [list]);
 
   const handler: updateHandler = {
     toggle: item => {
