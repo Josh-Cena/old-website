@@ -31,33 +31,26 @@ class Todo extends Component<todoProps, todoState> {
   constructor(props: todoProps) {
     super(props);
     let list: todoItem[] = [];
-    // let history: string|null = localStorage.getItem("jc_todolistData");
-    // if (history != null)
-    //   list = JSON.parse(history);
+    let history: string = localStorage.getItem("jc_todolistData");
+    if (history !== null)
+      list = JSON.parse(history);
     this.state = {list: list};
 
     this.handler = {
       toggle: item => {
-        this.setState(state => {
-          return {
-            list: state.list.map(el => (el.id === item.id ? {...el, done: !item.done} : el))
-          }
-        });
+        this.setState(state => ({
+          list: state.list.map(el => (el.id === item.id ? {...el, done: !item.done} : el))
+        }));
       },
       remove: item => {
-        this.setState(state => {
-          return {
-            list: state.list.filter(el => { return el.id !== item.id; }),
-          }
-        });
+        this.setState(state => ({
+          list: state.list.filter(el => el.id !== item.id),
+        }));
       },
       setPriority: (item, value) => {
-        this.setState(state => {
-          let nlist = state.list.map(el => (el.id === item.id ? {...el, priority: value} : el));
-          return {
-            list: nlist
-          }
-        });
+        this.setState(state => ({
+          list: state.list.map(el => (el.id === item.id ? {...el, priority: value} : el)),
+        }));
       },
       rename: item => {
       },
@@ -66,7 +59,7 @@ class Todo extends Component<todoProps, todoState> {
           let nlist = state.list.concat(
             [{id: uuid(), name: title, priority: priority, deadline: deadline, done: false}]
           );
-          nlist.sort((a: todoItem, b: todoItem): number => { return b.priority - a.priority });
+          nlist.sort((a, b) => b.priority - a.priority);
           return {
             list: nlist
           };
@@ -75,7 +68,7 @@ class Todo extends Component<todoProps, todoState> {
       update: () => {
         this.setState(state => {
           let nlist = [...state.list];
-          nlist.sort((a: todoItem, b: todoItem): number => { return b.priority - a.priority });
+          nlist.sort((a, b) =>  b.priority - a.priority);
           return {
             list: nlist
           }
@@ -85,8 +78,8 @@ class Todo extends Component<todoProps, todoState> {
   }
 
   render(): ReactElement {
-    const todos: todoItem[] = this.state.list.filter(i => { return !i.done; });
-    const dones: todoItem[] = this.state.list.filter(i => { return i.done; });
+    const todos: todoItem[] = this.state.list.filter(i => !i.done);
+    const dones: todoItem[] = this.state.list.filter(i => i.done);
 
     return (
       <Layout
