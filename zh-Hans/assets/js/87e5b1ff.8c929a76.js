@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[41],{115:function(a){a.exports=JSON.parse('{"allTagsPath":"/zh-Hans/blog/tags","slug":"compiler","name":"compiler","count":1,"permalink":"/zh-Hans/blog/tags/compiler"}')}}]);

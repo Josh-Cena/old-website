@@ -2,11 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://josh-cena.github.io/blog</id>
     <title>Joshua Chen Blog</title>
-    <updated>2021-04-01T00:00:00.000Z</updated>
+    <updated>2021-04-25T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://josh-cena.github.io/blog"/>
     <subtitle>Joshua Chen Blog</subtitle>
     <icon>https://josh-cena.github.io/img/favicon/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Random thoughts on a new programming language]]></title>
+        <id>Random thoughts on a new programming language</id>
+        <link href="https://josh-cena.github.io/zh-Hans/blog/2021/04/25/lang"/>
+        <updated>2021-04-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I'm just putting together some random thoughts that I wish to turn into a new programming language. These are notations I often use in comments for C++ algorithms. A lot of the syntax may have been realized by mathematical languages like Mathematica or Python.]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[千彘文]]></title>
         <id>千彘文</id>

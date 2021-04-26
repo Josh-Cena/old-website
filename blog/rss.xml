@@ -4,9 +4,16 @@
         <title>Joshua Chen Blog</title>
         <link>https://josh-cena.github.io/blog</link>
         <description>Joshua Chen Blog</description>
-        <lastBuildDate>Thu, 01 Apr 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 25 Apr 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Random thoughts on a new programming language]]></title>
+            <link>https://josh-cena.github.io/blog/2021/04/25/lang</link>
+            <guid>Random thoughts on a new programming language</guid>
+            <pubDate>Sun, 25 Apr 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[I'm just putting together some random thoughts that I wish to turn into a new programming language. These are notations I often use in comments for C++ algorithms. A lot of the syntax may have been realized by mathematical languages like Mathematica or Python.]]></description>
+        </item>
         <item>
             <title><![CDATA[A thousand words with Zhi]]></title>
             <link>https://josh-cena.github.io/blog/2021/04/01/zhi</link>
