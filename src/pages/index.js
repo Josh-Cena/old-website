@@ -7,6 +7,20 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+  Dot,
+} from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 import Translate from "@docusaurus/Translate";
 
 const features = [
@@ -60,6 +74,67 @@ const features = [
   },
 ];
 
+function Slide1({ siteConfig }) {
+  return (
+    <div className="container">
+      <img className={styles.logo} alt="Logo" src="/img/logo.png" />
+      <h1 className="hero__title">{siteConfig.title}</h1>
+      <p className="hero__subtitle">{siteConfig.tagline}</p>
+      <div className={styles.buttons}>
+        <Link
+          className={clsx(
+            "button button--outline button--secondary button--lg",
+            styles.getStarted
+          )}
+          to={useBaseUrl("CV/")}
+        >
+          <Translate id="front.about">About me</Translate>
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+function Slide2() {
+  return (
+    <div className="container">
+      <h2>Change the World with Rules of the Garage</h2>
+      <ol>
+        <li>Believe you can change the world.</li>
+        <li>Work quickly, keep the tools unlocked, work whenever.</li>
+        <li>Know when to work alone and when to work together.</li>
+        <li>Share — tools, ideas. Trust your colleagues.</li>
+        <li>
+          No Politics. No bureaucracy. (These are ridiculous in a garage.)
+        </li>
+        <li>The customer defines a job well done.</li>
+        <li>Radical ideas are not bad ideas.</li>
+        <li>Invent different ways of working.</li>
+        <li>
+          Make a contribution every day. If it doesn’t contribute, it doesn’t
+          leave the garage.
+        </li>
+        <li>Believe that together we can do anything.</li>
+        <li>Invent.</li>
+      </ol>
+      <div className={styles.caption}>
+        By{" "}
+        <a href="https://en.wikipedia.org/wiki/Rules_of_the_garage">
+          Bill Hewlett and David Packard
+        </a>
+      </div>
+    </div>
+  );
+}
+
+function Slide3() {
+  return (
+    <div className="container">
+      <h2>Hello world!</h2>
+    </div>
+  );
+}
+
 function Feature({ lightImageUrl, darkImageUrl, title, description }) {
   const lightImgUrl = useBaseUrl(lightImageUrl);
   const darkImgUrl = useBaseUrl(darkImageUrl);
@@ -87,22 +162,47 @@ function Home() {
   return (
     <Layout title={`Hello from ${siteConfig.title}`}>
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
-        <div className="container">
-          <img className={styles.logo} alt="Logo" src="/img/logo.png" />
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                "button button--outline button--secondary button--lg",
-                styles.getStarted
-              )}
-              to={useBaseUrl("CV/")}
-            >
-              <Translate id="front.about">About me</Translate>
-            </Link>
-          </div>
-        </div>
+        <CarouselProvider
+          className={styles.carousel}
+          totalSlides={3}
+          isPlaying
+          interval={3000}
+          isIntrinsicHeight
+          infinite
+        >
+          <Slider>
+            <Slide index={0}>
+              <Slide1 siteConfig={siteConfig} />
+            </Slide>
+            <Slide index={1}>
+              <Slide2 />
+            </Slide>
+            <Slide index={2}>
+              <Slide3 />
+            </Slide>
+          </Slider>
+          <ButtonBack
+            className={clsx(
+              styles.buttons,
+              styles.carouselbutton,
+              styles.backbutton
+            )}
+          >
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </ButtonBack>
+          <ButtonNext
+            className={clsx(
+              styles.buttons,
+              styles.carouselbutton,
+              styles.nextbutton
+            )}
+          >
+            <FontAwesomeIcon icon={faChevronRight} />
+          </ButtonNext>
+          <Dot className={styles.carouseldot} slide={0} />
+          <Dot className={styles.carouseldot} slide={1} />
+          <Dot className={styles.carouseldot} slide={2} />
+        </CarouselProvider>
       </header>
       <main>
         {features && features.length > 0 && (
