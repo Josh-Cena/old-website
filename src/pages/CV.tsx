@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import Layout from "@theme/Layout";
 import useThemeContext from "@theme/hooks/useThemeContext";
-import useBaseUrl from "@docusaurus/useBaseUrl";
+import ThemedImage from '@theme/ThemedImage';
 import styles from "./CV.module.css";
 
 import Translate from "@docusaurus/Translate";
@@ -10,14 +10,11 @@ import data from "../data/CVData";
 import Card from "../components/card";
 
 function Avatar(): ReactElement {
-  const lightUrl = useBaseUrl("img/logo.svg");
-  const darkUrl = useBaseUrl("img/logo-dark.svg");
-  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
   return (
     <div className="text--center">
-      <img
+      <ThemedImage
         className={styles.avatar}
-        src={isDarkTheme ? darkUrl : lightUrl}
+        sources={{light: "img/logo.svg", dark: "img/logo-dark.svg"}}
         alt={"Avatar"}
       />
     </div>

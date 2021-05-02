@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import clsx from "clsx";
-import useThemeContext from "@theme/hooks/useThemeContext";
 import Layout from "@theme/Layout";
+import ThemedImage from '@theme/ThemedImage';
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 
 import {
@@ -28,8 +27,10 @@ const features = [
     title: (
       <Translate id="front.features.feat1.title">7-year programmer</Translate>
     ),
-    lightImageUrl: "img/frontpage/feature1.svg",
-    darkImageUrl: "img/frontpage/feature1-dark.svg",
+    sources: {
+      light: "img/frontpage/feature1.svg",
+      dark: "img/frontpage/feature1-dark.svg"
+    },
     description: (
       <Translate id="front.features.feat1">
         Fluent with both front-end and back-end programming languages.
@@ -40,8 +41,10 @@ const features = [
   },
   {
     title: <Translate id="front.features.feat2.title">STEM explorer</Translate>,
-    lightImageUrl: "img/frontpage/feature2.svg",
-    darkImageUrl: "img/frontpage/feature2-dark.svg",
+    sources: {
+      light: "img/frontpage/feature2.svg",
+      dark: "img/frontpage/feature2-dark.svg"
+    },
     description: (
       <Translate
         id="front.features.feat2"
@@ -61,8 +64,10 @@ const features = [
   },
   {
     title: <Translate id="front.features.feat3.title">Keen debater</Translate>,
-    lightImageUrl: "img/frontpage/feature3.svg",
-    darkImageUrl: "img/frontpage/feature3-dark.svg",
+    sources: {
+      light: "img/frontpage/feature3.svg",
+      dark: "img/frontpage/feature3-dark.svg"
+    },
     description: (
       <Translate id="front.features.feat3">
         Started public forum debating in 8th grade. Debated on topics including
@@ -121,21 +126,16 @@ const slides = [
   </div>,
 ];
 
-function Feature({ lightImageUrl, darkImageUrl, title, description }) {
-  const lightImgUrl = useBaseUrl(lightImageUrl);
-  const darkImgUrl = useBaseUrl(darkImageUrl);
-  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
+function Feature({ sources, title, description }) {
   return (
     <div className={clsx("col col--4", styles.feature)}>
-      {lightImgUrl && (
-        <div className="text--center">
-          <img
-            className={styles.featureImage}
-            src={isDarkTheme ? darkImgUrl : lightImgUrl}
-            alt={title}
-          />
-        </div>
-      )}
+      <div className="text--center">
+        <ThemedImage
+          className={styles.featureImage}
+          sources={sources}
+          alt={title}
+        />
+      </div>
       <h3>{title}</h3>
       <p>{description}</p>
     </div>
@@ -148,9 +148,7 @@ function Home() {
   const [buttonVisible, setButtonVisible] = useState(false);
   return (
     <Layout title={`Hello from ${siteConfig.title}`}>
-      <header
-        className={clsx("hero hero--primary", styles.heroBanner)}
-      >
+      <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <CarouselProvider
           className={styles.carousel}
           totalSlides={3}
@@ -158,8 +156,12 @@ function Home() {
           interval={3000}
           isIntrinsicHeight
           infinite
-          onMouseEnter={() => {setButtonVisible(true)}}
-          onMouseLeave={() => {setButtonVisible(false)}}
+          onMouseEnter={() => {
+            setButtonVisible(true);
+          }}
+          onMouseLeave={() => {
+            setButtonVisible(false);
+          }}
         >
           <Slider>
             {slides.map((elem, idx) => (
@@ -189,11 +191,7 @@ function Home() {
             <FontAwesomeIcon icon={faChevronRight} />
           </ButtonNext>
           {slides.map((elem, idx) => (
-            <Dot
-              className={styles.carouseldot}
-              key={idx}
-              slide={idx}
-            />
+            <Dot className={styles.carouseldot} key={idx} slide={idx} />
           ))}
         </CarouselProvider>
       </header>
