@@ -18,12 +18,10 @@ import {
   MuiPickersUtilsProvider,
   KeyboardDatePicker,
 } from "@material-ui/pickers";
-
 import Translate from "@docusaurus/Translate";
 
 import styles from "./newTodo.module.css";
-import type { updateHandler } from "../pages/Todo";
-import { myDate } from "../data/todoData";
+import { myDate, UpdateHandler } from "../data/todoData";
 
 const useStyles = makeStyles({
   root: {
@@ -39,7 +37,7 @@ const useStyles = makeStyles({
 });
 
 type ntodoProps = {
-  handler: updateHandler;
+  handler: UpdateHandler;
 };
 
 export default function NewTodo({ handler }: ntodoProps): ReactElement {

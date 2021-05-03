@@ -1,11 +1,6 @@
 import React, { ReactElement } from "react";
 import clsx from "clsx";
-import useThemeContext from "@theme/hooks/useThemeContext";
-import {
-  createMuiTheme,
-  ThemeProvider,
-  makeStyles,
-} from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Checkbox from "@material-ui/core/Checkbox";
 import Slider from "@material-ui/core/Slider";
 import Card from "@material-ui/core/Card";
@@ -13,12 +8,10 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import styles from "./todoCard.module.css";
-
 import Translate from "@docusaurus/Translate";
 
-import type { todoItem } from "../data/todoData";
-import type { updateHandler } from "../pages/Todo";
+import styles from "./todoCard.module.css";
+import { todoItem, UpdateHandler } from "../data/todoData";
 
 const useStyles = makeStyles({
   root: {
@@ -38,7 +31,7 @@ const useStyles = makeStyles({
 
 type itemProps = {
   item: todoItem;
-  handler: updateHandler;
+  handler: UpdateHandler;
 };
 
 export default function Item({ item, handler }: itemProps): ReactElement {

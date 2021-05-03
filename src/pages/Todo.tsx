@@ -1,10 +1,6 @@
 import React, { ReactElement, useState, useEffect } from "react";
 import Layout from "@theme/Layout";
 import useThemeContext from "@theme/hooks/useThemeContext";
-import uuid from "uuid/v4";
-import styles from "./Todo.module.css";
-import Item from "../components/todoCard";
-import NewItem from "../components/newTodo";
 import Select from '@material-ui/core/Select';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -12,27 +8,20 @@ import {
   createMuiTheme,
   ThemeProvider,
 } from "@material-ui/core/styles";
-
 import Translate from "@docusaurus/Translate";
 
-import type { todoItem, myDate } from "../data/todoData";
-
-export type updateHandler = {
-  toggle: (item: todoItem) => void;
-  remove: (item: todoItem) => void;
-  setPriority: (item: todoItem, value: number) => void;
-  rename: (item: todoItem) => void;
-  addItem: (title: string, deadline: myDate, priority: number) => void;
-  update: () => void;
-};
+import styles from "./Todo.module.css";
+import Item from "../components/todoCard";
+import NewItem from "../components/newTodo";
+import { todoItem, UpdateHandler } from "../data/todoData";
 
 interface MainProps {
-  handler: updateHandler;
+  handler: UpdateHandler;
   todos: todoItem[];
   dones: todoItem[];
 }
 
-function Main({ handler, todos, dones }: MainProps) {
+function Main({ handler, todos, dones }: MainProps): ReactElement {
   const { isDarkTheme } = useThemeContext();
   const theme = createMuiTheme({
     palette: {
@@ -85,40 +74,7 @@ export default function Todo(): ReactElement {
     localStorage.setItem("jc_todolistData", JSON.stringify(list));
   }, [list]);
 
-  const handler: updateHandler = {
-    toggle: (item) => {
-      setList(
-        list.map((el) => (el.id === item.id ? { ...el, done: !item.done } : el))
-      );
-    },
-    remove: (item) => {
-      setList(list.filter((el) => el.id !== item.id));
-    },
-    setPriority: (item, value) => {
-      setList(
-        list.map((el) => (el.id === item.id ? { ...el, priority: value } : el))
-      );
-    },
-    rename: (item) => {},
-    addItem: (title, deadline, priority) => {
-      const nlist = list.concat([
-        {
-          id: uuid(),
-          name: title,
-          priority: priority,
-          deadline: deadline,
-          done: false,
-        },
-      ]);
-      nlist.sort((a, b) => b.priority - a.priority);
-      setList(nlist);
-    },
-    update: () => {
-      const nlist = [...list];
-      nlist.sort((a, b) => b.priority - a.priority);
-      setList(nlist);
-    },
-  };
+  const handler = new UpdateHandler(list, setList);
 
   const todos = list.filter((i) => !i.done);
   const dones = list.filter((i) => i.done);
