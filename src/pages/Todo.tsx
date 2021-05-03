@@ -13,7 +13,12 @@ import Item from "../components/todoCard";
 import NewItem from "../components/newTodo";
 import { todoItem, UpdateHandler } from "../data/todoData";
 
-function Main(): ReactElement {
+interface MainProps {
+  list: todoItem[];
+  setList: React.Dispatch<React.SetStateAction<todoItem[]>>;
+}
+
+function Main({ list, setList }: MainProps): ReactElement {
   const { isDarkTheme } = useThemeContext();
   const theme = createMuiTheme({
     palette: {
@@ -26,14 +31,6 @@ function Main(): ReactElement {
     },
   });
 
-  const [list, setList] = useState<todoItem[]>([]);
-  useEffect(() => {
-    const history = localStorage.getItem("jc_todolistData");
-    if (history !== null) setList(JSON.parse(history));
-  }, []);
-  useEffect(() => {
-    localStorage.setItem("jc_todolistData", JSON.stringify(list));
-  }, [list]);
   const todos = list.filter((i) => !i.done);
   const dones = list.filter((i) => i.done);
 
@@ -43,6 +40,7 @@ function Main(): ReactElement {
     handler.sortBy = sortBy;
     handler.update();
   }, [sortBy]);
+
   return (
     <ThemeProvider theme={theme}>
       <InputLabel id="sort-by">Sort by</InputLabel>
@@ -78,6 +76,15 @@ function Main(): ReactElement {
 }
 
 export default function Todo(): ReactElement {
+  const [list, setList] = useState<todoItem[]>([]);
+  useEffect(() => {
+    const history = localStorage.getItem("jc_todolistData");
+    if (history !== null) setList(JSON.parse(history));
+  }, []);
+  useEffect(() => {
+    localStorage.setItem("jc_todolistData", JSON.stringify(list));
+  }, [list]);
+
   return (
     <Layout title="Todo list" description="A convenient todo list">
       <main>
@@ -106,7 +113,7 @@ export default function Todo(): ReactElement {
               }
             </Translate>
           </p>
-          <Main />
+          <Main list={list} setList={setList} />
         </div>
       </main>
     </Layout>
