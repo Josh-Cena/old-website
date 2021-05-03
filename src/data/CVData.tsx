@@ -6,9 +6,7 @@ export type section = {
   readonly items: ReactElement[];
 };
 
-export type sections = section[];
-
-const CV: sections = [
+const CV: section[] = [
   {
     sectionHead: <Translate id="CV.sec1">Me as scholar</Translate>,
     items: [

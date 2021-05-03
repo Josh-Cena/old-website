@@ -4,8 +4,6 @@ import Layout from "@theme/Layout";
 import ThemedImage from "@theme/ThemedImage";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import styles from "./styles.module.css";
-
 import {
   CarouselProvider,
   Slider,
@@ -21,6 +19,8 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import Translate from "@docusaurus/Translate";
+
+import styles from "./styles.module.css";
 
 const features = [
   {
@@ -142,7 +142,7 @@ function Feature({ sources, title, description }) {
   );
 }
 
-function Home() {
+export default function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   const [buttonVisible, setButtonVisible] = useState(false);
@@ -211,5 +211,3 @@ function Home() {
     </Layout>
   );
 }
-
-export default Home;

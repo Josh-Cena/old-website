@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
-import styles from "./card.module.css";
 
+import styles from "./card.module.css";
 import type { section } from "../data/CVData";
 
 export default function Card({ sectionHead, items }: section): ReactElement {
