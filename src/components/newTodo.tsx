@@ -1,5 +1,5 @@
 import React, { ReactElement, useState } from "react";
-import classnames from "classnames";
+import clsx from "clsx";
 import useThemeContext from "@theme/hooks/useThemeContext";
 import {
   createMuiTheme,
@@ -64,7 +64,7 @@ export default function NewTodo({ handler }: ntodoProps): ReactElement {
 
   return (
     <ThemeProvider theme={theme}>
-      <Card className={classnames(classes.root, styles.additem)}>
+      <Card className={clsx(classes.root, styles.additem)}>
         {!item.editing && (
           <div
             className={styles.cover}

@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "@date-io/date-fns": "1.x",
-    "@docusaurus/core": "2.0.0-alpha.72",
-    "@docusaurus/preset-classic": "2.0.0-alpha.72",
+    "@docusaurus/core": "2.0.0-alpha.74",
+    "@docusaurus/preset-classic": "2.0.0-alpha.74",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",

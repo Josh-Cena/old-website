@@ -1,9 +1,17 @@
 import React, { ReactElement, useState, useEffect } from "react";
 import Layout from "@theme/Layout";
+import useThemeContext from "@theme/hooks/useThemeContext";
 import uuid from "uuid/v4";
 import styles from "./Todo.module.css";
 import Item from "../components/todoCard";
 import NewItem from "../components/newTodo";
+import Select from '@material-ui/core/Select';
+import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from '@material-ui/core/MenuItem';
+import {
+  createMuiTheme,
+  ThemeProvider,
+} from "@material-ui/core/styles";
 
 import Translate from "@docusaurus/Translate";
 
@@ -18,10 +26,59 @@ export type updateHandler = {
   update: () => void;
 };
 
+interface MainProps {
+  handler: updateHandler;
+  todos: todoItem[];
+  dones: todoItem[];
+}
+
+function Main({ handler, todos, dones }: MainProps) {
+  const { isDarkTheme } = useThemeContext();
+  const theme = createMuiTheme({
+    palette: {
+      type: isDarkTheme ? "dark" : "light",
+      primary: {
+        light: "#4dcfca",
+        main: "#39cac4",
+        dark: "#31b8b2",
+      },
+    },
+  });
+  return (
+    <ThemeProvider theme={theme}>
+      <InputLabel id="sort-by">Sort by</InputLabel>
+      <Select
+        labelId="sort-by"
+      >
+        <MenuItem value={10} selected>Priority</MenuItem>
+        <MenuItem value={20}>Due date</MenuItem>
+        <MenuItem value={30}>Label</MenuItem>
+      </Select>
+      <h2>
+        <Translate id="todo.todoTitle">Todo</Translate>
+      </h2>
+      <div className={styles.cardContainer}>
+        {todos.map((item) => (
+          <Item key={item.id} item={item} handler={handler} />
+        ))}
+        <NewItem handler={handler}></NewItem>
+      </div>
+      <h2>
+        <Translate id="todo.doneTitle">Done</Translate>
+      </h2>
+      <div className={styles.cardContainer}>
+        {dones.map((item) => (
+          <Item key={item.id} item={item} handler={handler} />
+        ))}
+      </div>
+    </ThemeProvider>
+  );
+}
+
 export default function Todo(): ReactElement {
   const [list, setList]: [todoItem[], (l: todoItem[]) => void] = useState([]);
   useEffect(() => {
-    const history: string = localStorage.getItem("jc_todolistData");
+    const history = localStorage.getItem("jc_todolistData");
     if (history !== null) setList(JSON.parse(history));
   }, []);
   useEffect(() => {
@@ -95,23 +152,7 @@ export default function Todo(): ReactElement {
                 }
               </Translate>
             </p>
-            <h2>
-              <Translate id="todo.todoTitle">Todo</Translate>
-            </h2>
-            <div className={styles.cardContainer}>
-              {todos.map((item) => (
-                <Item key={item.id} item={item} handler={handler} />
-              ))}
-              <NewItem handler={handler}></NewItem>
-            </div>
-            <h2>
-              <Translate id="todo.doneTitle">Done</Translate>
-            </h2>
-            <div className={styles.cardContainer}>
-              {dones.map((item) => (
-                <Item key={item.id} item={item} handler={handler} />
-              ))}
-            </div>
+            <Main todos={todos} dones={dones} handler={handler} />
           </div>
         </div>
       </main>

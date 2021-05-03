@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import classnames from "classnames";
+import clsx from "clsx";
 import useThemeContext from "@theme/hooks/useThemeContext";
 import {
   createMuiTheme,
@@ -43,63 +43,50 @@ type itemProps = {
 
 export default function Item({ item, handler }: itemProps): ReactElement {
   const classes = useStyles();
-  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
-  const theme = createMuiTheme({
-    palette: {
-      type: isDarkTheme ? "dark" : "light",
-      primary: {
-        light: "#4dcfca",
-        main: "#39cac4",
-        dark: "#31b8b2",
-      },
-    },
-  });
 
   return (
-    <ThemeProvider theme={theme}>
-      <Card
-        className={classnames(
-          classes.root,
-          styles.card,
-          item.done ? styles.done : styles.todo
-        )}
-      >
-        <CardContent>
-          <Typography variant="h5" component="h2">
-            {item.name}
-          </Typography>
-          <Typography className={classes.pos} color="textSecondary">
-            <Translate id="todo.due">Due by: </Translate>
-            {`${item.deadline.year}/${item.deadline.month}/${item.deadline.day}`}
-          </Typography>
-          <Typography variant="body2" component="p">
-            <span className={styles.priority}>
-              <Translate id="todo.priority">Priority: </Translate>
-              {item.priority}
-            </span>
-            <Slider
-              value={item.priority}
-              min={0}
-              max={10}
-              marks
-              onChange={(e, value) =>
-                handler.setPriority(item, value as number)
-              }
-              onChangeCommitted={() => handler.update()}
-            />
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Checkbox
-            defaultChecked={item.done}
-            color="primary"
-            onChange={() => handler.toggle(item)}
+    <Card
+      className={clsx(
+        classes.root,
+        styles.card,
+        item.done ? styles.done : styles.todo
+      )}
+    >
+      <CardContent>
+        <Typography variant="h5" component="h2">
+          {item.name}
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          <Translate id="todo.due">Due by: </Translate>
+          {`${item.deadline.year}/${item.deadline.month}/${item.deadline.day}`}
+        </Typography>
+        <Typography variant="body2" component="p">
+          <span className={styles.priority}>
+            <Translate id="todo.priority">Priority: </Translate>
+            {item.priority}
+          </span>
+          <Slider
+            value={item.priority}
+            min={0}
+            max={10}
+            marks
+            onChange={(__, value) =>
+              handler.setPriority(item, value as number)
+            }
+            onChangeCommitted={() => handler.update()}
           />
-          <Button size="small" onClick={() => handler.remove(item)}>
-            <Translate id="todo.delete">Delete</Translate>
-          </Button>
-        </CardActions>
-      </Card>
-    </ThemeProvider>
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Checkbox
+          defaultChecked={item.done}
+          color="primary"
+          onChange={() => handler.toggle(item)}
+        />
+        <Button size="small" onClick={() => handler.remove(item)}>
+          <Translate id="todo.delete">Delete</Translate>
+        </Button>
+      </CardActions>
+    </Card>
   );
 }
