@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
-import ThemedImage from '@theme/ThemedImage';
+import ThemedImage from "@theme/ThemedImage";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./styles.module.css";
@@ -29,7 +29,7 @@ const features = [
     ),
     sources: {
       light: "img/frontpage/feature1.svg",
-      dark: "img/frontpage/feature1-dark.svg"
+      dark: "img/frontpage/feature1-dark.svg",
     },
     description: (
       <Translate id="front.features.feat1">
@@ -43,7 +43,7 @@ const features = [
     title: <Translate id="front.features.feat2.title">STEM explorer</Translate>,
     sources: {
       light: "img/frontpage/feature2.svg",
-      dark: "img/frontpage/feature2-dark.svg"
+      dark: "img/frontpage/feature2-dark.svg",
     },
     description: (
       <Translate
@@ -66,7 +66,7 @@ const features = [
     title: <Translate id="front.features.feat3.title">Keen debater</Translate>,
     sources: {
       light: "img/frontpage/feature3.svg",
-      dark: "img/frontpage/feature3-dark.svg"
+      dark: "img/frontpage/feature3-dark.svg",
     },
     description: (
       <Translate id="front.features.feat3">

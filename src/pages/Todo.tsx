@@ -1,13 +1,10 @@
 import React, { ReactElement, useState, useEffect } from "react";
 import Layout from "@theme/Layout";
 import useThemeContext from "@theme/hooks/useThemeContext";
-import Select from '@material-ui/core/Select';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import {
-  createMuiTheme,
-  ThemeProvider,
-} from "@material-ui/core/styles";
+import Select from "@material-ui/core/Select";
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import Translate from "@docusaurus/Translate";
 
 import styles from "./Todo.module.css";
@@ -36,10 +33,10 @@ function Main({ handler, todos, dones }: MainProps): ReactElement {
   return (
     <ThemeProvider theme={theme}>
       <InputLabel id="sort-by">Sort by</InputLabel>
-      <Select
-        labelId="sort-by"
-      >
-        <MenuItem value={10} selected>Priority</MenuItem>
+      <Select labelId="sort-by">
+        <MenuItem value={10} selected>
+          Priority
+        </MenuItem>
         <MenuItem value={20}>Due date</MenuItem>
         <MenuItem value={30}>Label</MenuItem>
       </Select>

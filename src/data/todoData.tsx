@@ -36,21 +36,25 @@ export class UpdateHandler {
 
   toggle(item: todoItem) {
     this.setList(
-      this.list.map((el) => (el.id === item.id ? { ...el, done: !item.done } : el))
+      this.list.map((el) =>
+        el.id === item.id ? { ...el, done: !item.done } : el
+      )
     );
-  };
+  }
 
   remove(item: todoItem) {
     this.setList(this.list.filter((el) => el.id !== item.id));
-  };
+  }
 
   setPriority(item: todoItem, value: number) {
     this.setList(
-      this.list.map((el) => (el.id === item.id ? { ...el, priority: value } : el))
+      this.list.map((el) =>
+        el.id === item.id ? { ...el, priority: value } : el
+      )
     );
-  };
+  }
 
-  rename(item: todoItem) {};
+  rename(item: todoItem) {}
 
   addItem(title: string, deadline: myDate, priority: number) {
     const nlist = this.list.concat([
@@ -64,11 +68,11 @@ export class UpdateHandler {
     ]);
     nlist.sort((a, b) => b.priority - a.priority);
     this.setList(nlist);
-  };
+  }
 
   update() {
     const nlist = [...this.list];
     nlist.sort((a, b) => b.priority - a.priority);
     this.setList(nlist);
-  };
+  }
 }

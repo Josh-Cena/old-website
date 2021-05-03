@@ -1,7 +1,6 @@
 import React, { ReactElement } from "react";
 import Layout from "@theme/Layout";
-import useThemeContext from "@theme/hooks/useThemeContext";
-import ThemedImage from '@theme/ThemedImage';
+import ThemedImage from "@theme/ThemedImage";
 import styles from "./CV.module.css";
 
 import Translate from "@docusaurus/Translate";
@@ -14,7 +13,7 @@ function Avatar(): ReactElement {
     <div className="text--center">
       <ThemedImage
         className={styles.avatar}
-        sources={{light: "img/logo.svg", dark: "img/logo-dark.svg"}}
+        sources={{ light: "img/logo.svg", dark: "img/logo-dark.svg" }}
         alt={"Avatar"}
       />
     </div>
