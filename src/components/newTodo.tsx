@@ -53,12 +53,13 @@ export default function NewTodo({ handler }: ntodoProps): ReactElement {
       },
     },
   });
-  const [item, setItem] = useState({
+  const emptyItem = {
     name: "",
     deadline: new myDate(),
     priority: 0,
     editing: false,
-  });
+  };
+  const [item, setItem] = useState(emptyItem);
 
   return (
     <ThemeProvider theme={theme}>
@@ -117,12 +118,7 @@ export default function NewTodo({ handler }: ntodoProps): ReactElement {
             size="small"
             onClick={() => {
               handler.addItem(item.name, item.deadline, item.priority);
-              setItem({
-                name: "",
-                deadline: new myDate(),
-                priority: 0,
-                editing: false,
-              });
+              setItem(emptyItem);
             }}
           >
             <Translate id="todo.add">Add</Translate>
@@ -130,12 +126,7 @@ export default function NewTodo({ handler }: ntodoProps): ReactElement {
           <Button
             size="small"
             onClick={() => {
-              setItem({
-                name: "",
-                deadline: new myDate(),
-                priority: 0,
-                editing: false,
-              });
+              setItem(emptyItem);
             }}
           >
             <Translate id="todo.cancel">Cancel</Translate>

@@ -63,8 +63,9 @@ export default function Item({ item, handler }: itemProps): ReactElement {
             min={0}
             max={10}
             marks
-            onChange={(__, value) => handler.setPriority(item, value as number)}
-            onChangeCommitted={() => handler.update()}
+            onChangeCommitted={(__, value) =>
+              handler.setPriority(item, value as number)
+            }
           />
         </Typography>
       </CardContent>
