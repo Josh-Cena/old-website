@@ -10,6 +10,8 @@ tags: [personal page, front end]
 
 I just found it fun to include an interactive code block.
 
+<!-- truncate -->
+
 ```jsx live
 function Clock(props) {
   const [date, setDate] = useState(new Date());
