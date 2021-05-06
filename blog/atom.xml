@@ -2,11 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://josh-cena.github.io/blog</id>
     <title>Joshua Chen Blog</title>
-    <updated>2021-04-25T00:00:00.000Z</updated>
+    <updated>2021-05-06T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://josh-cena.github.io/blog"/>
     <subtitle>Joshua Chen Blog</subtitle>
     <icon>https://josh-cena.github.io/img/favicon/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Interactive code block!]]></title>
+        <id>Interactive code block!</id>
+        <link href="https://josh-cena.github.io/blog/2021/05/06/codeblock"/>
+        <updated>2021-05-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hey!]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Random thoughts on a new programming language]]></title>
         <id>Random thoughts on a new programming language</id>

@@ -4,9 +4,16 @@
         <title>Joshua Chen Blog</title>
         <link>https://josh-cena.github.io/blog</link>
         <description>Joshua Chen Blog</description>
-        <lastBuildDate>Sun, 25 Apr 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 06 May 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Interactive code block!]]></title>
+            <link>https://josh-cena.github.io/zh-Hans/blog/2021/05/06/codeblock</link>
+            <guid>Interactive code block!</guid>
+            <pubDate>Thu, 06 May 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hey!]]></description>
+        </item>
         <item>
             <title><![CDATA[Random thoughts on a new programming language]]></title>
             <link>https://josh-cena.github.io/zh-Hans/blog/2021/04/25/lang</link>
