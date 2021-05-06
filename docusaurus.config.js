@@ -25,6 +25,9 @@ module.exports = {
       },
     },
   },
+  plugins: [
+    "@docusaurus/theme-live-codeblock",
+  ],
   themeConfig: {
     navbar: {
       title: "Josh-Cena",
@@ -120,6 +123,9 @@ module.exports = {
       additionalLanguages: ["java", "php", "sql", "latex"],
       theme: require("prism-react-renderer/themes/vsLight"),
       darkTheme: require("prism-react-renderer/themes/vsDark"),
+    },
+    liveCodeBlock: {
+      playgroundPosition: "bottom",
     },
   },
   stylesheets: [
