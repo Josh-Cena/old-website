@@ -94,7 +94,7 @@ module.exports = {
             },
             {
               label: "LinkedIn",
-              href: "https://www.linkedin.com/in/sida-chen-9592361b9/",
+              href: "https://www.linkedin.com/in/sida-joshua-chen/",
             },
           ],
         },

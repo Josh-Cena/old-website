@@ -63,7 +63,7 @@ export default function CV(): ReactElement {
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/sida-chen-9592361b9/">
+              <a href="https://www.linkedin.com/in/sida-joshua-chen/">
                 <svg
                   className={styles.icon}
                   xmlns="http://www.w3.org/2000/svg"
