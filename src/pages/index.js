@@ -89,7 +89,7 @@ const slides = [
           "button button--outline button--secondary button--lg",
           styles.readMoreText
         )}
-        to="/blog/2021/04/25/champion"
+        to="/blog/2021/04/26/champion"
       >
         <Translate id="front.readMore">Read more</Translate>
       </Link>
