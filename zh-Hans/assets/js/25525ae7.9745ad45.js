@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{86:function(n){n.exports=JSON.parse('{"allTagsPath":"/zh-Hans/blog/tags","slug":"front-end","name":"front end","count":1,"permalink":"/zh-Hans/blog/tags/front-end"}')}}]);
