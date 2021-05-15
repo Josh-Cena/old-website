@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-
 const remarkMath = require("remark-math");
 const rehypeKatex = require("rehype-katex");
 
@@ -11,8 +9,8 @@ module.exports = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "/img/favicon/favicon.ico",
-  organizationName: "Josh-Cena", // Usually your GitHub org/user name.
-  projectName: "Josh-Cena.github.io", // Usually your repo name.
+  organizationName: "Josh-Cena",
+  projectName: "Josh-Cena.github.io",
   i18n: {
     defaultLocale: "en",
     locales: ["en", "zh-Hans"],

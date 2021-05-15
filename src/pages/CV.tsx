@@ -18,7 +18,7 @@ export default function CV(): ReactElement {
           </h1>
           <ThemedImage
             className={styles.avatar}
-            sources={{ light: "img/logo.svg", dark: "img/logo-dark.svg" }}
+            sources={{ light: "/img/logo.svg", dark: "/img/logo-dark.svg" }}
             alt={"Avatar"}
           />
           <h2>

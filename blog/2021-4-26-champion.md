@@ -1,0 +1,44 @@
+---
+title: Champions league reached!
+author: Joshua Chen
+author_url: https://github.com/Josh-Cena
+author_image_url: https://avatars.githubusercontent.com/u/55398995?s=460&u=88dc0dcb0691877524dd8739db9fde7ed4fa9721&v=4
+tags: [general, game]
+---
+
+**April 26, 2021**—after 1 year and 5 months since I started this game, I finally reached 6K (champions league) in _Clash Royale_.
+
+<!-- truncate -->
+
+It was definitely not easily. My deck is **Mega Knight Bait**, and it's almost dead right now in the meta.
+
+![Deck](/img/blog/2021-4-26/CR_deck.png)
+
+I picked up this deck in February, 2020, when I was at 4600 trophies. It dominated that arena since few opponents even had small spells. April was the paradise moment for this deck, when skeleton barrel got its speed buff—it even rose to mid-meta. _(That was also the happiest period of my life!)_
+
+But around July, I was almost giving up on this deck. I got crushed every time by valkeries, wizards, PEKKAs, anything. This deck is just weak on defense—only four ground units, all air defense units prone to zaps and other spells, mega knight being the only control card; inconsistent on offense—with one AOE unit from my opponent the entire push is shut down; and collecting three legendary cards was just an endless journey. I played mega knight miner wall breakers for one season (shortly after the prince and royal delivery buff, this deck was everywhere), but eventually switched back for no reason.
+
+I've been playing this deck ever since—not changing any card once. I did change my small spell from snowball to zap, though, in fear of all the skarmies and inferno towers around the arena, but never for any other card.
+
+And efforts payed back. I won CC 12 wins, season tournament 18 wins, etc., and consistently pushed further on ladder. Eventually when my inferno dragon was maxed, I reached 6K with my level 12 king tower. (It was so hard against goblin barrel decks! Mega knight bait already has a hard time against log bait.)
+
+So to show my respect for this deck, let me announce the names of each card.
+
+- **Mega knight**. The ultimate solution, the last defense. My best friend since 2500 trophies as my second legendary and my first level 10 card. This is what makes this deck fundamentally different from other bait / cycle decks. 7 elixirs can easily shut down a 15-elixir push, and even save half of its HP for a counterpush if you back it up with anything!
+- **Inferno dragon**. The perfect complement of mega knight. Shuts down any tank with ease, and has the second highest HP in this deck. When facing log bait, Mega knight + inferno dragon = tower down. It is simply satisfying seeing one inferno dragon draining out an entire tower.
+- **Miner**. Dig, dig, dig! Whenever you defend a mini-push with goblin gangs or bats, just send a miner to protect these swarms, and you get a workable counterpush. Using zap to make the opponent's princess tower lock on to the miner can usually make your crippled inferno dragon surprisingly take out an entire tower. It's even great on defense—same damage as bandit or fisherman.
+- **Skeleton barrel**. The second offensive card on par with the miner. It can be used as a tank for swarms when the miner's not in hand, can kite air units, can be a small spell bait, can be used as a small spell itself against minion horde, and can even be used as a source of swarms against a PEKKA + Ewiz synthergy.
+- **Goblin gang**. Probably the best swarm card. Defends prince, dark prince, battle ram... It is a card you don't pay much attention to (unlike skarmy) but usually saves you at last minute.
+- **Spear goblins**. Cheap but versatile. Defends minion horde, goblin barrel, balloon, valkerie...
+- **Bats**. Despite so many nerfs, it is still viable. Without a zap, snowball, or anti-air unit from the opponent, bats can take out most lone ground units. Mega knight + bats is always the best synthergy. (Except when facing graveyard, though, when you would rather pair mega knight with inferno dragon.)
+- **Zap**. This is what makes a 5000 player different from a 7000 one. Snowball is cool on defense (better than the log IMO), but on offense zap is the best. Quickly clears swarms, makes your miner quickly take out a musketeer or wizard, resets inferno towers, makes the tower retarget, stuns the unit for 0.5 second... It is the X-factor in the game.
+
+Now that my goal of 6K is completed, the next milestones on my journey are:
+
+1. Level 13 king tower
+2. Four maxed decks
+3. 6300, 6600, 7000...
+4. World ranking
+5. GC 12 wins (I don't have many gems though)
+
+It would not be an easy task, but I'm on my way.

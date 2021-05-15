@@ -7,8 +7,8 @@ export const features = [
       <Translate id="front.features.feat1.title">7-year programmer</Translate>
     ),
     sources: {
-      light: "img/frontpage/feature1.svg",
-      dark: "img/frontpage/feature1-dark.svg",
+      light: "/img/frontpage/feature1.svg",
+      dark: "/img/frontpage/feature1-dark.svg",
     },
     description: (
       <Translate id="front.features.feat1">
@@ -21,8 +21,8 @@ export const features = [
   {
     title: <Translate id="front.features.feat2.title">STEM explorer</Translate>,
     sources: {
-      light: "img/frontpage/feature2.svg",
-      dark: "img/frontpage/feature2-dark.svg",
+      light: "/img/frontpage/feature2.svg",
+      dark: "/img/frontpage/feature2-dark.svg",
     },
     description: (
       <Translate
@@ -44,8 +44,8 @@ export const features = [
   {
     title: <Translate id="front.features.feat3.title">Keen debater</Translate>,
     sources: {
-      light: "img/frontpage/feature3.svg",
-      dark: "img/frontpage/feature3-dark.svg",
+      light: "/img/frontpage/feature3.svg",
+      dark: "/img/frontpage/feature3-dark.svg",
     },
     description: (
       <Translate id="front.features.feat3">

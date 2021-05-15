@@ -73,7 +73,7 @@ export const Pic = ({children, src}) => (
 
 <Pic src="/zh-Hans/img/./docs/Science/bee/JGibibkelET6ic8fRiawIMic3jFWfS9o4SpMyl554iaGSsSRejxeq1Wqdtd1xVo9xapC4Wg475S6a5agoh4KWyiaob4ag.png">怎么看怎么别扭</Pic>
 
-为了从中搞出一个亲电试剂，不得不考虑一些正离子，比如硝酰（氢离子、氧鎓离子这种就不用说了）。拔掉羟基后，NO<sub>2</sub><sup>+</sup> 是肯定会共振中和电荷的。所以，答案是：<img src={useBaseUrl("img/./docs/Science/bee/JGibibkelET6ic8fRiawIMic3jFWfS9o4SpMyJiaFVCvdia4BqlYvkTJymZ1wQibjunhTVTUbqox9oeKGZFe0gZNr5OtqQ.png" />（这是一个极强的亲电试剂，甚至还有一整本书来描述它的作用原理）
+为了从中搞出一个亲电试剂，不得不考虑一些正离子，比如硝酰（氢离子、氧鎓离子这种就不用说了）。拔掉羟基后，NO<sub>2</sub><sup>+</sup> 是肯定会共振中和电荷的。所以，答案是：<img src="/zh-Hans/img/./docs/Science/bee/JGibibkelET6ic8fRiawIMic3jFWfS9o4SpMyJiaFVCvdia4BqlYvkTJymZ1wQibjunhTVTUbqox9oeKGZFe0gZNr5OtqQ.png" />（这是一个极强的亲电试剂，甚至还有一整本书来描述它的作用原理）
 
 (e) 胍 (guanidine) 当亲核试剂使的话，任何一个氮上的孤对电子都可以进攻硝酰，所以答案不止一个。为了和最后产物的结构一致，选择这种路径。
 
