@@ -11,7 +11,6 @@ import {
   ButtonBack,
   ButtonNext,
   Dot,
-  Image,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -163,7 +162,7 @@ export default function Home() {
           <FontAwesomeIcon icon={faChevronRight} />
         </ButtonNext>
         <div className={styles.carouseldots}>
-          {slides.map((elem, idx) => (
+          {slides.map((__, idx) => (
             <Dot className={styles.carouseldot} key={idx} slide={idx} />
           ))}
         </div>

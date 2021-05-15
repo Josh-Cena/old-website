@@ -155,6 +155,12 @@
     "message": "跳到主要内容",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
+  "front.heading3": {
+    "message": "6K 之路"
+  },
+  "front.readMore": {
+    "message": "阅读更多"
+  },
   "front.features.feat1.title": {
     "message": "7年编程经验"
   },
