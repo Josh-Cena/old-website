@@ -171,4 +171,5 @@ module.exports = {
       },
     ],
   ],
+  onBrokenLinks: 'warn',
 };
