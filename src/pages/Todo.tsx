@@ -1,4 +1,4 @@
-import React, { ReactElement, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
 import useThemeContext from "@theme/hooks/useThemeContext";
@@ -14,11 +14,11 @@ import NewItem from "../components/newTodo";
 import { todoItem, UpdateHandler } from "../data/todoData";
 
 interface MainProps {
+  handler: UpdateHandler;
   list: todoItem[];
-  setList: React.Dispatch<React.SetStateAction<todoItem[]>>;
 }
 
-function Main({ list, setList }: MainProps): ReactElement {
+function Main({ handler, list }: MainProps) {
   const { isDarkTheme } = useThemeContext();
   const theme = createMuiTheme({
     palette: {
@@ -34,7 +34,6 @@ function Main({ list, setList }: MainProps): ReactElement {
   const todos = list.filter((i) => !i.done);
   const dones = list.filter((i) => i.done);
 
-  const handler = new UpdateHandler(list, setList);
   const [sortBy, setSortBy] = useState("priority");
   useEffect(() => {
     handler.sortBy = sortBy;
@@ -75,7 +74,7 @@ function Main({ list, setList }: MainProps): ReactElement {
   );
 }
 
-export default function Todo(): ReactElement {
+export default function Todo() {
   const [list, setList] = useState<todoItem[]>([]);
   useEffect(() => {
     const history = localStorage.getItem("jc_todolistData");
@@ -84,6 +83,7 @@ export default function Todo(): ReactElement {
   useEffect(() => {
     localStorage.setItem("jc_todolistData", JSON.stringify(list));
   }, [list]);
+  const handler = new UpdateHandler(list, setList);
 
   return (
     <Layout title="Todo list" description="A convenient todo list">
@@ -113,7 +113,7 @@ export default function Todo(): ReactElement {
               }
             </Translate>
           </p>
-          <Main list={list} setList={setList} />
+          <Main handler={handler} list={list} />
         </div>
       </main>
     </Layout>
