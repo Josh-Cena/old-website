@@ -1,0 +1,1 @@
+(self.webpackChunkpersonal_page=self.webpackChunkpersonal_page||[]).push([[4257],{7763:function(a){"use strict";a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"personal-page","name":"personal page","count":5,"permalink":"/blog/tags/personal-page"}')}}]);
