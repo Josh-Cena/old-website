@@ -42,17 +42,28 @@ function Main({ handler, list }: MainProps) {
 
   return (
     <ThemeProvider theme={theme}>
-      <InputLabel id="sort-by">Sort by</InputLabel>
-      <Select
-        labelId="sort-by"
-        value={sortBy}
-        onChange={(e) => setSortBy(e.target.value as string)}
+      <div className={styles.sortBySelect}>
+        <InputLabel id="sort-by">Sort by</InputLabel>
+        <Select
+          labelId="sort-by"
+          value={sortBy}
+          onChange={(e) => setSortBy(e.target.value as string)}
+        >
+          <MenuItem value={"priority"}>Priority</MenuItem>
+          <MenuItem value={"deadline"}>Due date</MenuItem>
+          <MenuItem value={"name"}>Name</MenuItem>
+          <MenuItem value={"label"}>Label</MenuItem>
+        </Select>
+      </div>
+      <a
+        className={clsx("button button--outline button--secondary", styles.downloadLink)}
+        href={`data:text/json;charset=utf-8,${encodeURIComponent(
+          JSON.stringify(list)
+        )}`}
+        download="todolist.json"
       >
-        <MenuItem value={"priority"}>Priority</MenuItem>
-        <MenuItem value={"deadline"}>Due date</MenuItem>
-        <MenuItem value={"name"}>Name</MenuItem>
-        <MenuItem value={"label"}>Label</MenuItem>
-      </Select>
+        Download as JSON
+      </a>
       <h2>
         <Translate id="todo.todoTitle">Todo</Translate>
       </h2>
