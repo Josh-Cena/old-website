@@ -1,1 +1,0 @@
-(self.webpackChunkpersonal_page=self.webpackChunkpersonal_page||[]).push([[6651],{3478:function(n){"use strict";n.exports=JSON.parse('{"allTagsPath":"/zh-Hans/blog/tags","slug":"front-end","name":"front end","count":1,"permalink":"/zh-Hans/blog/tags/front-end"}')}}]);
