@@ -31,10 +31,10 @@
 
 .bkgimg {
   position: absolute;
-  right: 1rem;
+  right: calc(30% - 400px);
   top: 0;
-  width: 100%;
-  max-width: 900px;
+  max-width: none;
+  max-height: 550px;
   overflow: hidden;
   z-index: 0;
 }
@@ -42,10 +42,17 @@
 .slideHeading {
   position: absolute;
   left: 10rem;
-  top: 30%;
+  top: 35%;
   font-size: 40px;
+  margin-right: 4rem;
   z-index: 1;
-  color: white;
+  text-align: left;
+}
+
+.slideSubheading {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
 }
 
 .button {
@@ -59,10 +66,6 @@
   left: 10rem;
   top: 50%;
   z-index: 1;
-}
-
-.readMoreText {
-  color: white !important;
 }
 
 .carouselbutton {
@@ -127,7 +130,7 @@
 
 @media screen and (max-width: 768px) {
   .heroBanner {
-    padding: 3rem 2rem 4rem;
+    padding: 3rem 0.5rem 4rem;
   }
 
   .slide {
@@ -142,11 +145,12 @@
   .bkgimg {
     right: -10rem;
     top: 0;
-    width: 700px;
+    max-height: 400px;
   }
 
   .slideHeading {
     left: 5rem;
+    margin-right: 2rem;
   }
 
   .readMore {

@@ -78,21 +78,44 @@ const slides = [
       backgroundImage: "linear-gradient(rgb(69,26,24), rgb(95,36,33))",
     }}
   >
-    <h2 className={styles.slideHeading}>
+    <h2
+      className={styles.slideHeading}
+      style={{color: "white"}}
+    >
       <Translate id="front.heading3">Road to 6K</Translate>
     </h2>
     <img src="/img/frontpage/CR_arena_blur.png" className={styles.bkgimg} />
     <div className={styles.button, styles.readMore}>
       <Link
-        className={clsx(
-          "button button--outline button--secondary button--lg",
-          styles.readMoreText
-        )}
+        className="button button--outline button--lg"
+        style={{color: "white"}}
         to="/blog/2021/04/26/champion"
       >
         <Translate id="front.readMore">Read more</Translate>
       </Link>
     </div>
+  </div>,
+  <div
+    className={clsx(styles.heroBanner, styles.slide)}
+    style={{
+      backgroundColor: "rgb(64,116,225)",
+    }}
+  >
+    <h2
+      className={styles.slideHeading}
+      style={{color: "white"}}
+    >
+      <Translate id="front.heading4">Thank you, UCloud!</Translate>
+    </h2>
+    <img src="/img/frontpage/UCloud_logo.svg" className={styles.bkgimg} />
+    <p
+      className={clsx(styles.readMore, styles.slideSubheading)}
+      style={{
+        color: "white",
+      }}
+    >
+      This site is finally powered by a backend!
+    </p>
   </div>,
 ];
 
@@ -120,7 +143,7 @@ export default function Home() {
     <Layout title={`Hello from ${siteConfig.title}`}>
       <CarouselProvider
         className={styles.carousel}
-        totalSlides={3}
+        totalSlides={slides.length}
         isPlaying
         interval={3000}
         dragEnabled={false}

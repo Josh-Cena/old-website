@@ -1,6 +1,49 @@
 import React from "react";
 import Translate from "@docusaurus/Translate";
 
+export const slides = [
+  null,
+  null,
+  {
+    title: (
+      <Translate id="front.slides.slide3.title">Road to 6K</Translate>
+    ),
+    subtitle: (
+      <Translate id="front.slides.slide3.subtitle">
+        Finally, the noob mega knight bait player...
+      </Translate>
+    ),
+    promptText: (
+      <Translate id="front.slides.slide3.readMore">Read more</Translate>
+    ),
+    promptLink: "/blog/2021/04/26/champion",
+    image: "/img/frontpage/CR_arena_blur.png",
+    textColor: "white",
+    style: {
+      backgroundImage: "linear-gradient(rgb(69,26,24), rgb(95,36,33))",
+    },
+  },
+  {
+    title: (
+      <Translate id="front.slides.slide4.subtitle">Thank you, UCloud!</Translate>
+    ),
+    subtitle: (
+      <Translate id="front.slides.slide4.subtitle">
+        This website is now powered with a backend!
+      </Translate>
+    ),
+    promptText: (
+      <Translate id="front.slides.slide4.readMore">Read more</Translate>
+    ),
+    promptLink: "/blog/2021/04/26/champion",
+    image: "/img/frontpage/garage.jpg",
+    textColor: "white",
+    style: {
+      backgroundColor: "rgb(64,116,225)",
+    },
+  },
+]
+
 export const features = [
   {
     title: (
