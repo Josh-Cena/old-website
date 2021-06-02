@@ -162,6 +162,8 @@ module.exports = {
           rehypePlugins: [[rehypeKatex, { strict: false }]],
         },
         blog: {
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: 'All my posts',
           remarkPlugins: [remarkMath],
           rehypePlugins: [[rehypeKatex, { strict: false }]],
         },
