@@ -1,0 +1,1 @@
+(self.webpackChunkpersonal_page=self.webpackChunkpersonal_page||[]).push([[8e3],{449:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"compiler","name":"compiler","count":1,"permalink":"/blog/tags/compiler"}')}}]);
