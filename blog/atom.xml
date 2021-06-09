@@ -2,11 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://josh-cena.github.io/blog</id>
     <title>Joshua Chen Blog</title>
-    <updated>2021-05-06T00:00:00.000Z</updated>
+    <updated>2021-06-09T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://josh-cena.github.io/blog"/>
     <subtitle>Joshua Chen Blog</subtitle>
     <icon>https://josh-cena.github.io/img/favicon/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Caroline: a script font]]></title>
+        <id>Caroline: a script font</id>
+        <link href="https://josh-cena.github.io/blog/2021/06/09/font"/>
+        <updated>2021-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This font is developed by an Indonesian (Fatma Wati), and I just absolutely loved it. (FYI my personal server's hostname is Caroline as well. Caroline is truely a special name.)]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Interactive code block!]]></title>
         <id>Interactive code block!</id>

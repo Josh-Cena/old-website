@@ -4,9 +4,16 @@
         <title>Joshua Chen Blog</title>
         <link>https://josh-cena.github.io/blog</link>
         <description>Joshua Chen Blog</description>
-        <lastBuildDate>Thu, 06 May 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 09 Jun 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Caroline: a script font]]></title>
+            <link>https://josh-cena.github.io/zh-Hans/blog/2021/06/09/font</link>
+            <guid>Caroline: a script font</guid>
+            <pubDate>Wed, 09 Jun 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[This font is developed by an Indonesian (Fatma Wati), and I just absolutely loved it. (FYI my personal server's hostname is Caroline as well. Caroline is truely a special name.)]]></description>
+        </item>
         <item>
             <title><![CDATA[Interactive code block!]]></title>
             <link>https://josh-cena.github.io/zh-Hans/blog/2021/05/06/codeblock</link>
