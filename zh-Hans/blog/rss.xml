@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Joshua Chen Blog</title>
-        <link>https://josh-cena.github.io/blog</link>
+        <link>https://josh-cena.github.io/zh-Hans/blog</link>
         <description>Joshua Chen Blog</description>
         <lastBuildDate>Wed, 09 Jun 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -54,7 +54,7 @@
             <link>https://josh-cena.github.io/zh-Hans/blog/2021/03/15/color</link>
             <guid>选择配色方案</guid>
             <pubDate>Mon, 15 Mar 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[{children}]]></description>
+            <description><![CDATA[);]]></description>
         </item>
         <item>
             <title><![CDATA[自动化文件处理]]></title>
