@@ -23,6 +23,7 @@
 }
 
 :root .navbar__title {
+  margin-left: 10px;
   font-family: "Caroline", sans-serif;
   font-size: xx-large;
 }
