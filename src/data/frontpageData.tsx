@@ -44,7 +44,16 @@ export const slides = [
   },
 ]
 
-export const features = [
+export type feature = {
+  title: JSX.Element;
+  sources: {
+    light: string,
+    dark: string,
+  };
+  description: JSX.Element;
+};
+
+export const features: feature[] = [
   {
     title: (
       <Translate id="front.features.feat1.title">7-year programmer</Translate>

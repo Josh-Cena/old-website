@@ -17,6 +17,16 @@
   --ifm-code-font-size: 95%;
 }
 
+@font-face {
+  font-family: "Caroline";
+  src: url("/Caroline.otf");
+}
+
+:root .navbar__title {
+  font-family: "Caroline", sans-serif;
+  font-size: xx-large;
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(221, 223, 225);
   display: block;

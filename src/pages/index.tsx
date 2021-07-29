@@ -21,7 +21,7 @@ import {
 import Translate from "@docusaurus/Translate";
 
 import styles from "./styles.module.css";
-import { features } from "../data/frontpageData";
+import { features, feature } from "../data/frontpageData";
 
 const slides = [
   <header
@@ -85,7 +85,7 @@ const slides = [
       <Translate id="front.heading3">Road to 6K</Translate>
     </h2>
     <img src="/img/frontpage/CR_arena_blur.png" className={styles.bkgimg} />
-    <div className={styles.button, styles.readMore}>
+    <div className={clsx(styles.button, styles.readMore)}>
       <Link
         className="button button--outline button--lg"
         style={{color: "white"}}
@@ -119,7 +119,7 @@ const slides = [
   </div>,
 ];
 
-function Feature({ sources, title, description }) {
+function Feature({ sources, title, description }: feature) {
   return (
     <div className={clsx("col col--4", styles.feature)}>
       <div className="text--center">
@@ -149,45 +149,50 @@ export default function Home() {
         dragEnabled={false}
         isIntrinsicHeight
         infinite
-        onMouseEnter={() => {
-          setButtonVisible(true);
-        }}
-        onMouseLeave={() => {
-          setButtonVisible(false);
-        }}
+        naturalSlideHeight={undefined}
+        naturalSlideWidth={undefined}
       >
-        <Slider>
-          {slides.map((elem, idx) => (
-            <Slide key={idx} index={idx}>
-              {elem}
-            </Slide>
-          ))}
-        </Slider>
-        <ButtonBack
-          id="back"
-          className={clsx(
-            styles.button,
-            styles.carouselbutton,
-            styles.backbutton
-          )}
-          style={{ visibility: buttonVisible ? "visible" : "hidden" }}
+        <div
+          onMouseEnter={() => {
+            setButtonVisible(true);
+          }}
+          onMouseLeave={() => {
+            setButtonVisible(false);
+          }}
         >
-          <FontAwesomeIcon icon={faChevronLeft} />
-        </ButtonBack>
-        <ButtonNext
-          className={clsx(
-            styles.button,
-            styles.carouselbutton,
-            styles.nextbutton
-          )}
-          style={{ visibility: buttonVisible ? "visible" : "hidden" }}
-        >
-          <FontAwesomeIcon icon={faChevronRight} />
-        </ButtonNext>
-        <div className={styles.carouseldots}>
-          {slides.map((__, idx) => (
-            <Dot className={styles.carouseldot} key={idx} slide={idx} />
-          ))}
+          <Slider>
+            {slides.map((elem, idx) => (
+              <Slide key={idx} index={idx}>
+                {elem}
+              </Slide>
+            ))}
+          </Slider>
+          <ButtonBack
+            id="back"
+            className={clsx(
+              styles.button,
+              styles.carouselbutton,
+              styles.backbutton
+            )}
+            style={{ visibility: buttonVisible ? "visible" : "hidden" }}
+          >
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </ButtonBack>
+          <ButtonNext
+            className={clsx(
+              styles.button,
+              styles.carouselbutton,
+              styles.nextbutton
+            )}
+            style={{ visibility: buttonVisible ? "visible" : "hidden" }}
+          >
+            <FontAwesomeIcon icon={faChevronRight} />
+          </ButtonNext>
+          <div className={styles.carouseldots}>
+            {slides.map((__, idx) => (
+              <Dot className={styles.carouseldot} key={idx} slide={idx} />
+            ))}
+          </div>
         </div>
       </CarouselProvider>
       <main>
