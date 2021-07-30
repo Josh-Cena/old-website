@@ -22,7 +22,7 @@ export default function DocMetadataBanner({frontMatter}: Props) {
             date: <b>{date.toLocaleDateString('zh-Hans')}</b>,
           }}
         >
-          {'First published on {date}.'}
+          {'First published on {date}. '}
         </Translate>
       }{link && <a href={link}><Translate id="docMetadataBanner.sourceLink">Source link</Translate></a>}
     </div>
