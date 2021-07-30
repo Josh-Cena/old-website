@@ -79,14 +79,6 @@
     "message": "复制",
     "description": "The copy button label on code blocks"
   },
-  "theme.docs.sidebar.expandButtonTitle": {
-    "message": "展开侧边栏",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
-  },
-  "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "展开侧边栏",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
-  },
   "theme.docs.paginator.navAriaLabel": {
     "message": "文档分页导航",
     "description": "The ARIA label for the docs pagination"
@@ -125,7 +117,7 @@
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
     "message": "最新的文档请参阅 {latestVersionLink} ({versionLabel})。",
-    "description": "The label userd to tell the user that he's browsing an unmaintained doc version"
+    "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
     "message": "最新版本",
@@ -343,5 +335,43 @@
   },
   "docMetadataBanner.sourceLink": {
     "message": " 原文链接"
+  },
+  "front.slides.slide3.title": {
+    "message": "6K 之路"
+  },
+  "front.slides.slide3.subtitle": {
+    "message": "最终，那个萌新超骑骨球玩家……F"
+  },
+  "front.slides.slide3.readMore": {
+    "message": "了解更多"
+  },
+  "front.slides.slide4.subtitle": {
+    "message": "这个网站终于有后端了！"
+  },
+  "front.slides.slide4.readMore": {
+    "message": "了解更多"
+  },
+  "front.heading4": {
+    "message": "谢谢你，UCloud！"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "最近博文导航",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← 回到主菜单",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "本页总览",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.Playground.result": {
+    "message": "结果",
+    "description": "The result label of the live codeblocks"
+  },
+  "theme.Playground.liveEditor": {
+    "message": "实时编辑器",
+    "description": "The live editor label of the live codeblocks"
   }
 }
