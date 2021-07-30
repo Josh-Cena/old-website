@@ -1,17 +1,14 @@
 ---
 id: note3
 title: 数字电路学习笔记（三）：基本逻辑
+date: 2019-09-01
+link: https://zhuanlan.zhihu.com/p/80586814
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../../../../src/components/Pic';
+import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
-> 首次发布于 2019 年 9 月 1 日
->
-> 原文链接：https://zhuanlan.zhihu.com/p/80586814
+<DocMetadataBanner frontMatter={frontMatter} />
 
 这几章讲的是逻辑设计的基础：布尔运算。
 

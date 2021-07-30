@@ -1,17 +1,14 @@
 ---
 id: bananafish
 title: 西摩·格拉斯：那个男人来了，那个男人走了
+date: 2020-11-21
+link: https://mp.weixin.qq.com/s/ynD89NiwZ78ahO9XbCvKYg
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../../../../src/components/Pic';
+import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
-> 首次发布于 2020 年 11 月 21 日
->
-> 原文链接：https://mp.weixin.qq.com/s/ynD89NiwZ78ahO9XbCvKYg
+<DocMetadataBanner frontMatter={frontMatter} />
 
 <Pic src="/zh-Hans/img/./docs/Humanities/bananafish/JGibibkelET6iclfJibqI531Lka7LicMGVyqjS1UGoWRbQmSW3vslYCkibyib5qoribqzh8Tibj1iceA7QlZPKsLicjk72v9g.jpeg"></Pic>
 

@@ -2,11 +2,14 @@
 id: suicide
 title: 一个男人决定去死
 sidebar_label: A man decides to die
+date: 2020-09-28
+link: https://mp.weixin.qq.com/s/SNFmGdxKdPHCvnMLH8FOew
 ---
 
-> First published on Sept 28, 2020
->
-> Link: https://mp.weixin.qq.com/s/SNFmGdxKdPHCvnMLH8FOew
+import Pic from '../../src/components/Pic';
+import DocMetadataBanner from '../../src/components/DocMetadataBanner';
+
+<DocMetadataBanner frontMatter={frontMatter} />
 
 ## 一
 

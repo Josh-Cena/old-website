@@ -1,17 +1,14 @@
 ---
 id: red-pills
 title: Red pills for Christmas
+date: 2020-12-25
+link: https://mp.weixin.qq.com/s/A_kfewyaK_PVetHj6u3cIg
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../src/components/Pic';
+import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
-> First published on Dec 25, 2020
->
-> Link: https://mp.weixin.qq.com/s/A_kfewyaK_PVetHj6u3cIg
+<DocMetadataBanner frontMatter={frontMatter} />
 
 It was a world of snow. The black asphalt road was now soft and crystalline—so was the murky night, illuminated only by the snowflakes suspended in the air, as if the entire world was adrift in the clouds. The shops lining up the street have all gone blackout, their windows dormant in the darkness that the dim orange light from the streetlamps couldn’t light up. No colored lights, no Christmas trees—it was a desolate part of town where the merry Christmas spirit doesn’t visit on this special eve.
 

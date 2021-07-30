@@ -2,17 +2,14 @@
 id: dream
 title: 关于梦境、坠落与现实
 sidebar_label: About dreams, fall, and reality
+date: 2021-01-02
+link: https://mp.weixin.qq.com/s/gLPwsms14ZAF6iGfbsgiCw
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../src/components/Pic';
+import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
-> First published on Jan 2, 2021
->
-> Link: https://mp.weixin.qq.com/s/gLPwsms14ZAF6iGfbsgiCw
+<DocMetadataBanner frontMatter={frontMatter} />
 
 当大家都以为我之前的三篇文章只是纯水文时，我打算继续把这个话题《陈意非的随谈》写下去。（毕竟隔壁 Josh Cena 也有一个随谈，不能落后啊）
 

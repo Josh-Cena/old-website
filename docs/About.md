@@ -3,11 +3,10 @@ id: about
 title: About the docs
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../src/components/Pic';
+import DocMetadataBanner from '../src/components/DocMetadataBanner';
+
+<DocMetadataBanner frontMatter={frontMatter} />
 
 When I was building this website, I was in a dilemma. Mostly, about the positioning—what should I post? What's the target audience? What should I establish myself as? How seriously should I take it?
 

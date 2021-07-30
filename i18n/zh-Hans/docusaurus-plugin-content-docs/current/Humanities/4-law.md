@@ -1,17 +1,14 @@
 ---
 id: law
 title: 安提戈涅：恶法非法！
+date: 2020-12-29
+link: https://mp.weixin.qq.com/s/AkIjFaAvtsKZ03Lam_x0Sg
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../../../../src/components/Pic';
+import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
-> 首次发布于 2020 年 12 月 29 日
->
-> 原文链接：https://mp.weixin.qq.com/s/AkIjFaAvtsKZ03Lam_x0Sg
+<DocMetadataBanner frontMatter={frontMatter} />
 
 在知识论课上，作为“知识与价值观”这一部分的实例，我们看了两集美剧《波士顿法律》(Boston Legal) 的片段，是两个非常有趣的庭审案例。
 

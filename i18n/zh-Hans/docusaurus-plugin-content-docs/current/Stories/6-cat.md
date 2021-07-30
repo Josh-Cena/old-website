@@ -1,17 +1,14 @@
 ---
 id: cat
 title: 猫奴
+date: 2020-12-15
+link: https://mp.weixin.qq.com/s/x-gZ4YE85sWlqMY42UvlUw
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../../../../src/components/Pic';
+import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
-> 首次发布于 2020 年 12 月 15 日
->
-> 原文链接：https://mp.weixin.qq.com/s/x-gZ4YE85sWlqMY42UvlUw
+<DocMetadataBanner frontMatter={frontMatter} />
 
 “马文，马文，”男人坐在沙发上，看着猫在吧台上跳上跳下，“生命、宇宙和一切的答案是什么？”
 

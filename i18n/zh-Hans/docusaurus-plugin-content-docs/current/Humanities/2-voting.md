@@ -1,17 +1,15 @@
 ---
 id: voting
 title: 选举的悖论
+sidebar_label: A voting paradox
+date: 2020-10-23
+link: https://mp.weixin.qq.com/s/FKrzNcdkfouqQTfGXWFdkw
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../../../../src/components/Pic';
+import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
-> 首次发布于 2020 年 10 月 23 日
->
-> 原文链接：https://mp.weixin.qq.com/s/FKrzNcdkfouqQTfGXWFdkw
+<DocMetadataBanner frontMatter={frontMatter} />
 
 _\*本文是一篇理论密集的文章。得出的结论与政体无关，与意识形态无关。_
 

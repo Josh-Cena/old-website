@@ -1,17 +1,14 @@
 ---
 id: note4
 title: 数字电路学习笔记（四）：逻辑代数系统
+date: 2019-09-12
+link: https://zhuanlan.zhihu.com/p/80693923
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../../../../src/components/Pic';
+import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
-> 首次发布于 2019 年 9 月 12 日
->
-> 原文链接：https://zhuanlan.zhihu.com/p/80693923
+<DocMetadataBanner frontMatter={frontMatter} />
 
 逻辑代数系统由基本公式、常用公式、基本规则三部分构成。掌握了这些，设计出的电路可以尽可能地简单，减少故障几率和元件使用；编程时，如果掌握了逻辑函数化简，也能增加条件判断式的可读性，避免写出垃圾代码。
 

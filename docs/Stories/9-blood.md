@@ -2,17 +2,14 @@
 id: blood
 title: 关于血液、火焰与生命
 sidebar_label: About blood, flames, and life
+date: 2021-01-02
+link: https://mp.weixin.qq.com/s/1W5W18LHMRedhzXe-VhrTg
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../src/components/Pic';
+import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
-> First published on Jan 2, 2021
->
-> Link: https://mp.weixin.qq.com/s/1W5W18LHMRedhzXe-VhrTg
+<DocMetadataBanner frontMatter={frontMatter} />
 
 > I'm burning up,  
 > Like a fever that rages in the night  

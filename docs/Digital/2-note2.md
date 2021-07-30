@@ -2,17 +2,14 @@
 id: note2
 title: 数字电路学习笔记（二）：数制与编码
 sidebar_label: "Note 2: Numerical systems and encoding"
+date: 2019-08-31
+link: https://zhuanlan.zhihu.com/p/80456225
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../src/components/Pic';
+import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
-> First published on Aug 31, 2019
->
-> Link: https://zhuanlan.zhihu.com/p/80456225
+<DocMetadataBanner frontMatter={frontMatter} />
 
 我们先跳开数字电路内容，看看凡是讲计算机系统就绕不开的编码问题。
 

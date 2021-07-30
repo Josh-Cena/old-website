@@ -1,17 +1,14 @@
 ---
 id: greek
 title: 「西拉丁，东希腊」
+date: 2021-05-04
+link: https://mp.weixin.qq.com/s/Gh0b2ofiIVt6I93FthUxzg
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../../../../src/components/Pic';
+import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
-> 首次发布于 2021 年 5 月 4 日
->
-> 原文链接：https://mp.weixin.qq.com/s/Gh0b2ofiIVt6I93FthUxzg
+<DocMetadataBanner frontMatter={frontMatter} />
 
 在学有机化学的时候，学到了 S<sub>N</sub>2 反应的名字叫 "**Bimolecular** nucleophilic substitution"，S<sub>N</sub>1 则叫 "**Unimolecular** nucleophilic substitution"。
 

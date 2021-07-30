@@ -1,17 +1,14 @@
 ---
 id: blood
 title: 关于血液、火焰与生命
+date: 2021-01-02
+link: https://mp.weixin.qq.com/s/1W5W18LHMRedhzXe-VhrTg
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../../../../src/components/Pic';
+import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
-> 首次发布于 2021 年 1 月 2 日
->
-> 原文链接：https://mp.weixin.qq.com/s/1W5W18LHMRedhzXe-VhrTg
+<DocMetadataBanner frontMatter={frontMatter} />
 
 > I'm burning up,  
 > Like a fever that rages in the night  

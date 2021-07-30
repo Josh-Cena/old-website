@@ -1,17 +1,14 @@
 ---
 id: note1
 title: 数字电路学习笔记（一）：前言
+date: 2019-08-30
+link: https://zhuanlan.zhihu.com/p/80395268
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../../../../src/components/Pic';
+import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
-> 首次发布于 2019 年 8 月 30 日
->
-> 原文链接：https://zhuanlan.zhihu.com/p/80395268
+<DocMetadataBanner frontMatter={frontMatter} />
 
 决定写一系列关于数字电路的文章，整理一下过去几个月内本人自学的相关知识，从一个高中生的角度讲讲我对知识点的理解，算是一种巩固练习。限于知识水平，许多内容可能没有真正理解，如果有大佬路过，也欢迎提出改进意见，谢谢！
 

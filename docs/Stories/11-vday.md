@@ -2,17 +2,14 @@
 id: vday
 title: 胜利日
 sidebar_label: The V-Day
+date: 2021-06-30
+link: https://mp.weixin.qq.com/s/tG6ILq-uoODUGFgIxQu8Ig
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../src/components/Pic';
+import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
-> First published on Jun 30, 2021
->
-> Link: https://mp.weixin.qq.com/s/tG6ILq-uoODUGFgIxQu8Ig
+<DocMetadataBanner frontMatter={frontMatter} />
 
 马克一直有早睡的习惯，即使是军营生活也没有改变这一点。但今天晚上，他睡不着。他在床上翻来覆去，过去一年遇到的所有人，经历的所有事，都一个个地一闪而过，他既躲不开，也抓不住。
 

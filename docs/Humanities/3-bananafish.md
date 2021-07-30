@@ -2,17 +2,14 @@
 id: bananafish
 title: 西摩·格拉斯：那个男人来了，那个男人走了
 sidebar_label: "Seymour Glass: he comes, he goes"
+date: 2020-11-21
+link: https://mp.weixin.qq.com/s/ynD89NiwZ78ahO9XbCvKYg
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../src/components/Pic';
+import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
-> First published on Nov 21, 2020
->
-> Link: https://mp.weixin.qq.com/s/ynD89NiwZ78ahO9XbCvKYg
+<DocMetadataBanner frontMatter={frontMatter} />
 
 <Pic src="/img/./docs/Humanities/bananafish/JGibibkelET6iclfJibqI531Lka7LicMGVyqjS1UGoWRbQmSW3vslYCkibyib5qoribqzh8Tibj1iceA7QlZPKsLicjk72v9g.jpeg"></Pic>
 

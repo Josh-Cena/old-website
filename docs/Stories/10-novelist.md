@@ -2,17 +2,14 @@
 id: novelist
 title: 小说家
 sidebar_label: The novelist
+date: 2021-06-30
+link: https://mp.weixin.qq.com/s/UPHIZr_0abuZfgfZmYbg-g
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../src/components/Pic';
+import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
-> First published on Jun 30, 2021
->
-> Link: https://mp.weixin.qq.com/s/UPHIZr_0abuZfgfZmYbg-g
+<DocMetadataBanner frontMatter={frontMatter} />
 
 他透过准星凝视着眼前的这头鹿。
 

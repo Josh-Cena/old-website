@@ -1,17 +1,14 @@
 ---
 id: price
 title: 收入与成本曲线
+date: 2020-06-27
+link: https://mp.weixin.qq.com/s/yMTDAgsCygTRSYnfZkuhHg
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../../../../src/components/Pic';
+import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
-> 首次发布于 2020 年 6 月 27 日
->
-> 原文链接：https://mp.weixin.qq.com/s/yMTDAgsCygTRSYnfZkuhHg
+<DocMetadataBanner frontMatter={frontMatter} />
 
 在很久之前的经济课上，有这样一幅图，展示了垄断竞争市场下的公司长期收益-成本曲线 (long-run cost and revenue curves of a monopolistically competitive firm)：
 

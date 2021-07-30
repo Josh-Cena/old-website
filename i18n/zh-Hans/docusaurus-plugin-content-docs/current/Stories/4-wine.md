@@ -1,11 +1,14 @@
 ---
 id: wine
 title: 关于酒、深夜与笔
+date: 2020-11-22
+link: https://mp.weixin.qq.com/s/MSqUVJfc6jhsUAbdvKUaEg
 ---
 
-> 首次发布于 2020 年 11 月 22 日
->
-> 原文链接：https://mp.weixin.qq.com/s/MSqUVJfc6jhsUAbdvKUaEg
+import Pic from '../../../../../src/components/Pic';
+import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
+
+<DocMetadataBanner frontMatter={frontMatter} />
 
 > Wine comes in at the mouth  
 > And love comes in at the eye;  

@@ -1,17 +1,14 @@
 ---
 id: night
 title: 温柔良夜
+date: 2021-06-30
+link: https://mp.weixin.qq.com/s/CMCYOSntRbqWS9diJQxyfQ
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../../../../src/components/Pic';
+import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
-> 首次发布于 2021 年 6 月 30 日
->
-> 原文链接：https://mp.weixin.qq.com/s/CMCYOSntRbqWS9diJQxyfQ
+<DocMetadataBanner frontMatter={frontMatter} />
 
 他注视着腿上的黑斑，好像注视着一个老朋友。
 

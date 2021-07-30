@@ -1,11 +1,14 @@
 ---
 id: light
 title: 关于太阳、灯光与星空
+date: 2020-11-12
+link: https://mp.weixin.qq.com/s/S_JSnBz7AeKjDQk4MD8Tew
 ---
 
-> 首次发布于 2020 年 11 月 22 日
->
-> 原文链接：https://mp.weixin.qq.com/s/S_JSnBz7AeKjDQk4MD8Tew
+import Pic from '../../../../../src/components/Pic';
+import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
+
+<DocMetadataBanner frontMatter={frontMatter} />
 
 > It was this celestial splendor that suddenly made me realize how little time, how little life, I had left. My sense of the heavens’ beauty, of eternity, was inseparably mixed for me with a sense of transience — and death.
 >

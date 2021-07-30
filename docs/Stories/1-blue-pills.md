@@ -1,17 +1,14 @@
 ---
 id: blue-pills
 title: Blue pills and a birthday
+date: 2020-09-13
+link: https://mp.weixin.qq.com/s/SUvSjZB6X3UOo_iFkz-nrQ
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../src/components/Pic';
+import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
-> First published on Sept 13, 2020
->
-> Link: https://mp.weixin.qq.com/s/SUvSjZB6X3UOo_iFkz-nrQ
+<DocMetadataBanner frontMatter={frontMatter} />
 
 > So the hearse ran out of gas  
 > A passenger person grabbed a map  

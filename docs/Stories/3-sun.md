@@ -2,17 +2,14 @@
 id: sun
 title: 太阳！太阳！
 sidebar_label: The Sun! The Sun!
+date: 2020-11-02
+link: https://mp.weixin.qq.com/s/nQtihUgFgDHWKXjR3A01pg
 ---
 
-export const Pic = ({children, src}) => (
-<div style={{textAlign: 'center'}}>
-<img src={src} />
-<p style={{color: 'gray', fontSize: 'small'}}>{children}</p>
-</div>);
+import Pic from '../../src/components/Pic';
+import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
-> First published on Nov 2, 2020
->
-> Link: https://mp.weixin.qq.com/s/nQtihUgFgDHWKXjR3A01pg
+<DocMetadataBanner frontMatter={frontMatter} />
 
 我说这是一篇游记，你信吗？
 
