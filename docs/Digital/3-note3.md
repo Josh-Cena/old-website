@@ -6,7 +6,7 @@ date: 2019-09-01
 link: https://zhuanlan.zhihu.com/p/80586814
 ---
 
-import Pic from '../../src/components/Pic';
+import Figure from '../../src/components/Figure';
 import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -15,7 +15,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 布尔运算和普通算术运算最大的不同，在于其包括的数集只有 0 与 1（或者“真”和“假”），而算术运算是全数集；所以，布尔运算的学习重点一般在于算式的化简而不是求值。
 
-<Pic src="https://pic3.zhimg.com/80/v2-264ea2e7ffed54f40bd04b1c6d822a62_720w.jpg">我们又要回到这幅图了</Pic>
+<Figure src="https://pic3.zhimg.com/80/v2-264ea2e7ffed54f40bd04b1c6d822a62_720w.jpg">我们又要回到这幅图了</Figure>
 
 在开始之前，我们先了解几个概念。
 
@@ -36,7 +36,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 意义：只有当$A$不发生时，$X$才发生
 - 等价开关电路：开关与用电器并联（图中防盗系统开关）
 - 逻辑符号：
-  <Pic src="https://pic4.zhimg.com/80/v2-c0617961ff8e7331bf22aefcf617b403_720w.jpg"></Pic>
+  <Figure src="https://pic4.zhimg.com/80/v2-c0617961ff8e7331bf22aefcf617b403_720w.jpg"></Figure>
 - 真值表：
 
 | $A$ | $X$ |
@@ -55,7 +55,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 意义：只要当$A$**或**$B$中有一个发生时，$X$就发生
 - 等价开关电路：两开关并联（图中保管员开关组与主任开关）
 - 逻辑符号：
-  <Pic src="https://pic2.zhimg.com/80/v2-756955c5be42d29c20d3a7b15e991c0d_720w.jpg"></Pic>
+  <Figure src="https://pic2.zhimg.com/80/v2-756955c5be42d29c20d3a7b15e991c0d_720w.jpg"></Figure>
 - 真值表：
 
 | $A$ | $B$ | $X$ |
@@ -76,7 +76,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 意义：只有当$A$**与**$B$都发生时，$X$才发生
 - 等价开关电路：两开关串联（图中两保管员开关）
 - 逻辑符号：
-  <Pic src="https://pic4.zhimg.com/80/v2-b3d4a535ad06ba68461d80310c475d57_720w.jpg"></Pic>
+  <Figure src="https://pic4.zhimg.com/80/v2-b3d4a535ad06ba68461d80310c475d57_720w.jpg"></Figure>
 - 真值表：
 
 | $A$ | $B$ | $X$ |
@@ -96,10 +96,10 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 算式表示方法：$A\oplus B$（LaTeX 里这个符号不是很漂亮啊...）
 - 意义：只有当$A$**或**$B$中有一个发生时，$X$才发生（注意和或逻辑的”只有“”只要“的区别！）
 - 等价开关电路：双掷开关（用于两个开关同时控制一盏灯——任何一个开关变化都可以控制灯的亮灭）
-  <Pic src="https://pic3.zhimg.com/80/v2-ccfaf983e06bc7b2084c2538ec01cb26_720w.jpg">闭合状态，形成通路</Pic>
-  <Pic src="https://pic2.zhimg.com/80/v2-18e48906c8b96858618731ec03cbcd19_720w.jpg">断开状态，不形成通路</Pic>
+  <Figure src="https://pic3.zhimg.com/80/v2-ccfaf983e06bc7b2084c2538ec01cb26_720w.jpg">闭合状态，形成通路</Figure>
+  <Figure src="https://pic2.zhimg.com/80/v2-18e48906c8b96858618731ec03cbcd19_720w.jpg">断开状态，不形成通路</Figure>
 - 逻辑符号：
-  <Pic src="https://pic1.zhimg.com/80/v2-9b5dd3dec035a4a097f4fc829a0b89d8_720w.jpg"></Pic>
+  <Figure src="https://pic1.zhimg.com/80/v2-9b5dd3dec035a4a097f4fc829a0b89d8_720w.jpg"></Figure>
 - 真值表：
 
 | $A$ | $B$ | $X$ |
@@ -120,7 +120,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 意义：只有当$A$**与**$B$都发生或都不发生时，$X$才发生
 - 等价开关电路：双掷开关
 - 逻辑符号：
-  <Pic src="https://pic1.zhimg.com/80/v2-17cc4aef28d08f1fff9f7e850864dc64_720w.jpg">以后会常常见到输入端或输出端的这个小圆圈——它表示额外的一步非运算</Pic>
+  <Figure src="https://pic1.zhimg.com/80/v2-17cc4aef28d08f1fff9f7e850864dc64_720w.jpg">以后会常常见到输入端或输出端的这个小圆圈——它表示额外的一步非运算</Figure>
 - 真值表：
 
 | $A$ | $B$ | $X$ |

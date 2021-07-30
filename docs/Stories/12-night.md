@@ -6,7 +6,7 @@ date: 2021-06-30
 link: https://mp.weixin.qq.com/s/CMCYOSntRbqWS9diJQxyfQ
 ---
 
-import Pic from '../../src/components/Pic';
+import Figure from '../../src/components/Figure';
 import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -105,4 +105,4 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 尼努再也没有见过那个人。
 
-<Pic src="/img/docs/Stories/night/JGibibkelET6ibnwc16N3jOOHpsO1jcW7mNvCDMheHxMrkx0jibI2u5EIyoibJQ9kdcxfWz50kMvlPicuUsJlV5N6tyw.jpeg" />
+<Figure src="/img/docs/Stories/night/JGibibkelET6ibnwc16N3jOOHpsO1jcW7mNvCDMheHxMrkx0jibI2u5EIyoibJQ9kdcxfWz50kMvlPicuUsJlV5N6tyw.jpeg" />

@@ -5,7 +5,7 @@ date: 2019-10-05
 link: https://mp.weixin.qq.com/s/eYSzE_GJ-gQ_hMAPx8240Q
 ---
 
-import Pic from '../../../../../src/components/Pic';
+import Figure from '../../../../../src/components/Figure';
 import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -87,7 +87,7 @@ $$
 
 其中的曲线便是 $y=f(x)$，而不断运动的直线的方程则是 $y-f(m)=g(m)(x-m)$。画出 $k=g(m)$ 的图形，长这样：
 
-<Pic src="/zh-Hans/img/./docs/Science/derivative/JGibibkelET68f5MoWZfb3aicRibA7AGLZyqFE4cuCibtmkptNIOserzAFRyCgajzvSMtQxub74fdoWqw8aF0MiaR6Xg.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Science/derivative/JGibibkelET68f5MoWZfb3aicRibA7AGLZyqFE4cuCibtmkptNIOserzAFRyCgajzvSMtQxub74fdoWqw8aF0MiaR6Xg.png"></Figure>
 
 如果要计算导数，相当于算出 $g(m)$，或者说算出 $k$。
 

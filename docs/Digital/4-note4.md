@@ -6,7 +6,7 @@ date: 2019-09-12
 link: https://zhuanlan.zhihu.com/p/80693923
 ---
 
-import Pic from '../../src/components/Pic';
+import Figure from '../../src/components/Figure';
 import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />

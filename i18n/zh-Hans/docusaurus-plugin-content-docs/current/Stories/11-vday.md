@@ -5,7 +5,7 @@ date: 2021-06-30
 link: https://mp.weixin.qq.com/s/tG6ILq-uoODUGFgIxQu8Ig
 ---
 
-import Pic from '../../../../../src/components/Pic';
+import Figure from '../../../../../src/components/Figure';
 import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -60,4 +60,4 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 一年过去了，这是他的胜利日焰火。
 
-<Pic src="/zh-Hans/img/docs/Stories/vday/JGibibkelET68KJTZ5RXSZroDu0DeDsuvI1td0VNEvhx6hgRk5zyB2HZuQPxu57lQCavlmWxvStG1pffrkgLibCnA.jpeg" />
+<Figure src="/zh-Hans/img/docs/Stories/vday/JGibibkelET68KJTZ5RXSZroDu0DeDsuvI1td0VNEvhx6hgRk5zyB2HZuQPxu57lQCavlmWxvStG1pffrkgLibCnA.jpeg" />

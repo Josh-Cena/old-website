@@ -5,7 +5,7 @@ date: 2020-10-15
 link: https://mp.weixin.qq.com/s/shQ9WRD0KyhIzSyrodff9A
 ---
 
-import Pic from '../../../../../src/components/Pic';
+import Figure from '../../../../../src/components/Figure';
 import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -16,7 +16,7 @@ Requests 一类的 Python 爬虫我从来没有实际用过，通过抓包也没
 
 我们要“爬取”的是社团信息页，它展示了所有社团的名字与介绍，但只显示在下拉菜单中选择的社团，而手动逐个选择再复制显然不现实。为此，我们要先知道获取并刷新页面上的社团信息的请求是从何处发出的。
 
-<Pic src="/zh-Hans/img/./docs/Technology/scripting/JGibibkelET6ibSNIrDEiaLeaGew1FKn213nrlzVDLbibNBGXf7AUkwosNrHpMW4TTIFXvmlbcdf9OgNiaGE5UXcgSIg.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/scripting/JGibibkelET6ibSNIrDEiaLeaGew1FKn213nrlzVDLbibNBGXf7AUkwosNrHpMW4TTIFXvmlbcdf9OgNiaGE5UXcgSIg.png"></Figure>
 
 先定位到页面的 js 代码。看起来有三个外部脚本：`init category dropdown.js`、`init group dropdown.js`、`add group info.js`，以及一个页面内嵌的脚本：
 
@@ -36,7 +36,7 @@ jQuery(document).ready(function() {
 
 其中提到了两个元素：`#select_category` 和 `#select_group`。不难发现，这是右边的两个下拉菜单。逻辑是，先在第一个菜单中选择分组（Service, Academic 等），再根据选择的项目更新第二个社团菜单。为了确定这一点，实际操作了一次：
 
-<Pic src="/zh-Hans/img/./docs/Technology/scripting/JGibibkelET6ibSNIrDEiaLeaGew1FKn213nSsZSeJP8K3YzylnS7tmHnKjmorq7XglaQuHCA0aeSVNd0GJQBH0phg.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/scripting/JGibibkelET6ibSNIrDEiaLeaGew1FKn213nSsZSeJP8K3YzylnS7tmHnKjmorq7XglaQuHCA0aeSVNd0GJQBH0phg.png"></Figure>
 
 先在第一个菜单中选择 "Service"，`init_groups_dropdown.php` 被调用；再选择“信息化社”，`add_group_info.php` 被调用，符合上面的猜想。此时，就对后端的调用顺序有了大概的了解。
 
@@ -191,11 +191,11 @@ function init(valID) {
 
 其中 `valID` 是 `#select_group` 的 option value，比如下面列出的这些：
 
-<Pic src="/zh-Hans/img/./docs/Technology/scripting/JGibibkelET6ibSNIrDEiaLeaGew1FKn213nOfHJfOtPpRvyqFK13znUwDIv8ic53Huc0Tt70nic2rVE9dravYG1QGog.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/scripting/JGibibkelET6ibSNIrDEiaLeaGew1FKn213nOfHJfOtPpRvyqFK13znUwDIv8ic53Huc0Tt70nic2rVE9dravYG1QGog.png"></Figure>
 
 在发送请求时，只要提供一个 `valID` 就可以得到相应的社团信息：
 
-<Pic src="/zh-Hans/img/./docs/Technology/scripting/JGibibkelET6ibuMG0BxGHIXm8A91QTIXlYZVVXyriasNva7S03icO0YQSwWfYFlpsC1B3NfM789aEEpfTVkm2ssXMQ.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/scripting/JGibibkelET6ibuMG0BxGHIXm8A91QTIXlYZVVXyriasNva7S03icO0YQSwWfYFlpsC1B3NfM789aEEpfTVkm2ssXMQ.png"></Figure>
 
 但是，这些 option value 并不是连续编码的，看起来非常随机。那么，为了获取每个分组对应的 option value 列表，就需要查看获取这一信息的 `init group dropdown.js`。
 
@@ -265,7 +265,7 @@ for (let group = 1; group < 7; group++) {
 
 这些请求必须是同步的（AJAX 默认是异步请求），不然 `group` 和 `list` 无法一一对应。输出如下：
 
-<Pic src="/zh-Hans/img/./docs/Technology/scripting/JGibibkelET6ibuMG0BxGHIXm8A91QTIXlY76Zhu4zoNJCibfsLF2aib0rZ2aibcqAQl36UciaXiaoWJW8XOBQO1TPOq6Q.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/scripting/JGibibkelET6ibuMG0BxGHIXm8A91QTIXlY76Zhu4zoNJCibfsLF2aib0rZ2aibcqAQl36UciaXiaoWJW8XOBQO1TPOq6Q.png"></Figure>
 
 有了这些数据，就可以逐个发送请求了。下面的代码把返回的数据输出成 `json` 格式：
 
@@ -315,11 +315,11 @@ console.log(JSON.stringify(categoryList));
 
 看看输出：
 
-<Pic src="/zh-Hans/img/./docs/Technology/scripting/JGibibkelET6ibuMG0BxGHIXm8A91QTIXlYZicVkicMWCRpXWhsibyCc15BIuhicIJibLnzuuUZGBBWhmDmFazXolNfM1g.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/scripting/JGibibkelET6ibuMG0BxGHIXm8A91QTIXlYZicVkicMWCRpXWhsibyCc15BIuhicIJibLnzuuUZGBBWhmDmFazXolNfM1g.png"></Figure>
 
 有 89.5kB 的信息，选择拷贝到编辑器。
 
-<Pic src="/zh-Hans/img/./docs/Technology/scripting/JGibibkelET6ibuMG0BxGHIXm8A91QTIXlYlOYMX1DvxjiaoOicAibn1rPLt95MMk52zrvXQJGSs6oKFbOI57GMr7Hwg.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/scripting/JGibibkelET6ibuMG0BxGHIXm8A91QTIXlYlOYMX1DvxjiaoOicAibn1rPLt95MMk52zrvXQJGSs6oKFbOI57GMr7Hwg.png"></Figure>
 
 我们首先要把它分行并正确缩进，把其中 `\r\n` 的换行都替换成 `\n`。写几个正则解决这一问题：
 
@@ -335,7 +335,7 @@ console.log(JSON.stringify(categoryList));
 /\\r\\n/       ==> "\\n"
 ```
 
-<Pic src="/zh-Hans/img/./docs/Technology/scripting/JGibibkelET6ibuMG0BxGHIXm8A91QTIXlYUF93VtgYOCzzuloH3Ce5zEDXgP4foZ9hicNdN03Fj3Pd3oaVDOT8bhg.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/scripting/JGibibkelET6ibuMG0BxGHIXm8A91QTIXlYUF93VtgYOCzzuloH3Ce5zEDXgP4foZ9hicNdN03Fj3Pd3oaVDOT8bhg.png"></Figure>
 
 有了这些信息，就可以送进自己的网站里，生成社团列表了。
 

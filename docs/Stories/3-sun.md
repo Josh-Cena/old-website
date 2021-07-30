@@ -6,7 +6,7 @@ date: 2020-11-02
 link: https://mp.weixin.qq.com/s/nQtihUgFgDHWKXjR3A01pg
 ---
 
-import Pic from '../../src/components/Pic';
+import Figure from '../../src/components/Figure';
 import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -24,11 +24,11 @@ Kodaline - In a Perfect World \[Deluxe\]
 
 太阳去哪里了？他奇怪着。他收拾好东西，把双肩包甩上肩头，推开了房间门，门外的世界是两座巨山，两山之间，一条公路延展向看不见的远方。他在山间公路上奔跑，两旁是山峰、山麓、山谷、山脊，在深绿的覆盖边缘，都露着褐红的胴体，被细细的铁网禁锢住。
 
-<Pic src="/img/./docs/Stories/sun/JGibibkelET693VWk8BG4ckZiacJLE60dAbMJcNxKnYyRdOiaJ5g44UTw4Mh5SBzIgzmaG6EooyQnOwdc8Ipv12Ijg.jpeg"></Pic>
+<Figure src="/img/./docs/Stories/sun/JGibibkelET693VWk8BG4ckZiacJLE60dAbMJcNxKnYyRdOiaJ5g44UTw4Mh5SBzIgzmaG6EooyQnOwdc8Ipv12Ijg.jpeg"></Figure>
 
 他在一座桥上停住了脚步。桥的这一头是山林，那一头是砾石地；桥下，湍急的白水涌过，冲击着河道中央的几块卵石，溅起飞沫。流过桥后，水流变缓了，露出了河床粗粝的表面，河流像白蛇般穿梭于石缝中，奔向下游。它们要去哪里？它们也像我一样，在找太阳么？陈意非问自己。
 
-<Pic src="/img/./docs/Stories/sun/JGibibkelET693VWk8BG4ckZiacJLE60dAbpbn5kpCA5f4ULkR361rUdrH3D31I0icVfjc55QRokmOdU89uicic9wqHw.jpeg"></Pic>
+<Figure src="/img/./docs/Stories/sun/JGibibkelET693VWk8BG4ckZiacJLE60dAbpbn5kpCA5f4ULkR361rUdrH3D31I0icVfjc55QRokmOdU89uicic9wqHw.jpeg"></Figure>
 
 他继续跋涉向前。砾石地很硌脚，每一步都传来咯吱咯吱的声音，耳边一直是流水隆隆的声音，像谷中巨龙的低吼。前方，又有一座通向新的山林的桥。他在桥头的小村庄里找到了一家店，从那个热情的彝族奶奶手中买下了两瓶饮料，塞进了包里。
 
@@ -38,7 +38,7 @@ Kodaline - In a Perfect World \[Deluxe\]
 
 湖水荡漾着，藏住了答案。
 
-<Pic src="/img/./docs/Stories/sun/JGibibkelET693VWk8BG4ckZiacJLE60dAbVpGdmCu1QdfdDrYLYQiaIGBx9ibLaEVlZjNTJn2TlGqVPIGIibI19ibHAQ.jpeg"></Pic>
+<Figure src="/img/./docs/Stories/sun/JGibibkelET693VWk8BG4ckZiacJLE60dAbVpGdmCu1QdfdDrYLYQiaIGBx9ibLaEVlZjNTJn2TlGqVPIGIibI19ibHAQ.jpeg"></Figure>
 
 光芒逐渐黯淡了，万物落入黑暗中。他四下张望，想要找到一条离开的道路，但举目皆是山峦。寒气沁入他的骨髓，他裹紧了身上的衣服，低着头，顶着寒风向黑暗中迈去。
 
@@ -50,7 +50,7 @@ Kodaline - In a Perfect World \[Deluxe\]
 
 “看，什么升起来了？”有人指向陈意非的身后。他一回头，看到身后的天空被红光照亮了。那是太阳，是太阳！他转头飞奔向前，红光越升越高，愈发明亮，直到山崖尽头，一个乳白色的尖头从崖边升起，然后是火箭箭身，带着熊熊烈焰，希望和力量。他朝着悬崖跑去，脚下是红土地，眼前是红色的光芒，黄色、白色。近了，近了，火箭高悬在他的头顶，像炽天使一样召唤着他的灵魂。
 
-<Pic src="/img/./docs/Stories/sun/JGibibkelET693VWk8BG4ckZiacJLE60dAbjyodpty4XcYHUDQ5dx9mcuicREVPNxOqhxgqnyicL43ulXhGobHqwM6Q.jpeg"></Pic>
+<Figure src="/img/./docs/Stories/sun/JGibibkelET693VWk8BG4ckZiacJLE60dAbjyodpty4XcYHUDQ5dx9mcuicREVPNxOqhxgqnyicL43ulXhGobHqwM6Q.jpeg"></Figure>
 
 他纵身一跃，右手伸向天使红色的披风一角。他在下坠——耳边是呼呼的风声，脚下是一望无际的黑暗，黑暗中潜伏着无数的生灵，而他沐浴着唯一的光。但他在下坠——不，他在上升。他的身躯逐渐变得轻盈，悬浮在空气中，悬浮在宇宙中，世界只剩下了他和乳白色的太阳，纯白的火焰将两者一同包围。他呼吸着这炽热而纯净的光。
 

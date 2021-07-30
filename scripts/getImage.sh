@@ -3,7 +3,7 @@ for doc in "${doc_list[@]}"
 do
     if [ ! -d "./static/img/""${doc%.*}" ]; then
         mkdir -p "./static/img/""${doc%.*}"
-        links=( $(ggrep -o -P "(?<=<Pic src=\").*?(?=\">)" "$doc") )
+        links=( $(ggrep -o -P "(?<=<Figure src=\").*?(?=\">)" "$doc") )
         for link in "${links[@]}"
         do
             name=$(echo "$link" | ggrep -o -P "(?<=(jpg|png)/).*(?=/640)")

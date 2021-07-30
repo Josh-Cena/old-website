@@ -5,7 +5,7 @@ date: 2020-09-13
 link: https://mp.weixin.qq.com/s/SUvSjZB6X3UOo_iFkz-nrQ
 ---
 
-import Pic from '../../../../../src/components/Pic';
+import Figure from '../../../../../src/components/Figure';
 import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -45,7 +45,7 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 He woke up in his bed, sweat-soaked all over. 2:50, the clock read. Same dream, third time this week, he recalled, the exact same scene. He tried to refrain himself from thinking about it, but the more he held back, the more persistent the memories became, until his heavy breaths turned into a sob. “No,” he implored, “go to someone else’s dream!” But he knew this would be in vain. He realized, without that comforting hand at night he’s nothing, powerless in front of his own nightmares. Those voices echoed in his mind: “Coward! Coward! Slacker! Murderer! …”
 
-<Pic src="/zh-Hans/img/./docs/Stories/blue-pills/JGibibkelET6ibpNRJnUJeQabo5GmxCeqibvEAHQnOjd3GNW4o9OLxFu4cmYfQDNl34xic2BbJwcrF5qFRpdx1yK1TA.jpeg"></Pic>
+<Figure src="/zh-Hans/img/./docs/Stories/blue-pills/JGibibkelET6ibpNRJnUJeQabo5GmxCeqibvEAHQnOjd3GNW4o9OLxFu4cmYfQDNl34xic2BbJwcrF5qFRpdx1yK1TA.jpeg"></Figure>
 
 In the dark of the night, as he lay in silence, the bell tower’s chiming came from afar, _bong_, _bong_, _bong_.
 
@@ -71,7 +71,7 @@ He took a deep breath, carefully scrutinizing the bottle for the last time, like
 
 When he opened his eyes, he was walking on the stone beach. For the hundredth time, he heard the tides beating the shoreline, as always in his late-night dreams. The salty smell filled his nostrils. Limbo, he determined it to be, in its most suitable form. But this time, no longer filled with fear or remorse, he rose his arms, in a challenging posture: “Show me what you’ve got!”
 
-<Pic src="/zh-Hans/img/./docs/Stories/blue-pills/JGibibkelET68y0M6bVwP2gu8LEDcRKFMc24HTr1CtmQaajUic3fT3ibdKhbCmQNYY81Tg8DAJ8SiayibB5YQic84t9GQ.jpeg"></Pic>
+<Figure src="/zh-Hans/img/./docs/Stories/blue-pills/JGibibkelET68y0M6bVwP2gu8LEDcRKFMc24HTr1CtmQaajUic3fT3ibdKhbCmQNYY81Tg8DAJ8SiayibB5YQic84t9GQ.jpeg"></Figure>
 
 Lightning came crashing down. A cloud of furious ravens swooshed from the horizon. He felt the storm—and he shouted, “Rain down! Rain down on me!” As he fell to the ground, droplets of fluid splashed onto his face, warm, thick, blood-smelling. He sank into the bottomless darkness.
 
@@ -99,7 +99,7 @@ And now he’s here, putting God to his test, and he got no salvation from God�
 
 _Numbness_.
 
-<Pic src="/zh-Hans/img/./docs/Stories/blue-pills/JGibibkelET6ibpNRJnUJeQabo5GmxCeqibvJzDWld29CbAGMe4cvlP440ZW4awNl0PKictKcHKgV6yQWCjotAYvwqA.jpeg"></Pic>
+<Figure src="/zh-Hans/img/./docs/Stories/blue-pills/JGibibkelET6ibpNRJnUJeQabo5GmxCeqibvJzDWld29CbAGMe4cvlP440ZW4awNl0PKictKcHKgV6yQWCjotAYvwqA.jpeg"></Figure>
 
 Then he started to sob again, on realizing this place could only be an alternative form of torture from God, but this time for eternity. He thought of the girl again, her angel eyes, her soft lips, her warm embrace, and deep in her soul, that sheltering geniality. He must have repeated the same sentence when he longed for an ending, “She’s the reason for me to live on.” But he gave up on her at the last moment. She was the missing weight on his scale. God, God Almighty! He cried out. He wandered around, trying to find a way out—but how could he if he couldn’t sense anything? In essence, he couldn’t even tell if he was actually moving, or only believing he was moving. But suddenly, he did hit something solid—a wooden wall, it turned out to be, extending in every direction. He felt it, inch by inch: its texture, grooves, and pores. Then he leaned against it, the only symbol of existence in this space of void.
 
@@ -145,7 +145,7 @@ He is, inevitably, facing his ultimate destination. This is a one-way trip with 
 
 There came a “click” in the void. A beam of sacred light shone in, almost blinding him. He squinted his eyes. It was from one edge of the wooden wall, like the gate to a divine kingdom which magically opened up a slit. He leaned against the wall, pushing hard against it with all his weight and strength. Gently, the gate opened up. Light flooded in, filling up every corner of the void, bathing him in this holy gift, and every pore of his absorbed greedily this nectar of life. He felt his feet on solid ground again.
 
-<Pic src="/zh-Hans/img/./docs/Stories/blue-pills/JGibibkelET6ibpNRJnUJeQabo5GmxCeqibvVd0npMJ5ISzBljUq4jo0AAQD04QibdHpM3uFdK9zdNa66kdxqCLiaXgw.jpeg"></Pic>
+<Figure src="/zh-Hans/img/./docs/Stories/blue-pills/JGibibkelET6ibpNRJnUJeQabo5GmxCeqibvVd0npMJ5ISzBljUq4jo0AAQD04QibdHpM3uFdK9zdNa66kdxqCLiaXgw.jpeg"></Figure>
 
 The next moment he sat up on the floor, looking around. He’s sitting in a wooden box, with its lid slid to the side, whose inner side was scattered with dents and scratches. He spent a few seconds adjusting to the bright sunlight, which shone right through the windshield. The place he’s in looks suspiciously like a taxicab, a beautifully planned one, with its backseats removed, where he now sits upon.
 
@@ -161,7 +161,7 @@ They didn’t look back. A voice came in no direction: “Son, I see your many s
 
 He looked up. The morning sun bloomed on the horizon, spreading its radiant flames of hope. A brand-new day is up on the rise, another chance to live.
 
-<Pic src="/zh-Hans/img/./docs/Stories/blue-pills/JGibibkelET6ibpNRJnUJeQabo5GmxCeqibvO9f1EuvIfZ7JiaRD68mfCricQ9eL2ot6OsruaUUBjspd8Qb6WbgM12sA.jpeg"></Pic>
+<Figure src="/zh-Hans/img/./docs/Stories/blue-pills/JGibibkelET6ibpNRJnUJeQabo5GmxCeqibvO9f1EuvIfZ7JiaRD68mfCricQ9eL2ot6OsruaUUBjspd8Qb6WbgM12sA.jpeg"></Figure>
 
 They continued to talk. They talked about the meaning of life, about salvation, about the spirit’s love in all His people. The men told him, he was blessed; that they sent him an angel to guide him through his life, to shelter him from any hardships he will face. They told him his second life is not a gift from anyone but one he earned for himself, that he should live it with gratitude and cherishing.
 
@@ -175,7 +175,7 @@ Birthday cake he hadn’t bought one; presents he had none. When the cold water 
 
 He turned off the tap, steadied himself with both hands on the edge of the sink, and stared at the water whirling down the bottom. She is his angel, he assured himself. But could she be imaginary? Could she just be the emblem of perfection in his sea of imagination? He laughed hysterically at this idea.
 
-<Pic src="/zh-Hans/img/./docs/Stories/blue-pills/JGibibkelET6ibpNRJnUJeQabo5GmxCeqibvWdcoDGoUjH0qulm5UoF5wlkaVnvdfaM3FJFjkNvXnDibMh3xtLDYOibw.jpeg"></Pic>
+<Figure src="/zh-Hans/img/./docs/Stories/blue-pills/JGibibkelET6ibpNRJnUJeQabo5GmxCeqibvWdcoDGoUjH0qulm5UoF5wlkaVnvdfaM3FJFjkNvXnDibMh3xtLDYOibw.jpeg"></Figure>
 
 As the last drops of water seeped down into the bottomless hole, he heard the church bell strike twelve. Not long after, the doorbell rang.
 

@@ -5,7 +5,7 @@ date: 2019-09-29
 link: https://mp.weixin.qq.com/s/tB2EaRngiu3p5Z4p9gJplA
 ---
 
-import Pic from '../../../../../src/components/Pic';
+import Figure from '../../../../../src/components/Figure';
 import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -64,7 +64,7 @@ $$
 
 当然，以上都是纸上谈兵，在实际工业生产中，制约压强的因素还有装置材料和加料推力等，所以并不能一概地说压强越高效率越高；同样，温度还会影响反应速率——虽然最终产生的氨的绝对量是上升了，但效率却大打折扣，在工业上还是不划算。所以，温度依然会控制在一个比较高的范围。不过，化学平衡理论还是在这里得到了完美的证明。
 
-<Pic src="/zh-Hans/img/./docs/Science/le-chatlier/JGibibkelET6ibR0govvZaugqanKfhKibPUsmPM3xdVeiaVKyPX1t8RETYQ7JBtERO5nczOsEoQ7VTwFicYYxhayicdCg.jpeg">现代的合成氨厂。（如果没认错的话，）那四座塔用于合成和分离，矮矮胖胖的圆柱体则是储氨槽。</Pic>
+<Figure src="/zh-Hans/img/./docs/Science/le-chatlier/JGibibkelET6ibR0govvZaugqanKfhKibPUsmPM3xdVeiaVKyPX1t8RETYQ7JBtERO5nczOsEoQ7VTwFicYYxhayicdCg.jpeg">现代的合成氨厂。（如果没认错的话，）那四座塔用于合成和分离，矮矮胖胖的圆柱体则是储氨槽。</Figure>
 
 题外话：其实，勒夏特列本人，才应该是合成氨流程的创造者——不过因为实验事故，氧气爆炸，不得不停止研究，才让哈伯得到了“合成氨之父”这一头衔。但勒夏特列原理仍是合成氨的理论基础。
 

@@ -5,16 +5,16 @@ date: 2020-06-18
 link: https://mp.weixin.qq.com/s/AM0tlHO9C8lExRgu8RpG1w
 ---
 
-import Pic from '../../../../../src/components/Pic';
+import Figure from '../../../../../src/components/Figure';
 import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
 
 不久之前，我写了这样一份文档，来吐槽某些人的排版水平：
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicHBFhq2CXsYv6MUdVII8XQx0lTJNABbsfap1l9U0PZTO7qn2783ZjkA.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicHBFhq2CXsYv6MUdVII8XQx0lTJNABbsfap1l9U0PZTO7qn2783ZjkA.png"></Figure>
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicU8sohE086HLchrppx4icVkSLwicBiaM1Dg7jU6ZlfUSqH06ReF1fyBwLw.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicU8sohE086HLchrppx4icVkSLwicBiaM1Dg7jU6ZlfUSqH06ReF1fyBwLw.png"></Figure>
 
 但是，我所遇到的第二种排版的数量远远多于第一种，包括但不限于：物理、化学练习册的某些页面；绝大多数同学写出来的论文；一些网上的资料。这促使我为各位科普一下排版的一些基础概念和原则。
 
@@ -36,11 +36,11 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 其次，好的排版能够使读者最大程度地关注内容，而不会被杂乱的版式干扰，提升了读者接受信息的效率。有这样一个论断：_Good typography (like good organization) is something you do not notice._ (Tantau, 52) 优秀的排版恰恰是使得人们不会注意到的排版。以某本 C++ 信竞参考书作为反面教材，以下是我从中复刻出的一页：
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69Rqicxh5VdMQ5gPibfS0YezQYlIibIux3WOib4VOUrhdrDjuT5wUDpC7Oemhxoj0D4YM6xAEShHCfecA.jpeg"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69Rqicxh5VdMQ5gPibfS0YezQYlIibIux3WOib4VOUrhdrDjuT5wUDpC7Oemhxoj0D4YM6xAEShHCfecA.jpeg"></Figure>
 
 由于我在复刻时，标点用了半角，因此效果还要好于原书。这本书是第一本我看得懂每一行字，却看不下去的书。究其原因，正是因为它的排版太过混乱：一页中出现了程序代码、数学公式、列表、正文等多种环境，竟然全部使用“宋体正文”格式，导致可读性极差，大段的代码段需要一个个字符地读，而无法一眼抓住其内容。我们只需将其略作调整，就可以极大地增进其可读性：
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69Rqicxh5VdMQ5gPibfS0YezQtNH2icFeOVFfRnxaLrjibAwQEO3KrqlevTnbPkC5p6G4afuUjOia3T7tg.jpeg"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69Rqicxh5VdMQ5gPibfS0YezQtNH2icFeOVFfRnxaLrjibAwQEO3KrqlevTnbPkC5p6G4afuUjOia3T7tg.jpeg"></Figure>
 
 最后一点，主观上，优秀的排版能增加读者对作者专业度的肯定。如果一篇文章的作者清楚地知道何处使用正体，何处使用斜体，并为文章配上最得当清晰的插图，那么这代表作者完全了解他所创作的内容，并且十分注意细节，可以极大地增加读者的好感度。
 
@@ -52,7 +52,7 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 排版设计中，将字体分为三类：**_衬线体 (Serif)_**、**_非衬线体 (Sans serif)_**、**_等宽体 (Monospace)_**。
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicCWicN5WMjRrcAvJMibH7ibs4YNNMiaRCzDicGC4VHHsoHUByrFtWvjAvibYg.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicCWicN5WMjRrcAvJMibH7ibs4YNNMiaRCzDicGC4VHHsoHUByrFtWvjAvibYg.png"></Figure>
 
 它们之间的区别应该是比较显而易见的。一般的论文，往往用衬线体，这也是最安全的选择。非衬线体很少出现在学术文章的正文中，但可能用于标题；等宽体则大量用于代码中。一篇文章中每种字体不应使用超过两种，在同一个语境中，也不应切换字体。
 
@@ -60,7 +60,7 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 不同的标题层级要分清。可以用 Word 的标题功能辅助建立文本大纲。如果已经设为了标题后又更新了段落格式，再次点击标题按钮，则可以将这个格式应用于所有同级标题。
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicxzwAwnK2ojd9gu5y5dr8Ka5GqtgticSgBWLnhIyk57hSXrrXkSQnnqg.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicxzwAwnK2ojd9gu5y5dr8Ka5GqtgticSgBWLnhIyk57hSXrrXkSQnnqg.png"></Figure>
 
 Word 的棘手之处之一就在于有时正文的格式会发生混乱。建议不要在第一遍创作时调整格式，而留至完成大概的创作后统一调整，这样可以防止漏过一些细节。如果还要做更精细的调整，可以了解一下 LaTeX👍
 
@@ -82,11 +82,11 @@ https://apastyle.apa.org/style-grammar-guidelines/italics-quotations/italics
 6. 表示状态的下标（但表示物理量的下标仍用斜体）；
 7. 化学式、粒子符号。
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET6icDFANIONdGibfELHBibTicdFExGeKl9gvrL0hic9cZfA6gqgjprAOZMzM96XYbv44YFau17RCU5a5kbg.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET6icDFANIONdGibfELHBibTicdFExGeKl9gvrL0hic9cZfA6gqgjprAOZMzM96XYbv44YFau17RCU5a5kbg.png"></Figure>
 
 这是一种非常粗浅的归纳，但足够应对绝大多数场景。更详细的说明，请参考 ISO 手册 (The ISO Standards Handbook, Quantities and Units) 和 IUPAC 手册。但是，有一个值得一提的特例：关于微分算子 $\mathrm{d}$。请看下面两个公式：
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET6icDFANIONdGibfELHBibTicdFEh9ia2buhqk2z1KliaXSUggPYc5b8swD26SWXKia5AShAkSaGZ283bqY9Q.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET6icDFANIONdGibfELHBibTicdFEh9ia2buhqk2z1KliaXSUggPYc5b8swD26SWXKia5AShAkSaGZ283bqY9Q.png"></Figure>
 
 选择左边还是右边？由于 $\mathrm{d}$ 在我的理解中是一种算子，因此符合规则 3，应该使用正体，也就是右边，而这也是大多数有追求的人的选择；但实际上，近年来的期刊，尤其是美国的一些期刊，开始偏向左边的写法。这种做法，应该是把 $dx$ 看成了一个完整的实体参与运算。因此，两种公式写法都是可以接受的。
 
@@ -96,9 +96,9 @@ https://apastyle.apa.org/style-grammar-guidelines/italics-quotations/italics
 
 对比如下两段文字：
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET6icDFANIONdGibfELHBibTicdFEW0M7cfwiclsWuxfoWr28VkibFQujuybosPI9wxLXStK0PhxrOCnEs1qA.png">排版 1</Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET6icDFANIONdGibfELHBibTicdFEW0M7cfwiclsWuxfoWr28VkibFQujuybosPI9wxLXStK0PhxrOCnEs1qA.png">排版 1</Figure>
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET6icDFANIONdGibfELHBibTicdFEqM2lHLsTm8lk2ia2Tjbicm6PV1iabDy5SUB2sQhfzNfcDRmZ2GQocHumw.png">排版 2</Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET6icDFANIONdGibfELHBibTicdFEqM2lHLsTm8lk2ia2Tjbicm6PV1iabDy5SUB2sQhfzNfcDRmZ2GQocHumw.png">排版 2</Figure>
 
 希望各位能够看出其中的区别。有三个区别：
 
@@ -108,45 +108,45 @@ https://apastyle.apa.org/style-grammar-guidelines/italics-quotations/italics
 
 除此之外，还有一点需要格外注意。Word 的公式分为两类：**_行内模式_**和**_展示模式_**。如果公式单独占据一行，会用展示模式；如果公式周围有其他文本，则会用行内模式。展示模式会强制居中，并且在巨算符上下标的处理上有区别。
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicpsR4SG5xd3NcE2bqT7gBlWlQFDEaaOZTF4bXgbo6vic8pVaHYlNGLsw.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicpsR4SG5xd3NcE2bqT7gBlWlQFDEaaOZTF4bXgbo6vic8pVaHYlNGLsw.png"></Figure>
 
 请尽量使用展示模式来排版比较长的公式，尤其是带有求和、积分等巨算符的公式；而对于行内公式，请不要用分式等会使公式高度增长的结构，而用斜线 (solidus) 代替：
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8Pict51WZ6PHcoXAOVgvkST02lQdGKia6thL6hLVWLhxOWbSBR47bzMTmwg.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8Pict51WZ6PHcoXAOVgvkST02lQdGKia6thL6hLVWLhxOWbSBR47bzMTmwg.png"></Figure>
 
 同样的原则也适用于展示模式的上下标中。由于上下标也会使用行内模式，如果在上下标中套分数，会显得整体不统一。因此，我们也推荐用斜线代替：
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicoYyVBoV6r5lmBGo7EoN2bf79rIX6YNuMR54xoRwiaQqDIJhIBpSduKQ.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicoYyVBoV6r5lmBGo7EoN2bf79rIX6YNuMR54xoRwiaQqDIJhIBpSduKQ.png"></Figure>
 
 特别地，对于 $\displaystyle\mathrm{e}^x$ 形式的函数，用 $\exp()$ 函数可能会更加优雅：
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicNtLUetqSQH7L95jIDtH1lbzHrcWCNU7iaZ8RrGDZ3r9kOYicRxQnmpmw.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicNtLUetqSQH7L95jIDtH1lbzHrcWCNU7iaZ8RrGDZ3r9kOYicRxQnmpmw.png"></Figure>
 
 ### 四、数学公式：输入技巧
 
 许多人用 Word 输入公式时举步维艰，原因在于没有完全利用其支持 LaTeX 捷径的优势。在 Word 中，分数结构可以用`斜线/ +空格`调出；上标可以用`乘方号^ + 空格`调出；下标可以用`下划线_ + 空格`调出。
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicZl5Hd1ZdqnHhNJ4VcQcWdqRnmt2pQp0ehuCibVFW6UibTbzAibWgdgQbw.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicZl5Hd1ZdqnHhNJ4VcQcWdqRnmt2pQp0ehuCibVFW6UibTbzAibWgdgQbw.png"></Figure>
 
 `\sqrt + 空格`可以调出一个根号；在这之后随便添一个字符，再按空格，便可以变成一个根式结构。
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicWvTQnDELIVlqeX79nAuMpwcia0z6L2BDI6y9JkrX3771s2ln1uIZPlw.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicWvTQnDELIVlqeX79nAuMpwcia0z6L2BDI6y9JkrX3771s2ln1uIZPlw.png"></Figure>
 
 求和符号、积分符号等也可以用`\sum`, `\int` 等调出；但上下标的处理就会比较繁琐，因此不如使用工具栏选择对应的结构。
 
 所有的符号都有对应的捷径，可以将光标悬停在符号列表中查看。
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicgRGdkR25E71UY8qEdjPj39WA2DaRocpb7W6GktXa7HJnmciaiaouVCUg.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicgRGdkR25E71UY8qEdjPj39WA2DaRocpb7W6GktXa7HJnmciaiaouVCUg.png"></Figure>
 
 所以，我们就知道，如果输入`\infty`，再加一个空格，就可以打出 $∞$ 符号。所有希腊字母的捷径都是它们的英语名，首字母大写则为大写字母，比如`\Delta` → $Δ$；`\delta` → $δ$
 
 最后，按一下空格，也可以进行很多格式更新，如输入`sin`后按空格，则自动变成算符：
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PictmTb5WFn03ZcwGFahdJ5L81y9cSgtJiaiaKgTWKibWuAYU8ZhTMlGF8kw.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PictmTb5WFn03ZcwGFahdJ5L81y9cSgtJiaiaKgTWKibWuAYU8ZhTMlGF8kw.png"></Figure>
 
 或者括号高度的调整：
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PiceLFuqbWB5wqWzNWHFciajadiadPfgSMkm8TqRCoofEw2WOz0VT7eSEXw.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PiceLFuqbWB5wqWzNWHFciajadiadPfgSMkm8TqRCoofEw2WOz0VT7eSEXw.png"></Figure>
 
 非常实用。
 
@@ -154,11 +154,11 @@ https://apastyle.apa.org/style-grammar-guidelines/italics-quotations/italics
 
 许多人的表格设计如下：
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicMicl3EDFibfs3S8moxR81kzAWXcyvYAXokuOz02xaFsb9ehxCpBtpRSQ.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicMicl3EDFibfs3S8moxR81kzAWXcyvYAXokuOz02xaFsb9ehxCpBtpRSQ.png"></Figure>
 
 这已经可以称得上是一份非常精致的表格，尤其是在公式的处理上。但是，这类表格并不受科技类期刊的青睐。几乎所有的科学发行物都会使用三线表，也就是这样的表格：
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8Picic78J0NSibGI7narC1hiazcVQKpYp8QagHe3opa0j2wqkHzz36ibVM0T0Q.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8Picic78J0NSibGI7narC1hiazcVQKpYp8QagHe3opa0j2wqkHzz36ibVM0T0Q.png"></Figure>
 
 三线表似乎没有成文的规定，不同的编辑也会有自己的格式偏好。下面给出我的习惯，这些也基本被绝大多数人接受：
 
@@ -174,9 +174,9 @@ https://apastyle.apa.org/style-grammar-guidelines/italics-quotations/italics
 
 仍然用两幅图作对比：
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicFNDPfmbIN3QOXOvpdFeQR4E0ibXJMfarQwk3oUxXQkhpia8Fsg5wicTvw.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicFNDPfmbIN3QOXOvpdFeQR4E0ibXJMfarQwk3oUxXQkhpia8Fsg5wicTvw.png"></Figure>
 
-<Pic src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicTIGhsUNrZfO6MsKeic4v1Oaq2F9DOPQJibcoMcln8BzZfHXgZRBj7eDw.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Technology/typeset/JGibibkelET69LMWer8nib5rxaznvumq8PicTIGhsUNrZfO6MsKeic4v1Oaq2F9DOPQJibcoMcln8BzZfHXgZRBj7eDw.png"></Figure>
 
 诚然，许多图表都是用外部工具，如 Mathematica, Logger Pro, Matplotlib 等生成的；但是，如果需要自己画图，或者对于生成的图表有一定操控自由，则应当尽量遵循下列原则：
 

@@ -6,7 +6,7 @@ date: 2020-11-12
 link: https://mp.weixin.qq.com/s/S_JSnBz7AeKjDQk4MD8Tew
 ---
 
-import Pic from '../../src/components/Pic';
+import Figure from '../../src/components/Figure';
 import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />

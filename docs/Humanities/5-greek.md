@@ -6,7 +6,7 @@ date: 2021-05-04
 link: https://mp.weixin.qq.com/s/Gh0b2ofiIVt6I93FthUxzg
 ---
 
-import Pic from '../../src/components/Pic';
+import Figure from '../../src/components/Figure';
 import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -25,7 +25,7 @@ Mono- 前缀来自希腊文“唯一的” **μόνος** (mónos)；Di- 前缀�
 
 这种事情并不少见。“肾”有两个对应的词根："nephro-" 和 "-renal"，前者来自希腊文 **νεφρός** (nephrós)，后者来自拉丁文 **rēnēs**。这样就能解释“肾上腺素”的两种写法："epinephrine" 和 "adrenaline"，根据上文的结论，很显然，"epi-" 是希腊前缀，"ad-" 是拉丁前缀，实际上的确如此。"epi-" 来自希腊文 **ἐπί** (epí)，"ad-" 则是拉丁文介词，都是“上”的意思。
 
-<Pic src="/img/docs/Humanities/greek/JGibibkelET6ibIHm8IK7MMQwJbXIKIFxzIicG4PswScthSRNgiboZxY4qqBQAHMgaFuQMHTz8D2icFibFiaWQnHibljVGA.jpeg" />
+<Figure src="/img/docs/Humanities/greek/JGibibkelET6ibIHm8IK7MMQwJbXIKIFxzIicG4PswScthSRNgiboZxY4qqBQAHMgaFuQMHTz8D2icFibFiaWQnHibljVGA.jpeg" />
 
 分辨拉丁文和希腊文词源，其实没有那么容易，因为拉丁文和希腊文并不是独立发展的，拉丁文从希腊文中借了很多词，这些词又被英语采用：希腊文 **ἐλαίᾱ** (elaíā) 到了拉丁文里变成了 **olīva**，也就是 olive； **πυξίς** (pyxís) 到拉丁文里变成了 **pyxis**，今天英语中叫它 box。单从它们英语的拼写，是猜不出它们本来的样子的。
 
@@ -66,11 +66,11 @@ Bilateral · Multilateral · Multitude · Attitude · Attribute · Distribute
 
 拉丁文和希腊文的并列发展已经有几千年历史了。它们同属于印欧语族，前者滥觞于意大利地区，后者则发源于希腊地区，都是从青铜时代就已经出现的语言。希腊文明对拉丁文化产生了深厚影响，从拉丁语中希腊语借词数量之众就可看出。罗马人一直以会说希腊语为“有文化”的象征。西塞罗和凯撒都曾师从希腊修辞学家阿波罗尼奥斯，而阿波罗尼奥斯曾在罗马元老院用希腊语演说。马可·奥勒留的《沉思录》，也是用希腊语写成。
 
-<Pic src="/img/docs/Humanities/greek/JGibibkelET6ibIHm8IK7MMQwJbXIKIFxzITy5AXz6iaiaakpicia1ZvMIibYHcy8ScE6OIOxVkY5MGmsXZcXHbAtrSUGA.png" />
+<Figure src="/img/docs/Humanities/greek/JGibibkelET6ibIHm8IK7MMQwJbXIKIFxzITy5AXz6iaiaakpicia1ZvMIibYHcy8ScE6OIOxVkY5MGmsXZcXHbAtrSUGA.png" />
 
 常说“东希腊，西拉丁”，即使是在罗马帝国的鼎盛时期，内部也存在这样明显的两种文化分庭抗礼的现象。随着罗马帝国的分裂，东罗马更是在 610 年希拉克略时期定希腊语为官方语言，成了一个彻底希腊化的国家；相对应地，东正教和天主教的《圣经》也分别以希腊语和拉丁语写就。
 
-<Pic src="/img/docs/Humanities/greek/JGibibkelET6ibIHm8IK7MMQwJbXIKIFxzIy4RnZLwdzO2ahXEcqVmpIp0nZibTYz195C5KLDLPVDFv578FZJWTvdw.png" />
+<Figure src="/img/docs/Humanities/greek/JGibibkelET6ibIHm8IK7MMQwJbXIKIFxzIy4RnZLwdzO2ahXEcqVmpIp0nZibTYz195C5KLDLPVDFv578FZJWTvdw.png" />
 
 除了希腊语和拉丁语，英语中还有很多日常用词来自凯尔特语（如 clock, slogan, clan）。但总地来说，在 1066 年之前，所谓的古英语中，无论是先来的盎格鲁–撒克逊语，还是后来的斯堪的纳维亚语，都主要属于日耳曼语。
 

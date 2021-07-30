@@ -6,7 +6,7 @@ date: 2021-06-30
 link: https://mp.weixin.qq.com/s/UPHIZr_0abuZfgfZmYbg-g
 ---
 
-import Pic from '../../src/components/Pic';
+import Figure from '../../src/components/Figure';
 import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -49,4 +49,4 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 他只记得，有那么一头鹿站在他的面前，他没有开火。
 
-<Pic src="/img/docs/Stories/novelist/JGibibkelET6ic6NonDVJKvyFsnBMMcIKvxNaj2W82uVGn3YO62aNhodWMqWeOcvQMQkkpgLu9G5ebZ3vbjgclZkw.jpeg" />
+<Figure src="/img/docs/Stories/novelist/JGibibkelET6ic6NonDVJKvyFsnBMMcIKvxNaj2W82uVGn3YO62aNhodWMqWeOcvQMQkkpgLu9G5ebZ3vbjgclZkw.jpeg" />

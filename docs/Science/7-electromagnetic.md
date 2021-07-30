@@ -6,7 +6,7 @@ date: 2020-06-13
 link: https://mp.weixin.qq.com/s/OzmfpOR0llD3-lawWt9UIg
 ---
 
-import Pic from '../../src/components/Pic';
+import Figure from '../../src/components/Figure';
 import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -20,11 +20,11 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 > - 线圈质量 $m=0.060\,\text{kg}$
 > - 线圈阻值 $R=0.12\,\text{Ω}$
 
-<Pic src="/img/./docs/Science/electromagnetic/JGibibkelET6icxXkheRQOhUib4eXZGtGqWsqxS1B7chB5K5ia1W0naHMcqicLFKQXUHMohcBCaKNnCBdBe0jsEQc3Aw.png"></Pic>
+<Figure src="/img/./docs/Science/electromagnetic/JGibibkelET6icxXkheRQOhUib4eXZGtGqWsqxS1B7chB5K5ia1W0naHMcqicLFKQXUHMohcBCaKNnCBdBe0jsEQc3Aw.png"></Figure>
 
 本题所问的内容不难；但是，我们所关心的是题目中给出的一项条件：速度 $v$ 关于时间 $t$ 的图像。大概画出题中所给的图：
 
-<Pic src="/img/./docs/Science/electromagnetic/JGibibkelET6icxXkheRQOhUib4eXZGtGqWsY1Ywngico4eEGnCM9gqicC6mgflRKDVgWyV9xrOCYEpvReIiaBvVHQB5Q.png"></Pic>
+<Figure src="/img/./docs/Science/electromagnetic/JGibibkelET6icxXkheRQOhUib4eXZGtGqWsY1Ywngico4eEGnCM9gqicC6mgflRKDVgWyV9xrOCYEpvReIiaBvVHQB5Q.png"></Figure>
 
 看起来，图像分为两段——一段是下降曲线，另一段则是水平直线，分界点位于 $(0.14, 3.0)$。定性地看，速度之所以下降，是因为线圈进入磁场的过程中，产生感应电流，AB 段受到向左的安培力而减速；之后维持匀速，是因为各边都在磁场中，所受的安培力正好抵消。
 
@@ -124,6 +124,6 @@ $$
 
 可以看出，由于速度较低，此时离开磁场需要多一倍的时间。完整的图像如下：
 
-<Pic src="/img/./docs/Science/electromagnetic/JGibibkelET6icxXkheRQOhUib4eXZGtGqWsZzgFsw6sjE81LEscI3yMH1Q2NLAJIhQa13BRNkzic6gxUjrKuH23NpA.png"></Pic>
+<Figure src="/img/./docs/Science/electromagnetic/JGibibkelET6icxXkheRQOhUib4eXZGtGqWsZzgFsw6sjE81LEscI3yMH1Q2NLAJIhQa13BRNkzic6gxUjrKuH23NpA.png"></Figure>
 
 至此，我们定量地完成了本题的分析。

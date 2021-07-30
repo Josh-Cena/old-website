@@ -5,7 +5,7 @@ date: 2019-08-31
 link: https://zhuanlan.zhihu.com/p/80456225
 ---
 
-import Pic from '../../../../../src/components/Pic';
+import Figure from '../../../../../src/components/Figure';
 import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -31,7 +31,7 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 对于计算机系统来说，二进制是最便于处理的，因为每一个数字都能和一条线路的高电平-低电平对应；而相对地，其它进制就会复杂不少，因为对输出与识别的精度要求提高了。不过据我了解，前苏联曾研制过一种叫做 Сетунь 的三进制计算机[^1]，实际上更加接近人类的逻辑，还能够提高运算效率（而另据参考，越接近 e 进制，效率就越高[^2]）。
 
-<Pic src="https://pic2.zhimg.com/80/v2-6e87f23acece22d6fb10cd87abe851b5_720w.jpg">1959 年时的“Сетунь”，来自[http://www.wyzxwk.com/Article/lishi/2011/09/254852.html](http://www.wyzxwk.com/Article/lishi/2011/09/254852.html)</Pic>
+<Figure src="https://pic2.zhimg.com/80/v2-6e87f23acece22d6fb10cd87abe851b5_720w.jpg">1959 年时的“Сетунь”，来自[http://www.wyzxwk.com/Article/lishi/2011/09/254852.html](http://www.wyzxwk.com/Article/lishi/2011/09/254852.html)</Figure>
 
 _（以上部分道听途说消息并非重点，请勿太过在意）_
 
@@ -171,7 +171,7 @@ $x=a\times 2^m$
 
 1985 年，IEEE（Institute of Electrical and Electronics Engineers，美国电气和电子工程师协会）首次制定了统一的浮点数（可以简单地理解成”小数点位置可以移动的数“）表示规范，最新的 IEEE754-2019 规范中，主要有单精度与双精度两种形式，分别占用两个字节和四个字节；一个数又可以分为 Sign（符号），exponent（指数）和 mantissa（尾数）三部分。具体规范如下（方括号表示比特位）：
 
-<Pic src="https://pic3.zhimg.com/80/v2-9690ba1e6fdf6c1333f90e305447ff62_720w.jpg">来源：<a href="https://www.cnblogs.com/german-iris/p/5759557.html">https://www.cnblogs.com/german-iris/p/5759557.html</a>，此博客也提供了详细的浮点值处理方法</Pic>
+<Figure src="https://pic3.zhimg.com/80/v2-9690ba1e6fdf6c1333f90e305447ff62_720w.jpg">来源：<a href="https://www.cnblogs.com/german-iris/p/5759557.html">https://www.cnblogs.com/german-iris/p/5759557.html</a>，此博客也提供了详细的浮点值处理方法</Figure>
 
 而更详细的浮点数计算、赋值等规范，在此时就不是那么重要了。
 
@@ -181,7 +181,7 @@ $x=a\times 2^m$
 
 随着计算机交互的兴起，如何传递文字也成了亟待解决的问题。于是，60 年代，美国率先制定了以拉丁字母为基础的 ASCII（美国信息交换标准代码）表——它的理念很简单，只要把常用字符都用二进制表达，然后让双方计算机都认可这一协议规范即可。表格如下：
 
-<Pic src="https://pic2.zhimg.com/80/v2-7150b4417cd849b2a00292c4f4d26ac9_720w.jpg">来自百度百科 ASCII 词条，有编辑</Pic>
+<Figure src="https://pic2.zhimg.com/80/v2-7150b4417cd849b2a00292c4f4d26ac9_720w.jpg">来自百度百科 ASCII 词条，有编辑</Figure>
 
 ASCII 使用了一个字节中的七个 bit，最高位留空。
 

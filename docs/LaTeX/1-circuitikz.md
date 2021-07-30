@@ -6,7 +6,7 @@ date: 2020-05-04
 link: https://zhuanlan.zhihu.com/p/137847051
 ---
 
-import Pic from '../../src/components/Pic';
+import Figure from '../../src/components/Figure';
 import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -65,7 +65,7 @@ TikZ 的图形主要由三部分构成：坐标（coordinate），路径（path�
 \end{circuitikz}
 ```
 
-<Pic src="https://pic4.zhimg.com/80/v2-911f9f1e0c0988336976d476442e8093_720w.jpg"></Pic>
+<Figure src="https://pic4.zhimg.com/80/v2-911f9f1e0c0988336976d476442e8093_720w.jpg"></Figure>
 
 此处还用了`\draw`指令，但暂时不必在意，只需知道我们生成了一个从`(0,0)`到`(5,5)`，间隔为 1 的网格即可。注意到这个指令给三个选项赋了值：网格线的间距`step`，以及两个绘制选项`gray`和`very thin`，表示颜色和线的粗细。
 
@@ -97,7 +97,7 @@ TikZ 的图形主要由三部分构成：坐标（coordinate），路径（path�
 \end{circuitikz}
 ```
 
-<Pic src="https://pic1.zhimg.com/80/v2-551cdd43dceb37587ce94171f77f7300_720w.jpg"></Pic>
+<Figure src="https://pic1.zhimg.com/80/v2-551cdd43dceb37587ce94171f77f7300_720w.jpg"></Figure>
 
 路径一般的声明方式是：
 
@@ -116,7 +116,7 @@ TikZ 的图形主要由三部分构成：坐标（coordinate），路径（path�
 \end{circuitikz}
 ```
 
-<Pic src="https://pic2.zhimg.com/80/v2-6a005a1eebbe161d1dedb468991e6cf9_720w.jpg"></Pic>
+<Figure src="https://pic2.zhimg.com/80/v2-6a005a1eebbe161d1dedb468991e6cf9_720w.jpg"></Figure>
 
 一条路径可以连续连接多个坐标，在最后使用`-- cycle`会使得路径闭合。同时，一直用`\path[draw]`显得太过累赘。我们可以简单地用`\draw`替换。
 
@@ -127,11 +127,11 @@ TikZ 的图形主要由三部分构成：坐标（coordinate），路径（path�
 \end{circuitikz}
 ```
 
-<Pic src="https://pic4.zhimg.com/80/v2-69a100b9bb6f88e1a5f80e840af94d8f_720w.jpg"></Pic>
+<Figure src="https://pic4.zhimg.com/80/v2-69a100b9bb6f88e1a5f80e840af94d8f_720w.jpg"></Figure>
 
 为什么要说`(1,1) -- (4,5) -- (3,2) -- cycle`而不说`(1,1) -- (4,5) -- (3,2) -- (1,1)`？可以放大一下两者生成的图片：
 
-<Pic src="https://pic1.zhimg.com/80/v2-830343b2066a7c5fb123903f68deb8a4_720w.jpg"></Pic>
+<Figure src="https://pic1.zhimg.com/80/v2-830343b2066a7c5fb123903f68deb8a4_720w.jpg"></Figure>
 
 左边是`-- cycle`，右边是简单的“起点=终点”的路径。可以看到，前者闭合得更加优雅。
 
@@ -146,7 +146,7 @@ TikZ 的图形主要由三部分构成：坐标（coordinate），路径（path�
 \end{circuitikz}
 ```
 
-<Pic src="https://pic1.zhimg.com/80/v2-5f0974bc97741caea660f48266439b48_720w.jpg"></Pic>
+<Figure src="https://pic1.zhimg.com/80/v2-5f0974bc97741caea660f48266439b48_720w.jpg"></Figure>
 
 每个节点都自带四个锚点：`north`，`south`，`east`，`west`。如果我们在设置节点时，用`south`锚点锚定坐标`(2,2)`，那么节点的下端就会对齐`(2,2)`，这个节点就会出现在`(2,2)`上方。
 
@@ -157,7 +157,7 @@ TikZ 的图形主要由三部分构成：坐标（coordinate），路径（path�
 \end{circuitikz}
 ```
 
-<Pic src="https://pic4.zhimg.com/80/v2-0b95a277a1b216bec907907723ce4593_720w.jpg"></Pic>
+<Figure src="https://pic4.zhimg.com/80/v2-0b95a277a1b216bec907907723ce4593_720w.jpg"></Figure>
 
 当然，`south`表示“上方”实在太反人类，所以有这样的简写方式：
 
@@ -179,7 +179,7 @@ TikZ 的图形主要由三部分构成：坐标（coordinate），路径（path�
 \end{circuitikz}
 ```
 
-<Pic src="https://pic4.zhimg.com/80/v2-d084be0bfaa5e84f8d814676d9bf5c9f_720w.jpg"></Pic>
+<Figure src="https://pic4.zhimg.com/80/v2-d084be0bfaa5e84f8d814676d9bf5c9f_720w.jpg"></Figure>
 
 设置节点时，还可以为它指定名字，并把它作为一个坐标调用。
 
@@ -191,7 +191,7 @@ TikZ 的图形主要由三部分构成：坐标（coordinate），路径（path�
 \end{circuitikz}
 ```
 
-<Pic src="https://pic3.zhimg.com/80/v2-aa67e07c05253cb4f4bb7b69901ca43e_720w.jpg"></Pic>
+<Figure src="https://pic3.zhimg.com/80/v2-aa67e07c05253cb4f4bb7b69901ca43e_720w.jpg"></Figure>
 
 要注意的是，要用`(a.north)`而不只是`(a)`，因为后者所代表的坐标是在"A"的中央，而前者才是之前声明的`(1,1)`这个点。
 
@@ -211,7 +211,7 @@ TikZ 的图形主要由三部分构成：坐标（coordinate），路径（path�
 \end{circuitikz}
 ```
 
-<Pic src="https://pic4.zhimg.com/80/v2-23ad627961a9cd6169424a334eac00cb_720w.jpg"></Pic>
+<Figure src="https://pic4.zhimg.com/80/v2-23ad627961a9cd6169424a334eac00cb_720w.jpg"></Figure>
 
 ## 三、CircuiTikZ 中的元件
 
@@ -224,7 +224,7 @@ CircuiTikZ 中有两类元件：“路径类”和“节点类”。基本所有
 \end{circuitikz}
 ```
 
-<Pic src="https://pic3.zhimg.com/80/v2-f8ec5f414b825712e3821b9d45493bbe_720w.jpg"></Pic>
+<Figure src="https://pic3.zhimg.com/80/v2-f8ec5f414b825712e3821b9d45493bbe_720w.jpg"></Figure>
 
 所有的路径类元件都使用`to[]`连接。方括号中的参数除了指定元件（如电阻`R`和导线`short`），还可以指定末端的连接方式。下文中会出现一些例子。
 
@@ -237,7 +237,7 @@ CircuiTikZ 中有两类元件：“路径类”和“节点类”。基本所有
 \end{circuitikz}
 ```
 
-<Pic src="https://pic3.zhimg.com/80/v2-a3a937560b9925bf95fc1d55e48defba_720w.jpg"></Pic>
+<Figure src="https://pic3.zhimg.com/80/v2-a3a937560b9925bf95fc1d55e48defba_720w.jpg"></Figure>
 
 还要注意，每个节点都需要有一个大括号围起的标签，哪怕是空的。接下来，就可以从各个锚点出发，绘制其他导线了。一个逻辑门有`out`和若干`in`锚点；比如下面的例子：
 
@@ -251,7 +251,7 @@ CircuiTikZ 中有两类元件：“路径类”和“节点类”。基本所有
 \end{circuitikz}
 ```
 
-<Pic src="https://pic1.zhimg.com/80/v2-8a82a9dc23c7291c34462051ed1fbc70_720w.jpg"></Pic>
+<Figure src="https://pic1.zhimg.com/80/v2-8a82a9dc23c7291c34462051ed1fbc70_720w.jpg"></Figure>
 
 可以设置不止两个接口的逻辑门，只需添加选项`number inputs`，同时也可以通过`inner inputs`指定有多少个位于逻辑门内部：
 
@@ -265,7 +265,7 @@ CircuiTikZ 中有两类元件：“路径类”和“节点类”。基本所有
 \end{circuitikz}
 ```
 
-<Pic src="https://pic3.zhimg.com/80/v2-1b50151ad62b828cf19d9e2f9d14e59a_720w.jpg"></Pic>
+<Figure src="https://pic3.zhimg.com/80/v2-1b50151ad62b828cf19d9e2f9d14e59a_720w.jpg"></Figure>
 
 对于表示否定的“小圆圈”，如果是输出端，那可以使用`nand`等表示否定的门；不然，就需要手动在接口处添加一个`notcirc`节点。注意，`in`，`out`等锚点在“针脚”的末端，如果要设置在起点，要在前面加`b`，变成`bin`，`bout`：
 
@@ -280,7 +280,7 @@ CircuiTikZ 中有两类元件：“路径类”和“节点类”。基本所有
 \end{circuitikz}
 ```
 
-<Pic src="https://pic3.zhimg.com/80/v2-8c49959b59b198ff5d71b0cf59cd78da_720w.jpg"></Pic>
+<Figure src="https://pic3.zhimg.com/80/v2-8c49959b59b198ff5d71b0cf59cd78da_720w.jpg"></Figure>
 
 以下是所有常用逻辑门的节点名：
 
@@ -304,7 +304,7 @@ CircuiTikZ 中有两类元件：“路径类”和“节点类”。基本所有
 
 以一位比较器为例：
 
-<Pic src="https://pic3.zhimg.com/80/v2-a7a738c85eec18aa4977264e3b7c1e1e_720w.jpg"></Pic>
+<Figure src="https://pic3.zhimg.com/80/v2-a7a738c85eec18aa4977264e3b7c1e1e_720w.jpg"></Figure>
 
 首先，确定各个门电路的位置。
 
@@ -316,7 +316,7 @@ CircuiTikZ 中有两类元件：“路径类”和“节点类”。基本所有
 \end{circuitikz}
 ```
 
-<Pic src="https://pic3.zhimg.com/80/v2-00c157c7dffd242999b8b665bc1f29f6_720w.jpg"></Pic>
+<Figure src="https://pic3.zhimg.com/80/v2-00c157c7dffd242999b8b665bc1f29f6_720w.jpg"></Figure>
 
 坐标是随意设的，只要符合审美即可。使用`anchor=out`也只是因为这样容易设置坐标。
 
@@ -332,7 +332,7 @@ CircuiTikZ 中有两类元件：“路径类”和“节点类”。基本所有
 \end{circuitikz}
 ```
 
-<Pic src="https://pic4.zhimg.com/80/v2-f12d31231c521ed330be605b5587e88f_720w.jpg"></Pic>
+<Figure src="https://pic4.zhimg.com/80/v2-f12d31231c521ed330be605b5587e88f_720w.jpg"></Figure>
 
 然后是最繁琐的接线部分。可以先接连接两个与门的线：
 
@@ -348,7 +348,7 @@ CircuiTikZ 中有两类元件：“路径类”和“节点类”。基本所有
 \end{circuitikz}
 ```
 
-<Pic src="https://pic2.zhimg.com/80/v2-c9a8f46aebf624a6356df4279e6472d5_720w.jpg"></Pic>
+<Figure src="https://pic2.zhimg.com/80/v2-c9a8f46aebf624a6356df4279e6472d5_720w.jpg"></Figure>
 
 对于同或门向后的两根线，我们知道与它们横纵坐标相同的几个节点，但不知道它们的具体坐标，因此，我们将要使用`let`语法。
 
@@ -366,7 +366,7 @@ CircuiTikZ 中有两类元件：“路径类”和“节点类”。基本所有
 \end{circuitikz}
 ```
 
-<Pic src="https://pic1.zhimg.com/80/v2-cd12fd05fd9a277b53527029f7e9fa7c_720w.jpg"></Pic>
+<Figure src="https://pic1.zhimg.com/80/v2-cd12fd05fd9a277b53527029f7e9fa7c_720w.jpg"></Figure>
 
 其中还用了一个小语法：在大括号之间的内容会被 TikZ 的数学引擎计算。所以`{\x2-0.5cm}`有类似`(\x2,\y2)+(-0.5,0)`的效果。`to`中包含的`-*`选项会在线路末端生成一个小黑圆表示连接点。这是 CircuiTikZ 提供的连接方式，而不是 TikZ 的，所以只有在用`to`时才能使用，如果用`--`则不行。
 
@@ -391,6 +391,6 @@ CircuiTikZ 中有两类元件：“路径类”和“节点类”。基本所有
 \end{circuitikz}
 ```
 
-<Pic src="https://pic4.zhimg.com/80/v2-331d8d5891bfcc838d549d5fd0f574bb_720w.jpg"></Pic>
+<Figure src="https://pic4.zhimg.com/80/v2-331d8d5891bfcc838d549d5fd0f574bb_720w.jpg"></Figure>
 
 就这样，我们完成了此图的绘制。

@@ -6,7 +6,7 @@ date: 2019-09-18
 link: https://mp.weixin.qq.com/s/nBy4ScJTYmZ07-VopTzxGg
 ---
 
-import Pic from '../../src/components/Pic';
+import Figure from '../../src/components/Figure';
 import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -174,7 +174,7 @@ $$
 
 接下来，运用丰富的红石电路设计经验，就搞出来了：
 
-<Pic src="/img/./docs/Technology/xor/JGibibkelET6ickicicmsMd0DBoeWH4UjqXpE9cQke2iaoOHl6G11EPeDNCFFKe8JBicQTLShTYQeseTjib8YgymQHMI8g.jpeg"></Pic>
+<Figure src="/img/./docs/Technology/xor/JGibibkelET6ickicicmsMd0DBoeWH4UjqXpE9cQke2iaoOHl6G11EPeDNCFFKe8JBicQTLShTYQeseTjib8YgymQHMI8g.jpeg"></Figure>
 
 从左至右，分别对应输入是 00，01，11。这种设计，非常紧凑，但延时要比另一种也很常用的设计（虽然我个人不用）多 1 tick。
 

@@ -5,14 +5,14 @@ date: 2020-10-01
 link: https://mp.weixin.qq.com/s/VrFpvUU5W4GUlqhXtYigZQ
 ---
 
-import Pic from '../../../../../src/components/Pic';
+import Figure from '../../../../../src/components/Figure';
 import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
 
 在我的青春还没有结束的时候（误），曾经在有机所周老师（我现在便在他的实验室搬砖）的课上近距离接触了绿色荧光蛋白（Green Fluorescent Protein, GFP），并且人生中第一次体验了柱子——那应该是迄今为止最美妙的一次过柱子经历了。
 
-<Pic src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQMJZ7HczzaF7jibcOiajtmSKD1GJQX58l7JsSwOdzgmspoRrIwBFTTcLQ.jpeg">应该不是我的手</Pic>
+<Figure src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQMJZ7HczzaF7jibcOiajtmSKD1GJQX58l7JsSwOdzgmspoRrIwBFTTcLQ.jpeg">应该不是我的手</Figure>
 
 但是，由于当时我们都太弱了，周老师并没有给我们深入科普 GFP 的结构和机理……本文便来填补这一空白。同时，我们也会为每一步结论提供相应的实验证据。
 
@@ -20,7 +20,7 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 野生型绿色荧光蛋白（Aequorea）的原始氨基酸序列如下 [^1]：
 
-<Pic src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQyaG4EfvutoHKJWnMjIYFA8dSNLFpabZs8hiaFoblMLlpLx4uHhLEg1w.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQyaG4EfvutoHKJWnMjIYFA8dSNLFpabZs8hiaFoblMLlpLx4uHhLEg1w.png"></Figure>
 
 已知的是，在大肠杆菌中人工表达的以上蛋白可以发光。因此，GFP 的生色团和其他荧光蛋白不同，不是一个另外合成然后塞进蛋白里的外加基团，而是由肽链本身折叠形成的。
 
@@ -28,11 +28,11 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 接下来，生色团的结构本身被确定了，实际上起关键作用的是三肽 Ser65-Tyr66-Gly67。
 
-<Pic src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQtXINUZ4zxPPx3RtXtuExm5iaLG00vCF6Qz34MgvS6xH7PKXZVPqg5bA.png">Ser65-Tyr66-Gly67</Pic>
+<Figure src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQtXINUZ4zxPPx3RtXtuExm5iaLG00vCF6Qz34MgvS6xH7PKXZVPqg5bA.png">Ser65-Tyr66-Gly67</Figure>
 
 它可以转化为一个对羟基亚苄咪唑啉酮 (_p_-hydroxybenzylidene-imidazolinone)，具体的折叠机理如下 [^1]：
 
-<Pic src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQ22hdq0ST03DnjxEN5HdicwQvQqmFHMBHlhJI2nGwESicxBcRkDPGIyQg.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQ22hdq0ST03DnjxEN5HdicwQvQqmFHMBHlhJI2nGwESicxBcRkDPGIyQg.png"></Figure>
 
 这是个亲核进攻—脱水环化，然后氧化的过程。支持氧化机理的观察包括：
 
@@ -52,7 +52,7 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 我们继续研究生色团本身。生色团的吸收和发射光谱如下 [^2]：
 
-<Pic src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQwnoS8g5yJxpFK4iaP7mb8dCa7ObsdH3icYU8umZyLI96UQc49ITBJbaw.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQwnoS8g5yJxpFK4iaP7mb8dCa7ObsdH3icYU8umZyLI96UQc49ITBJbaw.png"></Figure>
 
 吸收谱线在 395nm（紫外）和 475nm（蓝光）有两个峰，并且 395nm 的吸收度要高得多。发射谱线（用 395nm 激发）则只有 508nm（绿光）一个峰。
 
@@ -70,7 +70,7 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 因此，生色团的发光机理是一个类福斯特循环（Förster cycle）的过程：
 
-<Pic src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQyuiaUaFibwh4icvuIU8x5Spia7N2xTlvB9BaQqVW5U0tuZeiaNjCOXvcNWg.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQyuiaUaFibwh4icvuIU8x5Spia7N2xTlvB9BaQqVW5U0tuZeiaNjCOXvcNWg.png"></Figure>
 
 其中活性氢是苯酚的羟基氢。我们将四种物质从左上角开始顺时针编号为(1)、(2)、(3)、(4)。激发过程如下：
 
@@ -87,7 +87,7 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 此处，也可以解释这个现象：
 
-<Pic src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQcq8tXulaEGniaib6iaeRhEuKakAQMsC4HC9vWkTZgSibQ9FHoXlgweDMiaw.jpeg"></Pic>
+<Figure src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQcq8tXulaEGniaib6iaeRhEuKakAQMsC4HC9vWkTZgSibQ9FHoXlgweDMiaw.jpeg"></Figure>
 
 在我们的实验中，用可见光照射样品呈黄色。作者的假说是，这是由于样品吸收了 470nm 的蓝光，因此呈黄色，也就是蓝色的补色。
 
@@ -95,15 +95,15 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 上面的机理漂亮得让人觉得只要有个生色团就可以发荧光。但实际上，失活的 GFP 的光谱特性和正常蛋白有显著不同，并且只要对正常蛋白略作删减（氮端或碳端截短 5~9 个残基），便会失去荧光。这启示我们，GFP 的正常工作和它其余的残基形成的二级、三级结构有很大关系。
 
-<Pic src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQ7Kb4cUicRicUF5gicjg5hb3KASmlEWNUKvd4icrhL9B7OVjYa9PoYIL8tQ.jpeg"></Pic>
+<Figure src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQ7Kb4cUicRicUF5gicjg5hb3KASmlEWNUKvd4icrhL9B7OVjYa9PoYIL8tQ.jpeg"></Figure>
 
 GFP 的整体结构是一个由 11 个 β-折叠接成的圆柱形“灯罩”，里面则是由三个 α-螺旋把生色团“灯泡”固定在正当中，就像一个台灯。这样的结构防止了生色团被任何杂分子作用而失活（比如被氧气淬灭）。同时这也有力地支持了生色团自组装的机理，因为没有任何酶和底物能够进入重重包裹。（氧化需要的氧分子被包含在一个小缺口里。[^3]）
 
-<Pic src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQlAlxtKakF7YnVOZKm7paHBG732kFBbTMLa9myibwRZqlciaBI0N1Ff1A.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQlAlxtKakF7YnVOZKm7paHBG732kFBbTMLa9myibwRZqlciaBI0N1Ff1A.png"></Figure>
 
 而生色团周围，则有几个氨基酸和它以氢键相连。
 
-<Pic src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQJo6DibHicxZdz06CPv611yxjMnjG15KsWV4AOILwM6XB9tncem9hEefA.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQJo6DibHicxZdz06CPv611yxjMnjG15KsWV4AOILwM6XB9tncem9hEefA.png"></Figure>
 
 还有一些以水分子和其他氨基酸间接和生色团相连的氨基酸未标出。上面标出的五个氨基酸的用处各不相同。[^3]
 
@@ -111,7 +111,7 @@ GFP 的整体结构是一个由 11 个 β-折叠接成的圆柱形“灯罩”�
 - Glu222 和 Ser65 产生氢键，形成一个负电中心。这个负电阻止了 Tyr66 的电离，稳定了中性分子 (1) 的状态。如果 Glu222 突变为甘氨酸，或者 Ser65 突变成缬氨酸、丙氨酸等非极性氨基酸，则 395nm 峰降低而 475nm 峰升高，说明此时更多的生色团处于阴离子 (4) 状态。
 - Arg96 参与催化了成环过程，也通过自己的正电（这一正电又通过其它几个相邻的氨基酸加以固定），稳定了阴离子 (4) 在羰基上的部分负电。（见下面的共振图）
 
-<Pic src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQmgbFog1hibwfgLqjibv6KIzWswWAMibyzuhiaialQ5Mn931RH5pDFK4jxzw.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Science/gfp/JGibibkelET68AwHGVOouGOOX77FpeckPQmgbFog1hibwfgLqjibv6KIzWswWAMibyzuhiaialQ5Mn931RH5pDFK4jxzw.png"></Figure>
 
 - His148 和 Gln94 稳定了生色团结构并扩大了离域体系。
 

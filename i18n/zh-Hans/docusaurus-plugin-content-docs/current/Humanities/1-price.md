@@ -5,14 +5,14 @@ date: 2020-06-27
 link: https://mp.weixin.qq.com/s/yMTDAgsCygTRSYnfZkuhHg
 ---
 
-import Pic from '../../../../../src/components/Pic';
+import Figure from '../../../../../src/components/Figure';
 import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
 
 在很久之前的经济课上，有这样一幅图，展示了垄断竞争市场下的公司长期收益-成本曲线 (long-run cost and revenue curves of a monopolistically competitive firm)：
 
-<Pic src="/zh-Hans/img/./docs/Humanities/price/JGibibkelET6ibuaHjMuS5MicolBQqyfVOVicCqaPLWU7Zp0bwaW3la6ZicxyCx7mMpMuicFbMWZiaF7tlN8GCTjllE1vQ.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Humanities/price/JGibibkelET6ibuaHjMuS5MicolBQqyfVOVicCqaPLWU7Zp0bwaW3la6ZicxyCx7mMpMuicFbMWZiaF7tlN8GCTjllE1vQ.png"></Figure>
 
 然后，引发了某位问题男孩的问题：
 
@@ -20,7 +20,7 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 他随手画了这样一个反例：
 
-<Pic src="/zh-Hans/img/./docs/Humanities/price/JGibibkelET6ibuaHjMuS5MicolBQqyfVOVicRxNlLGN3pF0pZO1I42Eovwba3IRLxMFKTAZkKAicoLvgrrPjGFbDw7w.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Humanities/price/JGibibkelET6ibuaHjMuS5MicolBQqyfVOVicRxNlLGN3pF0pZO1I42Eovwba3IRLxMFKTAZkKAicoLvgrrPjGFbDw7w.png"></Figure>
 
 一时竟无人能反驳。当时我的证明误入歧途，因此未能当场给出答案。事实上，这个证明并不复杂。本文将要用数学证明两个命题：
 

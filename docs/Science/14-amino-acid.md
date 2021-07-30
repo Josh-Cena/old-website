@@ -6,7 +6,7 @@ date: 2021-02-07
 link: https://mp.weixin.qq.com/s/N-sn-xfwGFd4mFI85Ls4hA
 ---
 
-import Pic from '../../src/components/Pic';
+import Figure from '../../src/components/Figure';
 import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -17,7 +17,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 形而上地说，一个氨基酸就是一个同时包含了羧基和胺基的分子。所有生物的蛋白质水解出的氨基酸都是 L-α-氨基酸，也就是它们的胺基都位于 α 碳上，并且 α 碳的手性呈 L 构型。可以这样表示所有的 L-α-氨基酸：
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumbHScF3UlNDHuFu6ZCgy5KaleRHbQL4F4pxcXssGrk4Yarz0iahjQTbA.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumbHScF3UlNDHuFu6ZCgy5KaleRHbQL4F4pxcXssGrk4Yarz0iahjQTbA.png"></Figure>
 
 在之后的结构式中，我们不会特别注明 α 碳的手性，但会把主链用灰色弱化。如果把结构式转写成化学式，则为 H<sub>2</sub>N-CH(-R)-COOH，或 R-C<sub>2</sub>H<sub>4</sub>O<sub>2</sub>N。
 
@@ -50,7 +50,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Ala (A)
 - 取代基：甲基 -CH<sub>3</sub>
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum89pQSqgKBPaeHresJukxTHrHC7VqwXfIN5HgtsnsGgjrlYg1icjKgbQ.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum89pQSqgKBPaeHresJukxTHrHC7VqwXfIN5HgtsnsGgjrlYg1icjKgbQ.png"></Figure>
 
 蛋白质内的疏水氨基酸，基本都在疏水核心中抱团，也不会形成氢键，因此没什么存在感。丙氨酸又是其中最稳定，最简单的一个，侧链仅有一个甲基，因此它很容易作为反应副产品在生物体内产生——比如在肌肉中排除游离氨的丙氨酸-葡萄糖循环，就是由丙酮酸经转氨作用生成丙氨酸，从而被安全排出肌肉进入血液，再在肝脏中脱氨，合成葡萄糖。
 
@@ -59,7 +59,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Val (V)
 - 取代基：异丙基 -CH(-CH<sub>3</sub>)-CH<sub>3</sub>
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumZDJVHCvr9zbyNyibAB76gO2PIMStaQ7TRiaK4bvXM4Zzu17lyrNzemgA.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumZDJVHCvr9zbyNyibAB76gO2PIMStaQ7TRiaK4bvXM4Zzu17lyrNzemgA.png"></Figure>
 
 把丙氨酸的甲基上再插两个甲基，就变成了缬氨酸。它的命名来自缬草酸，后者是正戊酸，缬氨酸的系统命名则是 2-胺基-异戊酸。
 
@@ -68,7 +68,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Leu (L)
 - 取代基：异丁基 -CH<sub>2</sub>-CH(-CH<sub>3</sub>)-CH<sub>3</sub>
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum2HEkiafU3yR5ZoSjtNg7KKe3RRur7tpW0puzj5rYuDpibUfg26u0aIUQ.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum2HEkiafU3yR5ZoSjtNg7KKe3RRur7tpW0puzj5rYuDpibUfg26u0aIUQ.png"></Figure>
 
 亮氨酸比缬氨酸长一个甲基的长度。它的命名来自它闪亮的晶体。
 
@@ -77,7 +77,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Ile (I)
 - 取代基：仲丁基 -CH(-CH<sub>3</sub>)-CH<sub>2</sub>-CH<sub>3</sub>
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumTickfdibDHV5363nROIp2hIVibgiarwOSMYVPhcV0tNALcRlQTQIWHmyLg.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumTickfdibDHV5363nROIp2hIVibgiarwOSMYVPhcV0tNALcRlQTQIWHmyLg.png"></Figure>
 
 把亮氨酸的甲基从 β 碳挪到 α 碳，就变成了异亮氨酸。
 
@@ -88,13 +88,13 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Pro (P)
 - 取代基：吡咯烷（经环化） -C<sub>3</sub>H<sub>6</sub>
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum9II54MqJXzzCCicLYtjCcTicjibfD5JtZDUZic6iaUOlw28mcDGLmkibsqXA.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum9II54MqJXzzCCicLYtjCcTicjibfD5JtZDUZic6iaUOlw28mcDGLmkibsqXA.png"></Figure>
 
 脯氨酸是氨基酸中唯一一种仲胺，也就是 R<sub>2</sub>NH，而不是 RNH<sub>2</sub>。可以把它看作是先连一个丙基，然后环化形成的吡咯烷。
 
 由于氮原子被环锁死，因此它在蛋白中成的 C-N 键不能随意旋转，而是被固定在一个二面角。这使得它成为典型的 α 螺旋破坏者，往往出现在螺旋的最末端。就像这个 meme 所说的：
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumrmhwWV3rGZ3oJeEXM3y367k3vXHVFCib1XgAtuhHGk29icibwtOAANvIQ.jpeg"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumrmhwWV3rGZ3oJeEXM3y367k3vXHVFCib1XgAtuhHGk29icibwtOAANvIQ.jpeg"></Figure>
 
 它旁边的甘氨酸同样是 α 螺旋破坏者，在之后会提到。
 
@@ -105,7 +105,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Phe (F)
 - 取代基：苯甲基 -CH<sub>2</sub>-C<sub>6</sub>H<sub>5</sub>
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumsVgMDmYam0HP7N11OhlRnic8TXrrv4M8UUNbnvOPR6PYEoLaL9nTD3w.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumsVgMDmYam0HP7N11OhlRnic8TXrrv4M8UUNbnvOPR6PYEoLaL9nTD3w.png"></Figure>
 
 在丙氨酸上加一个苯基，就变成了苯丙氨酸。它最著名的用处应该是合成天门冬酰苯丙氨酸甲酯，也就是阿斯巴甜。
 
@@ -116,7 +116,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Trp (W)
 - 取代基：吲哚基甲基 -CH<sub>2</sub>-C<sub>8</sub>H<sub>6</sub>N
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum5iczV0fyMeaBW8oo1oZHIgs0ibFWC2DIsiaceLtpchOfZl5IrkiaLNoKnQ.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum5iczV0fyMeaBW8oo1oZHIgs0ibFWC2DIsiaceLtpchOfZl5IrkiaLNoKnQ.png"></Figure>
 
 在丙氨酸上加一个吲哚基，就变成了色氨酸。它的命名可能来自于它在 280nm 的强烈吸收峰，要比另外两种芳香氨基酸：苯丙氨酸和酪氨酸高得多。（记得在[天然 GFP 中的大设计](../Science/gfp)中提到过，共轭体系越大，吸收峰的波长就越长，但这几个的共轭体系都没有大到吸收峰位于可见光区域。）
 
@@ -127,7 +127,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Met (M)
 - 取代基：2-甲硫基乙基 -CH<sub>2</sub>-CH<sub>2</sub>-S-CH<sub>3</sub>
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum3rSujTh7qnenwzs35OFvDpgfp9uics4MDa0qkm1YmKZESu3rfPCVFKw.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum3rSujTh7qnenwzs35OFvDpgfp9uics4MDa0qkm1YmKZESu3rfPCVFKw.png"></Figure>
 
 鸡蛋蛋白中很常见的氨基酸。我有一段记忆：在某次胡搞的化学实验中，我们将蛋清溶解后，向剩下的胶状不溶物中加入稀盐酸，产生了浓郁的臭鸡蛋味。这大概率就是甲硫氨酸的分解产生的硫化氢。
 
@@ -142,7 +142,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Gly (G)
 - 取代基：氢 -H
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumaByNib6768icENHaCHZRcSLiadINyAscmZmPle4IqI3FvVwQibzqs9iaUAw.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumaByNib6768icENHaCHZRcSLiadINyAscmZmPle4IqI3FvVwQibzqs9iaUAw.png"></Figure>
 
 最简单的氨基酸，也是唯一一种没有手性的氨基酸（因为两边都是氢原子，没有不对称中心）。有些分类会把它归进疏水氨基酸，但一个氢原子到底是疏水基还是亲水基也不好说，因此只能根据整个分子的性质，把它归进亲水氨基酸。它的命名来自于它的甜味，甜度可以和蔗糖相媲美。但作为食品添加剂，甘氨酸的用量被严格限制，因为过多摄入甘氨酸会影响其他氨基酸摄取。
 
@@ -155,7 +155,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Ser (S)
 - 取代基：羟甲基 -CH<sub>2</sub>-OH
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum7czaHJI81RjJbddXKMNWn2qFEYjKdiaunhuVKSwhsLHibsX0rYfszznw.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum7czaHJI81RjJbddXKMNWn2qFEYjKdiaunhuVKSwhsLHibsX0rYfszznw.png"></Figure>
 
 在丙氨酸上加一个羟基，就得到了丝氨酸。它最早在蚕丝蛋白中发现，因此得名。
 
@@ -164,7 +164,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Thr (T)
 - 取代基：1-羟基乙基 -CH(-OH)-CH<sub>2</sub>
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum4m2SS5hicObQUwNicbfzZibCTxyFas7XkTxyvsQLicfCh5yzPvJ7SBgs4g.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjum4m2SS5hicObQUwNicbfzZibCTxyFas7XkTxyvsQLicfCh5yzPvJ7SBgs4g.png"></Figure>
 
 苏氨酸比丝氨酸又多了一个甲基。它的结构和苏阿糖类似，因此得名。苏阿糖把胺基变成了羟基，羧基上的羟基被挪到了另一端的甲基上。
 
@@ -175,7 +175,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Cys (C)
 - 取代基：巯甲基 -CH<sub>2</sub>-SH
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumeYQAicn6NUD3FY43YE8FFzYgzibrmiaf652M75soCbAQW90ibzkTKogM9A.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumeYQAicn6NUD3FY43YE8FFzYgzibrmiaf652M75soCbAQW90ibzkTKogM9A.png"></Figure>
 
 在丙氨酸上加一个巯基，就得到了半胱氨酸。也可以把它看作硫代丝氨酸——如果再用硒取代硫，就叫做硒代半胱氨酸，这也是一种基本氨基酸，但在人体内含量极少。人们最早从膀胱结石中分离出胱氨酸，把它沿双硫键切成两半后，就变成了半胱氨酸。
 
@@ -188,7 +188,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Tyr (Y)
 - 取代基：对羟基苯甲基 -CH<sub>2</sub>-C<sub>6</sub>H<sub>4</sub>-OH
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumFsjRbpyHYulf21m7Cocc08jnWhy89iaT1raLxAkLfZibSL7acIGWkthw.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumFsjRbpyHYulf21m7Cocc08jnWhy89iaT1raLxAkLfZibSL7acIGWkthw.png"></Figure>
 
 它最早从乳酪中分离出来，因此得名。比起苯丙氨酸，它在对位上多了一个酚羟基。因此它和丝氨酸、苏氨酸功能类似，也是氢键的给体受体，同时也能被蛋白激酶作用。
 
@@ -199,7 +199,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Asn (N)
 - 取代基：胺基甲酰甲基 -CH<sub>2</sub>-CONH<sub>2</sub>
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumDZoticl5DDTbamZKwIZtEybTnXnic8cxCf0Ux86P74WfDBSaOh7OThpA.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumDZoticl5DDTbamZKwIZtEybTnXnic8cxCf0Ux86P74WfDBSaOh7OThpA.png"></Figure>
 
 把天冬氨酸的羧羟基换成胺基，即为天冬酰胺。
 
@@ -210,7 +210,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Gln (Q)
 - 取代基：胺基甲酰乙基 -CH<sub>2</sub>-CH<sub>2</sub>-CONH<sub>2</sub>
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumbm2PurZ8j112xub4OicHQIoL7fTD6IwbGQGDiaRUkdW4O5icmrkmeHiadQ.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumbm2PurZ8j112xub4OicHQIoL7fTD6IwbGQGDiaRUkdW4O5icmrkmeHiadQ.png"></Figure>
 
 把谷氨酸的羧羟基换成胺基，即为谷氨酰胺。
 
@@ -223,7 +223,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Lys (K)
 - 取代基：4-胺基丁基 -CH<sub>2</sub>-CH<sub>2</sub>-CH<sub>2</sub>-CH<sub>2</sub>-NH<sub>2</sub>
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumPkWia7icONJoibicoNMkKiaApsghN5EHTxBv8hwAgjvU5ZaovbtyT98t4ibQ.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumPkWia7icONJoibicoNMkKiaApsghN5EHTxBv8hwAgjvU5ZaovbtyT98t4ibQ.png"></Figure>
 
 它的侧链有四个碳和一个胺基，是手最长、最灵活的氨基酸。
 
@@ -238,7 +238,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：His (H)
 - 取代基：咪唑基甲基 -CH<sub>2</sub>-C<sub>3</sub>H<sub>5</sub>N<sub>2</sub>
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumfGnlLTCHpXSoEntFKFNrI0nWTZ3EJb8iaYPYHsIxOjOMyib6pXV4oRjg.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumfGnlLTCHpXSoEntFKFNrI0nWTZ3EJb8iaYPYHsIxOjOMyib6pXV4oRjg.png"></Figure>
 
 在丙氨酸上加一个咪唑基，就得到了组氨酸。组氨酸的碱性不强，接受给出质子的速度都极快，因此常被用于质子传递链，也能在酶的活性中心起酸碱催化作用。
 
@@ -251,7 +251,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Arg (R)
 - 取代基：3-胍基丙基 -CH<sub>2</sub>-CH<sub>2</sub>-CH<sub>2</sub>-NH-C(=NH)-NH<sub>2</sub>
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumyWdq18d8UWHAjhbD62YFXuV7icAJEcawJfUyicSxEG1gGib124SHZIOJg.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumyWdq18d8UWHAjhbD62YFXuV7icAJEcawJfUyicSxEG1gGib124SHZIOJg.png"></Figure>
 
 精氨酸的侧链结构是一个三个碳的碳链再安一个胍基。它的命名来自鱼精蛋白，同时它也是精子蛋白的主要成分。
 
@@ -264,7 +264,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Asp (D)
 - 取代基：乙羧基 -CH<sub>2</sub>-COOH
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumNUhKgKaMUquMDt4wsucCjIcmI2x14asMibx1qHOicIeqvLsmuuIeEmxg.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumNUhKgKaMUquMDt4wsucCjIcmI2x14asMibx1qHOicIeqvLsmuuIeEmxg.png"></Figure>
 
 在丙氨酸上加一个羧基，就得到天冬氨酸。它的命名来自天门冬，一种草类植物。
 
@@ -277,7 +277,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 - 缩写：Glu (E)
 - 取代基：丙羧基 -CH<sub>2</sub>-CH<sub>2</sub>-COOH
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumPDeM1eOZGUichIUgJLsyAJXkLl3UT7SAYSAnA0xibSHg0LIuicZXTktVw.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET6ibWL2vu1ARrAjJKibaY3cjumPDeM1eOZGUichIUgJLsyAJXkLl3UT7SAYSAnA0xibSHg0LIuicZXTktVw.png"></Figure>
 
 谷氨酸比天冬氨酸长一个甲基的长度。它的命名来自于谷蛋白。
 
@@ -289,11 +289,11 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 如果把这 20 种氨基酸塞进一张图鉴里：
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET69JKpFcOrUaxBicy6xJBFd5GicXwEo7VV77sicjb8TwBaMAPKu8rqSMBwlnqtXRnQcYAlx6t7I55WpmA.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET69JKpFcOrUaxBicy6xJBFd5GicXwEo7VV77sicjb8TwBaMAPKu8rqSMBwlnqtXRnQcYAlx6t7I55WpmA.png"></Figure>
 
 按单字母缩写顺序排列：
 
-<Pic src="/img/./docs/Science/amino-acid/JGibibkelET69JKpFcOrUaxBicy6xJBFd5GFibymrM8oTsp5ogL9ztAziaUvY8bVcWPq4QEFpiculK0ukozazmx8rZtg.png"></Pic>
+<Figure src="/img/./docs/Science/amino-acid/JGibibkelET69JKpFcOrUaxBicy6xJBFd5GFibymrM8oTsp5ogL9ztAziaUvY8bVcWPq4QEFpiculK0ukozazmx8rZtg.png"></Figure>
 
 最后一提：20 种氨基酸中，有 8 种人体不能合成而必须从外部摄取，它们被称为“必需氨基酸”：缬氨酸、亮氨酸、异亮氨酸、苯丙氨酸、色氨酸、甲硫氨酸、苏氨酸、赖氨酸。
 

@@ -5,7 +5,7 @@ date: 2020-02-02
 link: https://mp.weixin.qq.com/s/WwQxhkLN5sg9i3-V-6LnpQ
 ---
 
-import Pic from '../../../../../src/components/Pic';
+import Figure from '../../../../../src/components/Figure';
 import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -26,7 +26,7 @@ $$
 
 如果将向量 $\mathbf{m}$ 的起点置于平面直角坐标系的原点，那么它的终点即处在 $(x,y)$ 的位置。$x$ 和 $y$ 的值，实际上代表了 $\mathbf{m}$ 在 $x$ 轴和 $y$ 轴上的分量的权。
 
-<Pic src="/zh-Hans/img/./docs/Science/circular/JGibibkelET69yytpLPRrIXo9ibG2yhdyRagF8b6WBCW5A4GBt13YurqTn9MicMbn41GPMeebNkK16jutDJqNfH3sA.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Science/circular/JGibibkelET69yytpLPRrIXo9ibG2yhdyRagF8b6WBCW5A4GBt13YurqTn9MicMbn41GPMeebNkK16jutDJqNfH3sA.png"></Figure>
 
 我们研究作匀速圆周运动的物体从 $\mathbf{P}_i$ 到 $\mathbf{P}_f$ 的加速度。作一个（奇怪的）要求——不使用导数，而只凭极限的思想解决问题（虽然实际上和导数只差一步之遥）。
 
@@ -126,7 +126,7 @@ $$
 
 最后一个小小的惊喜：向量 $\begin{bmatrix}-\cos\theta_i\\-\sin\theta_i\end{bmatrix}$ 其实是一个单位向量，它的长度为 $1$！而它所指的方向，在图上是：
 
-<Pic src="/zh-Hans/img/./docs/Science/circular/JGibibkelET6icmuYj8IdictjCd2fiaDpVdZmW4OX5chESjEcrrAbbQMG0VQGOibWdQN8ib4b7OC7wzrOHJUVfy2zSdJA.png"></Pic>
+<Figure src="/zh-Hans/img/./docs/Science/circular/JGibibkelET6icmuYj8IdictjCd2fiaDpVdZmW4OX5chESjEcrrAbbQMG0VQGOibWdQN8ib4b7OC7wzrOHJUVfy2zSdJA.png"></Figure>
 
 如果起点在 $\mathbf{P}_i$ 的位置，就正是一条指向圆心的向量。得证加速度的方向指向圆心。
 

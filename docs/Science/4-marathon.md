@@ -6,7 +6,7 @@ date: 2019-10-18
 link: https://mp.weixin.qq.com/s/klXTROBbvXdgvJm5kSjZVg
 ---
 
-import Pic from '../../src/components/Pic';
+import Figure from '../../src/components/Figure';
 import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -15,7 +15,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 众所周知，2019 年 10 月 12 日，来自肯尼亚的跑者埃鲁德·基普乔格突破了马拉松记录（并且这个被打破的记录也是他本人创的），跑进 2 小时大关；为了纪念这一里程碑式的时刻，也为了和高中的机械运动专题相关联，本文就来看看基普乔格跑步中的一些问题。
 
-<Pic src="/img/./docs/Science/marathon/JGibibkelET694Ria3mjfEqTNZLFNOnResRe9zkgb2ws19U9UDwI0l2Bc88mcoeGZFiclYiaPmQRcA6ZhICj2Lic5Org.jpeg">此为真实数据；但为了使内容更加有趣，我们决定使用一些更“刺激”的数据</Pic>
+<Figure src="/img/./docs/Science/marathon/JGibibkelET694Ria3mjfEqTNZLFNOnResRe9zkgb2ws19U9UDwI0l2Bc88mcoeGZFiclYiaPmQRcA6ZhICj2Lic5Org.jpeg">此为真实数据；但为了使内容更加有趣，我们决定使用一些更“刺激”的数据</Figure>
 
 注：本文所用符号：
 
@@ -29,7 +29,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 无论如何，人类也不可能跑出严格的匀速运动——虽然在较大的尺度上，基普乔格的确做到了速度基本一致，但在秒的尺度上，一定是一步一步，有快有慢。假设基普乔格起步时的运动情况如下图：
 
-<Pic src="/img/./docs/Science/marathon/JGibibkelET694Ria3mjfEqTNZLFNOnResRoc4iabuQZ1tUV7EGFiahicbaWks1fgS1ASt5pH8LIAyscJwBcMLX5pDmA.png"></Pic>
+<Figure src="/img/./docs/Science/marathon/JGibibkelET694Ria3mjfEqTNZLFNOnResRoc4iabuQZ1tUV7EGFiahicbaWks1fgS1ASt5pH8LIAyscJwBcMLX5pDmA.png"></Figure>
 
 其中横坐标表示时间；纵坐标表示位移。所以，每一个点 (T,d) 代表了一个时刻 T 和对应的基普乔格的位移 d。因为此图展示了 d 随着 t 变化而变化的规律，所以叫做 d-t 图。
 
@@ -55,11 +55,11 @@ $$
 
 这两个式子长得何其相像！那么，如果我们把 $t$ 当作自变量，$d$ 当作 $t$ 的函数，$v$ 就是 $d$ 的导函数。它在几何上表示为在 $t=t_0$ 点附近的一段曲线的切线，如这样：
 
-<Pic src="/img/./docs/Science/marathon/JGibibkelET694Ria3mjfEqTNZLFNOnResRsveSn75UGBGC6AaVEbUeezmNMPdSgz9jxHAicy8mJxoIaUoldXv1icTw.png"></Pic>
+<Figure src="/img/./docs/Science/marathon/JGibibkelET694Ria3mjfEqTNZLFNOnResRsveSn75UGBGC6AaVEbUeezmNMPdSgz9jxHAicy8mJxoIaUoldXv1icTw.png"></Figure>
 
 每一个时刻 $t$ 都能对应一个瞬时速度 $v$。如果画出 $v$ 关于 $t$ 变化的曲线，就会长下图这样：
 
-<Pic src="/img/./docs/Science/marathon/JGibibkelET694Ria3mjfEqTNZLFNOnResRrVOUAoxd5pbVsxYIHgqDal2QiajN8xFxnKiaH4642lYKibl5UArNRnZQA.png"></Pic>
+<Figure src="/img/./docs/Science/marathon/JGibibkelET694Ria3mjfEqTNZLFNOnResRrVOUAoxd5pbVsxYIHgqDal2QiajN8xFxnKiaH4642lYKibl5UArNRnZQA.png"></Figure>
 
 这张图叫做 v-t 图。
 
@@ -85,7 +85,7 @@ $$
 
 在第一节中，我们把一个整体切成极小的部分来分析，称之为微分；在这里，我们则把无数个极小的部分拼成一个整体，这种过程叫做积分——准确地说，此处我们在讨论一定范围内的无数个极小部分之和，是定积分。在 平面几何大宝鉴：祖暅原理的平面几何运用 中，便运用了定积分的思想，可以在那里找到一种比较几何的积分推导方法。定积分在几何上的意义便为曲线与 x 轴围成的图形面积，如下图。
 
-<Pic src="/img/./docs/Science/marathon/JGibibkelET68Teov07Bqc25LmIXQc6ZjMQALOhrsJ2jjwWYzfWXfNBnIBMBLxlxicLIWTLO81rfNQj8ia7Gt2vNPg.png"></Pic>
+<Figure src="/img/./docs/Science/marathon/JGibibkelET68Teov07Bqc25LmIXQc6ZjMQALOhrsJ2jjwWYzfWXfNBnIBMBLxlxicLIWTLO81rfNQj8ia7Gt2vNPg.png"></Figure>
 
 由于牵涉到无限小、无限大，再用传统的 sigma 显得不大合适；所以，便用 summa 符号表示积分。
 

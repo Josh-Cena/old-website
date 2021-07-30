@@ -3,7 +3,7 @@ id: about
 title: 关于这些文章
 ---
 
-import Pic from '../../../../src/components/Pic';
+import Figure from '../../../../src/components/Figure';
 import DocMetadataBanner from '../../../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />

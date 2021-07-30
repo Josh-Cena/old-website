@@ -6,7 +6,7 @@ date: 2019-08-30
 link: https://zhuanlan.zhihu.com/p/80395268
 ---
 
-import Pic from '../../src/components/Pic';
+import Figure from '../../src/components/Figure';
 import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
@@ -23,7 +23,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 当然，题目本身并没什么难度，任何一个受过良好的九年义务教育的同学都应该能完成：
 
-<Pic src="https://pic3.zhimg.com/80/v2-8b6ce552d182e7b076503545b084ef5a_720w.jpg"></Pic>
+<Figure src="https://pic3.zhimg.com/80/v2-8b6ce552d182e7b076503545b084ef5a_720w.jpg"></Figure>
 
 但是，这道题目看似沙雕，实则暗含了数字电路的思想！我们重新审视一下这道题：
 
@@ -89,7 +89,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 惭愧的是，我一开始学习数电的目的，竟然是为了打游戏...
 
-<Pic src="https://pic1.zhimg.com/80/v2-dd7607d3365cb0b414d139fd5e4a97a8_720w.jpg">奋战两个月的成果</Pic>
+<Figure src="https://pic1.zhimg.com/80/v2-dd7607d3365cb0b414d139fd5e4a97a8_720w.jpg">奋战两个月的成果</Figure>
 
 Minecraft 中提供了红石线与红石火把两种最基础的元件，分别可以作为或门和非门使用；而这两个门就可以组合出所有逻辑门，进而搭建出计算器、控制器之类的大型电路。因此，如果要在 Minecraft 中完全掌握红石技术，数字电路知识是必不可少的。
 
