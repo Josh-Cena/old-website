@@ -337,5 +337,11 @@
   },
   "todo.cancel": {
     "message": "取消"
+  },
+  "docMetadataBanner.firstPublished": {
+    "message": "首次发布于 {date}。"
+  },
+  "docMetadataBanner.sourceLink": {
+    "message": " 原文链接"
   }
 }

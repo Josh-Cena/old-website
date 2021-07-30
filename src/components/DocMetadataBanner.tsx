@@ -1,4 +1,5 @@
 import React from 'react';
+import Translate from '@docusaurus/Translate';
 
 interface Props {
   frontMatter: Record<string, unknown> & {
@@ -14,7 +15,16 @@ export default function DocMetadataBanner({frontMatter}: Props) {
   }
   return (
     <div className="alert alert--info margin-bottom--md" role="contentinfo">
-      {date && <>First published on <span>{date.toLocaleDateString('zh-Hans')}</span>. </>}{link && <a href={link}>Link</a>}
+      {date && 
+        <Translate
+          id="docMetadataBanner.firstPublished"
+          values={{
+            date: <b>{date.toLocaleDateString('zh-Hans')}</b>,
+          }}
+        >
+          {'First published on {date}.'}
+        </Translate>
+      }{link && <a href={link}><Translate id="docMetadataBanner.sourceLink">Source link</Translate></a>}
     </div>
   );
 }
