@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
 
 interface Props {
@@ -24,7 +25,7 @@ export default function DocMetadataBanner({frontMatter}: Props) {
         >
           {'First published on {date}. '}
         </Translate>
-      }{link && <a href={link}><Translate id="docMetadataBanner.sourceLink">Source link</Translate></a>}
+      }{link && <Link to={link}><Translate id="docMetadataBanner.sourceLink">Source link</Translate></Link>}
     </div>
   );
 }

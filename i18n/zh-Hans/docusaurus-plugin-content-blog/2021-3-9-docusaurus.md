@@ -51,7 +51,7 @@ $ yarn start
 然后接下来就有很多个性化配置要做。Docusaurus 的占位内容散落在各处，要把它们都抓出来会花点时间。[这个提交记录](https://github.com/Josh-Cena/Personal-page/commit/a5f2566068a5f915b75b39f8aabfe139f58125ef)包括了要做的大部分工作。亦可以用这个检查表：
 
 1. 把所有的`/docs`和`/blogs`下的文件移除，再添加一些真的东西。按照需求修改`/sidebars.js`。
-2. 给网站选择一个主题色。我用了`#39cac4`，在<a href="/CV/">简介</a>中给出了原因。你可以用[这个工具](https://v2.docusaurus.io/docs/styling-layout#styling-your-site-with-infima)生成各种明暗色调，再把它们贴进`/src/css/custom.css`。
+2. 给网站选择一个主题色。我用了`#39cac4`，在[简介](/CV)中给出了原因。你可以用[这个工具](https://v2.docusaurus.io/docs/styling-layout#styling-your-site-with-infima)生成各种明暗色调，再把它们贴进`/src/css/custom.css`。
 3. 给网站画个 logo。大多数人可能会用 GitHub 头像，或者放张照片，但我真的画了个 logo，*然后*它变成了我的新 GitHub 头像。如果你想，你也可以重画一遍首页上的“特色”图片。
 4. 逐行浏览`/docusaurus.config.js`，做必要的改动。
 5. 逐行浏览`/src/pages/index.js`，做必要的改动。

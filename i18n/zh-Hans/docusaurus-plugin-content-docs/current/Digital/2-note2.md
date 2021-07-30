@@ -31,7 +31,7 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 对于计算机系统来说，二进制是最便于处理的，因为每一个数字都能和一条线路的高电平-低电平对应；而相对地，其它进制就会复杂不少，因为对输出与识别的精度要求提高了。不过据我了解，前苏联曾研制过一种叫做 Сетунь 的三进制计算机[^1]，实际上更加接近人类的逻辑，还能够提高运算效率（而另据参考，越接近 e 进制，效率就越高[^2]）。
 
-<Pic src="https://pic2.zhimg.com/80/v2-6e87f23acece22d6fb10cd87abe851b5_720w.jpg">1959 年时的“Сетунь”，来自<a href="http://www.wyzxwk.com/Article/lishi/2011/09/254852.html">http://www.wyzxwk.com/Article/lishi/2011/09/254852.html</a></Pic>
+<Pic src="https://pic2.zhimg.com/80/v2-6e87f23acece22d6fb10cd87abe851b5_720w.jpg">1959 年时的“Сетунь”，来自[http://www.wyzxwk.com/Article/lishi/2011/09/254852.html](http://www.wyzxwk.com/Article/lishi/2011/09/254852.html)</Pic>
 
 _（以上部分道听途说消息并非重点，请勿太过在意）_
 
