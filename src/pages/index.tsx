@@ -119,7 +119,7 @@ const slides = [
   </div>,
 ];
 
-function Feature({ sources, title, description }: feature) {
+function Feature({ sources, title, description, key }: feature & { key: number }) {
   return (
     <div className={clsx("col col--4", styles.feature)}>
       <div className="text--center">
@@ -129,7 +129,7 @@ function Feature({ sources, title, description }: feature) {
           alt={title}
         />
       </div>
-      <h3>{title}</h3>
+      <h3><Translate id={`front.features.feat${key}.title`}>{title}</Translate></h3>
       <p>{description}</p>
     </div>
   );

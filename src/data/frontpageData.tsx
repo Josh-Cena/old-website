@@ -45,7 +45,7 @@ export const slides = [
 ]
 
 export type feature = {
-  title: JSX.Element;
+  title: string;
   sources: {
     light: string,
     dark: string,
@@ -55,9 +55,7 @@ export type feature = {
 
 export const features: feature[] = [
   {
-    title: (
-      <Translate id="front.features.feat1.title">7-year programmer</Translate>
-    ),
+    title: "7-year programmer",
     sources: {
       light: "/img/frontpage/feature1.svg",
       dark: "/img/frontpage/feature1-dark.svg",
@@ -71,7 +69,7 @@ export const features: feature[] = [
     ),
   },
   {
-    title: <Translate id="front.features.feat2.title">STEM explorer</Translate>,
+    title: "STEM explorer",
     sources: {
       light: "/img/frontpage/feature2.svg",
       dark: "/img/frontpage/feature2-dark.svg",
@@ -94,7 +92,7 @@ export const features: feature[] = [
     ),
   },
   {
-    title: <Translate id="front.features.feat3.title">Keen debater</Translate>,
+    title: "Keen debater",
     sources: {
       light: "/img/frontpage/feature3.svg",
       dark: "/img/frontpage/feature3-dark.svg",

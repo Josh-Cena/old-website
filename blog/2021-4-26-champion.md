@@ -3,7 +3,7 @@ title: Champions league reached!
 author: Joshua Chen
 author_url: https://github.com/Josh-Cena
 author_image_url: https://avatars.githubusercontent.com/u/55398995?s=460&u=88dc0dcb0691877524dd8739db9fde7ed4fa9721&v=4
-tags: [general, game]
+tags: [general, recreation]
 ---
 
 **April 26, 2021**—after 1 year and 5 months since I started this game, I finally reached 6K (champions league) in _Clash Royale_.

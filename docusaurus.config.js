@@ -25,6 +25,15 @@ module.exports = {
   },
   plugins: [
     "@docusaurus/theme-live-codeblock",
+    [
+      "./src/plugins/plugin-blog-index",
+      {
+        blogSidebarCount: 'ALL',
+        blogSidebarTitle: 'All my posts',
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [[rehypeKatex, { strict: false }]],
+      },
+    ],
   ],
   themeConfig: {
     navbar: {
@@ -161,12 +170,7 @@ module.exports = {
           remarkPlugins: [remarkMath],
           rehypePlugins: [[rehypeKatex, { strict: false }]],
         },
-        blog: {
-          blogSidebarCount: 'ALL',
-          blogSidebarTitle: 'All my posts',
-          remarkPlugins: [remarkMath],
-          rehypePlugins: [[rehypeKatex, { strict: false }]],
-        },
+        blog: false,
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
