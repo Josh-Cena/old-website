@@ -10,3 +10,7 @@
   padding: 10pt;
   margin: 0 10pt 10pt 10pt;
 }
+
+html[data-theme="dark"] .out {
+  border: 1pt solid white;
+}
