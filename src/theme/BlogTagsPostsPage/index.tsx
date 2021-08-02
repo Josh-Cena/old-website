@@ -56,7 +56,7 @@ function BlogTagsPostPage(props: Props): JSX.Element {
         // assign unique search tag to exclude this page from search results!
         tag: 'blog_posts_list',
       }}>
-      <header className="margin-bottom--xl">
+      <header className="text--center margin-top--lg margin-bottom--xs">
         <h1>{title}</h1>
 
         <Link href={allTagsPath}>
