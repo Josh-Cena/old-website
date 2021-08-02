@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Caroline";
+  src: url("/Caroline.otf");
+}
+
+.out {
+  font-family: "Caroline", "serif";
+  font-size: 36pt;
+  border: 1pt solid black;
+  padding: 10pt;
+  margin: 0 10pt 10pt 10pt;
+}
