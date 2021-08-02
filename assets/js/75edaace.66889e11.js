@@ -1,0 +1,1 @@
+(self.webpackChunkpersonal_page=self.webpackChunkpersonal_page||[]).push([[1251],{6366:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"recreation","name":"recreation","count":2,"permalink":"/blog/tags/recreation"}')}}]);

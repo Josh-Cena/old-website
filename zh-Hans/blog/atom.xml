@@ -2,35 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://josh-cena.github.io/zh-Hans/blog</id>
     <title>Joshua Chen Blog</title>
-    <updated>2021-06-09T00:00:00.000Z</updated>
+    <updated>2021-08-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://josh-cena.github.io/zh-Hans/blog"/>
     <subtitle>Joshua Chen Blog</subtitle>
     <icon>https://josh-cena.github.io/zh-Hans/img/favicon/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Caroline: a script font]]></title>
-        <id>Caroline: a script font</id>
+        <title type="html"><![CDATA[Netease cloud music Level 10 reached!]]></title>
+        <id>Netease cloud music Level 10 reached!</id>
+        <link href="https://josh-cena.github.io/zh-Hans/blog/2021/08/05/music"/>
+        <updated>2021-08-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[aaa]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Caroline: 一种书法字体]]></title>
+        <id>Caroline: 一种书法字体</id>
         <link href="https://josh-cena.github.io/zh-Hans/blog/2021/06/09/font"/>
         <updated>2021-06-09T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[This font is developed by an Indonesian (Fatma Wati), and I just absolutely loved it. (FYI my personal server's hostname is Caroline as well. Caroline is truely a special name.)]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Interactive code block!]]></title>
-        <id>Interactive code block!</id>
+        <title type="html"><![CDATA[可交互代码框！]]></title>
+        <id>可交互代码框！</id>
         <link href="https://josh-cena.github.io/zh-Hans/blog/2021/05/06/codeblock"/>
         <updated>2021-05-06T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hey!]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Champions league reached!]]></title>
-        <id>Champions league reached!</id>
+        <title type="html"><![CDATA[到达冠军联赛了！]]></title>
+        <id>到达冠军联赛了！</id>
         <link href="https://josh-cena.github.io/zh-Hans/blog/2021/04/26/champion"/>
         <updated>2021-04-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[April 26, 2021—after 1 year and 5 months since I started this game, I finally reached 6K (champions league) in Clash Royale.]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Random thoughts on a new programming language]]></title>
-        <id>Random thoughts on a new programming language</id>
+        <title type="html"><![CDATA[关于设计一门新编程语言的一点想法]]></title>
+        <id>关于设计一门新编程语言的一点想法</id>
         <link href="https://josh-cena.github.io/zh-Hans/blog/2021/04/25/lang"/>
         <updated>2021-04-25T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[I'm just putting together some random thoughts that I wish to turn into a new programming language. These are notations I often use in comments for C++ algorithms. A lot of the syntax may have been realized by mathematical languages like Mathematica or Python.]]></summary>
