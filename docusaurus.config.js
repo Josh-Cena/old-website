@@ -1,5 +1,6 @@
 const remarkMath = require("remark-math");
 const rehypeKatex = require("rehype-katex");
+const path = require('path');
 
 module.exports = {
   title: "Joshua Chen",
@@ -26,10 +27,11 @@ module.exports = {
   plugins: [
     "@docusaurus/theme-live-codeblock",
     [
-      "./src/plugins/plugin-blog-index",
+      path.resolve(__dirname, './src/plugins/plugin-blog-index'),
       {
         blogSidebarCount: 'ALL',
         blogSidebarTitle: 'All my posts',
+        postsPerPage: 100,
         remarkPlugins: [remarkMath],
         rehypePlugins: [[rehypeKatex, { strict: false }]],
       },

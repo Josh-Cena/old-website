@@ -10,7 +10,10 @@ function BlogArchive({ metadata, items, sidebar }) {
     const { blogTitle, blogDescription, totalCount, time } = metadata;
     return (react_1.default.createElement(BlogLayout_1.default, { title: blogTitle, description: blogDescription, searchMetadatas: { tag: 'blog_posts_list' }, sidebar: sidebar },
         react_1.default.createElement("h1", null,
-            "All posts written ",
+            totalCount,
+            " post",
+            totalCount > 1 ? 's' : '',
+            " written ",
             time),
         react_1.default.createElement("ul", null, items.reverse().map(({ content }) => (react_1.default.createElement("li", null,
             content.metadata.formattedDate,

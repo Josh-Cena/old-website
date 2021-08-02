@@ -147,6 +147,9 @@
     "message": "跳到主要内容",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
+  "bloglist.title": {
+    "message": "Josh-Cena 的（秘密）博客"
+  },
   "front.heading3": {
     "message": "6K 之路"
   },

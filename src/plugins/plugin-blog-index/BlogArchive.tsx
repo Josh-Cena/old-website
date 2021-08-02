@@ -23,7 +23,7 @@ export default function BlogArchive({metadata, items, sidebar}: Props) {
       description={blogDescription}
       searchMetadatas={{tag: 'blog_posts_list'}}
       sidebar={sidebar}>
-      <h1>All posts written {time}</h1>
+      <h1>{totalCount} post{totalCount > 1 ? 's' : ''} written {time}</h1>
       <ul>
         {items.reverse().map(({content}) => (
           <li>
