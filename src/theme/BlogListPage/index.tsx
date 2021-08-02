@@ -36,7 +36,11 @@ function BlogListPage(props: Props): JSX.Element {
         // assign unique search tag to exclude this page from search results!
         tag: 'blog_posts_list',
       }}>
-      <h1 className="text--center margin-top--lg margin-bottom--xs"><Translate id="bloglist.title">Josh-Cena&rsquo;s (secret) blog</Translate></h1>
+      <h1 className="text--center margin-top--lg margin-bottom--xs">
+        <Translate id="bloglist.title">
+          Josh-Cena&rsquo;s (secret) blog
+        </Translate>
+      </h1>
       <main className={styles.wrapper}>
         <div className={styles.CardContainer}>
           {items.map(({content: BlogPostContent}) => (
