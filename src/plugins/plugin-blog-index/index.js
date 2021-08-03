@@ -37,6 +37,7 @@ function getTime(route) {
 const pluginBlogIndex = (context, options) => {
     const blogPluginInstance = lib_1.default(context, options);
     const { blogTitle, blogDescription, routeBasePath, } = options;
+    const { baseUrl } = context;
     return {
         ...blogPluginInstance,
         async contentLoaded({ content, allContent, actions }) {
@@ -58,7 +59,7 @@ const pluginBlogIndex = (context, options) => {
             const routes = Object.keys(postsByDate);
             await Promise.all(routes.map(async (route) => {
                 const items = postsByDate[route];
-                const permalink = `/${routeBasePath}/${route}`;
+                const permalink = utils_1.normalizeUrl([baseUrl, routeBasePath, route]);
                 const metadata = {
                     totalCount: items.length,
                     blogTitle,

@@ -15,9 +15,9 @@ function BlogArchive({ metadata, items, sidebar }) {
             totalCount > 1 ? 's' : '',
             " written ",
             time),
-        react_1.default.createElement("ul", null, items.reverse().map(({ content }) => (react_1.default.createElement("li", null,
-            content.metadata.formattedDate,
+        react_1.default.createElement("ul", null, items.reverse().map(({ content: { metadata: { formattedDate, permalink, title } } }) => (react_1.default.createElement("li", null,
+            formattedDate,
             " \u2014 ",
-            react_1.default.createElement(Link_1.default, { to: content.metadata.permalink }, content.metadata.title)))))));
+            react_1.default.createElement(Link_1.default, { to: permalink }, title)))))));
 }
 exports.default = BlogArchive;

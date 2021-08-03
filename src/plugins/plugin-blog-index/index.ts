@@ -1,28 +1,32 @@
 import pluginContentBlog, {
   validateOptions,
 } from "@docusaurus/plugin-content-blog/lib";
-import { docuHash } from "@docusaurus/utils";
-import type { BlogPost } from '@docusaurus/plugin-content-blog/src/types';
+import { docuHash, normalizeUrl } from "@docusaurus/utils";
+import type { BlogPost } from "@docusaurus/plugin-content-blog/src/types";
 
 function getTime(route: string) {
-  if (route.split('/').length === 1) {
+  if (route.split("/").length === 1) {
     return `in year ${route}`;
   }
-  if (route.split('/').length === 2) {
-    return `in ${new Date(route).toLocaleDateString("en", {month: "long", year: "numeric"})}`;
+  if (route.split("/").length === 2) {
+    return `in ${new Date(route).toLocaleDateString("en", {
+      month: "long",
+      year: "numeric",
+    })}`;
   }
-  if (route.split('/').length === 3) {
-    return `on ${new Date(route).toLocaleDateString("en", {month: "long", day: "numeric", year: "numeric"})}`;
+  if (route.split("/").length === 3) {
+    return `on ${new Date(route).toLocaleDateString("en", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    })}`;
   }
 }
 
 const pluginBlogIndex: typeof pluginContentBlog = (context, options) => {
   const blogPluginInstance = pluginContentBlog(context, options);
-  const {
-    blogTitle,
-    blogDescription,
-    routeBasePath,
-  } = options;
+  const { blogTitle, blogDescription, routeBasePath } = options;
+  const { baseUrl } = context;
 
   return {
     ...blogPluginInstance,
@@ -53,7 +57,7 @@ const pluginBlogIndex: typeof pluginContentBlog = (context, options) => {
       await Promise.all(
         routes.map(async (route) => {
           const items = postsByDate[route];
-          const permalink = `/${routeBasePath}/${route}`;
+          const permalink = normalizeUrl([baseUrl, routeBasePath, route]);
           const metadata = {
             totalCount: items.length,
             blogTitle,
@@ -67,7 +71,7 @@ const pluginBlogIndex: typeof pluginContentBlog = (context, options) => {
 
           addRoute({
             path: permalink,
-            component: '../src/plugins/plugin-blog-index/BlogArchive',
+            component: "../src/plugins/plugin-blog-index/BlogArchive",
             exact: true,
             modules: {
               sidebar:
