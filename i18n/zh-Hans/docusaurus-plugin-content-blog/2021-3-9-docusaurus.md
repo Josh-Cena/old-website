@@ -4,6 +4,7 @@ author: Joshua Chen
 author_url: https://github.com/Josh-Cena
 author_image_url: https://avatars.githubusercontent.com/u/55398995?s=460&u=88dc0dcb0691877524dd8739db9fde7ed4fa9721&v=4
 tags: [前端, 个人网页]
+image: /zh-Hans/img/blog/2021-3-9/docusaurus.png
 ---
 
 我在三月把这个网页迁移到了 Docusaurus。这篇博文总结了我的经历。

@@ -37,6 +37,12 @@ html[data-theme="dark"] .blogCard {
   box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.8);
 }
 
+.cardImg {
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
 .cardContent {
   margin: 20px;
 }

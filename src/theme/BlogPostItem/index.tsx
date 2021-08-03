@@ -104,6 +104,7 @@ function BlogPostItem(props: Props): JSX.Element {
     return (
       <div className={clsx("col col--4", styles.blogCard)}>
         <Seo {...{keywords, image}} />
+        {image && <img className={styles.cardImg} src={image} />}
         <div className={styles.cardContent}>
           {renderPostHeader()}
           <div className="markdown">
