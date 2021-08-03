@@ -78,17 +78,14 @@ const slides = [
       backgroundImage: "linear-gradient(rgb(69,26,24), rgb(95,36,33))",
     }}
   >
-    <h2
-      className={styles.slideHeading}
-      style={{color: "white"}}
-    >
+    <h2 className={styles.slideHeading} style={{ color: "white" }}>
       <Translate id="front.heading3">Road to 6K</Translate>
     </h2>
     <img src="/img/frontpage/CR_arena_blur.png" className={styles.bkgimg} />
     <div className={clsx(styles.button, styles.readMore)}>
       <Link
         className="button button--outline button--lg"
-        style={{color: "white"}}
+        style={{ color: "white" }}
         to="/blog/2021/04/26/champion"
       >
         <Translate id="front.readMore">Read more</Translate>
@@ -101,10 +98,7 @@ const slides = [
       backgroundColor: "rgb(64,116,225)",
     }}
   >
-    <h2
-      className={styles.slideHeading}
-      style={{color: "white"}}
-    >
+    <h2 className={styles.slideHeading} style={{ color: "white" }}>
       <Translate id="front.heading4">Thank you, UCloud!</Translate>
     </h2>
     <img src="/img/frontpage/UCloud_logo.svg" className={styles.bkgimg} />
@@ -119,7 +113,12 @@ const slides = [
   </div>,
 ];
 
-function Feature({ sources, title, description, key }: feature & { key: number }) {
+function Feature({
+  sources,
+  title,
+  description,
+  key,
+}: feature & { key: number }) {
   return (
     <div className={clsx("col col--4", styles.feature)}>
       <div className="text--center">
@@ -129,7 +128,9 @@ function Feature({ sources, title, description, key }: feature & { key: number }
           alt={title}
         />
       </div>
-      <h3><Translate id={`front.features.feat${key}.title`}>{title}</Translate></h3>
+      <h3>
+        <Translate id={`front.features.feat${key}.title`}>{title}</Translate>
+      </h3>
       <p>{description}</p>
     </div>
   );

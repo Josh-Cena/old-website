@@ -5,9 +5,7 @@ export const slides = [
   null,
   null,
   {
-    title: (
-      <Translate id="front.slides.slide3.title">Road to 6K</Translate>
-    ),
+    title: <Translate id="front.slides.slide3.title">Road to 6K</Translate>,
     subtitle: (
       <Translate id="front.slides.slide3.subtitle">
         Finally, the noob mega knight bait player...
@@ -25,7 +23,9 @@ export const slides = [
   },
   {
     title: (
-      <Translate id="front.slides.slide4.subtitle">Thank you, UCloud!</Translate>
+      <Translate id="front.slides.slide4.subtitle">
+        Thank you, UCloud!
+      </Translate>
     ),
     subtitle: (
       <Translate id="front.slides.slide4.subtitle">
@@ -42,13 +42,13 @@ export const slides = [
       backgroundColor: "rgb(64,116,225)",
     },
   },
-]
+];
 
 export type feature = {
   title: string;
   sources: {
-    light: string,
-    dark: string,
+    light: string;
+    dark: string;
   };
   description: JSX.Element;
 };

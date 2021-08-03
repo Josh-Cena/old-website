@@ -56,7 +56,10 @@ function Main({ handler, list }: MainProps) {
         </Select>
       </div>
       <a
-        className={clsx("button button--outline button--secondary", styles.downloadLink)}
+        className={clsx(
+          "button button--outline button--secondary",
+          styles.downloadLink
+        )}
         href={`data:text/json;charset=utf-8,${encodeURIComponent(
           JSON.stringify(list)
         )}`}
