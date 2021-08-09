@@ -47,7 +47,20 @@ module.exports = {
       },
       items: [
         { to: "CV", label: "Profile", position: "left" },
-        { to: "Todo", label: "Todo list", position: "left" },
+        {
+          label: 'Tools',
+          position: 'left',
+          items: [
+            {
+              label: 'Todo list',
+              to: 'todo',
+            },
+            {
+              label: 'Color converter',
+              to: 'colorconvert',
+            },
+          ],
+        },
         {
           to: "docs/about",
           activeBasePath: "docs",
@@ -57,11 +70,6 @@ module.exports = {
         { to: "blog", label: "Blog", position: "left" },
         {
           type: "localeDropdown",
-          position: "right",
-        },
-        {
-          href: "https://github.com/Josh-Cena",
-          label: "GitHub",
           position: "right",
         },
       ],
