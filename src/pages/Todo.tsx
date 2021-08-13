@@ -9,9 +9,9 @@ import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import Translate from "@docusaurus/Translate";
 
 import styles from "./todo.module.css";
-import Item from "@site/src/components/TodoCard";
-import NewItem from "@site/src/components/NewTodo";
-import { todoItem, UpdateHandler } from "@site/src/data/todoData";
+import Item from "../components/TodoCard";
+import NewItem from "../components/NewTodo";
+import { todoItem, UpdateHandler } from "../data/todoData";
 
 interface MainProps {
   handler: UpdateHandler;

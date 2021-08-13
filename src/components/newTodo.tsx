@@ -21,7 +21,7 @@ import {
 import Translate from "@docusaurus/Translate";
 
 import styles from "./NewTodo.module.css";
-import { myDate, UpdateHandler } from "@site/src/data/todoData";
+import { myDate, UpdateHandler } from "../data/todoData";
 
 const useStyles = makeStyles({
   root: {

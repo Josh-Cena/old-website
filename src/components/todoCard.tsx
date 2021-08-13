@@ -11,7 +11,7 @@ import Typography from "@material-ui/core/Typography";
 import Translate from "@docusaurus/Translate";
 
 import styles from "./TodoCard.module.css";
-import { todoItem, UpdateHandler } from "@site/src/data/todoData";
+import { todoItem, UpdateHandler } from "../data/todoData";
 
 const useStyles = makeStyles({
   root: {
