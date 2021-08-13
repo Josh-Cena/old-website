@@ -5,7 +5,7 @@ import Translate from "@docusaurus/Translate";
 
 import ColorConverter from '../components/ColorConverter';
 
-export default function Colorconvert() {
+export default function colorconvert() {
   return (
     <Layout
       title="Color converter"
@@ -14,7 +14,7 @@ export default function Colorconvert() {
       <main>
         <div className={clsx("container margin-vert--lg text--center")}>
           <h1>
-            <Translate id="colorConvert.title">Color converter</Translate>
+            <Translate id="colorConvert.title">Color converter [WIP]</Translate>
           </h1>
           <ColorConverter />
         </div>

@@ -8,9 +8,9 @@ import MenuItem from "@material-ui/core/MenuItem";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import Translate from "@docusaurus/Translate";
 
-import styles from "./Todo.module.css";
-import Item from "../components/todoCard";
-import NewItem from "../components/newTodo";
+import styles from "./todo.module.css";
+import Item from "../components/TodoCard";
+import NewItem from "../components/NewTodo";
 import { todoItem, UpdateHandler } from "../data/todoData";
 
 interface MainProps {
@@ -88,7 +88,7 @@ function Main({ handler, list }: MainProps) {
   );
 }
 
-export default function Todo() {
+export default function todo() {
   const [list, setList] = useState<todoItem[]>([]);
   useEffect(() => {
     const history = localStorage.getItem("jc_todolistData");

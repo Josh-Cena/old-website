@@ -4,9 +4,9 @@ import Layout from "@theme/Layout";
 import ThemedImage from "@theme/ThemedImage";
 import Translate from "@docusaurus/Translate";
 
-import styles from "./CV.module.css";
-import data from "../data/CVData";
-import Card from "../components/card";
+import styles from "./profile.module.css";
+import data from "../data/profileData";
+import Card from "../components/Card";
 
 export default function CV(): ReactElement {
   return (
@@ -34,6 +34,52 @@ export default function CV(): ReactElement {
                 items={section.items}
               />
             ))}
+          </div>
+          <div>
+            <h3>Random GitHub widgets</h3>
+            <div>
+              <a
+                href="https://sourcekarma.vercel.app/Josh-Cena"
+                target="_blank"
+                rel="noreferer noopener"
+              >
+                <img src="https://sourcekarma-og.vercel.app/api/Josh-Cena/github" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://github.com/anuraghazra/github-readme-stats"
+                target="_blank"
+                rel="noreferer noopener"
+              >
+                <ThemedImage
+                  alt="GitHub stats"
+                  sources={{
+                    light:
+                      "https://github-readme-stats.vercel.app/api?username=Josh-Cena&show_icons=true&title_color=39cac4&text_color=39cac4&icon_color=39cac4&bg_color=white&hide_border=true",
+                    dark:
+                      "https://github-readme-stats.vercel.app/api?username=Josh-Cena&show_icons=true&title_color=39cac4&text_color=39cac4&icon_color=39cac4&bg_color=ffffff17&hide_border=true",
+                  }}
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://github.com/ashutosh00710/github-readme-activity-graph"
+                target="_blank"
+                rel="noreferer noopener"
+              >
+                <ThemedImage
+                  alt="GitHub contribution"
+                  sources={{
+                    light:
+                      "https://activity-graph.herokuapp.com/graph?username=Josh-Cena&bg_color=white&color=39cac4&line=39cac4&hide_border=true",
+                    dark:
+                      "https://activity-graph.herokuapp.com/graph?username=Josh-Cena&bg_color=ffffff17&color=39cac4&line=39cac4&point=dddddd&hide_border=true",
+                  }}
+                />
+              </a>
+            </div>
           </div>
           <ul className={styles.links}>
             <li>

@@ -1,31 +1,24 @@
 const remarkMath = require("remark-math");
 const rehypeKatex = require("rehype-katex");
 const path = require('path');
+const i18nConfig = require('./config/i18n.config');
+const navbarConfig = require('./config/navbar.config');
+const footerConfig = require('./config/footer.config');
 
 module.exports = {
   title: "Joshua Chen",
   tagline: '"Zesty scholar"',
   url: "https://josh-cena.github.io",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
+  trailingSlash: true,
   favicon: "/img/favicon/favicon.ico",
   organizationName: "Josh-Cena",
   projectName: "Josh-Cena.github.io",
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en", "zh-Hans"],
-    localeConfigs: {
-      en: {
-        label: "English",
-      },
-      "zh-Hans": {
-        label: "中文",
-      },
-    },
-  },
+  i18n: i18nConfig,
+  themes: ["@docusaurus/theme-live-codeblock"],
   plugins: [
-    "@docusaurus/theme-live-codeblock",
     [
       path.resolve(__dirname, './src/plugins/plugin-blog-index'),
       {
@@ -38,104 +31,8 @@ module.exports = {
     ],
   ],
   themeConfig: {
-    navbar: {
-      title: "Josh-Cena",
-      logo: {
-        alt: "JC",
-        src: "/img/logo.svg",
-        srcDark: "/img/logo-dark.svg",
-      },
-      items: [
-        { to: "CV", label: "Profile", position: "left" },
-        {
-          label: 'Tools',
-          position: 'left',
-          items: [
-            {
-              label: 'Todo list',
-              to: 'todo',
-            },
-            {
-              label: 'Color converter',
-              to: 'colorconvert',
-            },
-          ],
-        },
-        {
-          to: "docs/about",
-          activeBasePath: "docs",
-          label: "Docs",
-          position: "left",
-        },
-        { to: "blog", label: "Blog", position: "left" },
-        {
-          type: "localeDropdown",
-          position: "right",
-        },
-      ],
-    },
-    footer: {
-      style: "dark",
-      links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Science",
-              to: "docs/Science/amino-acid",
-            },
-            {
-              label: "Technology",
-              to: "docs/Technology/easy-tsims",
-            },
-            {
-              label: "Humanities",
-              to: "docs/Humanities/law",
-            },
-            {
-              label: "Short stories",
-              to: "docs/Stories/red-pills",
-            },
-          ],
-        },
-        {
-          title: "Social",
-          items: [
-            {
-              label: "Zhihu",
-              href: "https://www.zhihu.com/people/joshcena",
-            },
-            {
-              label: "Discord",
-              href: "https://discord.gg/AU7X2HtnDK",
-            },
-            {
-              label: "LinkedIn",
-              href: "https://www.linkedin.com/in/sida-joshua-chen/",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/Josh-Cena",
-            },
-            {
-              label: "WeChat official account",
-              href:
-                "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwMzI0ODk0NA==&scene=124#wechat_redirect",
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Sida Chen. Built with Docusaurus.`,
-    },
+    navbar: navbarConfig,
+    footer: footerConfig,
     prism: {
       additionalLanguages: ["java", "php", "sql", "latex"],
       theme: require("prism-react-renderer/themes/github"),
@@ -187,5 +84,4 @@ module.exports = {
       },
     ],
   ],
-  onBrokenLinks: 'warn',
 };

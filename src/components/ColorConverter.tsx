@@ -30,7 +30,7 @@ function sanitizeCode(code: string) {
 
 type ModelType = "hex" | "rgb" | "hsl";
 type Display = Record<ModelType, string>;
-type ColorModel = [number, number, number, number?];
+type ColorModel = [number, number, number, number];
 
 export default function ColorConverter() {
   const [value, setValue] = useState("#39cac4");
@@ -40,8 +40,8 @@ export default function ColorConverter() {
     hsl: "hsl(177.5, 57.8%, 50.8%)",
   });
   const [valid, setValid] = useState(true);
-  const [RGBmodel, setRGBmodel] = useState<ColorModel>([57, 202, 196]);
-  const [HSLmodel, setHSLmodel] = useState<ColorModel>([177.5, 57.8, 50.8]);
+  const [RGBmodel, setRGBmodel] = useState<ColorModel>([57, 202, 196, 1]);
+  const [HSLmodel, setHSLmodel] = useState<ColorModel>([177.5, 57.8, 50.8, 1]);
   function updateDisplay(color: Color) {
     setDisplay({
       hex: color.hex(),
@@ -104,24 +104,33 @@ export default function ColorConverter() {
             .rgb()
             .array()
             .map((c, i) => {
-              const name = (["R", "G", "B"] as const)[i];
+              const name = (["R", "G", "B", "A"] as const)[i];
+              const max = [255, 255, 255, 1][i];
+              const [r, g, b] = Color(display.rgb).rgb().array();
+              const gradient = i === 0 ? `linear-gradient(90deg, rgb(0,${g},${b}), rgb(255,${g},${b}))` : i === 1 ? `linear-gradient(90deg, rgb(${r},0,${b}), rgb(${r},255,${b}))` : `linear-gradient(90deg, rgb(${r},${g},0), rgb(${r},${g},255))`;
               return (
-                <div style={{ display: "flex" }}>
-                  <div id={`slider-${name}`} style={{ marginRight: 8 }}>
-                    {name}
+                <div>
+                  <div style={{ display: "flex" }}>
+                    <div id={`slider-${name}`} style={{ marginRight: 8 }}>
+                      {name}
+                    </div>
+                    <div style={{ flexGrow: 100 }}>
+                      <Slider
+                        id={`slider-${name}`}
+                        key={i}
+                        value={c}
+                        min={0}
+                        max={max}
+                        onChange={(e, val) =>
+                          setRGBmodel(Object.assign([], RGBmodel, { [i]: val }))
+                        }
+                      />
+                    </div>
                   </div>
-                  <div style={{ flexGrow: 100 }}>
-                    <Slider
-                      id={`slider-${name}`}
-                      key={i}
-                      value={c}
-                      min={0}
-                      max={255}
-                      onChange={(e, val) =>
-                        setRGBmodel(Object.assign([], RGBmodel, { [i]: val }))
-                      }
-                    />
-                  </div>
+                  <div style={{
+                    height: 10,
+                    backgroundImage: gradient,
+                  }} />
                 </div>
               );
             })}
@@ -131,8 +140,10 @@ export default function ColorConverter() {
             .hsl()
             .array()
             .map((c, i) => {
-              const name = (["H", "S", "L"] as const)[i];
-              const max = [255, 100, 100][i];
+              const name = (["H", "S", "L", "A"] as const)[i];
+              const max = [359, 100, 100, 1][i];
+              const [h, s, l] = Color(display.hsl).hsl().array();
+              // const gradient = i === 0 ? `linear-gradient(90deg, rgb(0,${g},${b}), rgb(255,${g},${b}))` : i === 1 ? `linear-gradient(90deg, rgb(${r},0,${b}), rgb(${r},255,${b}))` : `linear-gradient(90deg, rgb(${r},${g},0), rgb(${r},${g},255))`;
               return (
                 <div style={{ display: "flex" }}>
                   <div style={{ flexGrow: 100 }}>
