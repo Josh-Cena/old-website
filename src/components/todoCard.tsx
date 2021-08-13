@@ -10,8 +10,8 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Translate from "@docusaurus/Translate";
 
-import styles from "./todoCard.module.css";
-import { todoItem, UpdateHandler } from "../data/todoData";
+import styles from "./TodoCard.module.css";
+import { todoItem, UpdateHandler } from "@site/src/data/todoData";
 
 const useStyles = makeStyles({
   root: {

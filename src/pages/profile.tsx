@@ -5,8 +5,8 @@ import ThemedImage from "@theme/ThemedImage";
 import Translate from "@docusaurus/Translate";
 
 import styles from "./profile.module.css";
-import data from "../data/profileData";
-import Card from "../components/Card";
+import data from "@site/src/data/profileData";
+import Card from "@site/src/components/Card";
 
 export default function CV(): ReactElement {
   return (

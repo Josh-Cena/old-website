@@ -3,6 +3,9 @@
   "include": ["src/"],
   "compilerOptions": {
     "target": "esnext",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "paths": {
+      "@site/*": ["./*"]
+    }
   },
 }

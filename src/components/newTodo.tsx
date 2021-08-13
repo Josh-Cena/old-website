@@ -20,8 +20,8 @@ import {
 } from "@material-ui/pickers";
 import Translate from "@docusaurus/Translate";
 
-import styles from "./newTodo.module.css";
-import { myDate, UpdateHandler } from "../data/todoData";
+import styles from "./NewTodo.module.css";
+import { myDate, UpdateHandler } from "@site/src/data/todoData";
 
 const useStyles = makeStyles({
   root: {
@@ -42,7 +42,7 @@ type ntodoProps = {
 
 export default function NewTodo({ handler }: ntodoProps): ReactElement {
   const classes = useStyles();
-  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
+  const { isDarkTheme } = useThemeContext();
   const theme = createMuiTheme({
     palette: {
       type: isDarkTheme ? "dark" : "light",

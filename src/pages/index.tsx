@@ -21,7 +21,7 @@ import {
 import Translate from "@docusaurus/Translate";
 
 import styles from "./styles.module.css";
-import { features, feature } from "../data/frontpageData";
+import { features, feature } from "@site/src/data/frontpageData";
 
 const slides = [
   <header
@@ -36,7 +36,7 @@ const slides = [
           className={clsx(
             "button button--outline button--secondary button--lg"
           )}
-          to="/CV/"
+          to="/profile/"
         >
           <Translate id="front.about">About me</Translate>
         </Link>

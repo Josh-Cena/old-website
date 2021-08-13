@@ -4,7 +4,7 @@ import TextField from "@material-ui/core/TextField";
 import Slider from "@material-ui/core/Slider";
 import Color from "color";
 
-import styles from "./Colorconverter.module.css";
+import styles from "./ColorConverter.module.css";
 
 function sanitizeCode(code: string) {
   try {

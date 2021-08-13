@@ -3,7 +3,7 @@ import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Translate from "@docusaurus/Translate";
 
-import ColorConverter from '../components/ColorConverter';
+import ColorConverter from '@site/src/components/ColorConverter';
 
 export default function colorconvert() {
   return (
