@@ -23,7 +23,7 @@ jobs:
       - run:
           name: Build Website
           command: |
-            ls .
+            tree .
             yarn build
       - persist_to_workspace:
           root: .
