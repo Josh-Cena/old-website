@@ -22,7 +22,9 @@ jobs:
           key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - run:
           name: Build Website
-          command: yarn build
+          command: |
+            ls .
+            yarn build
       - persist_to_workspace:
           root: .
           paths:
