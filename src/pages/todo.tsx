@@ -13,12 +13,11 @@ import Item from "../components/TodoCard";
 import NewItem from "../components/NewTodo";
 import { todoItem, UpdateHandler } from "../data/todoData";
 
-interface MainProps {
+
+function Main({ handler, list }: {
   handler: UpdateHandler;
   list: todoItem[];
-}
-
-function Main({ handler, list }: MainProps) {
+}) {
   const { isDarkTheme } = useThemeContext();
   const theme = createMuiTheme({
     palette: {

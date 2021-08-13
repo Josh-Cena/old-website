@@ -9,7 +9,7 @@ export default function colorconvert() {
   return (
     <Layout
       title="Color converter"
-      description="A color converter between different models; provides nice visualization"
+      description="A color converter between different models; provides nice visuals"
     >
       <main>
         <div className={clsx("container margin-vert--lg text--center")}>
