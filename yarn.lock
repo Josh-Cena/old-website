@@ -2686,6 +2686,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-dom@npm:^17.0.9":
+  version: 17.0.9
+  resolution: "@types/react-dom@npm:17.0.9"
+  dependencies:
+    "@types/react": "*"
+  checksum: 82da85bcfba524fb83946df50e433b8cc942dd30f5f3f6e0756816960ce4b85db6faa2da9f2b83124087fbe0d124580edf7b1017628b78fb28fee057e91512cb
+  languageName: node
+  linkType: hard
+
 "@types/react-helmet@npm:^6.1.0":
   version: 6.1.0
   resolution: "@types/react-helmet@npm:6.1.0"
@@ -9518,6 +9527,7 @@ fsevents@~2.3.1:
     "@tsconfig/docusaurus": ^1.0.2
     "@types/color": ^3.0.2
     "@types/react": ^17.0.3
+    "@types/react-dom": ^17.0.9
     "@types/react-helmet": ^6.1.0
     "@types/react-router-dom": ^5.1.7
     clsx: ^1.1.1
