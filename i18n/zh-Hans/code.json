@@ -150,6 +150,9 @@
   "bloglist.title": {
     "message": "Josh-Cena 的（秘密）博客"
   },
+  "front.title": {
+    "message": "Josh-Cena 的主页"
+  },
   "front.heading3": {
     "message": "6K 之路"
   },
@@ -376,5 +379,28 @@
   "theme.Playground.liveEditor": {
     "message": "实时编辑器",
     "description": "The live editor label of the live codeblocks"
+  },
+  "colorConvert.title": {
+    "message": "色彩转换器"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "展开侧边栏",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "展开侧边栏",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "{count} 篇文档带有标签",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} 含有标签「{tagName}」",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "选择版本",
+    "description": "The label for the navbar versions dropdown on mobile view"
   }
 }

@@ -15,9 +15,9 @@
   },
   "dependencies": {
     "@date-io/date-fns": "1.x",
-    "@docusaurus/core": "2.0.0-beta.4",
-    "@docusaurus/preset-classic": "2.0.0-beta.4",
-    "@docusaurus/theme-live-codeblock": "2.0.0-beta.4",
+    "@docusaurus/core": "0.0.0-3947",
+    "@docusaurus/preset-classic": "0.0.0-3947",
+    "@docusaurus/theme-live-codeblock": "0.0.0-3947",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
@@ -47,7 +47,7 @@
     ]
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.0.0-beta.4",
+    "@docusaurus/module-type-aliases": "0.0.0-3947",
     "@tsconfig/docusaurus": "^1.0.2",
     "@types/color": "^3.0.2",
     "@types/react": "^17.0.3",

@@ -3,7 +3,6 @@ import clsx from "clsx";
 import Layout from "@theme/Layout";
 import ThemedImage from "@theme/ThemedImage";
 import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import {
   CarouselProvider,
   Slider,
@@ -18,7 +17,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
-import Translate from "@docusaurus/Translate";
+import Translate, {translate} from "@docusaurus/Translate";
 
 import styles from "./styles.module.css";
 import { features, feature } from "../data/frontpageData";
@@ -117,8 +116,8 @@ function Feature({
   sources,
   title,
   description,
-  key,
-}: feature & { key: number }) {
+  index,
+}: feature & { index: number }) {
   return (
     <div className={clsx("col col--4", styles.feature)}>
       <div className="text--center">
@@ -129,7 +128,7 @@ function Feature({
         />
       </div>
       <h3>
-        <Translate id={`front.features.feat${key}.title`}>{title}</Translate>
+        <Translate id={`front.features.feat${index}.title`}>{title}</Translate>
       </h3>
       <p>{description}</p>
     </div>
@@ -137,11 +136,12 @@ function Feature({
 }
 
 export default function Home() {
-  const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
   const [buttonVisible, setButtonVisible] = useState(false);
   return (
-    <Layout title={`Hello from ${siteConfig.title}`}>
+    <Layout title={translate({
+      id: 'front.title',
+      message: 'Josh-Cena\'s homepage',
+    })}>
       <CarouselProvider
         className={styles.carousel}
         totalSlides={slides.length}
@@ -202,7 +202,7 @@ export default function Home() {
             <div className="container">
               <div className="row">
                 {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
+                  <Feature key={idx} index={idx} {...props} />
                 ))}
               </div>
             </div>
