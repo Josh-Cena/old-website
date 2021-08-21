@@ -1,1 +1,0 @@
-(self.webpackChunkpersonal_page=self.webpackChunkpersonal_page||[]).push([[8023],{6130:function(e){"use strict";e.exports=JSON.parse('{"totalCount":10,"blogTitle":"Blog","blogDescription":"Blog","time":"in year 2021"}')}}]);
