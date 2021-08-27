@@ -14,6 +14,7 @@ import {usePluralForm} from '@docusaurus/theme-common';
 import MDXComponents from '@theme/MDXComponents';
 import Seo from '@theme/Seo';
 import type {Props} from '@theme/BlogPostItem';
+import BlogPostAuthors from '@theme/BlogPostAuthors';
 
 import styles from './styles.module.css';
 
@@ -44,6 +45,7 @@ function BlogPostItem(props: Props): JSX.Element {
     frontMatter,
     metadata,
     truncated,
+    assets,
     isBlogPostPage = false,
   } = props;
   const {
@@ -53,13 +55,9 @@ function BlogPostItem(props: Props): JSX.Element {
     tags,
     readingTime,
     title,
+    authors,
   } = metadata;
-  const {author, image, keywords} = frontMatter;
-
-  const authorURL = frontMatter.author_url || frontMatter.authorURL;
-  const authorTitle = frontMatter.author_title || frontMatter.authorTitle;
-  const authorImageURL =
-    frontMatter.author_image_url || frontMatter.authorImageURL;
+  const {image, keywords} = frontMatter;
 
   const renderPostHeader = () => {
     const TitleHeading = isBlogPostPage ? 'h1' : 'h2';
@@ -79,23 +77,7 @@ function BlogPostItem(props: Props): JSX.Element {
             </>
           )}
         </div>
-        {isBlogPostPage && <div className="avatar margin-vert--md">
-          {authorImageURL && (
-            <Link className="avatar__photo-link avatar__photo" href={authorURL}>
-              <img src={authorImageURL} alt={author} />
-            </Link>
-          )}
-          <div className="avatar__intro">
-            {author && (
-              <>
-                <div className="avatar__name">
-                  <Link href={authorURL}>{author}</Link>
-                </div>
-                <small className="avatar__subtitle">{authorTitle}</small>
-              </>
-            )}
-          </div>
-        </div>}
+        {isBlogPostPage && <BlogPostAuthors authors={authors} assets={assets} />}
       </header>
     );
   };
