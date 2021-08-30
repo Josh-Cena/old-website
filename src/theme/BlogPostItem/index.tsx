@@ -10,11 +10,13 @@ import clsx from 'clsx';
 import {MDXProvider} from '@mdx-js/react';
 import Translate, {translate} from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
+import {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
 import {usePluralForm} from '@docusaurus/theme-common';
 import MDXComponents from '@theme/MDXComponents';
 import Seo from '@theme/Seo';
 import type {Props} from '@theme/BlogPostItem';
 import BlogPostAuthors from '@theme/BlogPostAuthors';
+import TagsListInline from '@theme/TagsListInline';
 
 import styles from './styles.module.css';
 
@@ -58,17 +60,18 @@ function BlogPostItem(props: Props): JSX.Element {
     authors,
   } = metadata;
   const {image, keywords} = frontMatter;
+  const {withBaseUrl} = useBaseUrlUtils();
 
   const renderPostHeader = () => {
     const TitleHeading = isBlogPostPage ? 'h1' : 'h2';
 
     return (
       <header>
-        <TitleHeading className={clsx(styles.blogPostTitle, {[styles.smallTitle]: !isBlogPostPage})}>
+        <TitleHeading className={clsx(styles.blogPostTitle, {[styles.smallTitle]: !isBlogPostPage})} itemProp="headline">
           {isBlogPostPage ? title : <Link to={permalink}>{title}</Link>}
         </TitleHeading>
         <div className={clsx(styles.blogPostData, 'margin-vert--md')}>
-          <time dateTime={date}>{formattedDate}</time>
+          <time dateTime={date} itemProp="datePublished">{formattedDate}</time>
 
           {readingTime && (
             <>
@@ -84,9 +87,13 @@ function BlogPostItem(props: Props): JSX.Element {
 
   if (!isBlogPostPage) {
     return (
-      <div className={clsx("col col--4", styles.blogCard)}>
+      <div
+        className={clsx("col col--4", styles.blogCard)}
+        itemProp="blogPost"
+        itemScope
+        itemType="http://schema.org/BlogPosting">
         <Seo {...{keywords, image}} />
-        {image && <img className={styles.cardImg} src={image} />}
+        {image && <img itemProp="image" className={styles.cardImg} src={image} />}
         <div className={styles.cardContent}>
           {renderPostHeader()}
           <div className="markdown">
@@ -106,22 +113,8 @@ function BlogPostItem(props: Props): JSX.Element {
             )}
           </div>
           {tags.length > 0 && (
-            <div className="margin-top--md">
-              <b>
-                <Translate
-                  id="theme.tags.tagsListLabel"
-                  description="The label alongside a tag list">
-                  Tags:
-                </Translate>
-              </b>
-                {tags.map(({label, permalink: tagPermalink}) => (
-                  <Link
-                    key={tagPermalink}
-                    className={clsx("pills__item", styles.tag)}
-                    to={tagPermalink}>
-                    {label}
-                  </Link>
-                ))}
+            <div className={'col col--9 margin-top--md'}>
+              <TagsListInline tags={tags} />
             </div>
           )}
         </div>
@@ -133,8 +126,14 @@ function BlogPostItem(props: Props): JSX.Element {
     <>
       <Seo {...{keywords, image}} />
 
-      <article>
+      <article
+        itemProp="blogPost"
+        itemScope
+        itemType="http://schema.org/BlogPosting">
         {renderPostHeader()}
+        {image && (
+          <meta itemProp="image" content={withBaseUrl(image, {absolute: true})} />
+        )}
         <div className="markdown">
           <MDXProvider components={MDXComponents}>{children}</MDXProvider>
         </div>
@@ -142,22 +141,8 @@ function BlogPostItem(props: Props): JSX.Element {
           <footer
             className={clsx('row docusaurus-mt-lg', styles.blogPostDetailsFull)}>
             {tags.length > 0 && (
-              <div className="col">
-                <b>
-                  <Translate
-                    id="theme.tags.tagsListLabel"
-                    description="The label alongside a tag list">
-                    Tags:
-                  </Translate>
-                </b>
-                {tags.map(({label, permalink: tagPermalink}) => (
-                  <Link
-                    key={tagPermalink}
-                    className="margin-horiz--sm"
-                    to={tagPermalink}>
-                    {label}
-                  </Link>
-                ))}
+              <div className={'col'}>
+                <TagsListInline tags={tags} />
               </div>
             )}
           </footer>
