@@ -48,9 +48,10 @@ jobs:
           at: .
       - run:
           name: Deploy to GitHub Pages
-          command: GIT_USER=Josh-Cena yarn run deploy
+          command: yarn deploy
           # Set environment variables so that project is deployed correctly
           environment:
+            GIT_USER: Josh-Cena 
             ORGANIZATION_NAME: Josh-Cena
             PROJECT_NAME: Josh-Cena.github.io
             DEPLOYMENT_BRANCH: master
