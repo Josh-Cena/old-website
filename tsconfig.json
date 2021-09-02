@@ -1,11 +1,3 @@
 {
-  "extends": "@tsconfig/docusaurus/tsconfig.json",
-  "include": ["src/"],
-  "compilerOptions": {
-    "target": "esnext",
-    "moduleResolution": "node",
-    "paths": {
-      "@site/*": ["./*"]
-    }
-  },
+  "extends": "@tsconfig/docusaurus/tsconfig.json"
 }
