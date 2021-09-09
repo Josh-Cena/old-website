@@ -1,6 +1,5 @@
 const remarkMath = require("remark-math");
 const rehypeKatex = require("rehype-katex");
-const path = require('path');
 const i18nConfig = require('./config/i18n.config');
 const navbarConfig = require('./config/navbar.config');
 const footerConfig = require('./config/footer.config');
@@ -20,7 +19,7 @@ module.exports = {
   themes: ["@docusaurus/theme-live-codeblock"],
   plugins: [
     [
-      path.resolve(__dirname, './src/plugins/plugin-blog-index'),
+      'plugin-blog-index',
       {
         blogSidebarCount: 'ALL',
         blogSidebarTitle: 'All my posts',

@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "removeComments": true,
+    "noEmit": false,
+    "rootDir": "src",
+    "outDir": "lib",
+    // Docusaurus libs error more often than not
+    "skipLibCheck": true
+  }
+}

@@ -3,6 +3,7 @@ import pluginContentBlog, {
 } from "@docusaurus/plugin-content-blog/lib";
 import { docuHash, normalizeUrl } from "@docusaurus/utils";
 import type { BlogPost } from "@docusaurus/plugin-content-blog/src/types";
+import path from 'path';
 
 function getTime(route: string) {
   if (route.split("/").length === 1) {
@@ -30,6 +31,9 @@ const pluginBlogIndex: typeof pluginContentBlog = (context, options) => {
 
   return {
     ...blogPluginInstance,
+    getThemePath() {
+      return path.resolve(__dirname, './theme');
+    },
     async contentLoaded({ content, allContent, actions }) {
       const { blogPosts } = content;
       const { addRoute, createData } = actions;
@@ -71,7 +75,7 @@ const pluginBlogIndex: typeof pluginContentBlog = (context, options) => {
 
           addRoute({
             path: permalink,
-            component: "../src/plugins/plugin-blog-index/BlogArchive",
+            component: "@theme/BlogArchive",
             exact: true,
             modules: {
               sidebar:
