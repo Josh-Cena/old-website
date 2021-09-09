@@ -7,8 +7,6 @@
     "removeComments": true,
     "noEmit": false,
     "rootDir": "src",
-    "outDir": "lib",
-    // Docusaurus libs error more often than not
-    "skipLibCheck": true
+    "outDir": "lib"
   }
 }
