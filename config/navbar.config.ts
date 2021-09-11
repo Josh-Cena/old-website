@@ -1,4 +1,5 @@
-module.exports = {
+// TODO: Docusaurus doesn't provide a good navbar type yet
+const navbar = {
   title: "Josh-Cena",
   logo: {
     alt: "JC",
@@ -34,3 +35,5 @@ module.exports = {
     },
   ],
 };
+
+export = navbar;

@@ -1,4 +1,6 @@
-module.exports = {
+import type { I18nConfig } from '@docusaurus/types';
+
+const i18n: I18nConfig = {
   defaultLocale: "en",
   locales: ["en", "zh-Hans"],
   localeConfigs: {
@@ -10,3 +12,5 @@ module.exports = {
     },
   },
 };
+
+export = i18n;

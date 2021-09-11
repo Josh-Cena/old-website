@@ -1,4 +1,6 @@
-module.exports = {
+import type { Footer } from '@docusaurus/theme-common';
+
+const footer: Footer = {
   style: "dark",
   links: [
     {
@@ -60,3 +62,5 @@ module.exports = {
   ],
   copyright: `Copyright © ${new Date().getFullYear()} Sida Chen. Built with Docusaurus.`,
 };
+
+export = footer;

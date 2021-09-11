@@ -15,7 +15,7 @@ jobs:
             - yarn-packages-v1-
       - run:
           name: Install dependencies
-          command: yarn install || true # Temporary until TS errors are fixed in Docusaurus
+          command: yarn install
       - save_cache:
           paths:
             - ~/.cache/yarn
@@ -37,7 +37,7 @@ jobs:
             - yarn-packages-v1-
       - run:
           name: Install dependencies
-          command: yarn install || true # Temporary until TS errors are fixed in docusaurusu
+          command: yarn install
       - save_cache:
           paths:
             - ~/.cache/yarn
@@ -53,7 +53,6 @@ jobs:
       - run:
           name: Deploy to GitHub Pages
           command: yarn deploy
-          # Set environment variables so that project is deployed correctly
           environment:
             GIT_USER: Josh-Cena 
             ORGANIZATION_NAME: Josh-Cena

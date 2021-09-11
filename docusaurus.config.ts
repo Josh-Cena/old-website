@@ -1,10 +1,11 @@
-const remarkMath = require("remark-math");
-const rehypeKatex = require("rehype-katex");
-const i18nConfig = require('./config/i18n.config');
-const navbarConfig = require('./config/navbar.config');
-const footerConfig = require('./config/footer.config');
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+import i18nConfig from './config/i18n.config';
+import navbarConfig from './config/navbar.config';
+import footerConfig from './config/footer.config';
+import {DocusaurusConfig} from '@docusaurus/types';
 
-module.exports = {
+const config: Partial<DocusaurusConfig> = {
   title: "Joshua Chen",
   tagline: '"Zesty scholar"',
   url: "https://josh-cena.github.io",
@@ -72,7 +73,7 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve("./sidebars.config.js"),
           remarkPlugins: [remarkMath],
           rehypePlugins: [[rehypeKatex, { strict: false }]],
         },
@@ -84,3 +85,5 @@ module.exports = {
     ],
   ],
 };
+
+export = config;

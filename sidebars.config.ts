@@ -1,4 +1,6 @@
-const autoCategory = (dirName, label = dirName) => {
+// import type {UnprocessedSidebars} from '@docusaurus/plugin-content-docs/lib/types';
+
+const autoCategory = (dirName: string, label = dirName) => {
   return {
     type: "category",
     label,
@@ -11,7 +13,8 @@ const autoCategory = (dirName, label = dirName) => {
   };
 };
 
-module.exports = {
+// TODO: Sidebar type is not working well
+const sidebar = {
   docs: [
     "about",
     {
@@ -36,3 +39,5 @@ module.exports = {
     }
   ],
 };
+
+export = sidebar;
