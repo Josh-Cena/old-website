@@ -48,8 +48,6 @@ jobs:
             git config --global user.email "sidachen2003@gmail.com"
             git config --global user.name "Josh-Cena"
             echo "machine github.com login Josh-Cena password $GITHUB_PA_TOKEN" > ~/.netrc
-      - attach_workspace:
-          at: .
       - run:
           name: Deploy to GitHub Pages
           command: yarn deploy
