@@ -31,7 +31,10 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 对于计算机系统来说，二进制是最便于处理的，因为每一个数字都能和一条线路的高电平-低电平对应；而相对地，其它进制就会复杂不少，因为对输出与识别的精度要求提高了。不过据我了解，前苏联曾研制过一种叫做 Сетунь 的三进制计算机[^1]，实际上更加接近人类的逻辑，还能够提高运算效率（而另据参考，越接近 e 进制，效率就越高[^2]）。
 
-<Figure src="https://pic2.zhimg.com/80/v2-6e87f23acece22d6fb10cd87abe851b5_720w.jpg">1959 年时的“Сетунь”，来自[http://www.wyzxwk.com/Article/lishi/2011/09/254852.html](http://www.wyzxwk.com/Article/lishi/2011/09/254852.html)</Figure>
+<Figure src="https://pic2.zhimg.com/80/v2-6e87f23acece22d6fb10cd87abe851b5_720w.jpg">
+  1959
+  年时的“Сетунь”，来自[http://www.wyzxwk.com/Article/lishi/2011/09/254852.html](http://www.wyzxwk.com/Article/lishi/2011/09/254852.html)
+</Figure>
 
 _（以上部分道听途说消息并非重点，请勿太过在意）_
 
@@ -69,7 +72,9 @@ _（以上部分道听途说消息并非重点，请勿太过在意）_
 | 8        | 00  | 08  | 10  | 18  | 20  | 28  | 30  | 38  | 40  | 48  |
 | 9        | 00  | 09  | 12  | 1B  | 24  | 2D  | 36  | 3F  | 48  | 51  |
 
-<p style={{textAlign: 'center', color: 'gray', fontSize: 'small'}}>十六进制下的九九乘法表，是否有一种别样的简洁之美？(并没有)</p>
+<p style={{ textAlign: 'center', color: 'gray', fontSize: 'small' }}>
+  十六进制下的九九乘法表，是否有一种别样的简洁之美？(并没有)
+</p>
 
 用数学一点的定义，对于$n$进制表示的$m$位整数$(\overline{d_{m-1}d_{m-2}...d_0})_n,\,d\in\mathbb{Z}_n$，每一位都有一个确定的权值，因此可以用位权展开式表示为：$\displaystyle\sum_{i=0}^md_i\cdot n^i$；比如，十进制数$19163=1\times10^4+9\times10^3+1\times10^2+6\times10^1+3\times10^0$；再比如，二进制数$(11001)_2=1\times2^4+1\times2^3+0\times2^2+0\times2^1+1\times2^0$，也就是 25。这样，我们只需解一个方程，就一定可以完成进制的转换。（至于更简单的方法，可以在这里了解：[6、计算机进制之二进制、十进制、十六进制之间的转换](https://baijiahao.baidu.com/s?id=1621423277747819472|wfr=spider|for=pc)）
 
@@ -104,7 +109,9 @@ _（以上部分道听途说消息并非重点，请勿太过在意）_
 | 8      | 1000 | 1011 | 1110 | 1110 | 1011   |
 | 9      | 1001 | 1100 | 1111 | 1111 | 1100   |
 
-<p style={{textAlign: 'center', color: 'gray', fontSize: 'small'}}>各类 BCD 码转换表，其中5211码的实现不唯一</p>
+<p style={{ textAlign: 'center', color: 'gray', fontSize: 'small' }}>
+  各类 BCD 码转换表，其中5211码的实现不唯一
+</p>
 
 第二种是**格雷码**，或循环码。它表示的数值+1 时，只会改变循环码的一个数位，而不像二进制码下因进位而改变若干数位：比如从 7 到 8，二进制码要同时改变四位，而格雷码只会变一位。
 
@@ -119,7 +126,7 @@ _（以上部分道听途说消息并非重点，请勿太过在意）_
 | 6      | 0101   | 14     | 1001   |
 | 7      | 0100   | 15     | 1000   |
 
-<p style={{textAlign: 'center', color: 'gray', fontSize: 'small'}}>格雷码转换表</p>
+<p style={{ textAlign: 'center', color: 'gray', fontSize: 'small' }}>格雷码转换表</p>
 
 格雷码的转换原则如下：
 
@@ -152,8 +159,7 @@ $\underbrace{d_{\mathrm{sign}}}_{符号位}\underbrace{\overline{d_{m-1}d_{m-2}.
 
 回到 13-2 的问题。因为 13 和 2 都能用四位二进制数表示，所以我们取$n=4$，得到-2 的补码为 16-2=14，即 1 1110（符号位是判断究竟表示正还是负的基础，不能变）。然后再做加法运算：0 1101+1 1110=(1)0 1011。舍弃掉进位，就得到了 0 1011，即+11。通过补码，成功把减法转化为了加法。既然每次要做关于负数的运算都要有这样的变换，那何不计算时就用补码作为负数的表达形式？（存储时仍可使用直接添加符号位的方法）
 
-用一个字节能表示的所有有符号整数，即编程中的 byte 类型数据
-但是，上面得到的这么多数，都是一个个老老实实用 128 减去原数得到的吗？其实还有一种简单的方法，即先将所有数字位取反——0 变 1，1 变 0——再加上 1。
+用一个字节能表示的所有有符号整数，即编程中的 byte 类型数据但是，上面得到的这么多数，都是一个个老老实实用 128 减去原数得到的吗？其实还有一种简单的方法，即先将所有数字位取反——0 变 1，1 变 0——再加上 1。
 
 为了证明$1000\,0000-\overline{b_7b_6...b_0}=\overline{b_7'b_6'...b_0'}+1$，我们只需注意到，因为$b_n$和$b_n'$永远一个为 0，一个为 1，所以$\overline{b_7b_6...b_0}+\overline{b_7'b_6'...b_0'}=0111\,1111$。移项，然后等号两边同时+1 即可。
 
@@ -171,7 +177,13 @@ $x=a\times 2^m$
 
 1985 年，IEEE（Institute of Electrical and Electronics Engineers，美国电气和电子工程师协会）首次制定了统一的浮点数（可以简单地理解成”小数点位置可以移动的数“）表示规范，最新的 IEEE754-2019 规范中，主要有单精度与双精度两种形式，分别占用两个字节和四个字节；一个数又可以分为 Sign（符号），exponent（指数）和 mantissa（尾数）三部分。具体规范如下（方括号表示比特位）：
 
-<Figure src="https://pic3.zhimg.com/80/v2-9690ba1e6fdf6c1333f90e305447ff62_720w.jpg">来源：<a href="https://www.cnblogs.com/german-iris/p/5759557.html">https://www.cnblogs.com/german-iris/p/5759557.html</a>，此博客也提供了详细的浮点值处理方法</Figure>
+<Figure src="https://pic3.zhimg.com/80/v2-9690ba1e6fdf6c1333f90e305447ff62_720w.jpg">
+  来源：
+  <a href="https://www.cnblogs.com/german-iris/p/5759557.html">
+    https://www.cnblogs.com/german-iris/p/5759557.html
+  </a>
+  ，此博客也提供了详细的浮点值处理方法
+</Figure>
 
 而更详细的浮点数计算、赋值等规范，在此时就不是那么重要了。
 
@@ -181,7 +193,9 @@ $x=a\times 2^m$
 
 随着计算机交互的兴起，如何传递文字也成了亟待解决的问题。于是，60 年代，美国率先制定了以拉丁字母为基础的 ASCII（美国信息交换标准代码）表——它的理念很简单，只要把常用字符都用二进制表达，然后让双方计算机都认可这一协议规范即可。表格如下：
 
-<Figure src="https://pic2.zhimg.com/80/v2-7150b4417cd849b2a00292c4f4d26ac9_720w.jpg">来自百度百科 ASCII 词条，有编辑</Figure>
+<Figure src="https://pic2.zhimg.com/80/v2-7150b4417cd849b2a00292c4f4d26ac9_720w.jpg">
+  来自百度百科 ASCII 词条，有编辑
+</Figure>
 
 ASCII 使用了一个字节中的七个 bit，最高位留空。
 

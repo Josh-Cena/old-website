@@ -1,4 +1,4 @@
-import uuid from "uuid/v4";
+import uuid from 'uuid/v4';
 
 export type todoItem = {
   id: string;
@@ -20,16 +20,16 @@ export class myDate {
     this.day = now.getDate();
   }
 
-  toDate() {
+  toDate(): Date {
     return new Date(this.year, this.month - 1, this.day);
   }
 }
 
 function compare(sortBy: string): (a: todoItem, b: todoItem) => number {
   switch (sortBy) {
-    case "name":
+    case 'name':
       return (a, b) => (a.name >= b.name ? 1 : -1);
-    case "deadline":
+    case 'deadline':
       return (a, b) => {
         const da = a.deadline,
           db = b.deadline;
@@ -39,7 +39,7 @@ function compare(sortBy: string): (a: todoItem, b: todoItem) => number {
             : da.month - db.month
           : da.year - db.year;
       };
-    case "priority":
+    case 'priority':
       return (a, b) => b.priority - a.priority;
   }
 }
@@ -52,38 +52,34 @@ export class UpdateHandler {
   constructor(list: todoItem[], setList: (l: todoItem[]) => void) {
     this.list = list;
     this.setList = setList;
-    this.sortBy = "priority";
+    this.sortBy = 'priority';
   }
 
-  toggle(item: todoItem) {
-    this.setList(
-      this.list.map((el) =>
-        el.id === item.id ? { ...el, done: !item.done } : el
-      )
-    );
+  toggle(item: todoItem): void {
+    this.setList(this.list.map((el) => (el.id === item.id ? { ...el, done: !item.done } : el)));
   }
 
-  remove(item: todoItem) {
+  remove(item: todoItem): void {
     this.setList(this.list.filter((el) => el.id !== item.id));
   }
 
-  setPriority(item: todoItem, value: number) {
-    const nlist = this.list.map((el) =>
-      el.id === item.id ? { ...el, priority: value } : el
-    );
+  setPriority(item: todoItem, value: number): void {
+    const nlist = this.list.map((el) => (el.id === item.id ? { ...el, priority: value } : el));
     nlist.sort(compare(this.sortBy));
     this.setList(nlist);
   }
 
-  rename(item: todoItem) {}
+  rename(item: todoItem): void {
+    // TODO
+  }
 
-  addItem(title: string, deadline: myDate, priority: number) {
+  addItem(title: string, deadline: myDate, priority: number): void {
     const nlist = this.list.concat([
       {
         id: uuid(),
         name: title,
-        priority: priority,
-        deadline: deadline,
+        priority,
+        deadline,
         done: false,
       },
     ]);
@@ -91,7 +87,7 @@ export class UpdateHandler {
     this.setList(nlist);
   }
 
-  update() {
+  update(): void {
     const nlist = [...this.list];
     nlist.sort(compare(this.sortBy));
     this.setList(nlist);

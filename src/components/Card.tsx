@@ -1,7 +1,7 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement } from 'react';
 
-import styles from "./Card.module.css";
-import type { section } from "../data/profileData";
+import styles from './Card.module.css';
+import type { section } from '../data/profileData';
 
 export default function Card({ sectionHead, items }: section): ReactElement {
   return (

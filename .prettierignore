@@ -1,0 +1,7 @@
+lib
+node_modules
+.yarn
+build
+coverage
+.docusaurus
+*.config.js

@@ -1,13 +1,13 @@
 // TODO: Docusaurus doesn't provide a good navbar type yet
 const navbar = {
-  title: "Josh-Cena",
+  title: 'Josh-Cena',
   logo: {
-    alt: "JC",
-    src: "/img/logo.svg",
-    srcDark: "/img/logo-dark.svg",
+    alt: 'JC',
+    src: '/img/logo.svg',
+    srcDark: '/img/logo-dark.svg',
   },
   items: [
-    { to: "profile", label: "Profile", position: "left" },
+    { to: 'profile', label: 'Profile', position: 'left' },
     {
       label: 'Tools',
       position: 'left',
@@ -23,15 +23,15 @@ const navbar = {
       ],
     },
     {
-      type: "doc",
-      label: "Docs",
-      docId: "about",
-      position: "left",
+      type: 'doc',
+      label: 'Docs',
+      docId: 'about',
+      position: 'left',
     },
-    { to: "blog", label: "Blog", position: "left" },
+    { to: 'blog', label: 'Blog', position: 'left' },
     {
-      type: "localeDropdown",
-      position: "right",
+      type: 'localeDropdown',
+      position: 'right',
     },
   ],
 };

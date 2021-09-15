@@ -20,16 +20,14 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 <Figure src="/zh-Hans/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiaqkcjqa8v3oTdqJXYbdqVZFJa3cn2NcEe9UD8UW7QK7ibBalMUReM7uQ.png"></Figure>
 
-:::note TL; DR
-此插件的功能包括：
+:::note TL; DR 此插件的功能包括：
 
 ✔️ 显示隐藏的页面入口；  
 ✔️ 根据页面内容修改标签名字；  
 ✔️ 更人性化的 CAS 活动记录填写界面；  
 ✔️ （奇怪的）站名修改
 
-目前，你可以在 https://github.com/Josh-Cena/Easy-TSIMS 下载这个插件和它的源代码，点击 "↓ Code" > "Download ZIP" 即可。下载后，你既可以添加封装好的 `.crx` 文件，也可以添加整个 `extension` 文件夹。至于在 chrome webstore 上线，则可能要等到项目做足准备之后。
-:::
+目前，你可以在 https://github.com/Josh-Cena/Easy-TSIMS 下载这个插件和它的源代码，点击 "↓ Code" > "Download ZIP" 即可。下载后，你既可以添加封装好的 `.crx` 文件，也可以添加整个 `extension` 文件夹。至于在 chrome webstore 上线，则可能要等到项目做足准备之后。 :::
 
 接下来，大概讲讲插件的开发过程和功能内容。
 
@@ -45,7 +43,9 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 实现的方法是一个 content script。它会在加载页面时，搜索导航栏中所有包含 `style` 的元素，然后把 `style` 修改为“浅灰色”。启用插件后，效果如下：
 
-<Figure src="/zh-Hans/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiamBqmkQMs0xw9DDK4Naz9LQIf4TXZHcnRRrAdibh46U5ALdibCqANTM8A.png">注意到 TSIMS 站名也发生了亿点点变化。那是我奇怪的恶趣味。</Figure>
+<Figure src="/zh-Hans/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiamBqmkQMs0xw9DDK4Naz9LQIf4TXZHcnRRrAdibh46U5ALdibCqANTM8A.png">
+  注意到 TSIMS 站名也发生了亿点点变化。那是我奇怪的恶趣味。
+</Figure>
 
 当然，这里 90%的被隐藏入口都是本就没用的页面，它们对应的后端接口并未开启，所以即使进去，也不能做什么有意义的操作。
 
@@ -77,9 +77,13 @@ import DocMetadataBanner from '../../../../../src/components/DocMetadataBanner';
 
 要重写的脚本文件是 http://101.230.1.163/ajax/cas_add_record_info.js，更具体地说，我们把目光放在了负责“记录列表”渲染的 `addInfo` 函数上。（顺便吐槽，这个代码写的是真的差——各种字符串拼接和 `var` 的作用域外调用，看得我几乎脑溢血……我把整个文件重写了一遍，从 280 行缩减到 150 行）
 
-<Figure src="/zh-Hans/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiavRLqfbCyAAsG799N3X8x4JgnpEGicic1s4WAgRgZQI2ZWuNBQotty7bg.png">原本的 野 兽 代 码</Figure>
+<Figure src="/zh-Hans/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiavRLqfbCyAAsG799N3X8x4JgnpEGicic1s4WAgRgZQI2ZWuNBQotty7bg.png">
+  原本的 野 兽 代 码
+</Figure>
 
-<Figure src="/zh-Hans/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiayDMdicmSXLZen0eKGU1pekibzibBvtjAn7GBzLOPcjLByibOIrUJd4qFLQ.png">重定义的函数，仍然非常野兽</Figure>
+<Figure src="/zh-Hans/img/./docs/Technology/easy-tsims/JGibibkelET68tpqgst86FWqsQzlXcwGMiayDMdicmSXLZen0eKGU1pekibzibBvtjAn7GBzLOPcjLByibOIrUJd4qFLQ.png">
+  重定义的函数，仍然非常野兽
+</Figure>
 
 完成之后，把这个文件声明成网页可以访问的 web accessible resource，然后注入到页面中原脚本的后面即可。
 

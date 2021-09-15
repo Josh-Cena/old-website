@@ -10,15 +10,15 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import BlogPostItem from '@theme/BlogPostItem';
-import type {Props} from '@theme/BlogTagsPostsPage';
-import Translate, {translate} from '@docusaurus/Translate';
-import {ThemeClassNames, usePluralForm} from '@docusaurus/theme-common';
+import type { Props } from '@theme/BlogTagsPostsPage';
+import Translate, { translate } from '@docusaurus/Translate';
+import { ThemeClassNames, usePluralForm } from '@docusaurus/theme-common';
 
 import styles from './styles.module.css';
 
 // Very simple pluralization: probably good enough for now
 function useBlogPostsPlural() {
-  const {selectMessage} = usePluralForm();
+  const { selectMessage } = usePluralForm();
   return (count: number) =>
     selectMessage(
       count,
@@ -29,14 +29,14 @@ function useBlogPostsPlural() {
             'Pluralized label for "{count} posts". Use as much plural forms (separated by "|") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)',
           message: 'One post|{count} posts',
         },
-        {count},
+        { count },
       ),
     );
 }
 
 function BlogTagsPostPage(props: Props): JSX.Element {
-  const {metadata, items} = props;
-  const {allTagsPath, name: tagName, count} = metadata;
+  const { metadata, items } = props;
+  const { allTagsPath, name: tagName, count } = metadata;
   const blogPostsPlural = useBlogPostsPlural();
   const title = translate(
     {
@@ -44,7 +44,7 @@ function BlogTagsPostPage(props: Props): JSX.Element {
       description: 'The title of the page for a blog tag',
       message: '{nPosts} tagged with "{tagName}"',
     },
-    {nPosts: blogPostsPlural(count), tagName},
+    { nPosts: blogPostsPlural(count), tagName },
   );
 
   return (
@@ -70,7 +70,7 @@ function BlogTagsPostPage(props: Props): JSX.Element {
 
       <main className={styles.wrapper}>
         <div className={styles.CardContainer}>
-          {items.map(({content: BlogPostContent}) => (
+          {items.map(({ content: BlogPostContent }) => (
             <BlogPostItem
               key={BlogPostContent.metadata.permalink}
               frontMatter={BlogPostContent.frontMatter}

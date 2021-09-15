@@ -24,8 +24,7 @@ $$
 \end{aligned}
 $$
 
-其中 $d$ 为圆孔的直径，$θ$ 是角宽度。
-那个 $1.22$ 实在看来让人难受，许多人（比如我）说不定会因为它做噩梦。它到底是从哪里冒出来的？为什么不能表示为关于 $π$、$\mathrm{e}$ 之类的方程？它究竟是因为时空扭曲作用产生的奇怪常数，还是某个变态超越方程的解？
+其中 $d$ 为圆孔的直径，$θ$ 是角宽度。那个 $1.22$ 实在看来让人难受，许多人（比如我）说不定会因为它做噩梦。它到底是从哪里冒出来的？为什么不能表示为关于 $π$、$\mathrm{e}$ 之类的方程？它究竟是因为时空扭曲作用产生的奇怪常数，还是某个变态超越方程的解？
 
 万同学给了我们一个非常学术的推导过程：[瑞利判据中圆孔衍射公式推导](https://mp.weixin.qq.com/s/LeDrTI2JNmz7Sj5Qyw_Edg)，只可惜，这个推导过程实在是<span style={{color: 'red'}}><b>非人哉</b></span>，像我这种最弱的人是根本看不懂啊……因此，我决定自力更生，研究下艾里斑大小的详细推导过程。
 
@@ -71,8 +70,7 @@ E(x,y,z)\propto \frac{1}{d}E_0\exp\left(\mathrm{i}\frac{2\pi}{\lambda}d\right)
 \end{aligned}
 $$
 
-有了这个公式，我们就可以描述衍射时子波的相互干涉了。
-假设小孔是在 $xOy$ 平面上，圆心位于原点，半径为 $r$ 的一个圆，那么光通过圆孔后，圆孔上的每一个点 $(x_0, y_0, 0)$ 都会成为新的子波源。这些波源发出的光最终抵达位于 $z$ 的光屏，我们想要的即是对于所有 $(x_0, y_0, 0)$，它们发出的子波在 $(x_1, y_1, z)$ 这一点的叠加波幅。
+有了这个公式，我们就可以描述衍射时子波的相互干涉了。假设小孔是在 $xOy$ 平面上，圆心位于原点，半径为 $r$ 的一个圆，那么光通过圆孔后，圆孔上的每一个点 $(x_0, y_0, 0)$ 都会成为新的子波源。这些波源发出的光最终抵达位于 $z$ 的光屏，我们想要的即是对于所有 $(x_0, y_0, 0)$，它们发出的子波在 $(x_1, y_1, z)$ 这一点的叠加波幅。
 
 <Figure src="/zh-Hans/img/./docs/Science/airy/JGibibkelET6ibRwzz1eaiaia1qgic8cviaNiaWNaUVzRvTlqiblbm7oGUPHm4OlvC8iayHChKOONwJrtI3zfjcpbMOFzibxw.png"></Figure>
 
@@ -235,8 +233,7 @@ $$
 
 此处的 $r$ 是半缝宽，因此 $2r$ 才是缝宽。我们的公式又和实验现象相符合，非常令人满足。
 
-最后，我们画点图验证一下衍射公式。首先是振幅关于轴距离的分布。（光强的分布就是把此函数平方，但画出来的图看起来不够优美）
-蓝线为圆孔衍射，黄线为单缝衍射，可以看到圆孔的衍射条纹要更宽一点，这个比值正是 $1.22$。
+最后，我们画点图验证一下衍射公式。首先是振幅关于轴距离的分布。（光强的分布就是把此函数平方，但画出来的图看起来不够优美）蓝线为圆孔衍射，黄线为单缝衍射，可以看到圆孔的衍射条纹要更宽一点，这个比值正是 $1.22$。
 
 <Figure src="/zh-Hans/img/./docs/Science/airy/JGibibkelET694UQSTSxsmQibPBc8Mt8iczYRwERhIXETibSiaEh4HQ4UhU99w3dSbH9o6WqXN4o2BiclLhl7zR4Mibvgg.png"></Figure>
 
@@ -246,7 +243,9 @@ $$
 
 平方之后，得到实际的光强分布图：
 
-<Figure src="/zh-Hans/img/./docs/Science/airy/JGibibkelET685a5rxPXLibElY6oEgLE59OBKFgG3E0fhyPeC1urPpKKCGaEvdWvICiaOfIMZPRlFEL2aiaDV22pINg.png">除了中心黄色亮斑和外面一圈红色光晕，你能看到第二个和第三个圈吗？</Figure>
+<Figure src="/zh-Hans/img/./docs/Science/airy/JGibibkelET685a5rxPXLibElY6oEgLE59OBKFgG3E0fhyPeC1urPpKKCGaEvdWvICiaOfIMZPRlFEL2aiaDV22pINg.png">
+  除了中心黄色亮斑和外面一圈红色光晕，你能看到第二个和第三个圈吗？
+</Figure>
 
 （我的 Python 代码太丑陋了，就不展示了）
 
@@ -258,4 +257,4 @@ J_1(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma(m+2)} {\left(\frac{x}{2}\righ
 \end{aligned}
 $$
 
-<p style={{textAlign: 'center', color: 'gray', fontSize: 'small'}}>第一类贝塞尔函数：你瞅啥？</p>
+<p style={{ textAlign: 'center', color: 'gray', fontSize: 'small' }}>第一类贝塞尔函数：你瞅啥？</p>

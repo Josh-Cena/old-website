@@ -1,61 +1,60 @@
 import type { Footer } from '@docusaurus/theme-common';
 
 const footer: Footer = {
-  style: "dark",
+  style: 'dark',
   links: [
     {
-      title: "Docs",
+      title: 'Docs',
       items: [
         {
-          label: "Science",
-          to: "docs/Science/amino-acid",
+          label: 'Science',
+          to: 'docs/Science/amino-acid',
         },
         {
-          label: "Technology",
-          to: "docs/Technology/easy-tsims",
+          label: 'Technology',
+          to: 'docs/Technology/easy-tsims',
         },
         {
-          label: "Humanities",
-          to: "docs/Humanities/law",
+          label: 'Humanities',
+          to: 'docs/Humanities/law',
         },
         {
-          label: "Short stories",
-          to: "docs/Stories/red-pills",
+          label: 'Short stories',
+          to: 'docs/Stories/red-pills',
         },
       ],
     },
     {
-      title: "Social",
+      title: 'Social',
       items: [
         {
-          label: "Zhihu",
-          href: "https://www.zhihu.com/people/joshcena",
+          label: 'Zhihu',
+          href: 'https://www.zhihu.com/people/joshcena',
         },
         {
-          label: "Discord",
-          href: "https://discord.gg/AU7X2HtnDK",
+          label: 'Discord',
+          href: 'https://discord.gg/AU7X2HtnDK',
         },
         {
-          label: "LinkedIn",
-          href: "https://www.linkedin.com/in/sida-joshua-chen/",
+          label: 'LinkedIn',
+          href: 'https://www.linkedin.com/in/sida-joshua-chen/',
         },
       ],
     },
     {
-      title: "More",
+      title: 'More',
       items: [
         {
-          label: "Blog",
-          to: "blog",
+          label: 'Blog',
+          to: 'blog',
         },
         {
-          label: "GitHub",
-          href: "https://github.com/Josh-Cena",
+          label: 'GitHub',
+          href: 'https://github.com/Josh-Cena',
         },
         {
-          label: "WeChat official account",
-          href:
-            "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwMzI0ODk0NA==&scene=124#wechat_redirect",
+          label: 'WeChat official account',
+          href: 'https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwMzI0ODk0NA==&scene=124#wechat_redirect',
         },
       ],
     },

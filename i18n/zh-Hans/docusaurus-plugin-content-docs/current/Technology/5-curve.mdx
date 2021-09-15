@@ -130,8 +130,7 @@ w^2-\frac{1}{4}&>m^2
 \end{aligned}
 $$
 
-使它无解的条件是$w<0.5$。因此只要移动距离小于$0.5$，就不会有消失的点。
-一般地说，如果$f'(k)=0$，那么找一点$(m,f(m)),m < k$，假设它在变换后消失了，代入变换公式：
+使它无解的条件是$w<0.5$。因此只要移动距离小于$0.5$，就不会有消失的点。一般地说，如果$f'(k)=0$，那么找一点$(m,f(m)),m < k$，假设它在变换后消失了，代入变换公式：
 
 $$
 \begin{aligned}
@@ -168,8 +167,7 @@ $$
 
 这便是$w$的最大值。
 
-:::note
-如果你对曲率了解的话，你会知道，我们推导出的正是函数在$x=k$这一点的密切圆半径：
+:::note 如果你对曲率了解的话，你会知道，我们推导出的正是函数在$x=k$这一点的密切圆半径：
 
 $$
 \begin{aligned}
@@ -177,8 +175,7 @@ r=\frac{\left(1+f'(k)^2\right)^{3/2}}{|f''(k)|}
 \end{aligned}
 $$
 
-而由于$f'(k)=0$，分子为 1，化简便得正文中的公式。
-:::
+而由于$f'(k)=0$，分子为 1，化简便得正文中的公式。 :::
 
 如果代入$k=0$，就可以算出 0.5，和前文推导一致。对于$y=\sin x$，由于$f$有周期性质，不妨设$k=\frac{\pi}{2}$。
 
@@ -283,7 +280,9 @@ plt.show()
 
 从逆变换的角度想，这个尖角对应了一个图形向内移动后丧失信息的情况，所以逆变换就无法恢复这部分信息。
 
-<Figure src="/zh-Hans/img/./docs/Technology/curve/JGibibkelET69kvA5qMPE6En5bAQibJ83DGaM9xibhjbaAf4BXpeSIoZuOSicBNEiabMgw7Dh8JZGtRJt7hKcs7oy4mQ.png">有多根曲线和蓝曲线对应</Figure>
+<Figure src="/zh-Hans/img/./docs/Technology/curve/JGibibkelET69kvA5qMPE6En5bAQibJ83DGaM9xibhjbaAf4BXpeSIoZuOSicBNEiabMgw7Dh8JZGtRJt7hKcs7oy4mQ.png">
+  有多根曲线和蓝曲线对应
+</Figure>
 
 我用 TikZ 给他画了个曲线，说明现有的程序也处理不了这种情况：
 

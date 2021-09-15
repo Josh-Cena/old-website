@@ -12,9 +12,12 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 
 <DocMetadataBanner frontMatter={frontMatter} />
 
-<p style={{color: 'orange'}}>面试算法题警告</p>
-<p style={{color: 'orange'}}>Minecraft教程警告</p>
-<p style={{color: 'orange'}}>本文默认读者了解基本异或运算知识，如：<code>0^0=0</code>, <code>0^1=1</code>, <code>1^1=0</code>, <code>x^0=x</code>, <code>x^1=x'</code>, <code>x^x=0</code> 等</p>
+<p style={{ color: 'orange' }}>面试算法题警告</p>
+<p style={{ color: 'orange' }}>Minecraft教程警告</p>
+<p style={{ color: 'orange' }}>
+  本文默认读者了解基本异或运算知识，如：<code>0^0=0</code>, <code>0^1=1</code>, <code>1^1=0</code>,{' '}
+  <code>x^0=x</code>, <code>x^1=x'</code>, <code>x^x=0</code> 等
+</p>
 
 ## 一、从一类经典面试题类型讲起
 
@@ -64,8 +67,7 @@ import DocMetadataBanner from '../../src/components/DocMetadataBanner';
 >
 > 链接：48. 旋转图像 - 力扣（LeetCode）
 
-题目本身不难，但绝大多数算法时间都是 1ms（java 数据），精益求精的程序猿肯定会想尽办法再从这里面抠出 1ms 来；那么，不改变算法的情况下，有哪些细节可以优化呢？
-在原地改变数组的算法中，几乎一定会涉及两数的交换；如果要写出一个 `swap(int a, int b)` 函数，绝大多数人写出来应该类似这样：
+题目本身不难，但绝大多数算法时间都是 1ms（java 数据），精益求精的程序猿肯定会想尽办法再从这里面抠出 1ms 来；那么，不改变算法的情况下，有哪些细节可以优化呢？在原地改变数组的算法中，几乎一定会涉及两数的交换；如果要写出一个 `swap(int a, int b)` 函数，绝大多数人写出来应该类似这样：
 
 ```java
 public void swap(int a, int b) {
