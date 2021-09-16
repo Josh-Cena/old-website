@@ -4,11 +4,12 @@
   "private": true,
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "docusaurus-plugin build --theme-dir=theme",
     "postinstall": "yarn build"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "2.0.0-beta.6",
+    "@joshcena/docusaurus-plugin-utils": "0.0.1",
     "typescript": "^4.3.5"
   },
   "peerDependencies": {

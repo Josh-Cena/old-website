@@ -1,5 +1,4 @@
 {
-  "extends": "../../tsconfig.json",
   "include": ["src"],
   "compilerOptions": {
     "module": "commonjs",
@@ -7,6 +6,7 @@
     "removeComments": true,
     "noEmit": false,
     "rootDir": "src",
-    "outDir": "lib"
+    "outDir": "lib",
+    "jsx": "react"
   }
 }

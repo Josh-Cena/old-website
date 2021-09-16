@@ -31,7 +31,10 @@ const pluginBlogIndex: typeof pluginContentBlog = (context, options) => {
   return {
     ...blogPluginInstance,
     getThemePath() {
-      return path.resolve(__dirname, './theme');
+      return path.resolve(__dirname, '..', 'lib', 'js-theme');
+    },
+    getTypeScriptThemePath() {
+      return path.resolve(__dirname, '..', 'src', 'theme');
     },
     async contentLoaded({ content, allContent, actions }) {
       const { blogPosts } = content;
