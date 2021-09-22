@@ -15,7 +15,7 @@ import { features, feature } from '../data/frontpageData';
 const slides = [
   <header className={clsx('hero hero--primary', styles.heroBanner, styles.slide)}>
     <div className="container">
-      <img className={styles.logo} alt="Logo" src="/img/logo.png" />
+      <img className={styles.logo} alt="Logo" src="/img/logo.svg" />
       <h1 className="hero__title">Joshua Chen</h1>
       <p className="hero__subtitle">&quot;Zesty scholar&quot;</p>
       <div className={styles.button}>
