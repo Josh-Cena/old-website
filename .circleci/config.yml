@@ -45,14 +45,14 @@ jobs:
       - run:
           name: Configure Git Credentials
           command: |
-            git config --global user.email "sidachen2003@gmail.com"
-            git config --global user.name "Josh-Cena"
-            echo "machine github.com login Josh-Cena password $GITHUB_PA_TOKEN" > ~/.netrc
+            git config --global user.email "jchenbot@gmail.com"
+            git config --global user.name "jchen-bot"
+            echo "machine github.com login jchen-bot password $GITHUB_BOT_PA_TOKEN" > ~/.netrc
       - run:
           name: Deploy to GitHub Pages
           command: yarn deploy
           environment:
-            GIT_USER: Josh-Cena 
+            GIT_USER: jchen-bot 
             ORGANIZATION_NAME: Josh-Cena
             PROJECT_NAME: Josh-Cena.github.io
             DEPLOYMENT_BRANCH: master
