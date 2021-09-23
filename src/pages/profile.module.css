@@ -23,20 +23,6 @@
   margin-bottom: 3pt;
 }
 
-.avatar {
-  margin-top: 20pt;
-  border-radius: 50%;
-  width: 200pt;
-  padding: 10pt;
-  background: #ffffff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-html[data-theme="dark"] .avatar {
-  background: rgba(255, 255, 255, 0.09);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
-}
-
 .links {
   margin-top: 20pt;
 }

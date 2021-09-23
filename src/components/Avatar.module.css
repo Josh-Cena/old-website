@@ -1,0 +1,30 @@
+.avatar {
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  padding: 10px;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  fill: black;
+}
+
+html[data-theme="dark"] .avatar {
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  fill: white;
+}
+
+.eyebrow {
+  animation-name: bounce;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce {
+  20% {transform: translateY(-3px);}
+  50% {transform: translateY(-0.5px);}
+  80% {transform: translateY(-3px);}
+}

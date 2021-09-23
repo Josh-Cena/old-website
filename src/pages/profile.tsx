@@ -7,6 +7,7 @@ import Translate from '@docusaurus/Translate';
 import styles from './profile.module.css';
 import data from '../data/profileData';
 import Card from '../components/Card';
+import Avatar from '../components/Avatar';
 
 export default function CV(): ReactElement {
   return (
@@ -16,11 +17,9 @@ export default function CV(): ReactElement {
           <h1>
             <Translate id="CV.title">About me</Translate>
           </h1>
-          <ThemedImage
-            className={styles.avatar}
-            sources={{ light: '/img/avatar.svg', dark: '/img/avatar-dark.svg' }}
-            alt={'Avatar'}
-          />
+          <div style={{ marginLeft: 'auto', marginRight: 'auto' }}>
+            <Avatar />
+          </div>
           <h2>
             陈思达
             <br />
