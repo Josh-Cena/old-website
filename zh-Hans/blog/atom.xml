@@ -63,6 +63,17 @@
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[中文支持]]></title>
+        <id>中文支持</id>
+        <link href="https://josh-cena.github.io/zh-Hans/blog/2021/3/26/chinese"/>
+        <updated>2021-03-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[本站正式加入中文。奇妙的是，作为中文母语者，我竟然把英语设成了默认语言……]]></summary>
+        <author>
+            <name>陈思达</name>
+            <uri>https://github.com/Josh-Cena</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[运行 Laravel 应用]]></title>
         <id>运行 Laravel 应用</id>
         <link href="https://josh-cena.github.io/zh-Hans/blog/2021/3/25/laravel"/>
