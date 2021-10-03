@@ -55,7 +55,7 @@ jobs:
             GIT_USER: jchen-bot 
             ORGANIZATION_NAME: Josh-Cena
             PROJECT_NAME: Josh-Cena.github.io
-            DEPLOYMENT_BRANCH: master
+            DEPLOYMENT_BRANCH: gh-pages
             CURRENT_BRANCH: master
 
 workflows:
