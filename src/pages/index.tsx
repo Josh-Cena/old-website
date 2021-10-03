@@ -66,7 +66,7 @@ const slides = [
       <Link
         className="button button--outline button--lg"
         style={{ color: 'white' }}
-        to="/blog/2021/4/26/champion">
+        to="/blog/2021/04/26/champion">
         <Translate id="front.readMore">Read more</Translate>
       </Link>
     </div>
