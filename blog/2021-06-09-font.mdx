@@ -5,17 +5,20 @@ tags: [general, design]
 image: /img/blog/2021-06-09/preview.png
 ---
 
-import styles from './2021-06-09-font.module.css';
-
 This font is developed by an Indonesian ([Fatma Wati](https://www.behance.net/fatmastudio)), and I just absolutely loved it. (FYI my personal server's hostname is _Caroline_ as well. Caroline is truely a special name.)
 
 <!-- truncate -->
 
 Try it out in the box below:
 
-<div contentEditable className={styles.out}>
+```mdx-code-block
+import styles from './2021-06-09-font.module.css';
+import clsx from 'clsx';
+
+<div contentEditable className={clsx(styles.out, 'caroline')}>
   Hello world!
 </div>
+```
 
 I found the font here: https://www.dafont.com/caroline-2.font
 
