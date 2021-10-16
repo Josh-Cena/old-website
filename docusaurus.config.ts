@@ -14,8 +14,6 @@ const config: Partial<DocusaurusConfig> = {
   onBrokenMarkdownLinks: 'warn',
   trailingSlash: true,
   favicon: '/img/favicon/favicon.ico',
-  organizationName: 'Josh-Cena',
-  projectName: 'Josh-Cena.github.io',
   i18n: i18nConfig,
   themes: ['@docusaurus/theme-live-codeblock'],
   plugins: [
