@@ -20,11 +20,11 @@ const config: Partial<DocusaurusConfig> = {
   themes: ['@docusaurus/theme-live-codeblock'],
   plugins: [
     [
-      'plugin-blog-index',
+      'docusaurus-plugin-blog-index',
       {
         blogSidebarCount: 'ALL',
         blogSidebarTitle: 'All my posts',
-        postsPerPage: 100,
+        postsPerPage: 'ALL',
         remarkPlugins: [remarkMath],
         rehypePlugins: [[rehypeKatex, { strict: false }]],
       },
@@ -69,7 +69,7 @@ const config: Partial<DocusaurusConfig> = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.config.js'),
+          sidebarPath: require.resolve('./config/sidebars.config.js'),
           remarkPlugins: [remarkMath],
           rehypePlugins: [[rehypeKatex, { strict: false }]],
         },

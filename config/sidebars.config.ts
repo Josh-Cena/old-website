@@ -1,6 +1,7 @@
-// import type {UnprocessedSidebars} from '@docusaurus/plugin-content-docs/lib/types';
+import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
+import type {SidebarItemCategoryConfig} from '@docusaurus/plugin-content-docs/lib/sidebars/types';
 
-function autoCategory(dirName: string, label = dirName) {
+function autoCategory(dirName: string, label = dirName): SidebarItemCategoryConfig {
   return {
     type: 'category',
     label,
@@ -13,8 +14,7 @@ function autoCategory(dirName: string, label = dirName) {
   };
 }
 
-// TODO: Sidebar type is not working well
-const sidebar = {
+const sidebar: SidebarsConfig = {
   docs: [
     'about',
     {

@@ -1,3 +1,6 @@
+
+/// <reference types="@docusaurus/theme-classic" />
+
 import React from 'react';
 import BlogLayout from '@theme/BlogLayout';
 import type { BlogSidebar } from '@theme/BlogSidebar';

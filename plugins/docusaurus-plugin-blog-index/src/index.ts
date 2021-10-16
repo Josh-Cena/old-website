@@ -1,3 +1,5 @@
+/// <reference types="@docusaurus/module-type-aliases" />
+
 import pluginContentBlog, { validateOptions } from '@docusaurus/plugin-content-blog/lib';
 import { docuHash, normalizeUrl } from '@docusaurus/utils';
 import type { BlogPost } from '@docusaurus/plugin-content-blog/src/types';
@@ -31,7 +33,7 @@ const pluginBlogIndex: typeof pluginContentBlog = (context, options) => {
   return {
     ...blogPluginInstance,
     getThemePath() {
-      return path.resolve(__dirname, '..', 'lib', 'js-theme');
+      return path.resolve(__dirname, '..', 'lib', 'theme');
     },
     getTypeScriptThemePath() {
       return path.resolve(__dirname, '..', 'src', 'theme');
