@@ -44,7 +44,7 @@ function BlogPostItem(props: Props): JSX.Element {
   const readingTimePlural = useReadingTimePlural();
   const { children, frontMatter, metadata, truncated, assets, isBlogPostPage = false } = props;
   const { date, formattedDate, permalink, tags, readingTime, title, authors } = metadata;
-  const { image, keywords } = frontMatter;
+  const { keywords } = frontMatter;
   const { withBaseUrl } = useBaseUrlUtils();
 
   function renderPostHeader() {
@@ -83,8 +83,8 @@ function BlogPostItem(props: Props): JSX.Element {
         itemProp="blogPost"
         itemScope
         itemType="http://schema.org/BlogPosting">
-        <Seo {...{ keywords, image }} />
-        {image && <img itemProp="image" className={styles.cardImg} src={image} />}
+        <Seo {...{ keywords, image: assets.image }} />
+        {assets.image && <img itemProp="image" className={styles.cardImg} src={assets.image} />}
         <div className={styles.cardContent}>
           {renderPostHeader()}
           <div className="markdown">
@@ -113,11 +113,11 @@ function BlogPostItem(props: Props): JSX.Element {
 
   return (
     <>
-      <Seo {...{ keywords, image }} />
+      <Seo {...{ keywords, image: assets.image }} />
 
       <article itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
         {renderPostHeader()}
-        {image && <meta itemProp="image" content={withBaseUrl(image, { absolute: true })} />}
+        {assets.image && <meta itemProp="image" content={withBaseUrl(assets.image, { absolute: true })} />}
         <div className="markdown">
           <MDXProvider components={MDXComponents}>{children}</MDXProvider>
         </div>
