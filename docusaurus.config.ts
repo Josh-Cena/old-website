@@ -1,9 +1,11 @@
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
-import i18nConfig from './config/i18n.config';
-import navbarConfig from './config/navbar.config';
-import footerConfig from './config/footer.config';
+import remarkMath = require('remark-math');
+import rehypeKatex = require('./src/remark/rehypeKatex');
+import i18nConfig = require('./config/i18n.config');
+import navbarConfig = require('./config/navbar.config');
+import footerConfig = require('./config/footer.config');
 import { DocusaurusConfig } from '@docusaurus/types';
+// import cardlink from './src/remark/cardlink';
+// import figure from './src/remark/figure';
 
 const config: Partial<DocusaurusConfig> = {
   title: 'Joshua Chen',
@@ -50,20 +52,6 @@ const config: Partial<DocusaurusConfig> = {
     {
       href: '/font/caroline.css',
       type: 'text/css',
-    },
-  ],
-  scripts: [
-    {
-      src: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js',
-      integrity: 'sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4',
-      crossorigin: 'anonymous',
-      defer: true,
-    },
-    {
-      src: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/mhchem.min.js',
-      integrity: 'sha384-5gCAXJ0ZgozlShOzzT0OWArn7yCPGWVIvgo+BAd8NUKbCmulrJiQuCVR9cHlPHeG',
-      crossorigin: 'anonymous',
-      defer: true,
     },
   ],
   presets: [
