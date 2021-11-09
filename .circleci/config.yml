@@ -45,6 +45,7 @@ jobs:
       - run:
           name: Configure Git Credentials
           command: |
+            git remote -v
             git config --global user.email "jchenbot@gmail.com"
             git config --global user.name "jchen-bot"
             echo "machine github.com login jchen-bot password $GITHUB_BOT_PA_TOKEN" > ~/.netrc
