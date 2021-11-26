@@ -1,5 +1,3 @@
-import uuid from 'uuid/v4';
-
 export type todoItem = {
   id: string;
   name: string;
@@ -76,7 +74,7 @@ export class UpdateHandler {
   addItem(title: string, deadline: myDate, priority: number): void {
     const nlist = this.list.concat([
       {
-        id: uuid(),
+        id: String(Date.now()),
         name: title,
         priority,
         deadline,
