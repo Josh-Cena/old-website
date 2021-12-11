@@ -2,12 +2,14 @@
   "include": ["src"],
   "compilerOptions": {
     "module": "commonjs",
+    "target": "es2017",
     "esModuleInterop": true,
     "removeComments": true,
     "noEmit": false,
     "rootDir": "src",
     "outDir": "lib",
     "jsx": "react",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["node", "react"]
   }
 }

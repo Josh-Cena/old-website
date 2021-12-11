@@ -1,4 +1,4 @@
-
+/// <reference types="@docusaurus/plugin-content-blog" />
 /// <reference types="@docusaurus/theme-classic" />
 
 import React from 'react';
@@ -24,7 +24,7 @@ export default function BlogArchive({ metadata, items, sidebar }: Props): JSX.El
     <BlogLayout
       title={blogTitle}
       description={blogDescription}
-      searchMetadatas={{ tag: 'blog_posts_list' }}
+      searchMetadata={{ tag: 'blog_posts_list' }}
       sidebar={sidebar}>
       <h1>
         {totalCount} post{totalCount > 1 ? 's' : ''} written {time}

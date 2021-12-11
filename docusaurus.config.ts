@@ -3,11 +3,11 @@ import rehypeKatex = require('./src/remark/rehypeKatex');
 import i18nConfig = require('./config/i18n.config');
 import navbarConfig = require('./config/navbar.config');
 import footerConfig = require('./config/footer.config');
-import { DocusaurusConfig } from '@docusaurus/types';
+import type { Config } from '@docusaurus/types';
 // import cardlink from './src/remark/cardlink';
 // import figure from './src/remark/figure';
 
-const config: Partial<DocusaurusConfig> = {
+const config: Config = {
   title: 'Joshua Chen',
   tagline: '"Zesty scholar"',
   url: 'https://josh-cena.github.io',
@@ -20,7 +20,7 @@ const config: Partial<DocusaurusConfig> = {
   themes: ['@docusaurus/theme-live-codeblock'],
   plugins: [
     [
-      'docusaurus-plugin-blog-index',
+      'blog-index',
       {
         blogSidebarCount: 'ALL',
         blogSidebarTitle: 'All my posts',
@@ -56,7 +56,7 @@ const config: Partial<DocusaurusConfig> = {
   ],
   presets: [
     [
-      '@docusaurus/preset-classic',
+      'classic',
       {
         docs: {
           sidebarPath: require.resolve('./config/sidebars.config.js'),
