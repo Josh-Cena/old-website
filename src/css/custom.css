@@ -48,3 +48,12 @@ html[data-theme="dark"] blockquote {
   border-left: 6px solid #5c5d5f;
   color: #bcc3cc;
 }
+
+@font-face {
+  font-family: "Caroline";
+  src: url("/font/Caroline.otf");
+}
+
+.caroline {
+  font-family: "Caroline", sans-serif;
+}

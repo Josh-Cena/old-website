@@ -49,10 +49,6 @@ const config: Config = {
       integrity: 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
       crossorigin: 'anonymous',
     },
-    {
-      href: '/font/caroline.css',
-      type: 'text/css',
-    },
   ],
   presets: [
     [
