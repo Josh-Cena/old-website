@@ -25,8 +25,8 @@ function getTime(route: string) {
 }
 
 // eslint-disable-next-line func-style
-const pluginBlogIndex: typeof pluginContentBlog = (context, options) => {
-  const blogPluginInstance = pluginContentBlog(context, options);
+const pluginBlogIndex: typeof pluginContentBlog = async (context, options) => {
+  const blogPluginInstance = await pluginContentBlog(context, options);
   const { blogTitle, blogDescription, routeBasePath } = options;
   const { baseUrl } = context;
 
