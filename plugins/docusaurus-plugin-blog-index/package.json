@@ -4,8 +4,7 @@
   "private": true,
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc",
-    "postinstall": "yarn build"
+    "build": "tsc"
   },
   "dependencies": {
     "@docusaurus/plugin-content-blog": "2.0.0-beta.16",
