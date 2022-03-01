@@ -23,12 +23,12 @@
   },
   "dependencies": {
     "@date-io/date-fns": "1.x",
-    "@docusaurus/core": "2.0.0-beta.14",
-    "@docusaurus/plugin-content-docs": "2.0.0-beta.14",
-    "@docusaurus/preset-classic": "2.0.0-beta.14",
-    "@docusaurus/theme-classic": "2.0.0-beta.14",
-    "@docusaurus/theme-common": "2.0.0-beta.14",
-    "@docusaurus/theme-live-codeblock": "2.0.0-beta.14",
+    "@docusaurus/core": "2.0.0-beta.16",
+    "@docusaurus/plugin-content-docs": "2.0.0-beta.16",
+    "@docusaurus/preset-classic": "2.0.0-beta.16",
+    "@docusaurus/theme-classic": "2.0.0-beta.16",
+    "@docusaurus/theme-common": "2.0.0-beta.16",
+    "@docusaurus/theme-live-codeblock": "2.0.0-beta.16",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
@@ -40,8 +40,10 @@
     "copy-text-to-clipboard": "^3.0.1",
     "date-fns": "^2.19.0",
     "docusaurus-plugin-blog-index": "0.0.0",
+    "fs-extra": "^10.0.0",
     "hast-util-to-text": "2.x",
     "katex": "^0.15.1",
+    "node-fetch": "^3.2.0",
     "prism-react-renderer": "^1.2.1",
     "prop-types": "^15.7.2",
     "pure-react-carousel": "^1.27.6",
@@ -64,8 +66,8 @@
     ]
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.0.0-beta.14",
-    "@docusaurus/types": "2.0.0-beta.14",
+    "@docusaurus/module-type-aliases": "2.0.0-beta.16",
+    "@docusaurus/types": "2.0.0-beta.16",
     "@tsconfig/docusaurus": "^1.0.3",
     "@types/color": "^3.0.2",
     "@types/node": "^16.11.12",
@@ -99,5 +101,5 @@
       "prettier --write"
     ]
   },
-  "packageManager": "yarn@3.1.1"
+  "packageManager": "yarn@3.2.0"
 }
