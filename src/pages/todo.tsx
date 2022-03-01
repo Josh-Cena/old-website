@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import useThemeContext from '@theme/hooks/useThemeContext';
+import {useColorMode} from '@docusaurus/theme-common';
 import Select from '@material-ui/core/Select';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -14,7 +14,7 @@ import NewItem from '../components/NewTodo';
 import { todoItem, UpdateHandler } from '../data/todoData';
 
 function Main({ handler, list }: { handler: UpdateHandler; list: todoItem[] }) {
-  const { isDarkTheme } = useThemeContext();
+  const { isDarkTheme } = useColorMode();
   const theme = createMuiTheme({
     palette: {
       type: isDarkTheme ? 'dark' : 'light',

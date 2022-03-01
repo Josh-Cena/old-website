@@ -1,6 +1,6 @@
 import React, { ReactElement, useState } from 'react';
 import clsx from 'clsx';
-import useThemeContext from '@theme/hooks/useThemeContext';
+import {useColorMode} from '@docusaurus/theme-common';
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -35,7 +35,7 @@ type ntodoProps = {
 
 export default function NewTodo({ handler }: ntodoProps): ReactElement {
   const classes = useStyles();
-  const { isDarkTheme } = useThemeContext();
+  const { isDarkTheme } = useColorMode();
   const theme = createMuiTheme({
     palette: {
       type: isDarkTheme ? 'dark' : 'light',
