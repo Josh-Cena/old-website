@@ -31,7 +31,9 @@ async function getContributions(token, username) {
   return data;
 }
 
+console.log(process.env.ACCESS_TOKEN?.length > 0 ? "Token set" : "Token absent");
 const data = await getContributions(process.env.ACCESS_TOKEN, 'Josh-Cena');
+console.log(JSON.stringify(data));
 const day = data.data.user.contributionsCollection.contributionCalendar.weeks.at(-1).contributionDays.at(-1);
 
 // For testing purposes; to be changed to === 0 later
