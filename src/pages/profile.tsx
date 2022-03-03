@@ -1,23 +1,23 @@
-import React, { ReactElement } from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-import ThemedImage from '@theme/ThemedImage';
-import Translate from '@docusaurus/Translate';
+import React, { ReactElement } from "react";
+import clsx from "clsx";
+import Layout from "@theme/Layout";
+import ThemedImage from "@theme/ThemedImage";
+import Translate from "@docusaurus/Translate";
 
-import styles from './profile.module.css';
-import data from '../data/profileData';
-import Card from '../components/Card';
-import Avatar from '../components/Avatar';
+import styles from "./profile.module.css";
+import data from "../data/profileData";
+import Card from "../components/Card";
+import Avatar from "../components/Avatar";
 
 export default function CV(): ReactElement {
   return (
     <Layout title="About me" description="My CV">
       <main>
-        <div className={clsx('container margin-vert--lg', styles.cv)}>
+        <div className={clsx("container margin-vert--lg", styles.cv)}>
           <h1>
             <Translate id="CV.title">About me</Translate>
           </h1>
-          <div style={{ marginLeft: 'auto', marginRight: 'auto' }}>
+          <div style={{ marginLeft: "auto", marginRight: "auto" }}>
             <Avatar />
           </div>
           <h2>
@@ -27,7 +27,11 @@ export default function CV(): ReactElement {
           </h2>
           <div className={styles.cardContainer}>
             {data.map((section, index) => (
-              <Card key={index} sectionHead={section.sectionHead} items={section.items} />
+              <Card
+                key={index}
+                sectionHead={section.sectionHead}
+                items={section.items}
+              />
             ))}
           </div>
           <div>
@@ -49,8 +53,8 @@ export default function CV(): ReactElement {
                   alt="GitHub stats"
                   sources={{
                     light:
-                      'https://github-readme-stats.vercel.app/api?username=Josh-Cena&show_icons=true&title_color=39cac4&text_color=39cac4&icon_color=39cac4&bg_color=white&hide_border=true',
-                    dark: 'https://github-readme-stats.vercel.app/api?username=Josh-Cena&show_icons=true&title_color=39cac4&text_color=39cac4&icon_color=39cac4&bg_color=ffffff17&hide_border=true',
+                      "https://github-readme-stats.vercel.app/api?username=Josh-Cena&show_icons=true&title_color=39cac4&text_color=39cac4&icon_color=39cac4&bg_color=white&hide_border=true",
+                    dark: "https://github-readme-stats.vercel.app/api?username=Josh-Cena&show_icons=true&title_color=39cac4&text_color=39cac4&icon_color=39cac4&bg_color=ffffff17&hide_border=true",
                   }}
                 />
               </a>
@@ -64,8 +68,8 @@ export default function CV(): ReactElement {
                   alt="GitHub contribution"
                   sources={{
                     light:
-                      'https://activity-graph.herokuapp.com/graph?username=Josh-Cena&bg_color=white&color=39cac4&line=39cac4&hide_border=true',
-                    dark: 'https://activity-graph.herokuapp.com/graph?username=Josh-Cena&bg_color=ffffff17&color=39cac4&line=39cac4&point=dddddd&hide_border=true',
+                      "https://activity-graph.herokuapp.com/graph?username=Josh-Cena&bg_color=white&color=39cac4&line=39cac4&hide_border=true",
+                    dark: "https://activity-graph.herokuapp.com/graph?username=Josh-Cena&bg_color=ffffff17&color=39cac4&line=39cac4&point=dddddd&hide_border=true",
                   }}
                 />
               </a>

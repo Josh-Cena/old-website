@@ -1,6 +1,6 @@
-import React from 'react';
-import Link from '@docusaurus/Link';
-import Translate from '@docusaurus/Translate';
+import React from "react";
+import Link from "@docusaurus/Link";
+import Translate from "@docusaurus/Translate";
 
 interface Props {
   frontMatter: Record<string, unknown> & {
@@ -20,9 +20,9 @@ export default function DocMetadataBanner({ frontMatter }: Props): JSX.Element {
         <Translate
           id="docMetadataBanner.firstPublished"
           values={{
-            date: <b>{date.toLocaleDateString('zh-Hans')}</b>,
+            date: <b>{date.toLocaleDateString("zh-Hans")}</b>,
           }}>
-          {'First published on {date}. '}
+          {"First published on {date}. "}
         </Translate>
       )}
       {link && (

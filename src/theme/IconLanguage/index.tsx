@@ -5,10 +5,14 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React from 'react';
-import type { Props } from '@theme/IconLanguage';
+import React from "react";
+import type { Props } from "@theme/IconLanguage";
 
-export default function IconLanguage({ width = 20, height = 20, ...props }: Props): JSX.Element {
+export default function IconLanguage({
+  width = 20,
+  height = 20,
+  ...props
+}: Props): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

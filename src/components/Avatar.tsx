@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import clsx from 'clsx';
-import styles from './Avatar.module.css';
+import React, { useState } from "react";
+import clsx from "clsx";
+import styles from "./Avatar.module.css";
 
 export default function Avatar(): JSX.Element {
   const [clicked, setClicked] = useState(false);
@@ -13,7 +13,10 @@ export default function Avatar(): JSX.Element {
     }
   }
   return (
-    <div className={styles.avatar} onClick={handleClick} onMouseEnter={handleClick}>
+    <div
+      className={styles.avatar}
+      onClick={handleClick}
+      onMouseEnter={handleClick}>
       <svg width="200" height="200" viewBox="0 0 200 200">
         <g>
           <path d="m 40.597948,53.652817 c 0,5.45822 0,10.916442 0,16.374661 17.362592,0 34.725183,0 52.087774,0 -10.112277,24.82784 -20.224554,49.655672 -30.336831,74.483512 -6.236435,-5.15711 -12.47287,-10.31423 -18.709304,-15.47135 -3.451477,4.17371 -6.902954,8.34741 -10.35443,12.5211 11.921294,9.85786 23.842589,19.71572 35.763883,29.57358 13.726928,-33.70229 27.453854,-67.40456 41.18078,-101.106842 17.72646,0 35.45291,0 53.17937,0 0,-5.458219 0,-10.916441 0,-16.374661 -40.93708,0 -81.874164,0 -122.811242,0 z" />
@@ -30,13 +33,13 @@ export default function Avatar(): JSX.Element {
           <path
             d="m 153.86903,55.368874 c -0.10519,2.366721 -2.40555,3.806331 -4.30783,4.756214 -5.76944,2.601433 -12.276,3.051559 -18.52206,2.704715 -4.72103,-0.402854 -9.66795,-1.168747 -13.69218,-3.840952 -1.57182,-1.014048 -3.00432,-3.044071 -2.06513,-4.940148 1.38193,-2.600204 4.39224,-3.709345 7.0221,-4.603408 7.07564,-2.055388 14.68311,-2.140198 21.87419,-0.631329 3.21502,0.807417 6.74549,1.805406 8.93804,4.466841 0.44661,0.601486 0.75658,1.329592 0.75287,2.088067 z"
             style={{
-              fill: 'white',
-              stroke: 'black',
+              fill: "white",
+              stroke: "black",
               strokeWidth: 4,
-              strokeLinejoin: 'round',
+              strokeLinejoin: "round",
               strokeMiterlimit: 4,
-              strokeDasharray: 'none',
-              paintOrder: 'stroke fill markers',
+              strokeDasharray: "none",
+              paintOrder: "stroke fill markers",
             }}
           />
           <path
@@ -50,13 +53,13 @@ export default function Avatar(): JSX.Element {
           />
           <path
             style={{
-              fill: 'white',
-              stroke: 'black',
+              fill: "white",
+              stroke: "black",
               strokeWidth: 4,
-              strokeLinejoin: 'round',
+              strokeLinejoin: "round",
               strokeMiterlimit: 4,
-              strokeDasharray: 'none',
-              paintOrder: 'stroke fill markers',
+              strokeDasharray: "none",
+              paintOrder: "stroke fill markers",
             }}
             d="m 91.019508,54.997169 c -0.105185,2.366722 -2.405551,3.806332 -4.307834,4.756215 -5.769431,2.601433 -12.275998,3.051559 -18.52205,2.704715 -4.721032,-0.402854 -9.66795,-1.168747 -13.692187,-3.840952 -1.571817,-1.014048 -3.004316,-3.044071 -2.065128,-4.940148 1.381929,-2.600204 4.392238,-3.709345 7.022107,-4.603408 7.075633,-2.055388 14.6831,-2.140198 21.874179,-0.631329 3.215024,0.807417 6.745497,1.805406 8.938038,4.466841 0.446612,0.601486 0.756586,1.329591 0.752875,2.088066 z"
           />

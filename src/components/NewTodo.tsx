@@ -1,28 +1,35 @@
-import React, { ReactElement, useState } from 'react';
-import clsx from 'clsx';
-import {useColorMode} from '@docusaurus/theme-common';
-import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import TextField from '@material-ui/core/TextField';
-import Slider from '@material-ui/core/Slider';
-import DateFnsUtils from '@date-io/date-fns';
-import { MuiPickersUtilsProvider, KeyboardDatePicker } from '@material-ui/pickers';
-import Translate from '@docusaurus/Translate';
+import React, { ReactElement, useState } from "react";
+import clsx from "clsx";
+import { useColorMode } from "@docusaurus/theme-common";
+import {
+  createMuiTheme,
+  ThemeProvider,
+  makeStyles,
+} from "@material-ui/core/styles";
+import Card from "@material-ui/core/Card";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
+import TextField from "@material-ui/core/TextField";
+import Slider from "@material-ui/core/Slider";
+import DateFnsUtils from "@date-io/date-fns";
+import {
+  MuiPickersUtilsProvider,
+  KeyboardDatePicker,
+} from "@material-ui/pickers";
+import Translate from "@docusaurus/Translate";
 
-import styles from './NewTodo.module.css';
-import { myDate, UpdateHandler } from '../data/todoData';
+import styles from "./NewTodo.module.css";
+import { myDate, UpdateHandler } from "../data/todoData";
 
 const useStyles = makeStyles({
   root: {
     width: 300,
     margin: 15,
-    backgroundColor: '#fff',
-    borderRadius: '.25rem',
-    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)',
+    backgroundColor: "#fff",
+    borderRadius: ".25rem",
+    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
   },
   pos: {
     marginBottom: 12,
@@ -38,16 +45,16 @@ export default function NewTodo({ handler }: ntodoProps): ReactElement {
   const { isDarkTheme } = useColorMode();
   const theme = createMuiTheme({
     palette: {
-      type: isDarkTheme ? 'dark' : 'light',
+      type: isDarkTheme ? "dark" : "light",
       primary: {
-        light: '#4dcfca',
-        main: '#39cac4',
-        dark: '#31b8b2',
+        light: "#4dcfca",
+        main: "#39cac4",
+        dark: "#31b8b2",
       },
     },
   });
   const emptyItem = {
-    name: '',
+    name: "",
     deadline: new myDate(),
     priority: 0,
     editing: false,
@@ -58,7 +65,9 @@ export default function NewTodo({ handler }: ntodoProps): ReactElement {
     <ThemeProvider theme={theme}>
       <Card className={clsx(classes.root, styles.additem)}>
         {!item.editing && (
-          <div className={styles.cover} onClick={() => setItem({ ...item, editing: true })}>
+          <div
+            className={styles.cover}
+            onClick={() => setItem({ ...item, editing: true })}>
             +
           </div>
         )}
@@ -82,7 +91,9 @@ export default function NewTodo({ handler }: ntodoProps): ReactElement {
               margin="dense"
               format="yyyy/M/d"
               value={item.deadline.toDate()}
-              onChange={(value) => setItem({ ...item, deadline: new myDate(value) })}
+              onChange={(value) =>
+                setItem({ ...item, deadline: new myDate(value) })
+              }
             />
           </MuiPickersUtilsProvider>
           <Typography variant="body2" component="p">
@@ -95,7 +106,9 @@ export default function NewTodo({ handler }: ntodoProps): ReactElement {
               min={0}
               max={10}
               marks
-              onChange={(e, value) => setItem({ ...item, priority: value as number })}
+              onChange={(e, value) =>
+                setItem({ ...item, priority: value as number })
+              }
             />
           </Typography>
         </CardContent>

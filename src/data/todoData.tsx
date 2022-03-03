@@ -25,9 +25,9 @@ export class myDate {
 
 function compare(sortBy: string): (a: todoItem, b: todoItem) => number {
   switch (sortBy) {
-    case 'name':
+    case "name":
       return (a, b) => (a.name >= b.name ? 1 : -1);
-    case 'deadline':
+    case "deadline":
       return (a, b) => {
         const da = a.deadline,
           db = b.deadline;
@@ -37,7 +37,7 @@ function compare(sortBy: string): (a: todoItem, b: todoItem) => number {
             : da.month - db.month
           : da.year - db.year;
       };
-    case 'priority':
+    case "priority":
       return (a, b) => b.priority - a.priority;
   }
 }
@@ -50,11 +50,15 @@ export class UpdateHandler {
   constructor(list: todoItem[], setList: (l: todoItem[]) => void) {
     this.list = list;
     this.setList = setList;
-    this.sortBy = 'priority';
+    this.sortBy = "priority";
   }
 
   toggle(item: todoItem): void {
-    this.setList(this.list.map((el) => (el.id === item.id ? { ...el, done: !item.done } : el)));
+    this.setList(
+      this.list.map((el) =>
+        el.id === item.id ? { ...el, done: !item.done } : el,
+      ),
+    );
   }
 
   remove(item: todoItem): void {
@@ -62,7 +66,9 @@ export class UpdateHandler {
   }
 
   setPriority(item: todoItem, value: number): void {
-    const nlist = this.list.map((el) => (el.id === item.id ? { ...el, priority: value } : el));
+    const nlist = this.list.map((el) =>
+      el.id === item.id ? { ...el, priority: value } : el,
+    );
     nlist.sort(compare(this.sortBy));
     this.setList(nlist);
   }

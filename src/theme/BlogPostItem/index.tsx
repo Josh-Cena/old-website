@@ -5,20 +5,20 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React from 'react';
-import clsx from 'clsx';
-import { MDXProvider } from '@mdx-js/react';
-import Translate, { translate } from '@docusaurus/Translate';
-import Link from '@docusaurus/Link';
-import { useBaseUrlUtils } from '@docusaurus/useBaseUrl';
-import { usePluralForm } from '@docusaurus/theme-common';
-import MDXComponents from '@theme/MDXComponents';
-import Seo from '@theme/Seo';
-import type { Props } from '@theme/BlogPostItem';
-import BlogPostAuthors from '@theme/BlogPostAuthors';
-import TagsListInline from '@theme/TagsListInline';
+import React from "react";
+import clsx from "clsx";
+import { MDXProvider } from "@mdx-js/react";
+import Translate, { translate } from "@docusaurus/Translate";
+import Link from "@docusaurus/Link";
+import { useBaseUrlUtils } from "@docusaurus/useBaseUrl";
+import { usePluralForm } from "@docusaurus/theme-common";
+import MDXComponents from "@theme/MDXComponents";
+import Seo from "@theme/Seo";
+import type { Props } from "@theme/BlogPostItem";
+import BlogPostAuthors from "@theme/BlogPostAuthors";
+import TagsListInline from "@theme/TagsListInline";
 
-import styles from './styles.module.css';
+import styles from "./styles.module.css";
 
 // Very simple pluralization: probably good enough for now
 function useReadingTimePlural() {
@@ -29,10 +29,10 @@ function useReadingTimePlural() {
       readingTime,
       translate(
         {
-          id: 'theme.blog.post.readingTime.plurals',
+          id: "theme.blog.post.readingTime.plurals",
           description:
             'Pluralized label for "{readingTime} min read". Use as much plural forms (separated by "|") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)',
-          message: 'One min read|{readingTime} min read',
+          message: "One min read|{readingTime} min read",
         },
         { readingTime },
       ),
@@ -42,13 +42,21 @@ function useReadingTimePlural() {
 
 function BlogPostItem(props: Props): JSX.Element {
   const readingTimePlural = useReadingTimePlural();
-  const { children, frontMatter, metadata, truncated, assets, isBlogPostPage = false } = props;
-  const { date, formattedDate, permalink, tags, readingTime, title, authors } = metadata;
+  const {
+    children,
+    frontMatter,
+    metadata,
+    truncated,
+    assets,
+    isBlogPostPage = false,
+  } = props;
+  const { date, formattedDate, permalink, tags, readingTime, title, authors } =
+    metadata;
   const { keywords } = frontMatter;
   const { withBaseUrl } = useBaseUrlUtils();
 
   function renderPostHeader() {
-    const TitleHeading = isBlogPostPage ? 'h1' : 'h2';
+    const TitleHeading = isBlogPostPage ? "h1" : "h2";
 
     return (
       <header>
@@ -59,19 +67,21 @@ function BlogPostItem(props: Props): JSX.Element {
           itemProp="headline">
           {isBlogPostPage ? title : <Link to={permalink}>{title}</Link>}
         </TitleHeading>
-        <div className={clsx(styles.blogPostData, 'margin-vert--md')}>
+        <div className={clsx(styles.blogPostData, "margin-vert--md")}>
           <time dateTime={date} itemProp="datePublished">
             {formattedDate}
           </time>
 
           {readingTime && (
             <>
-              {' · '}
+              {" · "}
               {readingTimePlural(readingTime)}
             </>
           )}
         </div>
-        {isBlogPostPage && <BlogPostAuthors authors={authors} assets={assets} />}
+        {isBlogPostPage && (
+          <BlogPostAuthors authors={authors} assets={assets} />
+        )}
       </header>
     );
   }
@@ -79,18 +89,22 @@ function BlogPostItem(props: Props): JSX.Element {
   if (!isBlogPostPage) {
     return (
       <div
-        className={clsx('col col--4', styles.blogCard)}
+        className={clsx("col col--4", styles.blogCard)}
         itemProp="blogPost"
         itemScope
         itemType="http://schema.org/BlogPosting">
         <Seo {...{ keywords, image: assets.image }} />
-        {assets.image && <img itemProp="image" className={styles.cardImg} src={assets.image} />}
+        {assets.image && (
+          <img itemProp="image" className={styles.cardImg} src={assets.image} />
+        )}
         <div className={styles.cardContent}>
           {renderPostHeader()}
           <div className="markdown">
             <MDXProvider components={MDXComponents}>{children}</MDXProvider>
             {truncated && (
-              <Link to={metadata.permalink} aria-label={`Read more about ${title}`}>
+              <Link
+                to={metadata.permalink}
+                aria-label={`Read more about ${title}`}>
                 <b>
                   <Translate
                     id="theme.blog.post.readMore"
@@ -102,7 +116,7 @@ function BlogPostItem(props: Props): JSX.Element {
             )}
           </div>
           {tags.length > 0 && (
-            <div className={'col col--9 margin-top--md'}>
+            <div className={"col col--9 margin-top--md"}>
               <TagsListInline tags={tags} />
             </div>
           )}
@@ -115,16 +129,28 @@ function BlogPostItem(props: Props): JSX.Element {
     <>
       <Seo {...{ keywords, image: assets.image }} />
 
-      <article itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
+      <article
+        itemProp="blogPost"
+        itemScope
+        itemType="http://schema.org/BlogPosting">
         {renderPostHeader()}
-        {assets.image && <meta itemProp="image" content={withBaseUrl(assets.image, { absolute: true })} />}
+        {assets.image && (
+          <meta
+            itemProp="image"
+            content={withBaseUrl(assets.image, { absolute: true })}
+          />
+        )}
         <div className="markdown">
           <MDXProvider components={MDXComponents}>{children}</MDXProvider>
         </div>
         {(tags.length > 0 || truncated) && (
-          <footer className={clsx('row docusaurus-mt-lg', styles.blogPostDetailsFull)}>
+          <footer
+            className={clsx(
+              "row docusaurus-mt-lg",
+              styles.blogPostDetailsFull,
+            )}>
             {tags.length > 0 && (
-              <div className={'col'}>
+              <div className={"col"}>
                 <TagsListInline tags={tags} />
               </div>
             )}

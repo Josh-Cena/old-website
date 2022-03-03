@@ -1,25 +1,27 @@
 /// <reference types="@docusaurus/module-type-aliases" />
 
-import pluginContentBlog, { validateOptions } from '@docusaurus/plugin-content-blog/lib';
-import { docuHash, normalizeUrl } from '@docusaurus/utils';
-import type { BlogPost } from '@docusaurus/plugin-content-blog/src/types';
-import path from 'path';
+import pluginContentBlog, {
+  validateOptions,
+} from "@docusaurus/plugin-content-blog/lib";
+import { docuHash, normalizeUrl } from "@docusaurus/utils";
+import type { BlogPost } from "@docusaurus/plugin-content-blog/src/types";
+import path from "path";
 
 function getTime(route: string) {
-  if (route.split('/').length === 1) {
+  if (route.split("/").length === 1) {
     return `in year ${route}`;
   }
-  if (route.split('/').length === 2) {
-    return `in ${new Date(route).toLocaleDateString('en', {
-      month: 'long',
-      year: 'numeric',
+  if (route.split("/").length === 2) {
+    return `in ${new Date(route).toLocaleDateString("en", {
+      month: "long",
+      year: "numeric",
     })}`;
   }
-  if (route.split('/').length === 3) {
-    return `on ${new Date(route).toLocaleDateString('en', {
-      month: 'long',
-      day: 'numeric',
-      year: 'numeric',
+  if (route.split("/").length === 3) {
+    return `on ${new Date(route).toLocaleDateString("en", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
     })}`;
   }
 }
@@ -33,10 +35,10 @@ const pluginBlogIndex: typeof pluginContentBlog = async (context, options) => {
   return {
     ...blogPluginInstance,
     getThemePath() {
-      return path.resolve(__dirname, '..', 'lib', 'theme');
+      return path.resolve(__dirname, "..", "lib", "theme");
     },
     getTypeScriptThemePath() {
-      return path.resolve(__dirname, '..', 'src', 'theme');
+      return path.resolve(__dirname, "..", "src", "theme");
     },
     async contentLoaded({ content, allContent, actions }) {
       const { blogPosts } = content;
@@ -51,10 +53,12 @@ const pluginBlogIndex: typeof pluginContentBlog = async (context, options) => {
         } = post;
         postById[id] = post;
         const year = `${date.getFullYear()}`;
-        const month = `${date.getFullYear()}/${String(date.getMonth() + 1).padStart(2, '0')}`;
-        const day = `${date.getFullYear()}/${String(date.getMonth() + 1).padStart(2, '0')}/${String(
-          date.getDate(),
-        ).padStart(2, '0')}`;
+        const month = `${date.getFullYear()}/${String(
+          date.getMonth() + 1,
+        ).padStart(2, "0")}`;
+        const day = `${date.getFullYear()}/${String(
+          date.getMonth() + 1,
+        ).padStart(2, "0")}/${String(date.getDate()).padStart(2, "0")}`;
         postsByDate[year] = [...(postsByDate[year] || []), id];
         postsByDate[month] = [...(postsByDate[month] || []), id];
         postsByDate[day] = [...(postsByDate[day] || []), id];
@@ -77,10 +81,11 @@ const pluginBlogIndex: typeof pluginContentBlog = async (context, options) => {
 
           addRoute({
             path: permalink,
-            component: '@theme/BlogArchive',
+            component: "@theme/BlogArchive",
             exact: true,
             modules: {
-              sidebar: './docusaurus-plugin-content-blog/default/blog-post-list-prop-default.json',
+              sidebar:
+                "./docusaurus-plugin-content-blog/default/blog-post-list-prop-default.json",
               items: items.map((postID) =>
                 // To tell routes.js this is an import and not a nested object to recurse.
                 ({

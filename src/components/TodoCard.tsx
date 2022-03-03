@@ -1,25 +1,25 @@
-import React, { ReactElement } from 'react';
-import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
-import Checkbox from '@material-ui/core/Checkbox';
-import Slider from '@material-ui/core/Slider';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import Translate from '@docusaurus/Translate';
+import React, { ReactElement } from "react";
+import clsx from "clsx";
+import { makeStyles } from "@material-ui/core/styles";
+import Checkbox from "@material-ui/core/Checkbox";
+import Slider from "@material-ui/core/Slider";
+import Card from "@material-ui/core/Card";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
+import Translate from "@docusaurus/Translate";
 
-import styles from './TodoCard.module.css';
-import { todoItem, UpdateHandler } from '../data/todoData';
+import styles from "./TodoCard.module.css";
+import { todoItem, UpdateHandler } from "../data/todoData";
 
 const useStyles = makeStyles({
   root: {
     width: 300,
     margin: 15,
-    backgroundColor: '#fff',
-    borderRadius: '.25rem',
-    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)',
+    backgroundColor: "#fff",
+    borderRadius: ".25rem",
+    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
   },
   title: {
     fontSize: 14,
@@ -38,7 +38,12 @@ export default function Item({ item, handler }: itemProps): ReactElement {
   const classes = useStyles();
 
   return (
-    <Card className={clsx(classes.root, styles.card, item.done ? styles.done : styles.todo)}>
+    <Card
+      className={clsx(
+        classes.root,
+        styles.card,
+        item.done ? styles.done : styles.todo,
+      )}>
       <CardContent>
         <Typography variant="h5" component="h2">
           {item.name}
@@ -57,7 +62,9 @@ export default function Item({ item, handler }: itemProps): ReactElement {
             min={0}
             max={10}
             marks
-            onChangeCommitted={(__, value) => handler.setPriority(item, value as number)}
+            onChangeCommitted={(__, value) =>
+              handler.setPriority(item, value as number)
+            }
           />
         </Typography>
       </CardContent>
