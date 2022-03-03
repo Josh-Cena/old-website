@@ -22,4 +22,3 @@ jobs:
           message: 'chore: mark non-coding day'
           author_name: Joshua Chen
           author_email: sidachen2003@gmail.com
-          commit: -S
