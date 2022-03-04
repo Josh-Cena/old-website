@@ -1,5 +1,5 @@
-import fs from 'fs-extra';
-import fetch from 'node-fetch';
+import fs from "fs-extra";
+import fetch from "node-fetch";
 
 async function getContributions(token, username) {
   const headers = {
@@ -22,8 +22,8 @@ async function getContributions(token, username) {
   }
 }`,
   };
-  const response = await fetch('https://api.github.com/graphql', {
-    method: 'POST',
+  const response = await fetch("https://api.github.com/graphql", {
+    method: "POST",
     body: JSON.stringify(body),
     headers: headers,
   });
@@ -31,10 +31,14 @@ async function getContributions(token, username) {
   return data;
 }
 
-const data = await getContributions(process.env.ACCESS_TOKEN, 'Josh-Cena');
-const day = data.data.user.contributionsCollection.contributionCalendar.weeks.at(-1).contributionDays.at(-1);
+const data = await getContributions(process.env.ACCESS_TOKEN, "Josh-Cena");
+const day = data.data.user.contributionsCollection.contributionCalendar.weeks
+  .at(-1)
+  .contributionDays.at(-1);
 
-// For testing purposes; to be changed to === 0 later
-if (day.contributionCount < 100) {
-  await fs.outputFile(`./static/records/${day.date}.txt`, "I didn't code today! (Test)")
+if (day.contributionCount === 0) {
+  await fs.outputFile(
+    `./static/records/${day.date}.txt`,
+    "I didn't code today!",
+  );
 }
