@@ -2,7 +2,7 @@ name: Mark non-coding day
 
 on:
   schedule:
-    - cron: "50 13 * * *"
+    - cron: "30 15 * * *"
 
 jobs:
   mark-day:
