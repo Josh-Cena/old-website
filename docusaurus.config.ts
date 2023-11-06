@@ -11,7 +11,7 @@ const config: Config = {
   title: "Joshua Chen",
   tagline: '"Zesty scholar"',
   url: "https://josh-cena.github.io",
-  baseUrl: "/",
+  baseUrl: "/old-website/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   trailingSlash: true,
@@ -63,6 +63,14 @@ const config: Config = {
         blog: false,
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
+          announcementBar: {
+            id: '1',
+            content:
+              'You are looking at the <strong>archived</strong> version of my website. <a href="https://joshcena.com">Click here</a> to go to the new homepage.',
+            backgroundColor: '#39cac4',
+            textColor: 'black',
+            isCloseable: false,
+          },
         },
       },
     ],
