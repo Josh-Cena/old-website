@@ -10,7 +10,7 @@ import type { Config } from "@docusaurus/types";
 const config: Config = {
   title: "Joshua Chen",
   tagline: '"Zesty scholar"',
-  url: "https://josh-cena.github.io",
+  url: "https://joshcena.com",
   baseUrl: "/old-website/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
