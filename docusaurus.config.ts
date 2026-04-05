@@ -33,6 +33,14 @@ const config: Config = {
   themeConfig: {
     navbar: navbarConfig,
     footer: footerConfig,
+    announcementBar: {
+      id: '1',
+      content:
+        'You are looking at the <strong>archived</strong> version of my website. <a href="https://joshcena.com">Click here</a> to go to the new homepage.',
+      backgroundColor: '#39cac4',
+      textColor: 'black',
+      isCloseable: false,
+    },
     prism: {
       additionalLanguages: ["java", "php", "sql", "latex"],
       theme: require("prism-react-renderer/themes/github"),
@@ -41,6 +49,9 @@ const config: Config = {
     liveCodeBlock: {
       playgroundPosition: "bottom",
     },
+    metadata: [
+      { name: "robots", content: "noindex,nofollow" },
+    ],
   },
   stylesheets: [
     {
@@ -63,14 +74,6 @@ const config: Config = {
         blog: false,
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
-          announcementBar: {
-            id: '1',
-            content:
-              'You are looking at the <strong>archived</strong> version of my website. <a href="https://joshcena.com">Click here</a> to go to the new homepage.',
-            backgroundColor: '#39cac4',
-            textColor: 'black',
-            isCloseable: false,
-          },
         },
       },
     ],

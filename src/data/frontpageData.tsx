@@ -15,7 +15,7 @@ export const slides = [
       <Translate id="front.slides.slide3.readMore">Read more</Translate>
     ),
     promptLink: "/blog/2021/04/26/champion",
-    image: "/img/frontpage/CR_arena_blur.png",
+    image: "/old-website/img/frontpage/CR_arena_blur.png",
     textColor: "white",
     style: {
       backgroundImage: "linear-gradient(rgb(69,26,24), rgb(95,36,33))",
@@ -36,7 +36,7 @@ export const slides = [
       <Translate id="front.slides.slide4.readMore">Read more</Translate>
     ),
     promptLink: "/blog/2021/04/26/champion",
-    image: "/img/frontpage/garage.jpg",
+    image: "/old-website/img/frontpage/garage.jpg",
     textColor: "white",
     style: {
       backgroundColor: "rgb(64,116,225)",
@@ -57,8 +57,8 @@ export const features: feature[] = [
   {
     title: "7-year programmer",
     sources: {
-      light: "/img/frontpage/feature1.svg",
-      dark: "/img/frontpage/feature1-dark.svg",
+      light: "/old-website/img/frontpage/feature1.svg",
+      dark: "/old-website/img/frontpage/feature1-dark.svg",
     },
     description: (
       <Translate id="front.features.feat1">
@@ -71,8 +71,8 @@ export const features: feature[] = [
   {
     title: "STEM explorer",
     sources: {
-      light: "/img/frontpage/feature2.svg",
-      dark: "/img/frontpage/feature2-dark.svg",
+      light: "/old-website/img/frontpage/feature2.svg",
+      dark: "/old-website/img/frontpage/feature2-dark.svg",
     },
     description: (
       <Translate
@@ -93,8 +93,8 @@ export const features: feature[] = [
   {
     title: "Keen debater",
     sources: {
-      light: "/img/frontpage/feature3.svg",
-      dark: "/img/frontpage/feature3-dark.svg",
+      light: "/old-website/img/frontpage/feature3.svg",
+      dark: "/old-website/img/frontpage/feature3-dark.svg",
     },
     description: (
       <Translate id="front.features.feat3">

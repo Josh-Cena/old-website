@@ -26,7 +26,7 @@ const slides = [
   <header
     className={clsx("hero hero--primary", styles.heroBanner, styles.slide)}>
     <div className="container">
-      <img className={styles.logo} alt="Logo" src="/img/logo.svg" />
+      <img className={styles.logo} alt="Logo" src="/old-website/img/logo.svg" />
       <h1 className="hero__title">Joshua Chen</h1>
       <p className="hero__subtitle">&quot;Zesty scholar&quot;</p>
       <div className={styles.button}>
@@ -77,7 +77,7 @@ const slides = [
     <h2 className={styles.slideHeading} style={{ color: "white" }}>
       <Translate id="front.heading3">Road to 6K</Translate>
     </h2>
-    <img src="/img/frontpage/CR_arena_blur.png" className={styles.bkgimg} />
+    <img src="/old-website/img/frontpage/CR_arena_blur.png" className={styles.bkgimg} />
     <div className={clsx(styles.button, styles.readMore)}>
       <Link
         className="button button--outline button--lg"
@@ -95,7 +95,7 @@ const slides = [
     <h2 className={styles.slideHeading} style={{ color: "white" }}>
       <Translate id="front.heading4">Thank you, UCloud!</Translate>
     </h2>
-    <img src="/img/frontpage/UCloud_logo.svg" className={styles.bkgimg} />
+    <img src="/old-website/img/frontpage/UCloud_logo.svg" className={styles.bkgimg} />
     <p
       className={clsx(styles.readMore, styles.slideSubheading)}
       style={{
